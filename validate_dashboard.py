@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate dashboard files before deployment; no third-party dependencies."""
+"""Validate dashboard files and independently audit calculations with pandas."""
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -7,6 +7,7 @@ import argparse
 import json
 import math
 import zipfile
+from validate_calculations import validate_calculations
 
 
 def validate(root):
@@ -42,6 +43,7 @@ def validate(root):
     for name in ['economic-updater-scripts.zip', 'dashboard-data.zip']:
         with zipfile.ZipFile(root / 'downloads' / name) as archive:
             assert archive.testzip() is None, name
+    validate_calculations(root)
     print(f'Validated {len(data["sections"])} tables, {len(raw["series"])} source series, dates, links and archives.')
 
 

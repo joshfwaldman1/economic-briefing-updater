@@ -13,6 +13,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install -r requirements.txt
+      - run: python -m pip install -r requirements.txt -r requirements-dashboard.txt
       - run: node --test test-data.mjs test-workbook.mjs test-dashboard.mjs
-      - run: python -m unittest test_chartbook.py
+      - run: python -m unittest test_chartbook.py test_calculate_dashboard.py test_validate_calculations.py

@@ -35,8 +35,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Verify calculations
-        run: node --test test-data.mjs test-workbook.mjs test-dashboard.mjs
+      - name: Install pandas
+        run: python -m pip install -r requirements-dashboard.txt
+      - name: Check pandas calculations
+        run: python -m unittest test_calculate_dashboard.py test_validate_calculations.py
+      - name: Verify transport
+        run: node --test test-dashboard.mjs
       - name: Retrieve current observations
         if: github.event_name != 'push'
         run: node refresh_dashboard.mjs

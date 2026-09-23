@@ -1,11 +1,11 @@
 {
   "retrieved": "2026-09-23",
-  "retrievedAt": "2026-09-23T23:02:35.813Z",
+  "retrievedAt": "2026-09-23T23:45:57.177Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
       "label": "Nonfarm payrolls",
-      "value": 162000,
+      "value": 162000.0,
       "digits": 0,
       "prefix": "+",
       "suffix": "",
@@ -102,15 +102,15 @@
           "id": "PAYEMS",
           "values": [
             "Overall",
-            159075000,
-            162000,
+            159075000.0,
+            162000.0,
             71333.33333333333,
-            50250,
-            15405000,
+            50250.0,
+            15405000.0,
             320937.5,
-            807000,
+            807000.0,
             42473.68421052631,
-            16212000,
+            16212000.0,
             "SA",
             "2026-08-01"
           ],
@@ -122,15 +122,15 @@
           "id": "MANEMP",
           "values": [
             "U.S. manufacturing",
-            12638000,
-            16000,
+            12638000.0,
+            16000.0,
             14333.333333333334,
             1916.6666666666667,
-            531000,
+            531000.0,
             11062.5,
-            -35000,
+            -35000.0,
             -1842.1052631578948,
-            496000,
+            496000.0,
             "SA",
             "2026-08-01"
           ],
@@ -142,15 +142,15 @@
           "id": "USMINE",
           "values": [
             "Mining and logging",
-            609000,
-            3000,
+            609000.0,
+            3000.0,
             -666.6666666666666,
             166.66666666666666,
-            73000,
+            73000.0,
             1520.8333333333333,
-            -13000,
+            -13000.0,
             -684.2105263157895,
-            60000,
+            60000.0,
             "SA",
             "2026-08-01"
           ],
@@ -162,15 +162,15 @@
           "id": "USCONS",
           "values": [
             "Construction",
-            8359000,
-            22000,
+            8359000.0,
+            22000.0,
             14333.333333333334,
-            10000,
-            902000,
+            10000.0,
+            902000.0,
             18791.666666666668,
-            95000,
-            5000,
-            997000,
+            95000.0,
+            5000.0,
+            997000.0,
             "SA",
             "2026-08-01"
           ],
@@ -182,15 +182,15 @@
           "id": "USTPU",
           "values": [
             "Trade, transportation and utilities",
-            28778000,
-            16000,
-            18000,
+            28778000.0,
+            16000.0,
+            18000.0,
             2916.6666666666665,
-            1594000,
+            1594000.0,
             33208.333333333336,
-            -17000,
+            -17000.0,
             -894.7368421052631,
-            1577000,
+            1577000.0,
             "SA",
             "2026-08-01"
           ],
@@ -202,15 +202,15 @@
           "id": "USINFO",
           "values": [
             "Information",
-            2745000,
-            -23000,
+            2745000.0,
+            -23000.0,
             -12333.333333333334,
             -9583.333333333334,
-            130000,
+            130000.0,
             2708.3333333333335,
-            -132000,
+            -132000.0,
             -6947.368421052632,
-            -2000,
+            -2000.0,
             "SA",
             "2026-08-01"
           ],
@@ -222,15 +222,15 @@
           "id": "USFIRE",
           "values": [
             "Financial activities",
-            9086000,
-            -11000,
+            9086000.0,
+            -11000.0,
             -6666.666666666667,
-            -8250,
-            465000,
+            -8250.0,
+            465000.0,
             9687.5,
-            -101000,
+            -101000.0,
             -5315.789473684211,
-            364000,
+            364000.0,
             "SA",
             "2026-08-01"
           ],
@@ -242,15 +242,15 @@
           "id": "USPBS",
           "values": [
             "Professional and business services",
-            22527000,
-            10000,
+            22527000.0,
+            10000.0,
             20333.333333333332,
             12666.666666666666,
-            1558000,
+            1558000.0,
             32458.333333333332,
-            47000,
+            47000.0,
             2473.684210526316,
-            1605000,
+            1605000.0,
             "SA",
             "2026-08-01"
           ],
@@ -262,15 +262,15 @@
           "id": "USEHS",
           "values": [
             "Private education and health services",
-            27974000,
-            29000,
+            27974000.0,
+            29000.0,
             30333.333333333332,
             44916.666666666664,
-            3644000,
+            3644000.0,
             75916.66666666667,
-            968000,
+            968000.0,
             50947.36842105263,
-            4612000,
+            4612000.0,
             "SA",
             "2026-08-01"
           ],
@@ -282,15 +282,15 @@
           "id": "USLAH",
           "values": [
             "Leisure and hospitality",
-            17001000,
-            62000,
+            17001000.0,
+            62000.0,
             -4333.333333333333,
             10916.666666666666,
-            4031000,
+            4031000.0,
             83979.16666666667,
-            169000,
+            169000.0,
             8894.736842105263,
-            4200000,
+            4200000.0,
             "SA",
             "2026-08-01"
           ],
@@ -302,15 +302,15 @@
           "id": "USSERV",
           "values": [
             "Other services",
-            6035000,
-            3000,
+            6035000.0,
+            3000.0,
             1333.3333333333333,
-            2250,
-            661000,
+            2250.0,
+            661000.0,
             13770.833333333334,
-            60000,
+            60000.0,
             3157.8947368421054,
-            721000,
+            721000.0,
             "SA",
             "2026-08-01"
           ],
@@ -322,15 +322,15 @@
           "id": "USGOVT",
           "values": [
             "Government",
-            23323000,
-            35000,
+            23323000.0,
+            35000.0,
             -3333.3333333333335,
             -17666.666666666668,
-            1816000,
+            1816000.0,
             37833.333333333336,
-            -234000,
+            -234000.0,
             -12315.78947368421,
-            1582000,
+            1582000.0,
             "SA",
             "2026-08-01"
           ],
@@ -342,15 +342,15 @@
           "id": "CES6562000101",
           "values": [
             "Health care (subset)",
-            18520700,
-            12900.000000001455,
+            18520700.0,
+            12900.0,
             14833.333333333334,
             31541.666666666668,
-            2012599.9999999986,
-            41929.166666666635,
-            576900.0000000014,
-            30363.157894736916,
-            2589500,
+            2012600.0,
+            41929.166666666664,
+            576900.0,
+            30363.157894736843,
+            2589500.0,
             "SA",
             "2026-08-01"
           ],
@@ -362,15 +362,15 @@
           "id": "USTRADE",
           "values": [
             "Retail Trade (subset)",
-            15488200,
-            1400.0000000014552,
-            8066.666666666909,
-            3991.666666666788,
-            293399.99999999965,
-            6112.499999999993,
-            28900.000000001455,
-            1521.052631579024,
-            322300.0000000011,
+            15488200.0,
+            1400.0,
+            8066.666666666667,
+            3991.6666666666665,
+            293400.0,
+            6112.5,
+            28900.0,
+            1521.0526315789473,
+            322300.0,
             "SA",
             "2026-08-01"
           ],
@@ -382,15 +382,15 @@
           "id": "USWTRADE",
           "values": [
             "Wholesale Trade (subset)",
-            6072100,
-            7800.000000000182,
-            5900.000000000243,
-            2425.0000000000305,
-            466000,
+            6072100.0,
+            7800.0,
+            5900.0,
+            2425.0,
+            466000.0,
             9708.333333333334,
-            -1199.999999999818,
-            -63.15789473683253,
-            464800.0000000002,
+            -1200.0,
+            -63.1578947368421,
+            464800.0,
             "SA",
             "2026-08-01"
           ],
@@ -402,15 +402,15 @@
           "id": "CES4300000001",
           "values": [
             "Transportation and Warehousing (subset)",
-            6606300,
-            5000,
+            6606300.0,
+            5000.0,
             2833.3333333333335,
             -4291.666666666667,
-            779599.9999999994,
-            16241.666666666655,
-            -58599.999999999454,
-            -3084.210526315761,
-            721000,
+            779600.0,
+            16241.666666666666,
+            -58600.0,
+            -3084.2105263157896,
+            721000.0,
             "SA",
             "2026-08-01"
           ],
@@ -422,15 +422,15 @@
           "id": "CES4422000001",
           "values": [
             "Utilities (subset)",
-            611700,
-            2500,
-            1366.6666666666742,
-            858.333333333339,
-            54500,
+            611700.0,
+            2500.0,
+            1366.6666666666667,
+            858.3333333333334,
+            54500.0,
             1135.4166666666667,
-            14700.000000000045,
-            773.6842105263182,
-            69200.00000000004,
+            14700.0,
+            773.6842105263158,
+            69200.0,
             "SA",
             "2026-08-01"
           ],
@@ -439,8 +439,8 @@
           "frequency": "monthly"
         }
       ],
-      "note": "Levels and changes are people. Jan 2021–Jan 2025 uses exact January levels and 48 elapsed monthly changes. Since Jan 2025 uses the exact January 2025 level and elapsed months to the row’s latest month. Totals require both endpoints; monthly averages also require every intervening month. Subsets overlap and should not be added to parent industries.",
-      "sourceNote": "BLS establishment survey, retrieved through FRED. Published seasonal adjustment is retained. Raw FRED employment levels are thousands of people; displayed values are multiplied by 1,000."
+      "note": "Levels and changes are people. Jan 2021–Jan 2025 uses exact January levels and 48 observed monthly changes. Since Jan 2025 uses the exact January 2025 level and observed monthly changes to the row’s latest month. Totals require both endpoints; averages require every intervening month. Subsets overlap and should not be added to parent industries.",
+      "sourceNote": "BLS establishment survey via FRED. Published seasonal adjustment is retained. Pandas converts raw thousands of people to people; monthly averages are means of observed monthly differences."
     },
     {
       "key": "unemployment",
@@ -479,7 +479,7 @@
           "values": [
             "Overall (U-3)",
             4.1,
-            0,
+            0.0,
             -0.20000000000000018,
             "2026-08-01"
           ],
@@ -492,8 +492,8 @@
           "values": [
             "Prime age (25-54)",
             3.6,
-            0,
-            0,
+            0.0,
+            0.0,
             "2026-08-01"
           ],
           "source": "https://fred.stlouisfed.org/series/LNS14000060",
@@ -506,7 +506,7 @@
             "Men (16+)",
             4.4,
             0.20000000000000018,
-            0,
+            0.0,
             "2026-08-01"
           ],
           "source": "https://fred.stlouisfed.org/series/LNS14000001",
@@ -518,7 +518,7 @@
           "values": [
             "Women (16+)",
             3.9,
-            0,
+            0.0,
             -0.3999999999999999,
             "2026-08-01"
           ],
@@ -532,7 +532,7 @@
             "White",
             3.7,
             0.10000000000000009,
-            0,
+            0.0,
             "2026-08-01"
           ],
           "source": "https://fred.stlouisfed.org/series/LNS14000003",
@@ -543,7 +543,7 @@
           "id": "LNS14000006",
           "values": [
             "Black or African American",
-            6,
+            6.0,
             -0.2999999999999998,
             -1.5999999999999996,
             "2026-08-01"
@@ -580,7 +580,7 @@
         }
       ],
       "note": "Seasonally adjusted. Ages 16 and over unless otherwise noted. Hispanic or Latino ethnicity may be of any race; these groups overlap.",
-      "sourceNote": "BLS household survey via FRED. pp means percentage points."
+      "sourceNote": "BLS household survey via FRED. pp means percentage points. Observed differences are computed with pandas."
     },
     {
       "key": "inflation",
@@ -594,11 +594,6 @@
         },
         {
           "label": "MoM (%)",
-          "type": "number",
-          "digits": 1
-        },
-        {
-          "label": "3m annualized (%)",
           "type": "number",
           "digits": 1
         },
@@ -619,7 +614,6 @@
           "values": [
             "CPI · Headline",
             0.3960181843858157,
-            0.18217169162264568,
             3.353016322755642,
             "2026-08-01"
           ],
@@ -632,7 +626,6 @@
           "values": [
             "CPI · Core",
             0.2897956881014574,
-            1.9708388578664415,
             2.4461631786472537,
             "2026-08-01"
           ],
@@ -645,7 +638,6 @@
           "values": [
             "CPI · Core Goods",
             0.10550661055541699,
-            0.87169976115129,
             0.6599216005945818,
             "2026-08-01"
           ],
@@ -658,7 +650,6 @@
           "values": [
             "CPI · Core Services",
             0.3274119421205812,
-            2.374268870865115,
             3.0164706532959773,
             "2026-08-01"
           ],
@@ -671,7 +662,6 @@
           "values": [
             "CPI · Shelter",
             0.26381104417434464,
-            2.099517640377302,
             3.034809785537229,
             "2026-08-01"
           ],
@@ -684,7 +674,6 @@
           "values": [
             "CPI · Food",
             0.12232730556962501,
-            1.6344954475855378,
             2.633598968709716,
             "2026-08-01"
           ],
@@ -697,7 +686,6 @@
           "values": [
             "CPI · Energy",
             2.096626005792346,
-            -19.114067828444014,
             16.049347026386364,
             "2026-08-01"
           ],
@@ -710,7 +698,6 @@
           "values": [
             "PCE · Headline",
             0.15594808830463602,
-            2.1958504645800403,
             3.7011657214870874,
             "2026-07-01"
           ],
@@ -723,7 +710,6 @@
           "values": [
             "PCE · Core",
             0.2455155058386671,
-            3.0477755322693367,
             3.3441430040338282,
             "2026-07-01"
           ],
@@ -732,47 +718,10 @@
           "frequency": "monthly"
         },
         {
-          "id": null,
-          "values": [
-            "PCE · Core Goods",
-            null,
-            null,
-            null,
-            null
-          ],
-          "source": null,
-          "note": "Exact monthly series is not configured; no automated value is published."
-        },
-        {
-          "id": null,
-          "values": [
-            "PCE · Core Services",
-            null,
-            null,
-            null,
-            null
-          ],
-          "source": null,
-          "note": "Exact monthly series is not configured; no automated value is published."
-        },
-        {
-          "id": null,
-          "values": [
-            "PCE · Housing",
-            null,
-            null,
-            null,
-            null
-          ],
-          "source": null,
-          "note": "Exact monthly series is not configured; no automated value is published."
-        },
-        {
           "id": "DFXARG3M086SBEA",
           "values": [
             "PCE · Food",
             -0.08013365689186758,
-            0.9314438558573945,
             2.4025350192140804,
             "2026-07-01"
           ],
@@ -785,7 +734,6 @@
           "values": [
             "PCE · Energy",
             -1.463922026889941,
-            -13.521241198817124,
             15.314272833151744,
             "2026-07-01"
           ],
@@ -794,8 +742,8 @@
           "frequency": "monthly"
         }
       ],
-      "note": "Changes calculated from published seasonally adjusted price indexes. CPI and PCE have different coverage and weights. PCE core goods, core services and housing remain unavailable until exact monthly sources are configured.",
-      "sourceNote": "BLS CPI and BEA PCE via FRED. SA CPI index-based YoY can differ slightly from the headline NSA convention. Annualization compounds index ratios."
+      "note": "Observed month-over-month and year-over-year changes in published seasonally adjusted price indexes. CPI and PCE have different coverage and weights. Only configured source series are included.",
+      "sourceNote": "BLS CPI and BEA PCE via FRED. Changes use pandas pct_change with no missing-value fill. SA CPI index-based YoY can differ slightly from the headline NSA convention."
     },
     {
       "key": "prices",
@@ -961,7 +909,7 @@
         }
       ],
       "note": "Actual dollar prices per stated unit. These series retain their published seasonal adjustment; most average retail prices are NSA. They are national averages, not a local shopping quote. The prior period is one month for monthly prices or one week for weekly fuel prices.",
-      "sourceNote": "BLS average retail prices and EIA fuel prices via FRED. Weekly YoY compares 52 weeks earlier; monthly YoY compares the same month a year earlier. Missing periods are never filled forward."
+      "sourceNote": "BLS average retail prices and EIA fuel prices via FRED. Weekly YoY compares 52 weeks earlier; monthly YoY compares the same month a year earlier. Pandas uses exact observations; missing periods remain unavailable."
     },
     {
       "key": "manufacturing",
@@ -1033,15 +981,15 @@
           "id": "MANEMP",
           "values": [
             "U.S. manufacturing",
-            12638000,
-            16000,
+            12638000.0,
+            16000.0,
             14333.333333333334,
             1916.6666666666667,
-            531000,
+            531000.0,
             11062.5,
-            -35000,
+            -35000.0,
             -1842.1052631578948,
-            496000,
+            496000.0,
             "SA",
             "2026-08-01"
           ],
@@ -1053,15 +1001,15 @@
           "id": "MIMFG",
           "values": [
             "Michigan manufacturing",
-            583300,
-            -2000,
-            299.99999999999244,
-            -175.0000000000019,
-            -7599.999999999909,
-            -158.33333333333144,
-            4599.999999999909,
-            242.10526315788994,
-            -3000,
+            583300.0,
+            -2000.0,
+            300.0,
+            -175.0,
+            -7600.0,
+            -158.33333333333334,
+            4600.0,
+            242.10526315789474,
+            -3000.0,
             "SA",
             "2026-08-01"
           ],
@@ -1073,15 +1021,15 @@
           "id": "OHMFG",
           "values": [
             "Ohio manufacturing",
-            688300,
-            -700.0000000000455,
-            2366.6666666666365,
+            688300.0,
+            -700.0,
+            2366.6666666666665,
             1041.6666666666667,
-            13800.00000000007,
-            287.5000000000014,
-            13199.99999999993,
-            694.7368421052595,
-            27000,
+            13800.0,
+            287.5,
+            13200.0,
+            694.7368421052631,
+            27000.0,
             "SA",
             "2026-08-01"
           ],
@@ -1093,15 +1041,15 @@
           "id": "WIMFG",
           "values": [
             "Wisconsin manufacturing",
-            458400,
-            299.9999999999545,
-            699.9999999999886,
-            99.99999999999905,
-            -399.99999999997726,
-            -8.33333333333286,
-            -2700.0000000000455,
-            -142.10526315789713,
-            -3100.0000000000227,
+            458400.0,
+            300.0,
+            700.0,
+            100.0,
+            -400.0,
+            -8.333333333333334,
+            -2700.0,
+            -142.10526315789474,
+            -3100.0,
             "SA",
             "2026-08-01"
           ],
@@ -1113,15 +1061,15 @@
           "id": "PAMFG",
           "values": [
             "Pennsylvania manufacturing",
-            557300,
-            -200.00000000004547,
-            566.6666666666439,
-            183.33333333332766,
-            21699.99999999993,
-            452.0833333333319,
-            -3000,
+            557300.0,
+            -200.0,
+            566.6666666666666,
+            183.33333333333334,
+            21700.0,
+            452.0833333333333,
+            -3000.0,
             -157.89473684210526,
-            18699.99999999993,
+            18700.0,
             "SA",
             "2026-08-01"
           ],
@@ -1133,15 +1081,15 @@
           "id": "MNMFG",
           "values": [
             "Minnesota manufacturing",
-            324700,
-            2199.9999999999886,
-            1799.9999999999925,
-            883.3333333333304,
-            6600.000000000023,
-            137.50000000000048,
-            8399.999999999978,
-            442.1052631578936,
-            15000,
+            324700.0,
+            2200.0,
+            1800.0,
+            883.3333333333334,
+            6600.0,
+            137.5,
+            8400.0,
+            442.10526315789474,
+            15000.0,
             "SA",
             "2026-08-01"
           ],
@@ -1153,15 +1101,15 @@
           "id": "CES3133600101",
           "values": [
             "U.S. motor vehicles and parts manufacturing",
-            962800,
-            -4500,
-            1933.3333333333183,
-            -33.33333333334091,
-            25200.000000000044,
-            525.0000000000009,
-            -12700.000000000045,
-            -668.4210526315813,
-            12500,
+            962800.0,
+            -4500.0,
+            1933.3333333333333,
+            -33.333333333333336,
+            25200.0,
+            525.0,
+            -12700.0,
+            -668.421052631579,
+            12500.0,
             "SA",
             "2026-08-01"
           ],
@@ -1173,15 +1121,15 @@
           "id": "CES4244100001",
           "values": [
             "U.S. motor vehicle and parts dealers",
-            2051600,
-            -900.000000000091,
-            1466.6666666666213,
-            391.6666666666515,
-            116899.99999999987,
-            2435.416666666664,
-            1000,
+            2051600.0,
+            -900.0,
+            1466.6666666666667,
+            391.6666666666667,
+            116900.0,
+            2435.4166666666665,
+            1000.0,
             52.63157894736842,
-            117899.99999999987,
+            117900.0,
             "SA",
             "2026-08-01"
           ],
@@ -1193,19 +1141,21 @@
           "id": "TOTAL_AUTO_JOBS",
           "values": [
             "U.S. total auto jobs (manufacturing + dealers)",
-            3014400,
-            -5400,
-            3400,
+            3014400.0,
+            -5400.0,
+            3400.0,
             358.3333333333333,
-            142100,
+            142100.0,
             2960.4166666666665,
-            -11700,
+            -11700.0,
             -615.7894736842105,
-            130400,
+            130400.0,
             "SA",
             "2026-08-01"
           ],
           "source": "https://fred.stlouisfed.org/graph/?id=CES3133600101,CES4244100001",
+          "sa": "SA",
+          "frequency": "monthly",
           "sources": [
             {
               "label": "U.S. motor vehicles and parts manufacturing",
@@ -1216,13 +1166,11 @@
               "url": "https://fred.stlouisfed.org/series/CES4244100001"
             }
           ],
-          "sa": "SA",
-          "frequency": "monthly",
           "note": "Sum of motor vehicles and parts manufacturing and motor vehicle and parts dealers, two disjoint payroll industries. This defined total excludes automotive repair, wholesale and other auto-related employment. Normalize each input to people before adding, on common observation dates only."
         }
       ],
-      "note": "Levels and changes are people. Jan 2021–Jan 2025 uses exact January levels and 48 elapsed monthly changes. Since Jan 2025 uses the exact January 2025 level and elapsed months to the row’s latest month. Totals require both endpoints; monthly averages also require every intervening month. Subsets overlap and should not be added to parent industries. “Total auto jobs” means motor vehicles and parts manufacturing plus motor vehicle and parts dealers; it does not cover every auto-related business. State components are labeled explicitly.",
-      "sourceNote": "BLS establishment-survey data via FRED, seasonally adjusted. Derived totals use only dates common to all components. The selected states are Michigan, Ohio, Wisconsin, Pennsylvania and Minnesota, not a complete geographic region."
+      "note": "Levels and changes are people. Jan 2021–Jan 2025 uses exact January levels and 48 observed monthly changes. Since Jan 2025 uses the exact January 2025 level and observed monthly changes to the row’s latest month. Totals require both endpoints; averages require every intervening month. Subsets overlap and should not be added to parent industries. “Total auto jobs” means motor vehicles and parts manufacturing plus motor vehicle and parts dealers; it does not cover every auto-related business.",
+      "sourceNote": "BLS establishment-survey data via FRED, using published seasonal adjustment. Pandas aligns derived components on dates present in every source before summing. The selected states are Michigan, Ohio, Wisconsin, Pennsylvania and Minnesota, not a complete geographic region."
     },
     {
       "key": "gdp",
@@ -1244,7 +1192,7 @@
           "type": "text"
         },
         {
-          "label": "QoQ annualized (%)",
+          "label": "QoQ (%)",
           "type": "number",
           "digits": 1
         },
@@ -1285,7 +1233,7 @@
             "United States",
             24269.613,
             "Billions of chained 2017 USD",
-            1.4836587880023622,
+            0.36886871149750533,
             2.097671547016011,
             11.697468576947667,
             3.063515231094005,
@@ -1304,7 +1252,7 @@
             "Germany",
             782934.3,
             "Millions of chained 2010 EUR",
-            1.3284259411258548,
+            0.3304647689418516,
             1.0171982341795838,
             3.4005291955930828,
             0.9980033483067086,
@@ -1323,7 +1271,7 @@
             "Japan",
             598950.5,
             "Billions of chained 2015 JPY",
-            1.449639217524945,
+            0.36045618686213476,
             0.7266540380768127,
             4.075660470336029,
             0.8510579544132479,
@@ -1340,9 +1288,9 @@
           "id": "NGDPRSAXDCGBQ",
           "values": [
             "United Kingdom",
-            712545,
+            712545.0,
             "Millions of domestic currency",
-            1.6715996746650807,
+            0.4153055673775885,
             1.1744008723877375,
             14.773652811895577,
             1.3320951451837315,
@@ -1361,7 +1309,7 @@
             "France",
             597203.9,
             "Millions of chained 2010 EUR",
-            0.14178567135310072,
+            0.035427586682845735,
             0.5422715031021985,
             9.328448666162647,
             0.7794663684477898,
@@ -1380,7 +1328,7 @@
             "Italy",
             436738.3,
             "Millions of chained 2010 EUR",
-            0.6883913679071263,
+            0.17165535256664644,
             1.0172308671593022,
             10.974396010290445,
             1.0025362896166623,
@@ -1399,7 +1347,7 @@
             "Canada",
             631031.8,
             "Millions of domestic currency",
-            3.3195248445222925,
+            0.819746253800524,
             1.1278958220418245,
             12.476967746123456,
             0.8828483020641542,
@@ -1413,8 +1361,8 @@
           "note": "Real GDP. Compare percentage growth or rebased indexes across countries; raw levels have different currencies, scales, reference years and annualization conventions."
         }
       ],
-      "note": "Inflation-adjusted output. Compare growth rates across countries: published levels use different currencies, reference years and annualization conventions. January baselines represent Q1, not monthly GDP. Quarterly growth is compounded to an annual rate. SAAR means the published level is seasonally adjusted at an annual rate.",
-      "sourceNote": "BEA and national statistical sources via FRED. Real GDP is quarterly and revised after initial estimates; Q1 2025 is not a clean January-only baseline."
+      "note": "Inflation-adjusted output. QoQ is the observed change from the preceding quarter. Compare growth rates across countries: published levels use different currencies, reference years and source conventions. Q1 baselines represent full quarters, not January alone.",
+      "sourceNote": "BEA and national statistical sources via FRED. Changes are computed with pandas from observed quarterly levels. SAAR identifies an annual-rate level published by the source; the dashboard does not convert observed quarterly growth into an annual rate."
     },
     {
       "key": "applications",
@@ -1452,7 +1400,7 @@
           "id": "BABATOTALSAUS",
           "values": [
             "Total applications",
-            531728,
+            531728.0,
             -7.768095026642985,
             11.377875155265183,
             "2026-08-01"
@@ -1465,7 +1413,7 @@
           "id": "BAHBATOTALSAUS",
           "values": [
             "High-propensity applications",
-            145387,
+            145387.0,
             -4.102080392596596,
             1.9201110425663082,
             "2026-08-01"
@@ -1476,7 +1424,7 @@
         }
       ],
       "note": "Monthly applications, seasonally adjusted. High-propensity applications are a subset of total applications, not additional business formations.",
-      "sourceNote": "U.S. Census Bureau via FRED."
+      "sourceNote": "U.S. Census Bureau via FRED. Changes are computed with pandas from observed application counts."
     },
     {
       "key": "claims",
@@ -1513,9 +1461,9 @@
           "id": "ICSA",
           "values": [
             "Initial claims",
-            196000,
-            206000,
-            233000,
+            196000.0,
+            206000.0,
+            233000.0,
             "2026-09-12"
           ],
           "source": "https://fred.stlouisfed.org/series/ICSA",
@@ -1526,9 +1474,9 @@
           "id": "IC4WSA",
           "values": [
             "Initial claims 4-week average",
-            203250,
-            206000,
-            239250,
+            203250.0,
+            206000.0,
+            239250.0,
             "2026-09-12"
           ],
           "source": "https://fred.stlouisfed.org/series/IC4WSA",
@@ -1539,9 +1487,9 @@
           "id": "CCSA",
           "values": [
             "Continued claims",
-            1730000,
-            1769000,
-            1925000,
+            1730000.0,
+            1769000.0,
+            1925000.0,
             "2026-09-05"
           ],
           "source": "https://fred.stlouisfed.org/series/CCSA",
@@ -1550,7 +1498,7 @@
         }
       ],
       "note": "Seasonally adjusted. Continued claims generally refer to an earlier week than initial claims.",
-      "sourceNote": "U.S. Employment and Training Administration via FRED. Comparisons require the exact week; missing dates remain unavailable."
+      "sourceNote": "U.S. Employment and Training Administration via FRED. Comparisons require exact dates; missing observations remain unavailable."
     },
     {
       "key": "markets",
@@ -1635,7 +1583,7 @@
         }
       ],
       "note": "Daily closing price indexes, not live prices. Changes exclude dividends. Market series are not seasonally adjusted.",
-      "sourceNote": "S&P Dow Jones Indices and Nasdaq via FRED. Calendar lookbacks use a preceding available close within seven days."
+      "sourceNote": "S&P Dow Jones Indices and Nasdaq via FRED. Calendar lookbacks use a prior observed close within seven days. Pandas computes returns from those observed prices."
     },
     {
       "key": "budget",
@@ -1678,7 +1626,7 @@
           "id": "MTSDS133FMS",
           "values": [
             "Fiscal year to date deficit",
-            1965.62782045344,
+            1965.6278204534403,
             "USD billions",
             "2026-08-01"
           ],
@@ -1690,7 +1638,7 @@
           "id": "MTSDS133FMS",
           "values": [
             "Trailing 12 months deficit",
-            1767.6781900912802,
+            1767.6781900912804,
             "USD billions",
             "2026-08-01"
           ],
@@ -1712,7 +1660,7 @@
         }
       ],
       "note": "Positive values indicate a deficit; negative values indicate a surplus. Fiscal year to date begins in October. Published budget balances are NSA.",
-      "sourceNote": "Treasury and OMB via FRED. Monthly balances are summed only when every required month is available."
+      "sourceNote": "Treasury and OMB via FRED. Pandas sums observed monthly balances only when every required month is available."
     },
     {
       "key": "participation",
@@ -1751,7 +1699,7 @@
           "values": [
             "Prime age (25-54)",
             83.4,
-            0,
+            0.0,
             -0.29999999999999716,
             "2026-08-01"
           ],
@@ -1764,7 +1712,7 @@
           "values": [
             "Prime-age employment / population",
             80.4,
-            0,
+            0.0,
             -0.29999999999999716,
             "2026-08-01"
           ],
@@ -1774,7 +1722,7 @@
         }
       ],
       "note": "People ages 25–54. Seasonally adjusted. Participation includes employed people and unemployed people seeking work.",
-      "sourceNote": "BLS household survey via FRED. pp means percentage points."
+      "sourceNote": "BLS household survey via FRED. pp means percentage points. Differences are computed with pandas."
     },
     {
       "key": "context",
@@ -1806,7 +1754,7 @@
           "id": "JTSJOL",
           "values": [
             "Job openings",
-            7271,
+            7271.0,
             "Thousands",
             "2026-07-01"
           ],
@@ -1912,7 +1860,12 @@
           ],
           "source": "https://fred.stlouisfed.org/series/DCOILWTICO",
           "sa": "NSA",
-          "frequency": "daily"
+          "frequency": "daily",
+          "digits": {
+            "1": 2,
+            "3": 2,
+            "5": 2
+          }
         },
         {
           "id": "DCOILBRENTEU",
@@ -1928,7 +1881,12 @@
           ],
           "source": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
           "sa": "NSA",
-          "frequency": "daily"
+          "frequency": "daily",
+          "digits": {
+            "1": 2,
+            "3": 2,
+            "5": 2
+          }
         },
         {
           "id": "GASREGW",
@@ -1945,7 +1903,12 @@
           "source": "https://fred.stlouisfed.org/series/GASREGW",
           "sa": "NSA",
           "frequency": "weekly",
-          "note": "U.S. regular all formulations retail gasoline price, including taxes."
+          "note": "U.S. regular all formulations retail gasoline price, including taxes.",
+          "digits": {
+            "1": 3,
+            "3": 3,
+            "5": 3
+          }
         },
         {
           "id": "GASDESW",
@@ -1962,7 +1925,12 @@
           "source": "https://fred.stlouisfed.org/series/GASDESW",
           "sa": "NSA",
           "frequency": "weekly",
-          "note": "U.S. diesel retail sales price."
+          "note": "U.S. diesel retail sales price.",
+          "digits": {
+            "1": 3,
+            "3": 3,
+            "5": 3
+          }
         },
         {
           "id": "SP500",
@@ -1979,7 +1947,12 @@
           "source": "https://fred.stlouisfed.org/series/SP500",
           "sa": "NSA",
           "frequency": "daily",
-          "note": "Closing price index, excluding dividends. Source history is limited to ten years."
+          "note": "Closing price index, excluding dividends. Source history is limited to ten years.",
+          "digits": {
+            "1": 2,
+            "3": 2,
+            "5": 2
+          }
         },
         {
           "id": "DJIA",
@@ -1996,7 +1969,12 @@
           "source": "https://fred.stlouisfed.org/series/DJIA",
           "sa": "NSA",
           "frequency": "daily",
-          "note": "Closing price index, excluding dividends. Source history is limited to ten years."
+          "note": "Closing price index, excluding dividends. Source history is limited to ten years.",
+          "digits": {
+            "1": 2,
+            "3": 2,
+            "5": 2
+          }
         },
         {
           "id": "NASDAQCOM",
@@ -2013,7 +1991,12 @@
           "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
           "sa": "NSA",
           "frequency": "daily",
-          "note": "Closing price index, excluding dividends."
+          "note": "Closing price index, excluding dividends.",
+          "digits": {
+            "1": 2,
+            "3": 2,
+            "5": 2
+          }
         },
         {
           "id": "CPIAUCSL",
@@ -2029,7 +2012,12 @@
           ],
           "source": "https://fred.stlouisfed.org/series/CPIAUCSL",
           "sa": "SA",
-          "frequency": "monthly"
+          "frequency": "monthly",
+          "digits": {
+            "1": 3,
+            "3": 3,
+            "5": 3
+          }
         },
         {
           "id": "CPILFESL",
@@ -2045,7 +2033,12 @@
           ],
           "source": "https://fred.stlouisfed.org/series/CPILFESL",
           "sa": "SA",
-          "frequency": "monthly"
+          "frequency": "monthly",
+          "digits": {
+            "1": 3,
+            "3": 3,
+            "5": 3
+          }
         },
         {
           "id": "PCEPI",
@@ -2061,7 +2054,12 @@
           ],
           "source": "https://fred.stlouisfed.org/series/PCEPI",
           "sa": "SA",
-          "frequency": "monthly"
+          "frequency": "monthly",
+          "digits": {
+            "1": 3,
+            "3": 3,
+            "5": 3
+          }
         },
         {
           "id": "PCEPILFE",
@@ -2077,23 +2075,33 @@
           ],
           "source": "https://fred.stlouisfed.org/series/PCEPILFE",
           "sa": "SA",
-          "frequency": "monthly"
+          "frequency": "monthly",
+          "digits": {
+            "1": 3,
+            "3": 3,
+            "5": 3
+          }
         },
         {
           "id": "PAYEMS",
           "values": [
             "Total nonfarm payroll jobs",
-            158592000,
+            158592000.0,
             "2026-01-01",
-            159075000,
+            159075000.0,
             "2026-08-01",
-            483000,
+            483000.0,
             0.3045550847457612,
             "People · SA"
           ],
           "source": "https://fred.stlouisfed.org/series/PAYEMS",
           "sa": "SA",
-          "frequency": "monthly"
+          "frequency": "monthly",
+          "digits": {
+            "1": 0,
+            "3": 0,
+            "5": 0
+          }
         },
         {
           "id": "UNRATE",
@@ -2109,27 +2117,37 @@
           ],
           "source": "https://fred.stlouisfed.org/series/UNRATE",
           "sa": "SA",
-          "frequency": "monthly"
+          "frequency": "monthly",
+          "digits": {
+            "1": 1,
+            "3": 1,
+            "5": 1
+          }
         },
         {
           "id": "ICSA",
           "values": [
             "Initial jobless claims",
-            211000,
+            211000.0,
             "2026-02-21",
-            196000,
+            196000.0,
             "2026-09-12",
-            -15000,
+            -15000.0,
             -7.109004739336489,
             "Number · SA"
           ],
           "source": "https://fred.stlouisfed.org/series/ICSA",
           "sa": "SA",
-          "frequency": "weekly"
+          "frequency": "weekly",
+          "digits": {
+            "1": 0,
+            "3": 0,
+            "5": 0
+          }
         }
       ],
-      "note": "Reference date: February 28, 2026. Daily and weekly baselines are the last available observation before that date; monthly baselines use January 2026 because February spans the start of the war. Each baseline is shown explicitly. These comparisons describe changes over time and do not attribute them to the war.",
-      "sourceNote": "Sources via FRED. Daily baselines must be within 7 days and weekly baselines within 14 days of the cutoff; missing monthly baselines stay unavailable. Percentage-point changes in rate series appear under absolute change; percent change is relative to the baseline."
+      "note": "User-selected start: February 28, 2026. Daily and weekly baselines are the last available observation before that date; monthly baselines use January 2026 because February spans the start of the war. Each baseline is shown explicitly. These comparisons describe changes over time and do not attribute them to the war.",
+      "sourceNote": "Sources via FRED. Pandas uses observed baselines within 7 days for daily data and 14 days for weekly data; missing monthly baselines remain unavailable. Rate differences under absolute change are percentage points; percent change is relative to the baseline."
     }
   ],
   "notes": {
@@ -2137,16 +2155,18 @@
     "employment": "Employment levels and changes are payroll jobs, not unique workers. Manufacturing subsets overlap the manufacturing total; do not add parent industries to their subsets.",
     "regionalCoverage": "The selected states are Michigan, Ohio, Wisconsin, Pennsylvania and Minnesota. They are not a complete Midwest region; Pennsylvania is outside the Census Midwest.",
     "retailPrices": "Average retail prices are published NSA and describe actual prices for the stated quantities. CPI indexes are better suited to measuring inflation because product composition and quality can change over time.",
-    "gdp": "Quarterly real GDP can be compared using percentage changes or a shared base-quarter index, not raw national-currency levels. Q1 2021 and Q1 2025 are quarter baselines, not January observations; any monthly equivalent growth rate is a calculation, not monthly GDP.",
-    "conflictBaseline": "The user selected February 28, 2026. Use each series last observed value strictly before that date; report each actual baseline date. February 28 is a Saturday, so daily market series normally use February 27 and weekly fuel series the preceding Monday. Describe changes since the baseline, not causal effects of the war."
+    "gdp": "Real GDP comparisons use observed quarterly levels. National currency levels are not directly comparable. Q1 baselines are full quarters, not January alone.",
+    "conflictBaseline": "The user selected February 28, 2026. Use each series last observed value strictly before that date; report each actual baseline date. February 28 is a Saturday, so daily market series normally use February 27 and weekly fuel series the preceding Monday. Describe changes since the baseline, not causal effects of the war.",
+    "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
-  "snapshotId": "cf4c2179-c63b-4300-acf6-2429fc2a7861",
+  "calculationEngine": "pandas 2.2.3",
+  "snapshotId": "184246c9-7838-44b6-b0b5-5654021bf9c4",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-09-23T23:02:35.813Z"
+      "updatedAt": "2026-09-23T23:45:57.177Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",

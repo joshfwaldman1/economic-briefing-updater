@@ -10,13 +10,14 @@ GitHub Actions retrieves current FRED observations **twice daily, at 9:10 a.m. a
 
 The dashboard and its CSV/source-data download refresh automatically. The Word chartbook is a separately dated download; it does not silently inherit the dashboard's newer timestamp. The economic briefing workbook download is currently omitted. Its original updater remains in the repository.
 
-The schedule runs on GitHub, so a personal computer does not need to remain awake. No API key, Codex runtime or paid server is needed for the website refresh. Failed refreshes leave the previously published website in place; inspect [workflow runs](https://github.com/joshfwaldman1/economic-briefing-updater/actions/workflows/pages.yml) for status or use **Run workflow** for an immediate refresh.
+The schedule runs on GitHub, so a personal computer does not need to remain awake. No API key, Codex runtime or paid server is needed for the website refresh. All dashboard arithmetic runs in pandas; the website presents source values and observed changes, without extrapolated annual growth rates. Failed refreshes leave the previously published website in place; inspect [workflow runs](https://github.com/joshfwaldman1/economic-briefing-updater/actions/workflows/pages.yml) for status or use **Run workflow** for an immediate refresh.
 
 ## Running the updaters
 
 | Tool | Purpose | Requirements |
 | --- | --- | --- |
-| `refresh_dashboard.mjs` | Retrieve source series and build all website indicator tables | Node.js 22+; built-in modules only |
+| `refresh_dashboard.mjs` | Retrieve FRED source series and invoke the pandas builder | Node.js 22+ and Python 3.10+ with pandas |
+| `calculate_dashboard.py` | Compute observed changes, totals and averages with pandas | Python 3.10+ and pandas |
 | `package_downloads.py` | Package current CSV tables, raw observations and script downloads | Python 3.10+; standard library only |
 | `update_chartbook.py` | 34 editable Word tables from 20 seasonally adjusted BLS series | Python 3.10+ and `python-docx` |
 | `download_fred_charts.py` | Optional downloads of the four original saved FRED graphs | Python 3.10+; standard library only |
@@ -25,6 +26,7 @@ The schedule runs on GitHub, so a personal computer does not need to remain awak
 To refresh the website locally:
 
 ```sh
+python3 -m pip install -r requirements-dashboard.txt
 node refresh_dashboard.mjs
 python3 package_downloads.py
 python3 validate_dashboard.py
@@ -53,11 +55,11 @@ The Mac `.command` launchers operate the original workbook/chartbook tools. They
 
 - Employment comparisons use **January 2021 → January 2025** (48 monthly changes), **January 2025 → latest**, and the **total change since January 2021**. January is the level baseline; its own change from December is excluded. Average monthly changes require uninterrupted monthly observations. Employment is displayed in people.
 - National total auto jobs means **motor vehicle and parts manufacturing + motor vehicle and parts dealers**. It is a defined sum, not an official total of every auto-related occupation. Manufacturing and dealer rows overlap this total. State manufacturing is included; state auto jobs are omitted.
-- CPI and PCE growth use seasonally adjusted indexes. Grocery dollar prices, oil, fuel and stock series retain their published adjustment conventions, which are labeled. A pound of beef is a dollar price per pound, not a price index.
+- CPI and PCE show observed monthly and year-over-year percentage changes from seasonally adjusted indexes. Extrapolated three-month annualized rates are omitted. GDP shows observed quarter-over-quarter growth; its published source levels retain their original SA/SAAR conventions. Grocery dollar prices, oil, fuel and stock series retain their published adjustment conventions, which are labeled. A pound of beef is a dollar price per pound, not a price index.
 - GDP observations retain their own national units. Growth rates can be compared across countries; their raw national levels cannot be added or ranked as common-dollar GDP.
 - The **Since Iran War began** tab uses the user-selected February 28, 2026 start. Daily and weekly baselines are the last available observation before that date. Monthly indicators use January 2026, the last full prewar month. Actual dates appear beside the values. These are descriptive changes, not estimates of the war's causal effect.
 - Hispanic ethnicity overlaps racial classifications. Industry subsets overlap their parent totals. Do not sum overlapping rows.
-- Missing observations stay unavailable. Current revisions are downloaded; this is not a historical-vintage service. A source failure stops automatic publication rather than relabeling cached data as fresh.
+- Categories without a configured source series are omitted. Missing observations within supported series stay unavailable. Current revisions are downloaded; this is not a historical-vintage service. A source failure stops automatic publication rather than relabeling cached data as fresh.
 - AAA daily prices, the release calendar and three PCE component rows in the original workbook remain explicitly manual. Those workbook values are not carried into the live dashboard as updated data.
 - Source data remain subject to their providers' terms. The four original custom FRED graph links appear at the bottom of the website.
 
@@ -65,8 +67,8 @@ The Mac `.command` launchers operate the original workbook/chartbook tools. They
 
 ```sh
 node --test test-data.mjs test-workbook.mjs test-dashboard.mjs
-python3 -m unittest test_chartbook.py
+python3 -m unittest test_chartbook.py test_calculate_dashboard.py test_validate_calculations.py
 python3 validate_dashboard.py
 ```
 
-Tests cover calendar lags, missing observations, payroll scaling, comparison-period denominators, derived totals, prewar baselines, CSV validation, retries and source protection. GitHub Actions validates before deploying. The deployment job explicitly publishes the scheduled refresh; it does not rely on a bot commit triggering another workflow.
+Pandas tests cover observed changes, missing observations, payroll scaling, comparison-period denominators, derived totals and prewar baselines. An independent pandas validator recomputes the displayed figures from the archived raw observations before publication. Node.js tests cover source transport, failures and snapshot integrity. GitHub Actions validates before deploying. The deployment job explicitly publishes the scheduled refresh; it does not rely on a bot commit triggering another workflow.

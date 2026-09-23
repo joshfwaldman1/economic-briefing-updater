@@ -284,56 +284,56 @@
       "label": "Overall (U-3)",
       "sa": "SA",
       "frequency": "Monthly",
-      "units": ""
+      "units": "Percent"
     },
     {
       "id": "LNS14000060",
       "label": "Prime age (25-54)",
       "sa": "SA",
       "frequency": "Monthly",
-      "units": ""
+      "units": "Percent"
     },
     {
       "id": "LNS14000001",
       "label": "Men (16+)",
       "sa": "SA",
       "frequency": "Monthly",
-      "units": ""
+      "units": "Percent"
     },
     {
       "id": "LNS14000002",
       "label": "Women (16+)",
       "sa": "SA",
       "frequency": "Monthly",
-      "units": ""
+      "units": "Percent"
     },
     {
       "id": "LNS14000003",
       "label": "White",
       "sa": "SA",
       "frequency": "Monthly",
-      "units": ""
+      "units": "Percent"
     },
     {
       "id": "LNS14000006",
       "label": "Black or African American",
       "sa": "SA",
       "frequency": "Monthly",
-      "units": ""
+      "units": "Percent"
     },
     {
       "id": "LNS14000009",
       "label": "Hispanic or Latino",
       "sa": "SA",
       "frequency": "Monthly",
-      "units": ""
+      "units": "Percent"
     },
     {
       "id": "LNS14032183",
       "label": "Asian",
       "sa": "SA",
       "frequency": "Monthly",
-      "units": ""
+      "units": "Percent"
     }
   ],
   "participation": [
@@ -342,7 +342,7 @@
       "label": "Prime age (25-54)",
       "sa": "SA",
       "frequency": "Monthly",
-      "units": ""
+      "units": "Percent"
     },
     {
       "id": "LNS12300060",
