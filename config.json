@@ -1,0 +1,568 @@
+{
+  "termBaseline": "2025-01-01",
+  "cpi": [
+    {
+      "id": "CPIAUCSL",
+      "label": "Headline",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 1982-1984=100",
+      "row": 3
+    },
+    {
+      "id": "CPILFESL",
+      "label": "Core",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 1982-1984=100",
+      "row": 4
+    },
+    {
+      "id": "CUSR0000SACL1E",
+      "label": "Core Goods",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 1982-1984=100",
+      "row": 5
+    },
+    {
+      "id": "CUSR0000SASLE",
+      "label": "Core Services",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 1982-1984=100",
+      "row": 6
+    },
+    {
+      "id": "CUSR0000SAH1",
+      "label": "Shelter",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 1982-1984=100",
+      "row": 7
+    },
+    {
+      "id": "CPIUFDSL",
+      "label": "Food",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 1982-1984=100",
+      "row": 8
+    },
+    {
+      "id": "CPIENGSL",
+      "label": "Energy",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 1982-1984=100",
+      "row": 9
+    }
+  ],
+  "pce": [
+    {
+      "id": "PCEPI",
+      "label": "Headline",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 2017=100",
+      "row": 3
+    },
+    {
+      "id": "PCEPILFE",
+      "label": "Core",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 2017=100",
+      "row": 4
+    },
+    {
+      "id": null,
+      "label": "Core Goods",
+      "row": 5,
+      "note": "Exact monthly source not configured. Original manual values retained."
+    },
+    {
+      "id": null,
+      "label": "Core Services",
+      "row": 6,
+      "note": "Exact monthly source not configured. Original manual values retained."
+    },
+    {
+      "id": null,
+      "label": "Housing",
+      "row": 7,
+      "note": "Exact monthly source not configured. Original manual values retained."
+    },
+    {
+      "id": "DFXARG3M086SBEA",
+      "label": "Food",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 2017=100",
+      "row": 8
+    },
+    {
+      "id": "DNRGRG3M086SBEA",
+      "label": "Energy",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 2017=100",
+      "row": 9
+    }
+  ],
+  "employment": [
+    {
+      "id": "PAYEMS",
+      "label": "Overall",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "aggregate",
+      "overlaps_with": null,
+      "units_override": "persons"
+    },
+    {
+      "id": "MANEMP",
+      "label": "Manufacturing",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "major_industry",
+      "overlaps_with": null,
+      "units_override": "persons"
+    },
+    {
+      "id": "USMINE",
+      "label": "Mining and logging",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "major_industry",
+      "overlaps_with": null,
+      "units_override": "persons"
+    },
+    {
+      "id": "USCONS",
+      "label": "Construction",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "major_industry",
+      "overlaps_with": null,
+      "units_override": "persons"
+    },
+    {
+      "id": "USTPU",
+      "label": "Trade, transportation and utilities",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "major_industry",
+      "overlaps_with": null,
+      "units_override": "persons"
+    },
+    {
+      "id": "USINFO",
+      "label": "Information",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "major_industry",
+      "overlaps_with": null,
+      "units_override": "persons"
+    },
+    {
+      "id": "USFIRE",
+      "label": "Financial activities",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "major_industry",
+      "overlaps_with": null,
+      "units_override": "persons"
+    },
+    {
+      "id": "USPBS",
+      "label": "Professional and business services",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "major_industry",
+      "overlaps_with": null,
+      "units_override": "persons"
+    },
+    {
+      "id": "USEHS",
+      "label": "Private education and health services",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "major_industry",
+      "overlaps_with": null,
+      "units_override": "persons"
+    },
+    {
+      "id": "USLAH",
+      "label": "Leisure and hospitality",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "major_industry",
+      "overlaps_with": null,
+      "units_override": "persons"
+    },
+    {
+      "id": "USSERV",
+      "label": "Other services",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "major_industry",
+      "overlaps_with": null,
+      "units_override": "persons"
+    },
+    {
+      "id": "USGOVT",
+      "label": "Government",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "major_industry",
+      "overlaps_with": null,
+      "units_override": "persons"
+    },
+    {
+      "id": "CES6562000101",
+      "label": "Health care (subset)",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "subset",
+      "overlaps_with": "USEHS",
+      "units_override": "persons"
+    },
+    {
+      "id": "USTRADE",
+      "label": "Retail Trade (subset)",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "subset",
+      "overlaps_with": "USTPU"
+    },
+    {
+      "id": "USWTRADE",
+      "label": "Wholesale Trade (subset)",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "subset",
+      "overlaps_with": "USTPU"
+    },
+    {
+      "id": "CES4300000001",
+      "label": "Transportation and Warehousing (subset)",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "subset",
+      "overlaps_with": "USTPU"
+    },
+    {
+      "id": "CES4422000001",
+      "label": "Utilities (subset)",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of persons",
+      "kind": "subset",
+      "overlaps_with": "USTPU"
+    }
+  ],
+  "unemployment": [
+    {
+      "id": "UNRATE",
+      "label": "Overall (U-3)",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": ""
+    },
+    {
+      "id": "LNS14000060",
+      "label": "Prime age (25-54)",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": ""
+    },
+    {
+      "id": "LNS14000001",
+      "label": "Men (16+)",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": ""
+    },
+    {
+      "id": "LNS14000002",
+      "label": "Women (16+)",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": ""
+    },
+    {
+      "id": "LNS14000003",
+      "label": "White",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": ""
+    },
+    {
+      "id": "LNS14000006",
+      "label": "Black or African American",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": ""
+    },
+    {
+      "id": "LNS14000009",
+      "label": "Hispanic or Latino",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": ""
+    },
+    {
+      "id": "LNS14032183",
+      "label": "Asian",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": ""
+    }
+  ],
+  "participation": [
+    {
+      "id": "LNS11300060",
+      "label": "Prime age (25-54)",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": ""
+    },
+    {
+      "id": "LNS12300060",
+      "label": "Prime-age employment / population",
+      "sa": "SA",
+      "units": "Percent"
+    }
+  ],
+  "goods": [
+    {
+      "id": "CUSR0000SETA01",
+      "label": "New Vehicles",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 1982-1984=100"
+    },
+    {
+      "id": "CUSR0000SETA02",
+      "label": "Used Cars and Trucks",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 1982-1984=100"
+    },
+    {
+      "id": "CPIAPPSL",
+      "label": "Apparel",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 1982-1984=100"
+    },
+    {
+      "id": "CUSR0000SAF11",
+      "label": "Food at Home",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 1982-1984=100"
+    },
+    {
+      "id": "CUSR0000SAF112",
+      "label": "Meats, Poultry, Fish, and Eggs",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Index 1982-1984=100"
+    }
+  ],
+  "manufacturing": [
+    {
+      "id": "MIMFG",
+      "label": "Michigan manufacturing",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of Persons"
+    },
+    {
+      "id": "OHMFG",
+      "label": "Ohio manufacturing",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of Persons"
+    },
+    {
+      "id": "WIMFG",
+      "label": "Wisconsin manufacturing",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of Persons"
+    },
+    {
+      "id": "PAMFG",
+      "label": "Pennsylvania manufacturing",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of Persons"
+    },
+    {
+      "id": "MNMFG",
+      "label": "Minnesota manufacturing",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of Persons"
+    },
+    {
+      "id": "CES3133600101",
+      "label": "Motor vehicles and parts manufacturing",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of Persons"
+    },
+    {
+      "id": "CES4244100001",
+      "label": "Motor vehicle and parts dealers",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Thousands of Persons"
+    }
+  ],
+  "fuels": [
+    {
+      "id": "GASREGW",
+      "label": "Gasoline",
+      "sa": "NSA",
+      "frequency": "Weekly",
+      "units": "Dollars per Gallon"
+    },
+    {
+      "id": "GASDESW",
+      "label": "Diesel",
+      "sa": "NSA",
+      "frequency": "Weekly",
+      "units": "Dollars per Gallon"
+    }
+  ],
+  "wages": [
+    {
+      "id": "CES0500000003",
+      "label": "Average hourly earnings",
+      "sa": "SA",
+      "frequency": "Monthly",
+      "units": "Dollars per Hour"
+    }
+  ],
+  "applications": [
+    {
+      "id": "BABATOTALSAUS",
+      "label": "Total applications",
+      "sa": "SA",
+      "units": "Number"
+    },
+    {
+      "id": "BAHBATOTALSAUS",
+      "label": "High-propensity applications",
+      "sa": "SA",
+      "units": "Number"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ICSA",
+      "label": "Initial claims",
+      "sa": "SA",
+      "frequency": "Weekly",
+      "units": "Number"
+    },
+    {
+      "id": "IC4WSA",
+      "label": "Initial claims 4-week average",
+      "sa": "SA",
+      "frequency": "Weekly",
+      "units": "Number"
+    },
+    {
+      "id": "CCSA",
+      "label": "Continued claims",
+      "sa": "SA",
+      "frequency": "Weekly",
+      "units": "Number"
+    }
+  ],
+  "markets": [
+    {
+      "id": "SP500",
+      "label": "S&P 500",
+      "sa": "NSA",
+      "frequency": "Daily",
+      "units": "Index"
+    },
+    {
+      "id": "DJIA",
+      "label": "Dow Jones Industrial Average",
+      "sa": "NSA",
+      "frequency": "Daily",
+      "units": "Index"
+    },
+    {
+      "id": "NASDAQCOM",
+      "label": "NASDAQ Composite",
+      "sa": "NSA",
+      "frequency": "Daily",
+      "units": "Index"
+    }
+  ],
+  "budget": [
+    {
+      "id": "MTSDS133FMS",
+      "label": "Federal monthly surplus or deficit",
+      "sa": "NSA",
+      "units": "USD millions"
+    },
+    {
+      "id": "FYFSGDA188S",
+      "label": "Fiscal year surplus or deficit / GDP",
+      "sa": "NSA",
+      "frequency": "Annual",
+      "units": "Percent of GDP"
+    }
+  ],
+  "extra": [
+    {
+      "id": "UMCSENT",
+      "label": "Consumer sentiment",
+      "sa": "NSA",
+      "units": "Index 1966 Q1=100"
+    },
+    {
+      "id": "JTSJOL",
+      "label": "Job openings",
+      "sa": "SA",
+      "units": "Thousands"
+    },
+    {
+      "id": "JTSQUR",
+      "label": "Quits rate",
+      "sa": "SA",
+      "units": "Percent"
+    },
+    {
+      "id": "U6RATE",
+      "label": "U-6 underemployment",
+      "sa": "SA",
+      "units": "Percent"
+    }
+  ]
+}

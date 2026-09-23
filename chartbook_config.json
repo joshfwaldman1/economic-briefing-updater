@@ -1,0 +1,555 @@
+{
+  "version": 1,
+  "title": "Economic labor market chartbook",
+  "default_start_year": 2009,
+  "source_reference": "charts book.docx",
+  "series": {
+    "nonfarm": {
+      "bls_id": "CES0000000001",
+      "fred_id": "PAYEMS",
+      "name": "Total nonfarm payrolls",
+      "units": "thousands",
+      "seasonal_adjustment": "SA",
+      "digits": 0,
+      "source_url": "https://data.bls.gov/timeseries/CES0000000001",
+      "verification_url": "https://fred.stlouisfed.org/series/PAYEMS"
+    },
+    "manufacturing": {
+      "bls_id": "CES3000000001",
+      "fred_id": "MANEMP",
+      "name": "Manufacturing payrolls",
+      "units": "thousands",
+      "seasonal_adjustment": "SA",
+      "digits": 0,
+      "source_url": "https://data.bls.gov/timeseries/CES3000000001",
+      "verification_url": "https://fred.stlouisfed.org/series/MANEMP"
+    },
+    "auto_manufacturing": {
+      "bls_id": "CES3133600101",
+      "fred_id": "CES3133600101",
+      "name": "Motor vehicles and parts manufacturing",
+      "units": "thousands",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/CES3133600101",
+      "verification_url": "https://fred.stlouisfed.org/series/CES3133600101"
+    },
+    "auto_retail": {
+      "bls_id": "CES4244100001",
+      "fred_id": "CES4244100001",
+      "name": "Motor vehicle and parts dealers",
+      "units": "thousands",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/CES4244100001",
+      "verification_url": "https://fred.stlouisfed.org/series/CES4244100001"
+    },
+    "state": {
+      "bls_id": "CES9092000001",
+      "fred_id": "CES9092000001",
+      "name": "State government payrolls",
+      "units": "thousands",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/CES9092000001",
+      "verification_url": "https://fred.stlouisfed.org/series/CES9092000001"
+    },
+    "local": {
+      "bls_id": "CES9093000001",
+      "fred_id": "CES9093000001",
+      "name": "Local government payrolls",
+      "units": "thousands",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/CES9093000001",
+      "verification_url": "https://fred.stlouisfed.org/series/CES9093000001"
+    },
+    "state_education": {
+      "bls_id": "CES9092161101",
+      "fred_id": "CES9092161101",
+      "name": "State government education payrolls",
+      "units": "thousands",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/CES9092161101",
+      "verification_url": "https://fred.stlouisfed.org/series/CES9092161101"
+    },
+    "local_education": {
+      "bls_id": "CES9093161101",
+      "fred_id": "CES9093161101",
+      "name": "Local government education payrolls",
+      "units": "thousands",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/CES9093161101",
+      "verification_url": "https://fred.stlouisfed.org/series/CES9093161101"
+    },
+    "labor_force": {
+      "bls_id": "LNS11000000",
+      "fred_id": "CLF16OV",
+      "name": "Civilian labor force age 16 and over",
+      "units": "thousands",
+      "seasonal_adjustment": "SA",
+      "digits": 0,
+      "source_url": "https://data.bls.gov/timeseries/LNS11000000",
+      "verification_url": "https://fred.stlouisfed.org/series/CLF16OV"
+    },
+    "women_labor_force": {
+      "bls_id": "LNS11000002",
+      "fred_id": "LNS11000002",
+      "name": "Civilian labor force women age 16 and over",
+      "units": "thousands",
+      "seasonal_adjustment": "SA",
+      "digits": 0,
+      "source_url": "https://data.bls.gov/timeseries/LNS11000002",
+      "verification_url": "https://fred.stlouisfed.org/series/LNS11000002"
+    },
+    "unemployment": {
+      "bls_id": "LNS14000000",
+      "fred_id": "UNRATE",
+      "name": "Unemployment rate age 16 and over",
+      "units": "percent",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/LNS14000000",
+      "verification_url": "https://fred.stlouisfed.org/series/UNRATE"
+    },
+    "lfpr": {
+      "bls_id": "LNS11300000",
+      "fred_id": "CIVPART",
+      "name": "Labor force participation age 16 and over",
+      "units": "percent",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/LNS11300000",
+      "verification_url": "https://fred.stlouisfed.org/series/CIVPART"
+    },
+    "prime_lfpr": {
+      "bls_id": "LNS11300060",
+      "fred_id": "LNS11300060",
+      "name": "Labor force participation age 25 to 54",
+      "units": "percent",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/LNS11300060",
+      "verification_url": "https://fred.stlouisfed.org/series/LNS11300060"
+    },
+    "black": {
+      "bls_id": "LNS14000006",
+      "fred_id": "LNS14000006",
+      "name": "Black unemployment age 16 and over",
+      "units": "percent",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/LNS14000006",
+      "verification_url": "https://fred.stlouisfed.org/series/LNS14000006"
+    },
+    "black_men": {
+      "bls_id": "LNS14000031",
+      "fred_id": "LNS14000031",
+      "name": "Black men unemployment age 20 and over",
+      "units": "percent",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/LNS14000031",
+      "verification_url": "https://fred.stlouisfed.org/series/LNS14000031"
+    },
+    "black_women": {
+      "bls_id": "LNS14000032",
+      "fred_id": "LNS14000032",
+      "name": "Black women unemployment age 20 and over",
+      "units": "percent",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/LNS14000032",
+      "verification_url": "https://fred.stlouisfed.org/series/LNS14000032"
+    },
+    "hispanic": {
+      "bls_id": "LNS14000009",
+      "fred_id": "LNS14000009",
+      "name": "Hispanic or Latino unemployment age 16 and over",
+      "units": "percent",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/LNS14000009",
+      "verification_url": "https://fred.stlouisfed.org/series/LNS14000009"
+    },
+    "hispanic_men": {
+      "bls_id": "LNS14000034",
+      "fred_id": null,
+      "name": "Hispanic or Latino men unemployment age 20 and over",
+      "units": "percent",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/LNS14000034",
+      "verification_url": "https://www.bls.gov/news.release/empsit.t03.htm"
+    },
+    "hispanic_women": {
+      "bls_id": "LNS14000035",
+      "fred_id": null,
+      "name": "Hispanic or Latino women unemployment age 20 and over",
+      "units": "percent",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/LNS14000035",
+      "verification_url": "https://www.bls.gov/news.release/empsit.t03.htm"
+    },
+    "youth": {
+      "bls_id": "LNS14024887",
+      "fred_id": "LNS14024887",
+      "name": "Youth unemployment age 16 to 24",
+      "units": "percent",
+      "seasonal_adjustment": "SA",
+      "digits": 1,
+      "source_url": "https://data.bls.gov/timeseries/LNS14024887",
+      "verification_url": "https://fred.stlouisfed.org/series/LNS14024887"
+    }
+  },
+  "tables": [
+    {
+      "id": "nonfarm_level",
+      "section": "Nonfarm payrolls",
+      "title": "Nonfarm payrolls",
+      "components": [
+        "nonfarm"
+      ],
+      "lag_months": 0,
+      "cps_level_change": false
+    },
+    {
+      "id": "nonfarm_change1",
+      "section": "Nonfarm payrolls",
+      "title": "Nonfarm payrolls monthly change",
+      "components": [
+        "nonfarm"
+      ],
+      "lag_months": 1,
+      "cps_level_change": false
+    },
+    {
+      "id": "nonfarm_change12",
+      "section": "Nonfarm payrolls",
+      "title": "Nonfarm payrolls 12 month change",
+      "components": [
+        "nonfarm"
+      ],
+      "lag_months": 12,
+      "cps_level_change": false
+    },
+    {
+      "id": "manufacturing_level",
+      "section": "Manufacturing",
+      "title": "Manufacturing payrolls",
+      "components": [
+        "manufacturing"
+      ],
+      "lag_months": 0,
+      "cps_level_change": false
+    },
+    {
+      "id": "manufacturing_change1",
+      "section": "Manufacturing",
+      "title": "Manufacturing payrolls monthly change",
+      "components": [
+        "manufacturing"
+      ],
+      "lag_months": 1,
+      "cps_level_change": false
+    },
+    {
+      "id": "manufacturing_change12",
+      "section": "Manufacturing",
+      "title": "Manufacturing payrolls 12 month change",
+      "components": [
+        "manufacturing"
+      ],
+      "lag_months": 12,
+      "cps_level_change": false
+    },
+    {
+      "id": "auto_manufacturing_level",
+      "section": "Auto jobs",
+      "title": "Auto manufacturing",
+      "components": [
+        "auto_manufacturing"
+      ],
+      "lag_months": 0,
+      "cps_level_change": false
+    },
+    {
+      "id": "auto_manufacturing_change1",
+      "section": "Auto jobs",
+      "title": "Auto manufacturing monthly change",
+      "components": [
+        "auto_manufacturing"
+      ],
+      "lag_months": 1,
+      "cps_level_change": false
+    },
+    {
+      "id": "auto_manufacturing_change12",
+      "section": "Auto jobs",
+      "title": "Auto manufacturing 12 month change",
+      "components": [
+        "auto_manufacturing"
+      ],
+      "lag_months": 12,
+      "cps_level_change": false
+    },
+    {
+      "id": "auto_total_level",
+      "section": "Auto jobs",
+      "title": "Auto manufacturing and retail",
+      "components": [
+        "auto_manufacturing",
+        "auto_retail"
+      ],
+      "lag_months": 0,
+      "cps_level_change": false
+    },
+    {
+      "id": "auto_total_change1",
+      "section": "Auto jobs",
+      "title": "Auto manufacturing and retail monthly change",
+      "components": [
+        "auto_manufacturing",
+        "auto_retail"
+      ],
+      "lag_months": 1,
+      "cps_level_change": false
+    },
+    {
+      "id": "auto_total_change12",
+      "section": "Auto jobs",
+      "title": "Auto manufacturing and retail 12 month change",
+      "components": [
+        "auto_manufacturing",
+        "auto_retail"
+      ],
+      "lag_months": 12,
+      "cps_level_change": false
+    },
+    {
+      "id": "state_local_level",
+      "section": "State and local",
+      "title": "State and local government jobs",
+      "components": [
+        "state",
+        "local"
+      ],
+      "lag_months": 0,
+      "cps_level_change": false
+    },
+    {
+      "id": "state_local_change1",
+      "section": "State and local",
+      "title": "State and local government jobs monthly change",
+      "components": [
+        "state",
+        "local"
+      ],
+      "lag_months": 1,
+      "cps_level_change": false
+    },
+    {
+      "id": "state_local_change12",
+      "section": "State and local",
+      "title": "State and local government jobs 12 month change",
+      "components": [
+        "state",
+        "local"
+      ],
+      "lag_months": 12,
+      "cps_level_change": false
+    },
+    {
+      "id": "education_level",
+      "section": "State and local education",
+      "title": "State and local education jobs",
+      "components": [
+        "state_education",
+        "local_education"
+      ],
+      "lag_months": 0,
+      "cps_level_change": false
+    },
+    {
+      "id": "education_change1",
+      "section": "State and local education",
+      "title": "State and local education jobs monthly change",
+      "components": [
+        "state_education",
+        "local_education"
+      ],
+      "lag_months": 1,
+      "cps_level_change": false
+    },
+    {
+      "id": "education_change12",
+      "section": "State and local education",
+      "title": "State and local education jobs 12 month change",
+      "components": [
+        "state_education",
+        "local_education"
+      ],
+      "lag_months": 12,
+      "cps_level_change": false
+    },
+    {
+      "id": "labor_force_level",
+      "section": "Labor force size",
+      "title": "Civilian labor force",
+      "components": [
+        "labor_force"
+      ],
+      "lag_months": 0,
+      "cps_level_change": false
+    },
+    {
+      "id": "labor_force_change1",
+      "section": "Labor force size",
+      "title": "Civilian labor force monthly change",
+      "components": [
+        "labor_force"
+      ],
+      "lag_months": 1,
+      "cps_level_change": true
+    },
+    {
+      "id": "labor_force_change12",
+      "section": "Labor force size",
+      "title": "Civilian labor force 12 month change",
+      "components": [
+        "labor_force"
+      ],
+      "lag_months": 12,
+      "cps_level_change": true
+    },
+    {
+      "id": "women_labor_force_level",
+      "section": "Labor force size",
+      "title": "Women in the labor force",
+      "components": [
+        "women_labor_force"
+      ],
+      "lag_months": 0,
+      "cps_level_change": false
+    },
+    {
+      "id": "women_labor_force_change1",
+      "section": "Labor force size",
+      "title": "Women in the labor force monthly change",
+      "components": [
+        "women_labor_force"
+      ],
+      "lag_months": 1,
+      "cps_level_change": true
+    },
+    {
+      "id": "women_labor_force_change12",
+      "section": "Labor force size",
+      "title": "Women in the labor force 12 month change",
+      "components": [
+        "women_labor_force"
+      ],
+      "lag_months": 12,
+      "cps_level_change": true
+    },
+    {
+      "id": "unemployment",
+      "section": "Unemployment rate",
+      "title": "Unemployment rate age 16 and over",
+      "components": [
+        "unemployment"
+      ],
+      "lag_months": 0
+    },
+    {
+      "id": "lfpr",
+      "section": "Labor force participation",
+      "title": "Labor force participation age 16 and over",
+      "components": [
+        "lfpr"
+      ],
+      "lag_months": 0
+    },
+    {
+      "id": "prime_lfpr",
+      "section": "Labor force participation",
+      "title": "Labor force participation age 25 to 54",
+      "components": [
+        "prime_lfpr"
+      ],
+      "lag_months": 0
+    },
+    {
+      "id": "black",
+      "section": "Black unemployment",
+      "title": "Black unemployment age 16 and over",
+      "components": [
+        "black"
+      ],
+      "lag_months": 0
+    },
+    {
+      "id": "black_men",
+      "section": "Black unemployment",
+      "title": "Black men unemployment age 20 and over",
+      "components": [
+        "black_men"
+      ],
+      "lag_months": 0
+    },
+    {
+      "id": "black_women",
+      "section": "Black unemployment",
+      "title": "Black women unemployment age 20 and over",
+      "components": [
+        "black_women"
+      ],
+      "lag_months": 0
+    },
+    {
+      "id": "hispanic",
+      "section": "Hispanic unemployment",
+      "title": "Hispanic or Latino unemployment age 16 and over",
+      "components": [
+        "hispanic"
+      ],
+      "lag_months": 0
+    },
+    {
+      "id": "hispanic_men",
+      "section": "Hispanic unemployment",
+      "title": "Hispanic or Latino men unemployment age 20 and over",
+      "components": [
+        "hispanic_men"
+      ],
+      "lag_months": 0
+    },
+    {
+      "id": "hispanic_women",
+      "section": "Hispanic unemployment",
+      "title": "Hispanic or Latino women unemployment age 20 and over",
+      "components": [
+        "hispanic_women"
+      ],
+      "lag_months": 0
+    },
+    {
+      "id": "youth",
+      "section": "Youth unemployment",
+      "title": "Youth unemployment age 16 to 24",
+      "components": [
+        "youth"
+      ],
+      "lag_months": 0
+    }
+  ],
+  "notes": [
+    "All series are seasonally adjusted. SA means seasonally adjusted.",
+    "Auto total is motor vehicles and parts manufacturing plus motor vehicle and parts dealers. It is not the entire automotive supply chain.",
+    "Changes are arithmetic differences in published levels, not percent changes. CPS labor force changes can include January population-control breaks.",
+    "Downloaded history reflects the current published vintage and revisions; an observation cutoff does not recreate a historical vintage."
+  ]
+}

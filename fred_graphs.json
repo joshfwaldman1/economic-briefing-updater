@@ -1,0 +1,40 @@
+{
+  "graphs": [
+    {
+      "key": "g7_real_gdp",
+      "title": "G7 real GDP",
+      "graph_id": "1tBaE",
+      "graph_url": "https://fred.stlouisfed.org/graph/?g=1tBaE",
+      "expected_columns": ["CLVMNACSCAB1GQDE", "GDPC1", "JPNRGDPEXP", "NGDPRSAXDCGBQ", "CLVMNACSCAB1GQFR", "CLVMNACSCAB1GQIT", "NGDPRSAXDCCAQ"],
+      "transformations": "Saved graph exports real GDP levels in each source series' original units. These levels have different currency, scale and base-year conventions; compare normalized growth rather than raw levels across countries.",
+      "series_labels": ["Germany", "United States", "Japan", "United Kingdom", "France", "Italy", "Canada"]
+    },
+    {
+      "key": "auto_jobs",
+      "title": "Auto jobs and manufacturing",
+      "graph_id": "1vp6J",
+      "graph_url": "https://fred.stlouisfed.org/graph/?g=1vp6J",
+      "expected_columns": ["CES3133600101", "CES4244100001", "MANEMP"],
+      "transformations": "Saved graph exports monthly seasonally adjusted levels, thousands of persons. Motor vehicles and parts is a subset of manufacturing; dealers are in retail trade.",
+      "series_labels": ["Motor vehicles and parts manufacturing", "Motor vehicle and parts dealers", "All manufacturing"]
+    },
+    {
+      "key": "inflation",
+      "title": "CPI and PCE inflation",
+      "graph_id": "1wX9M",
+      "graph_url": "https://fred.stlouisfed.org/graph/?g=1wX9M",
+      "expected_columns": ["CPIAUCSL_PC1", "CPILFESL_PC1", "PCEPI_PC1", "PCEPILFE_PC1"],
+      "transformations": "FRED PC1 transformation: percent change from year ago, calculated from each monthly seasonally adjusted index. CSV values are percentage points, e.g. 3.4 means 3.4 percent.",
+      "series_labels": ["Headline CPI, year over year", "Core CPI, year over year", "Headline PCE, year over year", "Core PCE, year over year"]
+    },
+    {
+      "key": "selected_state_manufacturing",
+      "title": "Selected state manufacturing",
+      "graph_id": "1tzuA",
+      "graph_url": "https://fred.stlouisfed.org/graph/?g=1tzuA",
+      "expected_columns": ["MIMFG", "OHMFG", "WIMFG", "PAMFG", "MNMFG"],
+      "transformations": "Saved graph exports monthly seasonally adjusted levels, thousands of persons. This is the supplied selection of states; it is not a complete Midwest aggregate. Pennsylvania is outside the Census Midwest region.",
+      "series_labels": ["Michigan", "Ohio", "Wisconsin", "Pennsylvania", "Minnesota"]
+    }
+  ]
+}
