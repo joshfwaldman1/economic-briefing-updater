@@ -1,6 +1,6 @@
 {
   "retrieved": "2026-09-23",
-  "retrievedAt": "2026-09-23T22:50:07.880Z",
+  "retrievedAt": "2026-09-23T23:02:35.813Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -2140,13 +2140,13 @@
     "gdp": "Quarterly real GDP can be compared using percentage changes or a shared base-quarter index, not raw national-currency levels. Q1 2021 and Q1 2025 are quarter baselines, not January observations; any monthly equivalent growth rate is a calculation, not monthly GDP.",
     "conflictBaseline": "The user selected February 28, 2026. Use each series last observed value strictly before that date; report each actual baseline date. February 28 is a Saturday, so daily market series normally use February 27 and weekly fuel series the preceding Monday. Describe changes since the baseline, not causal effects of the war."
   },
-  "snapshotId": "b56b677d-2a15-4eb1-8ef5-9b3e0cd26eb0",
+  "snapshotId": "cf4c2179-c63b-4300-acf6-2429fc2a7861",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-09-23T22:50:07.880Z"
+      "updatedAt": "2026-09-23T23:02:35.813Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
