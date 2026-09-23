@@ -5,7 +5,11 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: '17 14,23 * * *'
+    # Follow U.S. release times across daylight saving changes.
+    - cron: '10 9 * * *'
+      timezone: 'America/New_York'
+    - cron: '17 19 * * *'
+      timezone: 'America/New_York'
 
 # Serialize refreshes and deployments so an older run cannot replace a newer one.
 concurrency:

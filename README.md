@@ -6,7 +6,7 @@ U.S. employment, unemployment by race, CPI and PCE inflation, grocery and fuel p
 
 ## Automatic website updates
 
-GitHub Actions retrieves current FRED observations **twice daily, at 14:17 and 23:17 UTC**, then publishes the website. These are scheduled times; GitHub may delay a run. The displayed refresh timestamp changes only after a successful retrieval and deployment. Monthly or quarterly observations change when their source releases new data or revisions, not every time the site refreshes.
+GitHub Actions retrieves current FRED observations **twice daily, at 9:10 a.m. and 7:17 p.m. Eastern time**, then publishes the website. The schedule uses `America/New_York` and follows daylight saving time. The morning check runs on every day, including Jobs Day, after the usual 8:30 a.m. Eastern release. Each run downloads fresh observations and revisions from FRED. FRED may take longer to publish a release, and GitHub may delay a scheduled run; these times are not a guarantee of when new figures will appear. The displayed refresh timestamp changes only after a successful retrieval and deployment. Monthly or quarterly observations change when their source releases new data or revisions, not every time the site refreshes.
 
 The dashboard and its CSV/source-data download refresh automatically. The Word chartbook is a separately dated download; it does not silently inherit the dashboard's newer timestamp. The economic briefing workbook download is currently omitted. Its original updater remains in the repository.
 
