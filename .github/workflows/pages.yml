@@ -1,0 +1,68 @@
+name: Refresh and publish dashboard
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '17 14,23 * * *'
+
+# Serialize refreshes and deployments so an older run cannot replace a newer one.
+concurrency:
+  group: economic-dashboard-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify calculations
+        run: node --test test-data.mjs test-workbook.mjs test-dashboard.mjs
+      - name: Retrieve current observations
+        if: github.event_name != 'push'
+        run: node refresh_dashboard.mjs
+      - name: Package current downloads
+        run: python package_downloads.py
+      - name: Validate publication
+        run: python validate_dashboard.py
+      - name: Save refreshed snapshot
+        if: github.event_name != 'push'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/data.json docs/series.json docs/downloads/dashboard-data.zip docs/downloads/economic-updater-scripts.zip
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh economic dashboard data'
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4

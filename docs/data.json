@@ -1,5 +1,7 @@
 {
   "retrieved": "2026-09-23",
+  "retrievedAt": "2026-09-23T22:50:07.880Z",
+  "warStart": "2026-02-28",
   "kpis": [
     {
       "label": "Nonfarm payrolls",
@@ -7,7 +9,8 @@
       "digits": 0,
       "prefix": "+",
       "suffix": "",
-      "detail": "Monthly job change \u00b7 Aug 2026 \u00b7 SA"
+      "detail": "Monthly job change · Aug 2026 · SA",
+      "source": "https://fred.stlouisfed.org/series/PAYEMS"
     },
     {
       "label": "Unemployment rate",
@@ -15,7 +18,8 @@
       "digits": 1,
       "prefix": "",
       "suffix": "%",
-      "detail": "Overall U-3 \u00b7 Aug 2026 \u00b7 SA"
+      "detail": "Overall U-3 · Aug 2026 · SA",
+      "source": "https://fred.stlouisfed.org/series/UNRATE"
     },
     {
       "label": "CPI inflation",
@@ -23,15 +27,8 @@
       "digits": 1,
       "prefix": "",
       "suffix": "%",
-      "detail": "Year-over-year \u00b7 Aug 2026 \u00b7 SA index"
-    },
-    {
-      "label": "Fiscal year deficit",
-      "value": 1.96562782045344,
-      "digits": 2,
-      "prefix": "$",
-      "suffix": "T",
-      "detail": "FY to date \u00b7 Aug 2026 \u00b7 NSA"
+      "detail": "Year-over-year · Aug 2026 · SA index",
+      "source": "https://fred.stlouisfed.org/series/CPIAUCSL"
     }
   ],
   "sections": [
@@ -44,6 +41,11 @@
         {
           "label": "Industry",
           "type": "text"
+        },
+        {
+          "label": "Total jobs",
+          "type": "number",
+          "digits": 0
         },
         {
           "label": "Monthly change",
@@ -61,184 +63,384 @@
           "digits": 0
         },
         {
+          "label": "Jan 2021–Jan 2025 total",
+          "type": "number",
+          "digits": 0
+        },
+        {
+          "label": "Jan 2021–Jan 2025 monthly avg.",
+          "type": "number",
+          "digits": 0
+        },
+        {
+          "label": "Since Jan 2025 total",
+          "type": "number",
+          "digits": 0
+        },
+        {
+          "label": "Since Jan 2025 monthly avg.",
+          "type": "number",
+          "digits": 0
+        },
+        {
+          "label": "Since Jan 2021 total",
+          "type": "number",
+          "digits": 0
+        },
+        {
+          "label": "Adjustment",
+          "type": "text"
+        },
+        {
           "label": "Period",
-          "type": "date"
+          "type": "date",
+          "frequency": "monthly"
         }
       ],
       "rows": [
         {
+          "id": "PAYEMS",
           "values": [
             "Overall",
+            159075000,
             162000,
             71333.33333333333,
             50250,
+            15405000,
+            320937.5,
+            807000,
+            42473.68421052631,
+            16212000,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/PAYEMS"
+          "source": "https://fred.stlouisfed.org/series/PAYEMS",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "MANEMP",
           "values": [
-            "Manufacturing",
+            "U.S. manufacturing",
+            12638000,
             16000,
             14333.333333333334,
             1916.6666666666667,
+            531000,
+            11062.5,
+            -35000,
+            -1842.1052631578948,
+            496000,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/MANEMP"
+          "source": "https://fred.stlouisfed.org/series/MANEMP",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "USMINE",
           "values": [
             "Mining and logging",
+            609000,
             3000,
             -666.6666666666666,
             166.66666666666666,
+            73000,
+            1520.8333333333333,
+            -13000,
+            -684.2105263157895,
+            60000,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/USMINE"
+          "source": "https://fred.stlouisfed.org/series/USMINE",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "USCONS",
           "values": [
             "Construction",
+            8359000,
             22000,
             14333.333333333334,
             10000,
+            902000,
+            18791.666666666668,
+            95000,
+            5000,
+            997000,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/USCONS"
+          "source": "https://fred.stlouisfed.org/series/USCONS",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "USTPU",
           "values": [
             "Trade, transportation and utilities",
+            28778000,
             16000,
             18000,
             2916.6666666666665,
+            1594000,
+            33208.333333333336,
+            -17000,
+            -894.7368421052631,
+            1577000,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/USTPU"
+          "source": "https://fred.stlouisfed.org/series/USTPU",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "USINFO",
           "values": [
             "Information",
+            2745000,
             -23000,
             -12333.333333333334,
             -9583.333333333334,
+            130000,
+            2708.3333333333335,
+            -132000,
+            -6947.368421052632,
+            -2000,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/USINFO"
+          "source": "https://fred.stlouisfed.org/series/USINFO",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "USFIRE",
           "values": [
             "Financial activities",
+            9086000,
             -11000,
             -6666.666666666667,
             -8250,
+            465000,
+            9687.5,
+            -101000,
+            -5315.789473684211,
+            364000,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/USFIRE"
+          "source": "https://fred.stlouisfed.org/series/USFIRE",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "USPBS",
           "values": [
             "Professional and business services",
+            22527000,
             10000,
             20333.333333333332,
             12666.666666666666,
+            1558000,
+            32458.333333333332,
+            47000,
+            2473.684210526316,
+            1605000,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/USPBS"
+          "source": "https://fred.stlouisfed.org/series/USPBS",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "USEHS",
           "values": [
             "Private education and health services",
+            27974000,
             29000,
             30333.333333333332,
             44916.666666666664,
+            3644000,
+            75916.66666666667,
+            968000,
+            50947.36842105263,
+            4612000,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/USEHS"
+          "source": "https://fred.stlouisfed.org/series/USEHS",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "USLAH",
           "values": [
             "Leisure and hospitality",
+            17001000,
             62000,
             -4333.333333333333,
             10916.666666666666,
+            4031000,
+            83979.16666666667,
+            169000,
+            8894.736842105263,
+            4200000,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/USLAH"
+          "source": "https://fred.stlouisfed.org/series/USLAH",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "USSERV",
           "values": [
             "Other services",
+            6035000,
             3000,
             1333.3333333333333,
             2250,
+            661000,
+            13770.833333333334,
+            60000,
+            3157.8947368421054,
+            721000,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/USSERV"
+          "source": "https://fred.stlouisfed.org/series/USSERV",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "USGOVT",
           "values": [
             "Government",
+            23323000,
             35000,
             -3333.3333333333335,
             -17666.666666666668,
+            1816000,
+            37833.333333333336,
+            -234000,
+            -12315.78947368421,
+            1582000,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/USGOVT"
+          "source": "https://fred.stlouisfed.org/series/USGOVT",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "CES6562000101",
           "values": [
             "Health care (subset)",
+            18520700,
             12900.000000001455,
             14833.333333333334,
             31541.666666666668,
+            2012599.9999999986,
+            41929.166666666635,
+            576900.0000000014,
+            30363.157894736916,
+            2589500,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/CES6562000101"
+          "source": "https://fred.stlouisfed.org/series/CES6562000101",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "USTRADE",
           "values": [
             "Retail Trade (subset)",
+            15488200,
             1400.0000000014552,
             8066.666666666909,
             3991.666666666788,
+            293399.99999999965,
+            6112.499999999993,
+            28900.000000001455,
+            1521.052631579024,
+            322300.0000000011,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/USTRADE"
+          "source": "https://fred.stlouisfed.org/series/USTRADE",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "USWTRADE",
           "values": [
             "Wholesale Trade (subset)",
+            6072100,
             7800.000000000182,
             5900.000000000243,
             2425.0000000000305,
+            466000,
+            9708.333333333334,
+            -1199.999999999818,
+            -63.15789473683253,
+            464800.0000000002,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/USWTRADE"
+          "source": "https://fred.stlouisfed.org/series/USWTRADE",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "CES4300000001",
           "values": [
             "Transportation and Warehousing (subset)",
+            6606300,
             5000,
             2833.3333333333335,
             -4291.666666666667,
+            779599.9999999994,
+            16241.666666666655,
+            -58599.999999999454,
+            -3084.210526315761,
+            721000,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/CES4300000001"
+          "source": "https://fred.stlouisfed.org/series/CES4300000001",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "CES4422000001",
           "values": [
             "Utilities (subset)",
+            611700,
             2500,
             1366.6666666666742,
             858.333333333339,
+            54500,
+            1135.4166666666667,
+            14700.000000000045,
+            773.6842105263182,
+            69200.00000000004,
+            "SA",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/CES4422000001"
+          "source": "https://fred.stlouisfed.org/series/CES4422000001",
+          "sa": "SA",
+          "frequency": "monthly"
         }
       ],
-      "note": "Monthly payroll changes in people, seasonally adjusted. Subsets overlap their parent industries and should not be added to the total.",
-      "sourceNote": "Source: BLS establishment survey, retrieved through FRED. Averages require consecutive monthly observations."
+      "note": "Levels and changes are people. Jan 2021–Jan 2025 uses exact January levels and 48 elapsed monthly changes. Since Jan 2025 uses the exact January 2025 level and elapsed months to the row’s latest month. Totals require both endpoints; monthly averages also require every intervening month. Subsets overlap and should not be added to parent industries.",
+      "sourceNote": "BLS establishment survey, retrieved through FRED. Published seasonal adjustment is retained. Raw FRED employment levels are thousands of people; displayed values are multiplied by 1,000."
     },
     {
       "key": "unemployment",
@@ -267,11 +469,13 @@
         },
         {
           "label": "Period",
-          "type": "date"
+          "type": "date",
+          "frequency": "monthly"
         }
       ],
       "rows": [
         {
+          "id": "UNRATE",
           "values": [
             "Overall (U-3)",
             4.1,
@@ -279,9 +483,12 @@
             -0.20000000000000018,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/UNRATE"
+          "source": "https://fred.stlouisfed.org/series/UNRATE",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "LNS14000060",
           "values": [
             "Prime age (25-54)",
             3.6,
@@ -289,9 +496,12 @@
             0,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/LNS14000060"
+          "source": "https://fred.stlouisfed.org/series/LNS14000060",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "LNS14000001",
           "values": [
             "Men (16+)",
             4.4,
@@ -299,9 +509,12 @@
             0,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/LNS14000001"
+          "source": "https://fred.stlouisfed.org/series/LNS14000001",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "LNS14000002",
           "values": [
             "Women (16+)",
             3.9,
@@ -309,9 +522,12 @@
             -0.3999999999999999,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/LNS14000002"
+          "source": "https://fred.stlouisfed.org/series/LNS14000002",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "LNS14000003",
           "values": [
             "White",
             3.7,
@@ -319,9 +535,12 @@
             0,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/LNS14000003"
+          "source": "https://fred.stlouisfed.org/series/LNS14000003",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "LNS14000006",
           "values": [
             "Black or African American",
             6,
@@ -329,9 +548,12 @@
             -1.5999999999999996,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/LNS14000006"
+          "source": "https://fred.stlouisfed.org/series/LNS14000006",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "LNS14000009",
           "values": [
             "Hispanic or Latino",
             4.8,
@@ -339,9 +561,12 @@
             -0.5,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/LNS14000009"
+          "source": "https://fred.stlouisfed.org/series/LNS14000009",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "LNS14032183",
           "values": [
             "Asian",
             3.2,
@@ -349,20 +574,22 @@
             -0.3999999999999999,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/LNS14032183"
+          "source": "https://fred.stlouisfed.org/series/LNS14032183",
+          "sa": "SA",
+          "frequency": "monthly"
         }
       ],
       "note": "Seasonally adjusted. Ages 16 and over unless otherwise noted. Hispanic or Latino ethnicity may be of any race; these groups overlap.",
-      "sourceNote": "Source: BLS household survey, retrieved through FRED. pp means percentage points."
+      "sourceNote": "BLS household survey via FRED. pp means percentage points."
     },
     {
       "key": "inflation",
-      "label": "CPI inflation",
-      "title": "Consumer price inflation",
+      "label": "CPI & PCE inflation",
+      "title": "CPI and PCE inflation",
       "kicker": "PRICES",
       "columns": [
         {
-          "label": "Component",
+          "label": "Measure / component",
           "type": "text"
         },
         {
@@ -382,83 +609,812 @@
         },
         {
           "label": "Period",
-          "type": "date"
+          "type": "date",
+          "frequency": "monthly"
         }
       ],
       "rows": [
         {
+          "id": "CPIAUCSL",
           "values": [
-            "Headline",
+            "CPI · Headline",
             0.3960181843858157,
             0.18217169162264568,
             3.353016322755642,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/CPIAUCSL"
+          "source": "https://fred.stlouisfed.org/series/CPIAUCSL",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "CPILFESL",
           "values": [
-            "Core",
+            "CPI · Core",
             0.2897956881014574,
             1.9708388578664415,
             2.4461631786472537,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/CPILFESL"
+          "source": "https://fred.stlouisfed.org/series/CPILFESL",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "CUSR0000SACL1E",
           "values": [
-            "Core Goods",
+            "CPI · Core Goods",
             0.10550661055541699,
             0.87169976115129,
             0.6599216005945818,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/CUSR0000SACL1E"
+          "source": "https://fred.stlouisfed.org/series/CUSR0000SACL1E",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "CUSR0000SASLE",
           "values": [
-            "Core Services",
+            "CPI · Core Services",
             0.3274119421205812,
             2.374268870865115,
             3.0164706532959773,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/CUSR0000SASLE"
+          "source": "https://fred.stlouisfed.org/series/CUSR0000SASLE",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "CUSR0000SAH1",
           "values": [
-            "Shelter",
+            "CPI · Shelter",
             0.26381104417434464,
             2.099517640377302,
             3.034809785537229,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/CUSR0000SAH1"
+          "source": "https://fred.stlouisfed.org/series/CUSR0000SAH1",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "CPIUFDSL",
           "values": [
-            "Food",
+            "CPI · Food",
             0.12232730556962501,
             1.6344954475855378,
             2.633598968709716,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/CPIUFDSL"
+          "source": "https://fred.stlouisfed.org/series/CPIUFDSL",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "CPIENGSL",
           "values": [
-            "Energy",
+            "CPI · Energy",
             2.096626005792346,
             -19.114067828444014,
             16.049347026386364,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/CPIENGSL"
+          "source": "https://fred.stlouisfed.org/series/CPIENGSL",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "PCEPI",
+          "values": [
+            "PCE · Headline",
+            0.15594808830463602,
+            2.1958504645800403,
+            3.7011657214870874,
+            "2026-07-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/PCEPI",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "PCEPILFE",
+          "values": [
+            "PCE · Core",
+            0.2455155058386671,
+            3.0477755322693367,
+            3.3441430040338282,
+            "2026-07-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/PCEPILFE",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": null,
+          "values": [
+            "PCE · Core Goods",
+            null,
+            null,
+            null,
+            null
+          ],
+          "source": null,
+          "note": "Exact monthly series is not configured; no automated value is published."
+        },
+        {
+          "id": null,
+          "values": [
+            "PCE · Core Services",
+            null,
+            null,
+            null,
+            null
+          ],
+          "source": null,
+          "note": "Exact monthly series is not configured; no automated value is published."
+        },
+        {
+          "id": null,
+          "values": [
+            "PCE · Housing",
+            null,
+            null,
+            null,
+            null
+          ],
+          "source": null,
+          "note": "Exact monthly series is not configured; no automated value is published."
+        },
+        {
+          "id": "DFXARG3M086SBEA",
+          "values": [
+            "PCE · Food",
+            -0.08013365689186758,
+            0.9314438558573945,
+            2.4025350192140804,
+            "2026-07-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/DFXARG3M086SBEA",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "DNRGRG3M086SBEA",
+          "values": [
+            "PCE · Energy",
+            -1.463922026889941,
+            -13.521241198817124,
+            15.314272833151744,
+            "2026-07-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/DNRGRG3M086SBEA",
+          "sa": "SA",
+          "frequency": "monthly"
         }
       ],
-      "note": "Growth calculated from seasonally adjusted CPI indexes. Annualized changes use index ratios, not rounded monthly changes.",
-      "sourceNote": "Source: BLS via FRED. SA index-based YoY may differ slightly from the headline NSA convention."
+      "note": "Changes calculated from published seasonally adjusted price indexes. CPI and PCE have different coverage and weights. PCE core goods, core services and housing remain unavailable until exact monthly sources are configured.",
+      "sourceNote": "BLS CPI and BEA PCE via FRED. SA CPI index-based YoY can differ slightly from the headline NSA convention. Annualization compounds index ratios."
+    },
+    {
+      "key": "prices",
+      "label": "Gas & basic goods",
+      "title": "Gas prices and everyday goods",
+      "kicker": "COST OF LIVING",
+      "columns": [
+        {
+          "label": "Item",
+          "type": "text"
+        },
+        {
+          "label": "Latest price ($)",
+          "type": "number",
+          "digits": 3
+        },
+        {
+          "label": "Change from prior period ($)",
+          "type": "number",
+          "digits": 3
+        },
+        {
+          "label": "YoY (%)",
+          "type": "number",
+          "digits": 1
+        },
+        {
+          "label": "Unit",
+          "type": "text"
+        },
+        {
+          "label": "Frequency",
+          "type": "text"
+        },
+        {
+          "label": "Adjustment",
+          "type": "text"
+        },
+        {
+          "label": "Period",
+          "type": "date"
+        }
+      ],
+      "rows": [
+        {
+          "id": "GASREGW",
+          "values": [
+            "Regular gasoline — gallon",
+            4.478,
+            0.1589999999999998,
+            41.12826977623698,
+            "USD per gallon",
+            "weekly",
+            "NSA",
+            "2026-09-21"
+          ],
+          "source": "https://fred.stlouisfed.org/series/GASREGW",
+          "sa": "NSA",
+          "frequency": "weekly",
+          "note": "U.S. regular all formulations retail gasoline price, including taxes."
+        },
+        {
+          "id": "GASDESW",
+          "values": [
+            "Diesel — gallon",
+            6.529,
+            0.24399999999999977,
+            74.15310749533208,
+            "USD per gallon",
+            "weekly",
+            "NSA",
+            "2026-09-21"
+          ],
+          "source": "https://fred.stlouisfed.org/series/GASDESW",
+          "sa": "NSA",
+          "frequency": "weekly",
+          "note": "U.S. diesel retail sales price."
+        },
+        {
+          "id": "APU0000703112",
+          "values": [
+            "Ground beef, 100% beef — 1 lb",
+            6.923,
+            0.038000000000000256,
+            9.57581513137069,
+            "USD per pound",
+            "monthly",
+            "NSA",
+            "2026-08-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/APU0000703112",
+          "sa": "NSA",
+          "frequency": "monthly",
+          "note": "U.S. city average retail dollar price. Published only without seasonal adjustment; average-price differences are not a quality-adjusted inflation measure."
+        },
+        {
+          "id": "APU0000708111",
+          "values": [
+            "Eggs, grade A large — dozen",
+            2.272,
+            0.08299999999999974,
+            -36.66016169500976,
+            "USD per dozen",
+            "monthly",
+            "NSA",
+            "2026-08-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/APU0000708111",
+          "sa": "NSA",
+          "frequency": "monthly",
+          "note": "U.S. city average retail dollar price. Published only without seasonal adjustment; average-price differences are not a quality-adjusted inflation measure."
+        },
+        {
+          "id": "APU0000709112",
+          "values": [
+            "Milk, whole fortified — gallon",
+            4.229,
+            -0.08399999999999963,
+            1.390553824023022,
+            "USD per gallon",
+            "monthly",
+            "NSA",
+            "2026-08-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/APU0000709112",
+          "sa": "NSA",
+          "frequency": "monthly",
+          "note": "U.S. city average retail dollar price. Published only without seasonal adjustment; average-price differences are not a quality-adjusted inflation measure."
+        },
+        {
+          "id": "APU0000702111",
+          "values": [
+            "White pan bread — 1 lb",
+            1.823,
+            0.0029999999999998916,
+            -0.977729494839763,
+            "USD per pound",
+            "monthly",
+            "NSA",
+            "2026-08-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/APU0000702111",
+          "sa": "NSA",
+          "frequency": "monthly",
+          "note": "U.S. city average retail dollar price. Published only without seasonal adjustment; average-price differences are not a quality-adjusted inflation measure."
+        },
+        {
+          "id": "APU0000706111",
+          "values": [
+            "Whole fresh chicken — 1 lb",
+            2.012,
+            0.007000000000000117,
+            -3.0828516377649384,
+            "USD per pound",
+            "monthly",
+            "NSA",
+            "2026-08-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/APU0000706111",
+          "sa": "NSA",
+          "frequency": "monthly",
+          "note": "U.S. city average retail dollar price. Published only without seasonal adjustment; average-price differences are not a quality-adjusted inflation measure."
+        }
+      ],
+      "note": "Actual dollar prices per stated unit. These series retain their published seasonal adjustment; most average retail prices are NSA. They are national averages, not a local shopping quote. The prior period is one month for monthly prices or one week for weekly fuel prices.",
+      "sourceNote": "BLS average retail prices and EIA fuel prices via FRED. Weekly YoY compares 52 weeks earlier; monthly YoY compares the same month a year earlier. Missing periods are never filled forward."
+    },
+    {
+      "key": "manufacturing",
+      "label": "Manufacturing & autos",
+      "title": "Manufacturing, auto manufacturing and dealers",
+      "kicker": "JOBS BY INDUSTRY & STATE",
+      "columns": [
+        {
+          "label": "Industry",
+          "type": "text"
+        },
+        {
+          "label": "Total jobs",
+          "type": "number",
+          "digits": 0
+        },
+        {
+          "label": "Monthly change",
+          "type": "number",
+          "digits": 0
+        },
+        {
+          "label": "3-month avg.",
+          "type": "number",
+          "digits": 0
+        },
+        {
+          "label": "12-month avg.",
+          "type": "number",
+          "digits": 0
+        },
+        {
+          "label": "Jan 2021–Jan 2025 total",
+          "type": "number",
+          "digits": 0
+        },
+        {
+          "label": "Jan 2021–Jan 2025 monthly avg.",
+          "type": "number",
+          "digits": 0
+        },
+        {
+          "label": "Since Jan 2025 total",
+          "type": "number",
+          "digits": 0
+        },
+        {
+          "label": "Since Jan 2025 monthly avg.",
+          "type": "number",
+          "digits": 0
+        },
+        {
+          "label": "Since Jan 2021 total",
+          "type": "number",
+          "digits": 0
+        },
+        {
+          "label": "Adjustment",
+          "type": "text"
+        },
+        {
+          "label": "Period",
+          "type": "date",
+          "frequency": "monthly"
+        }
+      ],
+      "rows": [
+        {
+          "id": "MANEMP",
+          "values": [
+            "U.S. manufacturing",
+            12638000,
+            16000,
+            14333.333333333334,
+            1916.6666666666667,
+            531000,
+            11062.5,
+            -35000,
+            -1842.1052631578948,
+            496000,
+            "SA",
+            "2026-08-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/MANEMP",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "MIMFG",
+          "values": [
+            "Michigan manufacturing",
+            583300,
+            -2000,
+            299.99999999999244,
+            -175.0000000000019,
+            -7599.999999999909,
+            -158.33333333333144,
+            4599.999999999909,
+            242.10526315788994,
+            -3000,
+            "SA",
+            "2026-08-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/MIMFG",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "OHMFG",
+          "values": [
+            "Ohio manufacturing",
+            688300,
+            -700.0000000000455,
+            2366.6666666666365,
+            1041.6666666666667,
+            13800.00000000007,
+            287.5000000000014,
+            13199.99999999993,
+            694.7368421052595,
+            27000,
+            "SA",
+            "2026-08-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/OHMFG",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "WIMFG",
+          "values": [
+            "Wisconsin manufacturing",
+            458400,
+            299.9999999999545,
+            699.9999999999886,
+            99.99999999999905,
+            -399.99999999997726,
+            -8.33333333333286,
+            -2700.0000000000455,
+            -142.10526315789713,
+            -3100.0000000000227,
+            "SA",
+            "2026-08-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/WIMFG",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "PAMFG",
+          "values": [
+            "Pennsylvania manufacturing",
+            557300,
+            -200.00000000004547,
+            566.6666666666439,
+            183.33333333332766,
+            21699.99999999993,
+            452.0833333333319,
+            -3000,
+            -157.89473684210526,
+            18699.99999999993,
+            "SA",
+            "2026-08-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/PAMFG",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "MNMFG",
+          "values": [
+            "Minnesota manufacturing",
+            324700,
+            2199.9999999999886,
+            1799.9999999999925,
+            883.3333333333304,
+            6600.000000000023,
+            137.50000000000048,
+            8399.999999999978,
+            442.1052631578936,
+            15000,
+            "SA",
+            "2026-08-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/MNMFG",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "CES3133600101",
+          "values": [
+            "U.S. motor vehicles and parts manufacturing",
+            962800,
+            -4500,
+            1933.3333333333183,
+            -33.33333333334091,
+            25200.000000000044,
+            525.0000000000009,
+            -12700.000000000045,
+            -668.4210526315813,
+            12500,
+            "SA",
+            "2026-08-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/CES3133600101",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "CES4244100001",
+          "values": [
+            "U.S. motor vehicle and parts dealers",
+            2051600,
+            -900.000000000091,
+            1466.6666666666213,
+            391.6666666666515,
+            116899.99999999987,
+            2435.416666666664,
+            1000,
+            52.63157894736842,
+            117899.99999999987,
+            "SA",
+            "2026-08-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/CES4244100001",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "TOTAL_AUTO_JOBS",
+          "values": [
+            "U.S. total auto jobs (manufacturing + dealers)",
+            3014400,
+            -5400,
+            3400,
+            358.3333333333333,
+            142100,
+            2960.4166666666665,
+            -11700,
+            -615.7894736842105,
+            130400,
+            "SA",
+            "2026-08-01"
+          ],
+          "source": "https://fred.stlouisfed.org/graph/?id=CES3133600101,CES4244100001",
+          "sources": [
+            {
+              "label": "U.S. motor vehicles and parts manufacturing",
+              "url": "https://fred.stlouisfed.org/series/CES3133600101"
+            },
+            {
+              "label": "U.S. motor vehicle and parts dealers",
+              "url": "https://fred.stlouisfed.org/series/CES4244100001"
+            }
+          ],
+          "sa": "SA",
+          "frequency": "monthly",
+          "note": "Sum of motor vehicles and parts manufacturing and motor vehicle and parts dealers, two disjoint payroll industries. This defined total excludes automotive repair, wholesale and other auto-related employment. Normalize each input to people before adding, on common observation dates only."
+        }
+      ],
+      "note": "Levels and changes are people. Jan 2021–Jan 2025 uses exact January levels and 48 elapsed monthly changes. Since Jan 2025 uses the exact January 2025 level and elapsed months to the row’s latest month. Totals require both endpoints; monthly averages also require every intervening month. Subsets overlap and should not be added to parent industries. “Total auto jobs” means motor vehicles and parts manufacturing plus motor vehicle and parts dealers; it does not cover every auto-related business. State components are labeled explicitly.",
+      "sourceNote": "BLS establishment-survey data via FRED, seasonally adjusted. Derived totals use only dates common to all components. The selected states are Michigan, Ohio, Wisconsin, Pennsylvania and Minnesota, not a complete geographic region."
+    },
+    {
+      "key": "gdp",
+      "label": "Real GDP",
+      "title": "Real GDP: U.S. and G7",
+      "kicker": "ECONOMIC OUTPUT",
+      "columns": [
+        {
+          "label": "Economy",
+          "type": "text"
+        },
+        {
+          "label": "Real GDP level",
+          "type": "number",
+          "digits": 2
+        },
+        {
+          "label": "Published unit",
+          "type": "text"
+        },
+        {
+          "label": "QoQ annualized (%)",
+          "type": "number",
+          "digits": 1
+        },
+        {
+          "label": "YoY (%)",
+          "type": "number",
+          "digits": 1
+        },
+        {
+          "label": "Q1 2021–Q1 2025 change (%)",
+          "type": "number",
+          "digits": 1
+        },
+        {
+          "label": "Since Q1 2025 change (%)",
+          "type": "number",
+          "digits": 1
+        },
+        {
+          "label": "Since Q1 2021 change (%)",
+          "type": "number",
+          "digits": 1
+        },
+        {
+          "label": "Adjustment",
+          "type": "text"
+        },
+        {
+          "label": "Quarter",
+          "type": "date",
+          "frequency": "quarterly"
+        }
+      ],
+      "rows": [
+        {
+          "id": "GDPC1",
+          "values": [
+            "United States",
+            24269.613,
+            "Billions of chained 2017 USD",
+            1.4836587880023622,
+            2.097671547016011,
+            11.697468576947667,
+            3.063515231094005,
+            15.119337539548905,
+            "SAAR",
+            "2026-04-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/GDPC1",
+          "sa": "SAAR",
+          "frequency": "quarterly",
+          "note": "Real GDP. Compare percentage growth or rebased indexes across countries; raw levels have different currencies, scales, reference years and annualization conventions."
+        },
+        {
+          "id": "CLVMNACSCAB1GQDE",
+          "values": [
+            "Germany",
+            782934.3,
+            "Millions of chained 2010 EUR",
+            1.3284259411258548,
+            1.0171982341795838,
+            3.4005291955930828,
+            0.9980033483067086,
+            4.432469939131978,
+            "SA",
+            "2026-04-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/CLVMNACSCAB1GQDE",
+          "sa": "SA",
+          "frequency": "quarterly",
+          "note": "Real GDP. Compare percentage growth or rebased indexes across countries; raw levels have different currencies, scales, reference years and annualization conventions."
+        },
+        {
+          "id": "JPNRGDPEXP",
+          "values": [
+            "Japan",
+            598950.5,
+            "Billions of chained 2015 JPY",
+            1.449639217524945,
+            0.7266540380768127,
+            4.075660470336029,
+            0.8510579544132479,
+            4.9614046573769555,
+            "SA",
+            "2026-04-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/JPNRGDPEXP",
+          "sa": "SA",
+          "frequency": "quarterly",
+          "note": "Real GDP. Compare percentage growth or rebased indexes across countries; raw levels have different currencies, scales, reference years and annualization conventions."
+        },
+        {
+          "id": "NGDPRSAXDCGBQ",
+          "values": [
+            "United Kingdom",
+            712545,
+            "Millions of domestic currency",
+            1.6715996746650807,
+            1.1744008723877375,
+            14.773652811895577,
+            1.3320951451837315,
+            16.302547068952844,
+            "SA",
+            "2026-04-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/NGDPRSAXDCGBQ",
+          "sa": "SA",
+          "frequency": "quarterly",
+          "note": "Real GDP. Compare percentage growth or rebased indexes across countries; raw levels have different currencies, scales, reference years and annualization conventions."
+        },
+        {
+          "id": "CLVMNACSCAB1GQFR",
+          "values": [
+            "France",
+            597203.9,
+            "Millions of chained 2010 EUR",
+            0.14178567135310072,
+            0.5422715031021985,
+            9.328448666162647,
+            0.7794663684477898,
+            10.180627154661082,
+            "SA",
+            "2026-04-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/CLVMNACSCAB1GQFR",
+          "sa": "SA",
+          "frequency": "quarterly",
+          "note": "Real GDP. Compare percentage growth or rebased indexes across countries; raw levels have different currencies, scales, reference years and annualization conventions."
+        },
+        {
+          "id": "CLVMNACSCAB1GQIT",
+          "values": [
+            "Italy",
+            436738.3,
+            "Millions of chained 2010 EUR",
+            0.6883913679071263,
+            1.0172308671593022,
+            10.974396010290445,
+            1.0025362896166623,
+            12.086954602476506,
+            "SA",
+            "2026-04-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/CLVMNACSCAB1GQIT",
+          "sa": "SA",
+          "frequency": "quarterly",
+          "note": "Real GDP. Compare percentage growth or rebased indexes across countries; raw levels have different currencies, scales, reference years and annualization conventions."
+        },
+        {
+          "id": "NGDPRSAXDCCAQ",
+          "values": [
+            "Canada",
+            631031.8,
+            "Millions of domestic currency",
+            3.3195248445222925,
+            1.1278958220418245,
+            12.476967746123456,
+            0.8828483020641542,
+            13.46996874608337,
+            "SA",
+            "2026-04-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/NGDPRSAXDCCAQ",
+          "sa": "SA",
+          "frequency": "quarterly",
+          "note": "Real GDP. Compare percentage growth or rebased indexes across countries; raw levels have different currencies, scales, reference years and annualization conventions."
+        }
+      ],
+      "note": "Inflation-adjusted output. Compare growth rates across countries: published levels use different currencies, reference years and annualization conventions. January baselines represent Q1, not monthly GDP. Quarterly growth is compounded to an annual rate. SAAR means the published level is seasonally adjusted at an annual rate.",
+      "sourceNote": "BEA and national statistical sources via FRED. Real GDP is quarterly and revised after initial estimates; Q1 2025 is not a clean January-only baseline."
     },
     {
       "key": "applications",
@@ -487,11 +1443,13 @@
         },
         {
           "label": "Period",
-          "type": "date"
+          "type": "date",
+          "frequency": "monthly"
         }
       ],
       "rows": [
         {
+          "id": "BABATOTALSAUS",
           "values": [
             "Total applications",
             531728,
@@ -499,9 +1457,12 @@
             11.377875155265183,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/BABATOTALSAUS"
+          "source": "https://fred.stlouisfed.org/series/BABATOTALSAUS",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "BAHBATOTALSAUS",
           "values": [
             "High-propensity applications",
             145387,
@@ -509,11 +1470,13 @@
             1.9201110425663082,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/BAHBATOTALSAUS"
+          "source": "https://fred.stlouisfed.org/series/BAHBATOTALSAUS",
+          "sa": "SA",
+          "frequency": "monthly"
         }
       ],
       "note": "Monthly applications, seasonally adjusted. High-propensity applications are a subset of total applications, not additional business formations.",
-      "sourceNote": "Source: U.S. Census Bureau, retrieved through FRED."
+      "sourceNote": "U.S. Census Bureau via FRED."
     },
     {
       "key": "claims",
@@ -547,6 +1510,7 @@
       ],
       "rows": [
         {
+          "id": "ICSA",
           "values": [
             "Initial claims",
             196000,
@@ -554,9 +1518,12 @@
             233000,
             "2026-09-12"
           ],
-          "source": "https://fred.stlouisfed.org/series/ICSA"
+          "source": "https://fred.stlouisfed.org/series/ICSA",
+          "sa": "SA",
+          "frequency": "weekly"
         },
         {
+          "id": "IC4WSA",
           "values": [
             "Initial claims 4-week average",
             203250,
@@ -564,9 +1531,12 @@
             239250,
             "2026-09-12"
           ],
-          "source": "https://fred.stlouisfed.org/series/IC4WSA"
+          "source": "https://fred.stlouisfed.org/series/IC4WSA",
+          "sa": "SA",
+          "frequency": "weekly"
         },
         {
+          "id": "CCSA",
           "values": [
             "Continued claims",
             1730000,
@@ -574,11 +1544,13 @@
             1925000,
             "2026-09-05"
           ],
-          "source": "https://fred.stlouisfed.org/series/CCSA"
+          "source": "https://fred.stlouisfed.org/series/CCSA",
+          "sa": "SA",
+          "frequency": "weekly"
         }
       ],
       "note": "Seasonally adjusted. Continued claims generally refer to an earlier week than initial claims.",
-      "sourceNote": "Source: U.S. Employment and Training Administration, retrieved through FRED."
+      "sourceNote": "U.S. Employment and Training Administration via FRED. Comparisons require the exact week; missing dates remain unavailable."
     },
     {
       "key": "markets",
@@ -617,6 +1589,7 @@
       ],
       "rows": [
         {
+          "id": "SP500",
           "values": [
             "S&P 500",
             7764.64,
@@ -625,20 +1598,28 @@
             15.998356676003734,
             "2026-09-22"
           ],
-          "source": "https://fred.stlouisfed.org/series/SP500"
+          "source": "https://fred.stlouisfed.org/series/SP500",
+          "sa": "NSA",
+          "frequency": "daily",
+          "note": "Closing price index, excluding dividends. Source history is limited to ten years."
         },
         {
+          "id": "DJIA",
           "values": [
             "Dow Jones Industrial Average",
-            51863.69,
-            -2.652776497780185,
-            7.907074193214814,
-            11.819680847164626,
-            "2026-09-22"
+            51511.59,
+            -3.3136619341062934,
+            7.174498458178791,
+            11.273485843796793,
+            "2026-09-23"
           ],
-          "source": "https://fred.stlouisfed.org/series/DJIA"
+          "source": "https://fred.stlouisfed.org/series/DJIA",
+          "sa": "NSA",
+          "frequency": "daily",
+          "note": "Closing price index, excluding dividends. Source history is limited to ten years."
         },
         {
+          "id": "NASDAQCOM",
           "values": [
             "NASDAQ Composite",
             27244.28,
@@ -647,11 +1628,14 @@
             19.550238755749483,
             "2026-09-22"
           ],
-          "source": "https://fred.stlouisfed.org/series/NASDAQCOM"
+          "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
+          "sa": "NSA",
+          "frequency": "daily",
+          "note": "Closing price index, excluding dividends."
         }
       ],
       "note": "Daily closing price indexes, not live prices. Changes exclude dividends. Market series are not seasonally adjusted.",
-      "sourceNote": "Source: S&P Dow Jones Indices and Nasdaq, retrieved through FRED. Calendar lookbacks use the preceding available close within seven days."
+      "sourceNote": "S&P Dow Jones Indices and Nasdaq via FRED. Calendar lookbacks use a preceding available close within seven days."
     },
     {
       "key": "budget",
@@ -679,44 +1663,56 @@
       ],
       "rows": [
         {
+          "id": "MTSDS133FMS",
           "values": [
             "Monthly deficit",
             166.79695227738003,
             "USD billions",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/MTSDS133FMS"
+          "source": "https://fred.stlouisfed.org/series/MTSDS133FMS",
+          "sa": "NSA",
+          "frequency": "monthly"
         },
         {
+          "id": "MTSDS133FMS",
           "values": [
             "Fiscal year to date deficit",
             1965.62782045344,
             "USD billions",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/MTSDS133FMS"
+          "source": "https://fred.stlouisfed.org/series/MTSDS133FMS",
+          "sa": "NSA",
+          "frequency": "monthly"
         },
         {
+          "id": "MTSDS133FMS",
           "values": [
             "Trailing 12 months deficit",
             1767.6781900912802,
             "USD billions",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/MTSDS133FMS"
+          "source": "https://fred.stlouisfed.org/series/MTSDS133FMS",
+          "sa": "NSA",
+          "frequency": "monthly"
         },
         {
+          "id": "FYFSGDA188S",
           "values": [
             "Fiscal year deficit / GDP",
             5.76906,
             "% of GDP",
             "FY 2025"
           ],
-          "source": "https://fred.stlouisfed.org/series/FYFSGDA188S"
+          "source": "https://fred.stlouisfed.org/series/FYFSGDA188S",
+          "sa": "NSA",
+          "frequency": "annual"
         }
       ],
       "note": "Positive values indicate a deficit; negative values indicate a surplus. Fiscal year to date begins in October. Published budget balances are NSA.",
-      "sourceNote": "Sources: Treasury, OMB and FRED. Monthly balances are summed for fiscal-year and trailing-year totals."
+      "sourceNote": "Treasury and OMB via FRED. Monthly balances are summed only when every required month is available."
     },
     {
       "key": "participation",
@@ -745,11 +1741,13 @@
         },
         {
           "label": "Period",
-          "type": "date"
+          "type": "date",
+          "frequency": "monthly"
         }
       ],
       "rows": [
         {
+          "id": "LNS11300060",
           "values": [
             "Prime age (25-54)",
             83.4,
@@ -757,9 +1755,12 @@
             -0.29999999999999716,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/LNS11300060"
+          "source": "https://fred.stlouisfed.org/series/LNS11300060",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "LNS12300060",
           "values": [
             "Prime-age employment / population",
             80.4,
@@ -767,16 +1768,18 @@
             -0.29999999999999716,
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/LNS12300060"
+          "source": "https://fred.stlouisfed.org/series/LNS12300060",
+          "sa": "SA",
+          "frequency": "monthly"
         }
       ],
-      "note": "People ages 25\u201354. Seasonally adjusted. Participation includes both employed people and unemployed people seeking work.",
-      "sourceNote": "Source: BLS household survey, retrieved through FRED."
+      "note": "People ages 25–54. Seasonally adjusted. Participation includes employed people and unemployed people seeking work.",
+      "sourceNote": "BLS household survey via FRED. pp means percentage points."
     },
     {
       "key": "context",
       "label": "Labor context",
-      "title": "Job openings, quits and underemployment",
+      "title": "Job openings, quits, underemployment and wages",
       "kicker": "LABOR MARKET",
       "columns": [
         {
@@ -786,7 +1789,7 @@
         {
           "label": "Value",
           "type": "number",
-          "digits": 1
+          "digits": 2
         },
         {
           "label": "Units",
@@ -794,40 +1797,362 @@
         },
         {
           "label": "Period",
-          "type": "date"
+          "type": "date",
+          "frequency": "monthly"
         }
       ],
       "rows": [
         {
+          "id": "JTSJOL",
           "values": [
             "Job openings",
             7271,
             "Thousands",
             "2026-07-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/JTSJOL"
+          "source": "https://fred.stlouisfed.org/series/JTSJOL",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "JTSQUR",
           "values": [
             "Quits rate",
             1.9,
             "Percent",
             "2026-07-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/JTSQUR"
+          "source": "https://fred.stlouisfed.org/series/JTSQUR",
+          "sa": "SA",
+          "frequency": "monthly"
         },
         {
+          "id": "U6RATE",
           "values": [
             "U-6 underemployment",
             7.7,
             "Percent",
             "2026-08-01"
           ],
-          "source": "https://fred.stlouisfed.org/series/U6RATE"
+          "source": "https://fred.stlouisfed.org/series/U6RATE",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "CES0500000003",
+          "values": [
+            "Average hourly earnings",
+            37.75,
+            "Dollars per Hour",
+            "2026-08-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/CES0500000003",
+          "sa": "SA",
+          "frequency": "monthly"
         }
       ],
-      "note": "Seasonally adjusted. Job openings and quits come from JOLTS; U-6 includes broader measures of labor underutilization.",
-      "sourceNote": "Source: BLS, retrieved through FRED. Observation months differ across releases."
+      "note": "Published seasonal adjustment is retained. Job openings and quits come from JOLTS; U-6 is a broader measure of labor underutilization. Wages are nominal dollars per hour.",
+      "sourceNote": "BLS via FRED. Observation months differ across releases."
+    },
+    {
+      "key": "war",
+      "label": "Since Iran War began",
+      "title": "Changes since February 28, 2026",
+      "kicker": "BEFORE & AFTER",
+      "columns": [
+        {
+          "label": "Indicator",
+          "type": "text"
+        },
+        {
+          "label": "Baseline value",
+          "type": "number",
+          "digits": 3
+        },
+        {
+          "label": "Baseline observation",
+          "type": "date"
+        },
+        {
+          "label": "Latest value",
+          "type": "number",
+          "digits": 3
+        },
+        {
+          "label": "Latest observation",
+          "type": "date"
+        },
+        {
+          "label": "Absolute change",
+          "type": "number",
+          "digits": 3
+        },
+        {
+          "label": "Change (%)",
+          "type": "number",
+          "digits": 1
+        },
+        {
+          "label": "Unit / adjustment",
+          "type": "text"
+        }
+      ],
+      "rows": [
+        {
+          "id": "DCOILWTICO",
+          "values": [
+            "WTI crude oil",
+            66.96,
+            "2026-02-27",
+            96.41,
+            "2026-09-22",
+            29.450000000000003,
+            43.98148148148149,
+            "USD per barrel · NSA"
+          ],
+          "source": "https://fred.stlouisfed.org/series/DCOILWTICO",
+          "sa": "NSA",
+          "frequency": "daily"
+        },
+        {
+          "id": "DCOILBRENTEU",
+          "values": [
+            "Brent crude oil",
+            71.32,
+            "2026-02-27",
+            114.89,
+            "2026-09-22",
+            43.57000000000001,
+            61.09085810431858,
+            "USD per barrel · NSA"
+          ],
+          "source": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
+          "sa": "NSA",
+          "frequency": "daily"
+        },
+        {
+          "id": "GASREGW",
+          "values": [
+            "Regular gasoline — gallon",
+            2.937,
+            "2026-02-23",
+            4.478,
+            "2026-09-21",
+            1.541,
+            52.468505277494046,
+            "USD per gallon · NSA"
+          ],
+          "source": "https://fred.stlouisfed.org/series/GASREGW",
+          "sa": "NSA",
+          "frequency": "weekly",
+          "note": "U.S. regular all formulations retail gasoline price, including taxes."
+        },
+        {
+          "id": "GASDESW",
+          "values": [
+            "Diesel — gallon",
+            3.809,
+            "2026-02-23",
+            6.529,
+            "2026-09-21",
+            2.7199999999999998,
+            71.40981885009188,
+            "USD per gallon · NSA"
+          ],
+          "source": "https://fred.stlouisfed.org/series/GASDESW",
+          "sa": "NSA",
+          "frequency": "weekly",
+          "note": "U.S. diesel retail sales price."
+        },
+        {
+          "id": "SP500",
+          "values": [
+            "S&P 500",
+            6878.88,
+            "2026-02-27",
+            7764.64,
+            "2026-09-22",
+            885.7600000000002,
+            12.876514781476068,
+            "Index · NSA"
+          ],
+          "source": "https://fred.stlouisfed.org/series/SP500",
+          "sa": "NSA",
+          "frequency": "daily",
+          "note": "Closing price index, excluding dividends. Source history is limited to ten years."
+        },
+        {
+          "id": "DJIA",
+          "values": [
+            "Dow Jones Industrial Average",
+            48977.92,
+            "2026-02-27",
+            51511.59,
+            "2026-09-23",
+            2533.6699999999983,
+            5.173086158007534,
+            "Index · NSA"
+          ],
+          "source": "https://fred.stlouisfed.org/series/DJIA",
+          "sa": "NSA",
+          "frequency": "daily",
+          "note": "Closing price index, excluding dividends. Source history is limited to ten years."
+        },
+        {
+          "id": "NASDAQCOM",
+          "values": [
+            "Nasdaq Composite",
+            22668.21,
+            "2026-02-27",
+            27244.28,
+            "2026-09-22",
+            4576.07,
+            20.187169608892795,
+            "Index February 5, 1971=100 · NSA"
+          ],
+          "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
+          "sa": "NSA",
+          "frequency": "daily",
+          "note": "Closing price index, excluding dividends."
+        },
+        {
+          "id": "CPIAUCSL",
+          "values": [
+            "CPI price index",
+            326.588,
+            "2026-01-01",
+            334.131,
+            "2026-08-01",
+            7.5429999999999495,
+            2.309637831151168,
+            "Index 1982-1984=100 · SA"
+          ],
+          "source": "https://fred.stlouisfed.org/series/CPIAUCSL",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "CPILFESL",
+          "values": [
+            "Core CPI price index",
+            332.793,
+            "2026-01-01",
+            337.765,
+            "2026-08-01",
+            4.97199999999998,
+            1.4940218093529634,
+            "Index 1982-1984=100 · SA"
+          ],
+          "source": "https://fred.stlouisfed.org/series/CPILFESL",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "PCEPI",
+          "values": [
+            "PCE price index",
+            129.023,
+            "2026-01-01",
+            131.659,
+            "2026-07-01",
+            2.6359999999999957,
+            2.043046588592734,
+            "Index 2017=100 · SA"
+          ],
+          "source": "https://fred.stlouisfed.org/series/PCEPI",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "PCEPILFE",
+          "values": [
+            "Core PCE price index",
+            128.455,
+            "2026-01-01",
+            130.658,
+            "2026-07-01",
+            2.2029999999999745,
+            1.71499746993109,
+            "Index 2017=100 · SA"
+          ],
+          "source": "https://fred.stlouisfed.org/series/PCEPILFE",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "PAYEMS",
+          "values": [
+            "Total nonfarm payroll jobs",
+            158592000,
+            "2026-01-01",
+            159075000,
+            "2026-08-01",
+            483000,
+            0.3045550847457612,
+            "People · SA"
+          ],
+          "source": "https://fred.stlouisfed.org/series/PAYEMS",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "UNRATE",
+          "values": [
+            "Unemployment rate (U-3)",
+            4.3,
+            "2026-01-01",
+            4.1,
+            "2026-08-01",
+            -0.20000000000000018,
+            -4.651162790697683,
+            "Percent · SA"
+          ],
+          "source": "https://fred.stlouisfed.org/series/UNRATE",
+          "sa": "SA",
+          "frequency": "monthly"
+        },
+        {
+          "id": "ICSA",
+          "values": [
+            "Initial jobless claims",
+            211000,
+            "2026-02-21",
+            196000,
+            "2026-09-12",
+            -15000,
+            -7.109004739336489,
+            "Number · SA"
+          ],
+          "source": "https://fred.stlouisfed.org/series/ICSA",
+          "sa": "SA",
+          "frequency": "weekly"
+        }
+      ],
+      "note": "Reference date: February 28, 2026. Daily and weekly baselines are the last available observation before that date; monthly baselines use January 2026 because February spans the start of the war. Each baseline is shown explicitly. These comparisons describe changes over time and do not attribute them to the war.",
+      "sourceNote": "Sources via FRED. Daily baselines must be within 7 days and weekly baselines within 14 days of the cutoff; missing monthly baselines stay unavailable. Percentage-point changes in rate series appear under absolute change; percent change is relative to the baseline."
+    }
+  ],
+  "notes": {
+    "units": "The units field describes raw FRED observations. Multiply each raw observation by multiplier exactly once. Derived employment series sum components after scaling to people, with no additional conversion.",
+    "employment": "Employment levels and changes are payroll jobs, not unique workers. Manufacturing subsets overlap the manufacturing total; do not add parent industries to their subsets.",
+    "regionalCoverage": "The selected states are Michigan, Ohio, Wisconsin, Pennsylvania and Minnesota. They are not a complete Midwest region; Pennsylvania is outside the Census Midwest.",
+    "retailPrices": "Average retail prices are published NSA and describe actual prices for the stated quantities. CPI indexes are better suited to measuring inflation because product composition and quality can change over time.",
+    "gdp": "Quarterly real GDP can be compared using percentage changes or a shared base-quarter index, not raw national-currency levels. Q1 2021 and Q1 2025 are quarter baselines, not January observations; any monthly equivalent growth rate is a calculation, not monthly GDP.",
+    "conflictBaseline": "The user selected February 28, 2026. Use each series last observed value strictly before that date; report each actual baseline date. February 28 is a Saturday, so daily market series normally use February 27 and weekly fuel series the preceding Monday. Describe changes since the baseline, not causal effects of the war."
+  },
+  "snapshotId": "b56b677d-2a15-4eb1-8ef5-9b3e0cd26eb0",
+  "downloads": [
+    {
+      "path": "downloads/dashboard-data.zip",
+      "label": "Current dashboard tables and source data",
+      "description": "All indicator tables as CSV + source observations as JSON",
+      "updatedAt": "2026-09-23T22:50:07.880Z"
+    },
+    {
+      "path": "downloads/labor-market-chartbook.docx",
+      "label": "BLS labor market chartbook",
+      "description": "34 editable tables · DOCX · run the BLS updater to refresh",
+      "updatedAt": "2026-09-23"
     }
   ]
 }

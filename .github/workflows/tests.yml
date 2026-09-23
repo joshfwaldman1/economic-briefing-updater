@@ -14,5 +14,5 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r requirements.txt
-      - run: node --test test-data.mjs test-workbook.mjs
+      - run: node --test test-data.mjs test-workbook.mjs test-dashboard.mjs
       - run: python -m unittest test_chartbook.py

@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="An economic briefing with employment, inflation, business applications, claims, markets and fiscal data, plus reusable BLS and FRED update scripts.">
+  <meta name="description" content="Economic indicators from BLS, BEA and FRED, with employment comparisons, inflation, everyday prices, real GDP and reusable update scripts. Created by Josh Waldman.">
   <meta name="theme-color" content="#142847">
-  <title>Economic Briefing · Data and updater</title>
+  <title>Economic Briefing · Josh Waldman</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23142847'/%3E%3Cpath d='M14 45V30h8v15zm14 0V20h8v25zm14 0V10h8v35z' fill='%23fff'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
@@ -14,47 +14,47 @@
 <a class="skip" href="#indicators">Skip to indicators</a>
 <header class="topbar">
   <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">EB</span>Economic Briefing</a>
-  <nav aria-label="Main"><a href="#charts">FRED charts</a><a href="#downloads">Downloads</a><a href="https://github.com/joshfwaldman1/economic-briefing-updater">GitHub <span aria-hidden="true">↗</span></a></nav>
+  <nav aria-label="Main"><a href="#indicators">Indicators</a><a href="#downloads">Downloads</a><a href="#sources">Sources</a><a href="https://github.com/joshfwaldman1/economic-briefing-updater">GitHub <span aria-hidden="true">↗</span></a></nav>
 </header>
 <main>
   <section class="intro" aria-labelledby="title">
-    <div><p class="eyebrow">U.S. ECONOMY / DATA SNAPSHOT</p><h1 id="title">U.S. economic indicators.</h1><p class="lede">Jobs, prices, business activity, markets and the federal budget.</p></div>
-    <div class="snapshot"><span>Snapshot retrieved</span><strong id="retrieved-date">September 23, 2026</strong><span>Reporting periods vary by indicator.</span><a href="#method">About the data</a></div>
+    <div><p class="eyebrow">U.S. ECONOMY / ECONOMIC BRIEFING</p><h1 id="title">U.S. economic indicators.</h1><p class="lede">Jobs, prices, growth and markets. Follow the latest releases and compare changes over time.</p></div>
+    <div class="snapshot"><span>Last refreshed</span><strong id="retrieved-date">Loading…</strong><span>Scheduled twice daily · 14:17 &amp; 23:17 UTC</span><span>Reporting periods vary by indicator.</span><a href="#method">About the data</a></div>
   </section>
   <div class="kpis" id="kpis" aria-label="Key indicators"></div>
   <section class="workspace" id="indicators" aria-label="Economic indicators">
-    <aside><h2>Indicators</h2><div id="categories" class="categories" aria-label="Indicator groups"></div><p class="aside-note">Published seasonal adjustment is retained. SA = seasonally adjusted. NSA = not seasonally adjusted.</p></aside>
+    <aside><h2>Indicators</h2><div id="categories" class="categories" aria-label="Indicator groups"></div><p class="aside-note">SA = seasonally adjusted. NSA = not seasonally adjusted. Published source conventions are retained.</p></aside>
     <div class="data-panel">
-      <div class="panel-heading"><div><p class="eyebrow" id="section-kicker">LABOR MARKET</p><h2 id="section-title">Employment by industry</h2></div><span class="table-count" id="table-count"></span></div>
+      <div class="panel-heading"><div><p class="eyebrow" id="section-kicker">ECONOMIC DATA</p><h2 id="section-title">Loading indicators…</h2></div><span class="table-count" id="table-count"></span></div>
       <p id="section-note" class="section-note"></p>
-      <div class="table-scroll" tabindex="0" aria-label="Scrollable indicator table"><table id="data-table"><thead></thead><tbody></tbody></table></div>
+      <p class="scroll-hint" id="scroll-hint">Scroll the table horizontally to see every comparison <span aria-hidden="true">↔</span></p>
+      <div class="table-scroll" tabindex="0" role="region" aria-labelledby="section-title" aria-describedby="scroll-hint"><table id="data-table"><caption class="sr-only">Economic indicator values and changes</caption><thead></thead><tbody></tbody></table></div>
       <p class="source-note" id="section-source"></p>
     </div>
   </section>
-  <noscript><p>JavaScript is needed to explore the indicator table. The workbook and chartbook downloads below contain the data.</p></noscript>
-  <p id="load-error" class="error" hidden>The data snapshot could not load. Please reload, or download the workbook below.</p>
-  <section id="charts" class="section-block">
-    <div class="section-top"><div><p class="eyebrow">SAVED FRED GRAPHS</p><h2>Four views of the economy</h2></div><p>The original graph settings and transformations are preserved.</p></div>
-    <div class="chart-grid">
-      <article class="chart-card"><div class="chart-heading"><h3>Year-over-year inflation</h3><a href="https://fred.stlouisfed.org/graph/?g=1wX9M">Open in FRED ↗</a></div><a href="assets/inflation.png"><img src="assets/inflation.png" alt="FRED chart comparing year-over-year headline and core CPI and PCE inflation" loading="lazy" width="1200" height="700"></a><div class="chart-footer"><p>Headline and core CPI and PCE.</p><a href="assets/inflation.csv" download>Download CSV</a></div></article>
-      <article class="chart-card"><div class="chart-heading"><h3>Auto jobs</h3><a href="https://fred.stlouisfed.org/graph/?g=1vp6J">Open in FRED ↗</a></div><a href="assets/auto_jobs.png"><img src="assets/auto_jobs.png" alt="FRED chart of motor vehicle manufacturing, dealers and total manufacturing employment" loading="lazy" width="1200" height="700"></a><div class="chart-footer"><p>Manufacturing, motor vehicles and dealers.</p><a href="assets/auto_jobs.csv" download>Download CSV</a></div></article>
-      <article class="chart-card"><div class="chart-heading"><h3>Selected state manufacturing</h3><a href="https://fred.stlouisfed.org/graph/?g=1tzuA">Open in FRED ↗</a></div><a href="assets/selected_state_manufacturing.png"><img src="assets/selected_state_manufacturing.png" alt="FRED chart of manufacturing employment in Michigan, Ohio, Wisconsin, Pennsylvania and Minnesota" loading="lazy" width="1200" height="700"></a><div class="chart-footer"><p>Michigan, Ohio, Wisconsin, Pennsylvania and Minnesota.</p><a href="assets/selected_state_manufacturing.csv" download>Download CSV</a></div></article>
-      <article class="chart-card"><div class="chart-heading"><h3>G7 real GDP</h3><a href="https://fred.stlouisfed.org/graph/?g=1tBaE">Open in FRED ↗</a></div><a href="assets/g7_real_gdp.png"><img src="assets/g7_real_gdp.png" alt="Original saved FRED graph of real GDP levels in G7 countries" loading="lazy" width="1200" height="700"></a><div class="chart-footer"><p>Original national units differ. Use growth rates to compare countries.</p><a href="assets/g7_real_gdp.csv" download>Download CSV</a></div></article>
-    </div>
-  </section>
+  <noscript><p>JavaScript is needed to explore the indicator tables. The chartbook and data downloads below also contain economic data.</p></noscript>
+  <p id="load-error" class="error" role="alert" hidden>The data could not load. Please reload, or use the document downloads below.</p>
   <section id="downloads" class="downloads section-block">
-    <div><p class="eyebrow">WORK WITH THE DATA</p><h2>Download. Update. Repeat.</h2><p>Get the current documents or run the scripts to retrieve newer observations.</p><a class="button primary" href="downloads/economic-updater-scripts.zip" download>Download updater scripts <span aria-hidden="true">↓</span></a></div>
+    <div><p class="eyebrow">WORK WITH THE DATA</p><h2>Download. Update. Repeat.</h2><p>Explore the briefing files or use the scripts to retrieve observations directly from their sources.</p><a class="button primary" href="downloads/economic-updater-scripts.zip" download>Download updater scripts <span aria-hidden="true">↓</span></a><p class="download-note" id="downloads-note">Dashboard and document refresh dates are reported separately.</p></div>
     <div class="download-list">
-      <a href="downloads/economic-briefing.xlsx" download><span><strong>Economic briefing workbook</strong><small>18 tabs · 67 source series · XLSX</small></span><span aria-hidden="true">↓</span></a>
-      <a href="downloads/labor-market-chartbook.docx" download><span><strong>BLS labor market chartbook</strong><small>34 editable tables · seasonally adjusted · DOCX</small></span><span aria-hidden="true">↓</span></a>
-      <a href="https://github.com/joshfwaldman1/economic-briefing-updater#running-the-updaters"><span><strong>Setup and update instructions</strong><small>Python, Node.js and runtime requirements</small></span><span aria-hidden="true">↗</span></a>
+      <a href="downloads/labor-market-chartbook.docx" download data-download="chartbook"><span><strong>BLS labor market chartbook</strong><small>Editable tables · DOCX</small><small class="download-date"></small></span><span aria-hidden="true">↓</span></a>
+      <a href="https://github.com/joshfwaldman1/economic-briefing-updater#running-the-updaters"><span><strong>Setup and update instructions</strong><small>Requirements, data sources and automation</small></span><span aria-hidden="true">↗</span></a>
     </div>
   </section>
   <section id="method" class="method section-block">
-    <h2>About this snapshot</h2>
-    <div class="method-grid"><p>This is a published snapshot, not a live data feed. Dates in the tables identify the observation month or week. Running the local updater creates new files; the website changes when a new snapshot is published.</p><p>Labor data uses published seasonal adjustment. Stock indexes, Treasury budget balances and EIA fuel prices retain their source conventions. Percentage changes and percentage-point differences are labeled separately.</p><p>AAA daily prices, the release calendar and three PCE components in the workbook remain marked for manual updates. Missing observations stay unavailable. Source revisions can change past figures.</p><p>Sources include BLS, BEA, Census, Treasury, the Department of Labor and FRED. Stock indexes are closing-price indexes, excluding dividends. The chart images retain FRED’s original source attribution.</p></div>
+    <h2>About the data</h2>
+    <div class="method-grid"><p>The dashboard is scheduled to retrieve data twice daily. New observations appear when the source publishes them; monthly and quarterly figures do not change every day. The refresh timestamp above records the last successful data retrieval. Scheduled runs can be delayed.</p><p>Each table labels its reporting period, units and adjustment. Monthly average job changes are the change in employment divided by the number of months between the stated endpoints. Total changes are differences between levels, not sums of employment levels.</p><p>“Since Iran War began” uses February 28, 2026 as the reference date. The table identifies the actual baseline observation for each series. Changes over this period are descriptive and do not establish that the war caused them.</p><p>Sources include BLS, BEA, Census, the Department of Labor, EIA and FRED. Stock indexes exclude dividends. Missing observations remain unavailable, and source revisions can change historical comparisons.</p></div>
+  </section>
+  <section id="sources" class="sources section-block" aria-labelledby="sources-title">
+    <div><p class="eyebrow">SOURCE CHARTS</p><h2 id="sources-title">Explore the original FRED graphs</h2><p>Individual indicator names and headline cards also link to their source charts.</p></div>
+    <div class="source-links">
+      <a href="https://fred.stlouisfed.org/graph/?g=1tBaE"><span>G7 real GDP<small>National units differ; compare growth rates across countries.</small></span><span aria-hidden="true">↗</span></a>
+      <a href="https://fred.stlouisfed.org/graph/?g=1vp6J"><span>Auto jobs<small>Manufacturing, motor vehicles and dealers.</small></span><span aria-hidden="true">↗</span></a>
+      <a href="https://fred.stlouisfed.org/graph/?g=1wX9M"><span>Year-over-year inflation<small>Headline and core CPI and PCE.</small></span><span aria-hidden="true">↗</span></a>
+      <a href="https://fred.stlouisfed.org/graph/?g=1tzuA"><span>Selected state manufacturing<small>Michigan, Ohio, Wisconsin, Pennsylvania and Minnesota.</small></span><span aria-hidden="true">↗</span></a>
+    </div>
   </section>
 </main>
-<footer><span>Economic Briefing</span><a href="https://github.com/joshfwaldman1/economic-briefing-updater">Source code and documentation on GitHub ↗</a></footer>
+<footer><span>Created by <strong>Josh Waldman</strong></span><a href="https://github.com/joshfwaldman1/economic-briefing-updater">Source code and documentation on GitHub ↗</a></footer>
 </body>
 </html>
