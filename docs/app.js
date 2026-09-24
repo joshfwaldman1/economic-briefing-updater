@@ -59,8 +59,7 @@ function downloadDates(data) {
       const description = document.createElement('small'); description.className = 'download-description';
       const refreshed = document.createElement('small'); refreshed.className = 'download-date';
       content.append(label, description, refreshed);
-      const arrow = document.createElement('span'); arrow.setAttribute('aria-hidden', 'true'); arrow.textContent = '↓';
-      link.append(content, arrow);
+      link.append(content);
       list.insertBefore(link, setup);
     }
     link.href = href;
@@ -84,18 +83,19 @@ async function start() {
   const kpis = document.querySelector('#kpis');
   for (const item of data.kpis ?? []) {
     const href = sourceURL(item.source);
-    const card = document.createElement(href ? 'a' : 'div');
-    card.className = 'kpi';
+    const line = document.createElement('p');
+    line.className = 'kpi';
+    const link = document.createElement(href ? 'a' : 'span');
     if (href) {
-      card.href = href;
-      card.setAttribute('aria-label', `${item.label}: ${item.prefix ?? ''}${number(item.value, item.digits ?? 1)}${item.suffix ?? ''}. Open source chart on FRED.`);
+      link.href = href;
+      link.setAttribute('aria-label', `${item.label}: ${item.prefix ?? ''}${number(item.value, item.digits ?? 1)}${item.suffix ?? ''}. Open source chart on FRED.`);
     }
-    const label = document.createElement('p'); label.className = 'kpi-label'; label.textContent = item.label;
+    const label = document.createElement('span'); label.textContent = `${item.label}: `;
     const value = document.createElement('strong'); value.className = 'kpi-value'; value.textContent = `${item.prefix ?? ''}${number(item.value, item.digits ?? 1)}${item.suffix ?? ''}`;
-    const detail = document.createElement('p'); detail.className = 'kpi-detail'; detail.textContent = item.detail;
-    card.append(label, value, detail);
-    if (href) { const hint = document.createElement('span'); hint.className = 'kpi-link'; hint.textContent = 'View source chart ↗'; card.append(hint); }
-    kpis.append(card);
+    const detail = document.createElement('span'); detail.className = 'kpi-detail'; detail.textContent = item.detail;
+    link.append(label, value);
+    line.append(link, detail);
+    kpis.append(line);
   }
 
   const scroll = document.querySelector('.table-scroll');
@@ -105,7 +105,6 @@ async function start() {
   function show(section) {
     for (const button of document.querySelectorAll('#categories button')) button.setAttribute('aria-pressed', String(button.dataset.key === section.key));
     document.querySelector('#section-title').textContent = section.title;
-    document.querySelector('#section-kicker').textContent = section.kicker ?? 'ECONOMIC DATA';
     document.querySelector('#section-note').textContent = section.note ?? '';
     document.querySelector('#table-count').textContent = `${section.rows.length} series`;
     document.querySelector('#section-source').textContent = section.sourceNote ?? '';

@@ -3,58 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Economic indicators from BLS, BEA and FRED, with employment comparisons, inflation, everyday prices, real GDP and reusable update scripts. Created by Josh Waldman.">
-  <meta name="theme-color" content="#142847">
+  <meta name="description" content="Economic indicators from BLS, BEA and FRED. Created by Josh Waldman.">
   <title>Economic Briefing · Josh Waldman</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23142847'/%3E%3Cpath d='M14 45V30h8v15zm14 0V20h8v25zm14 0V10h8v35z' fill='%23fff'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#indicators">Skip to indicators</a>
-<header class="topbar">
-  <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">EB</span>Economic Briefing</a>
-  <nav aria-label="Main"><a href="#indicators">Indicators</a><a href="#downloads">Downloads</a><a href="#sources">Sources</a><a href="https://github.com/joshfwaldman1/economic-briefing-updater">GitHub <span aria-hidden="true">↗</span></a></nav>
+<header>
+  <h1>Economic Briefing</h1>
+  <nav aria-label="Main"><a href="#indicators">Indicators</a> · <a href="#downloads">Downloads</a> · <a href="#sources">FRED charts</a> · <a href="https://github.com/joshfwaldman1/economic-briefing-updater">GitHub</a></nav>
+  <p>Last refreshed: <strong id="retrieved-date">Loading…</strong><br>Scheduled daily at 9:10 a.m. and 7:17 p.m. Eastern. Reporting periods vary. <a href="#method">About the data</a></p>
 </header>
 <main>
-  <section class="intro" aria-labelledby="title">
-    <div><p class="eyebrow">U.S. ECONOMY / ECONOMIC BRIEFING</p><h1 id="title">U.S. economic indicators.</h1><p class="lede">Jobs, prices, growth and markets. Follow the latest releases and compare changes over time.</p></div>
-    <div class="snapshot"><span>Last refreshed</span><strong id="retrieved-date">Loading…</strong><span>Scheduled daily · 9:10 a.m. &amp; 7:17 p.m. Eastern</span><span>Reporting periods vary by indicator.</span><a href="#method">About the data</a></div>
+  <div id="kpis" aria-label="Key indicators"></div>
+  <section id="indicators" aria-label="Economic indicators">
+    <nav aria-label="Indicator groups" id="categories" class="categories"></nav>
+    <p class="note">SA = seasonally adjusted. NSA = not seasonally adjusted. Published source conventions are retained.</p>
+    <div class="panel-heading"><h2 id="section-title">Loading indicators…</h2><span id="table-count" class="note"></span></div>
+    <p id="section-note" class="note"></p>
+    <p id="scroll-hint" class="note">Scroll sideways to see all columns.</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-labelledby="section-title" aria-describedby="scroll-hint"><table id="data-table"><caption class="sr-only">Economic indicator values and changes</caption><thead></thead><tbody></tbody></table></div>
+    <p id="section-source" class="note"></p>
   </section>
-  <div class="kpis" id="kpis" aria-label="Key indicators"></div>
-  <section class="workspace" id="indicators" aria-label="Economic indicators">
-    <aside><h2>Indicators</h2><div id="categories" class="categories" aria-label="Indicator groups"></div><p class="aside-note">SA = seasonally adjusted. NSA = not seasonally adjusted. Published source conventions are retained.</p></aside>
-    <div class="data-panel">
-      <div class="panel-heading"><div><p class="eyebrow" id="section-kicker">ECONOMIC DATA</p><h2 id="section-title">Loading indicators…</h2></div><span class="table-count" id="table-count"></span></div>
-      <p id="section-note" class="section-note"></p>
-      <p class="scroll-hint" id="scroll-hint">Scroll the table horizontally to see every comparison <span aria-hidden="true">↔</span></p>
-      <div class="table-scroll" tabindex="0" role="region" aria-labelledby="section-title" aria-describedby="scroll-hint"><table id="data-table"><caption class="sr-only">Economic indicator values and changes</caption><thead></thead><tbody></tbody></table></div>
-      <p class="source-note" id="section-source"></p>
-    </div>
-  </section>
-  <noscript><p>JavaScript is needed to explore the indicator tables. The chartbook and data downloads below also contain economic data.</p></noscript>
-  <p id="load-error" class="error" role="alert" hidden>The data could not load. Please reload, or use the document downloads below.</p>
-  <section id="downloads" class="downloads section-block">
-    <div><p class="eyebrow">WORK WITH THE DATA</p><h2>Download. Update. Repeat.</h2><p>Explore the briefing files or use the scripts to retrieve observations directly from their sources.</p><a class="button primary" href="downloads/economic-updater-scripts.zip" download>Download updater scripts <span aria-hidden="true">↓</span></a><p class="download-note" id="downloads-note">Dashboard and document refresh dates are reported separately.</p></div>
+  <noscript><p>JavaScript is needed to explore the indicator tables. The data downloads below also contain economic data.</p></noscript>
+  <p id="load-error" role="alert" hidden>The data could not load. Please reload, or use the downloads below.</p>
+  <section id="downloads">
+    <h2>Downloads</h2>
+    <p><a href="downloads/economic-updater-scripts.zip" download>Updater scripts</a></p>
     <div class="download-list">
-      <a href="downloads/labor-market-chartbook.docx" download data-download="chartbook"><span><strong>BLS labor market chartbook</strong><small>Editable tables · DOCX</small><small class="download-date"></small></span><span aria-hidden="true">↓</span></a>
-      <a href="https://github.com/joshfwaldman1/economic-briefing-updater#running-the-updaters"><span><strong>Setup and update instructions</strong><small>Requirements, data sources and automation</small></span><span aria-hidden="true">↗</span></a>
+      <a href="downloads/labor-market-chartbook.docx" download data-download="chartbook"><span><strong>BLS labor market chartbook</strong><small>Editable tables · DOCX</small><small class="download-date"></small></span></a>
+      <a href="https://github.com/joshfwaldman1/economic-briefing-updater#running-the-updaters"><span><strong>Setup and update instructions</strong><small>Requirements, data sources and automation</small></span></a>
     </div>
+    <p id="downloads-note" class="note">Dashboard and document refresh dates are reported separately.</p>
   </section>
-  <section id="method" class="method section-block">
+  <section id="sources" aria-labelledby="sources-title">
+    <h2 id="sources-title">Original FRED charts</h2>
+    <ul>
+      <li><a href="https://fred.stlouisfed.org/graph/?g=1tBaE">G7 real GDP</a></li>
+      <li><a href="https://fred.stlouisfed.org/graph/?g=1vp6J">Auto jobs</a></li>
+      <li><a href="https://fred.stlouisfed.org/graph/?g=1wX9M">Year-over-year inflation</a></li>
+      <li><a href="https://fred.stlouisfed.org/graph/?g=1tzuA">Selected state manufacturing</a></li>
+    </ul>
+    <p class="note">Indicator names and headline numbers also link to their FRED source charts.</p>
+  </section>
+  <section id="method">
     <h2>About the data</h2>
-    <div class="method-grid"><p>The dashboard downloads fresh FRED observations at scheduled checks at 9:10 a.m. and 7:17 p.m. Eastern daily, including release days. The schedule follows daylight saving time. New observations appear when FRED makes them available; monthly and quarterly figures do not change every day. The refresh timestamp above records the last successful data retrieval. Scheduled runs can be delayed.</p><p>Each table labels its reporting period, units and adjustment. Calculations run in pandas using observed data. Growth rates are not extrapolated to annual rates. Monthly job averages cover the stated historical period; total changes compare its endpoints.</p><p>“Since Iran War began” uses February 28, 2026 as the reference date. The table identifies the actual baseline observation for each series. Changes over this period are descriptive and do not establish that the war caused them.</p><p>Sources include BLS, BEA, Census, the Department of Labor, EIA and FRED. Stock indexes exclude dividends. Missing observations remain unavailable, and source revisions can change historical comparisons.</p></div>
-  </section>
-  <section id="sources" class="sources section-block" aria-labelledby="sources-title">
-    <div><p class="eyebrow">SOURCE CHARTS</p><h2 id="sources-title">Explore the original FRED graphs</h2><p>Individual indicator names and headline cards also link to their source charts.</p></div>
-    <div class="source-links">
-      <a href="https://fred.stlouisfed.org/graph/?g=1tBaE"><span>G7 real GDP<small>National units differ; compare growth rates across countries.</small></span><span aria-hidden="true">↗</span></a>
-      <a href="https://fred.stlouisfed.org/graph/?g=1vp6J"><span>Auto jobs<small>Manufacturing, motor vehicles and dealers.</small></span><span aria-hidden="true">↗</span></a>
-      <a href="https://fred.stlouisfed.org/graph/?g=1wX9M"><span>Year-over-year inflation<small>Headline and core CPI and PCE.</small></span><span aria-hidden="true">↗</span></a>
-      <a href="https://fred.stlouisfed.org/graph/?g=1tzuA"><span>Selected state manufacturing<small>Michigan, Ohio, Wisconsin, Pennsylvania and Minnesota.</small></span><span aria-hidden="true">↗</span></a>
-    </div>
+    <p>The dashboard checks FRED daily at 9:10 a.m. and 7:17 p.m. Eastern, following daylight saving time. New observations appear when FRED makes them available. The refresh timestamp records the last successful retrieval. Scheduled runs can be delayed.</p>
+    <p>All calculations use pandas and observed data. Growth rates are not extrapolated to annual rates. Monthly job averages cover the stated historical period; total changes compare its endpoints. Each table labels its reporting period, units and adjustment.</p>
+    <p>“Since Iran War began” uses February 28, 2026 as the reference date, with the actual baseline observation shown for each series. These comparisons do not establish that the war caused the changes.</p>
+    <p>Sources include BLS, BEA, Census, the Department of Labor, EIA and FRED. Stock indexes exclude dividends. Missing observations remain unavailable, and source revisions can change historical comparisons.</p>
   </section>
 </main>
-<footer><span>Created by <strong>Josh Waldman</strong></span><a href="https://github.com/joshfwaldman1/economic-briefing-updater">Source code and documentation on GitHub ↗</a></footer>
+<footer>Created by <strong>Josh Waldman</strong> · <a href="https://github.com/joshfwaldman1/economic-briefing-updater">Source code</a></footer>
 </body>
 </html>
