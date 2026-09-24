@@ -43,11 +43,6 @@
           "type": "text"
         },
         {
-          "label": "Total jobs",
-          "type": "number",
-          "digits": 0
-        },
-        {
           "label": "Monthly change",
           "type": "number",
           "digits": 0
@@ -102,7 +97,6 @@
           "id": "PAYEMS",
           "values": [
             "Overall",
-            159075000.0,
             162000.0,
             71333.33333333333,
             50250.0,
@@ -122,7 +116,6 @@
           "id": "MANEMP",
           "values": [
             "U.S. manufacturing",
-            12638000.0,
             16000.0,
             14333.333333333334,
             1916.6666666666667,
@@ -142,7 +135,6 @@
           "id": "USMINE",
           "values": [
             "Mining and logging",
-            609000.0,
             3000.0,
             -666.6666666666666,
             166.66666666666666,
@@ -162,7 +154,6 @@
           "id": "USCONS",
           "values": [
             "Construction",
-            8359000.0,
             22000.0,
             14333.333333333334,
             10000.0,
@@ -182,7 +173,6 @@
           "id": "USTPU",
           "values": [
             "Trade, transportation and utilities",
-            28778000.0,
             16000.0,
             18000.0,
             2916.6666666666665,
@@ -202,7 +192,6 @@
           "id": "USINFO",
           "values": [
             "Information",
-            2745000.0,
             -23000.0,
             -12333.333333333334,
             -9583.333333333334,
@@ -222,7 +211,6 @@
           "id": "USFIRE",
           "values": [
             "Financial activities",
-            9086000.0,
             -11000.0,
             -6666.666666666667,
             -8250.0,
@@ -242,7 +230,6 @@
           "id": "USPBS",
           "values": [
             "Professional and business services",
-            22527000.0,
             10000.0,
             20333.333333333332,
             12666.666666666666,
@@ -262,7 +249,6 @@
           "id": "USEHS",
           "values": [
             "Private education and health services",
-            27974000.0,
             29000.0,
             30333.333333333332,
             44916.666666666664,
@@ -282,7 +268,6 @@
           "id": "USLAH",
           "values": [
             "Leisure and hospitality",
-            17001000.0,
             62000.0,
             -4333.333333333333,
             10916.666666666666,
@@ -302,7 +287,6 @@
           "id": "USSERV",
           "values": [
             "Other services",
-            6035000.0,
             3000.0,
             1333.3333333333333,
             2250.0,
@@ -322,7 +306,6 @@
           "id": "USGOVT",
           "values": [
             "Government",
-            23323000.0,
             35000.0,
             -3333.3333333333335,
             -17666.666666666668,
@@ -342,7 +325,6 @@
           "id": "CES6562000101",
           "values": [
             "Health care (subset)",
-            18520700.0,
             12900.0,
             14833.333333333334,
             31541.666666666668,
@@ -362,7 +344,6 @@
           "id": "USTRADE",
           "values": [
             "Retail Trade (subset)",
-            15488200.0,
             1400.0,
             8066.666666666667,
             3991.6666666666665,
@@ -382,7 +363,6 @@
           "id": "USWTRADE",
           "values": [
             "Wholesale Trade (subset)",
-            6072100.0,
             7800.0,
             5900.0,
             2425.0,
@@ -402,7 +382,6 @@
           "id": "CES4300000001",
           "values": [
             "Transportation and Warehousing (subset)",
-            6606300.0,
             5000.0,
             2833.3333333333335,
             -4291.666666666667,
@@ -422,7 +401,6 @@
           "id": "CES4422000001",
           "values": [
             "Utilities (subset)",
-            611700.0,
             2500.0,
             1366.6666666666667,
             858.3333333333334,
@@ -439,7 +417,7 @@
           "frequency": "monthly"
         }
       ],
-      "note": "Levels and changes are people. Jan 2021–Jan 2025 uses exact January levels and 48 observed monthly changes. Since Jan 2025 uses the exact January 2025 level and observed monthly changes to the row’s latest month. Totals require both endpoints; averages require every intervening month. Subsets overlap and should not be added to parent industries.",
+      "note": "Changes are people. Jan 2021–Jan 2025 uses exact January levels and 48 observed monthly changes. Since Jan 2025 uses the exact January 2025 level and observed monthly changes to the row’s latest month. Totals require both endpoints; averages require every intervening month. Subsets overlap and should not be added to parent industries.",
       "sourceNote": "BLS establishment survey via FRED. Published seasonal adjustment is retained. Pandas converts raw thousands of people to people; monthly averages are means of observed monthly differences."
     },
     {
@@ -2159,7 +2137,7 @@
     "conflictBaseline": "The user selected February 28, 2026. Use each series last observed value strictly before that date; report each actual baseline date. February 28 is a Saturday, so daily market series normally use February 27 and weekly fuel series the preceding Monday. Describe changes since the baseline, not causal effects of the war.",
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
-  "calculationEngine": "pandas 2.3.3",
+  "calculationEngine": "pandas 2.2.3",
   "snapshotId": "6bcddf62-7d3f-422d-8919-6fe5b9f7854c",
   "downloads": [
     {

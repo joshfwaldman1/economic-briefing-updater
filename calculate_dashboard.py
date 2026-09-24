@@ -275,15 +275,18 @@ def build_dashboard(raw_series, catalog, now, config=None, snapshot_id=None):
 
     employment_columns = [text('Industry'), number('Total jobs', 0), number('Monthly change', 0), number('3-month avg.', 0), number('12-month avg.', 0), number('Jan 2021–Jan 2025 total', 0), number('Jan 2021–Jan 2025 monthly avg.', 0), number('Since Jan 2025 total', 0), number('Since Jan 2025 monthly avg.', 0), number('Since Jan 2021 total', 0), text('Adjustment'), date_column('Period', 'monthly')]
 
-    def employment_rows(items):
+    def employment_rows(items, include_level=True):
         result = []
         for definition in items:
             stats = employment_comparison(series[definition['id']], metadata(definition).get('multiplier', 1000))
             result.append(row(definition, [definition['label'], stats['level'], stats['monthly'], stats['average3'], stats['average12'], stats['total2021To2025'], stats['average2021To2025'], stats['totalSince2025'], stats['averageSince2025'], stats['totalSince2021'], metadata(definition).get('sa', 'SA'), stats['period']]))
+        if not include_level:
+            for item in result:
+                item['values'] = item['values'][:1] + item['values'][2:]
         return result
 
     employment_note = 'Levels and changes are people. Jan 2021–Jan 2025 uses exact January levels and 48 observed monthly changes. Since Jan 2025 uses the exact January 2025 level and observed monthly changes to the row’s latest month. Totals require both endpoints; averages require every intervening month. Subsets overlap and should not be added to parent industries.'
-    add_section('employment', 'Employment', 'Employment by industry', 'LABOR MARKET', employment_columns, employment_rows(unique(config.get('employment', []))), employment_note, 'BLS establishment survey via FRED. Published seasonal adjustment is retained. Pandas converts raw thousands of people to people; monthly averages are means of observed monthly differences.')
+    add_section('employment', 'Employment', 'Employment by industry', 'LABOR MARKET', employment_columns[:1] + employment_columns[2:], employment_rows(unique(config.get('employment', [])), include_level=False), employment_note.replace('Levels and changes', 'Changes'), 'BLS establishment survey via FRED. Published seasonal adjustment is retained. Pandas converts raw thousands of people to people; monthly averages are means of observed monthly differences.')
 
     def rate_rows(items):
         result = []

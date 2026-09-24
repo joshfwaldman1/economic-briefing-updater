@@ -39,7 +39,7 @@ class IndependentAuditTests(unittest.TestCase):
     def test_wrong_numeric_value_is_rejected_with_row_and_column(self):
         data, raw = self.snapshots()
         row = self.row(data, 'employment', 'PAYEMS')
-        row['values'][2] = pd.Series([row['values'][2]]).add(1).iloc[0].item()
+        row['values'][1] = pd.Series([row['values'][1]]).add(1).iloc[0].item()
         findings = self.results(data, raw)['findings']
         self.assertTrue(any('employment/PAYEMS/Overall/Monthly change' in item for item in findings), findings)
 
@@ -68,7 +68,7 @@ class IndependentAuditTests(unittest.TestCase):
         findings = self.results(data, raw)['findings']
         self.assertTrue(any('Jan 2021–Jan 2025 monthly avg.' in item and 'expected None' in item for item in findings), findings)
         # An honest missing result is accepted. Endpoint changes remain valid.
-        self.row(data, 'employment', 'PAYEMS')['values'][6] = None
+        self.row(data, 'employment', 'PAYEMS')['values'][5] = None
         self.assertEqual(self.results(data, raw)['findings'], [])
 
     def test_missing_baseline_requires_null_totals_and_average(self):
@@ -77,7 +77,7 @@ class IndependentAuditTests(unittest.TestCase):
                                                  if observation['date'] != '2021-01-01']
         self.assertTrue(self.results(data, raw)['findings'])
         row = self.row(data, 'employment', 'PAYEMS')
-        for index in [5, 6, 9]:
+        for index in [4, 5, 8]:
             row['values'][index] = None
         self.assertEqual(self.results(data, raw)['findings'], [])
 

@@ -64,7 +64,7 @@ class PandasDashboardTest(unittest.TestCase):
     def test_raw_thousands_scaled_once_despite_display_override(self):
         config = {'employment': [definition('PAYEMS', units_override='persons')]}
         data = build_dashboard({'PAYEMS': raw(monthly())}, {}, NOW, config)
-        self.assertEqual(data['sections'][0]['rows'][0]['values'][1], 234000)
+        self.assertEqual(data['sections'][0]['rows'][0]['values'][1], 2000)
         self.assertEqual(data['kpis'][0]['value'], 2000)
         self.assertEqual(data['kpis'][0]['source'], 'https://fred.stlouisfed.org/series/PAYEMS')
 

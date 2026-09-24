@@ -252,6 +252,8 @@ def audit(data, raw, catalog, config):
                             7: subtract(cur, start25),
                             8: monthly_average_change(levels, '2025-01-01', end),
                             9: subtract(cur, start21), 10: definition['sa'], 11: end}
+                if key == 'employment':
+                    expected = {index - 1: value for index, value in expected.items() if index > 1}
             elif key in ['unemployment', 'participation']:
                 expected = {1: current, 2: subtract(current, values.get(month_shift(end, -1))),
                             3: subtract(current, values.get(month_shift(end, -12))), 4: end}
