@@ -14,8 +14,8 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parent
 DOCUMENTS = [
-    {'path': 'downloads/labor-market-chartbook.docx', 'label': 'BLS labor market chartbook',
-     'description': '34 editable tables · DOCX · run the BLS updater to refresh', 'updatedAt': '2026-09-23'},
+    {'path': 'downloads/labor-market-chartbook.docx', 'label': 'Chartbook tables (Word)',
+     'description': '34 editable BLS labor market tables · DOCX · run the BLS updater to refresh', 'updatedAt': '2026-09-23'},
 ]
 
 
