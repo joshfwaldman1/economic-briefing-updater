@@ -7,6 +7,7 @@ import argparse
 import json
 import math
 import zipfile
+from urllib.parse import urlsplit
 from validate_calculations import validate_calculations
 
 
@@ -36,7 +37,7 @@ def validate(root):
             for key, value in attrs:
                 if key not in ('src', 'href') or not value or value.startswith(('https:', 'http:', 'data:', '#')):
                     continue
-                assert (root / value.split('#')[0]).exists(), value
+                assert (root / urlsplit(value).path).exists(), value
     Links().feed((root / 'index.html').read_text())
     for item in data.get('downloads', []):
         assert (root / item['path']).exists(), item['path']
