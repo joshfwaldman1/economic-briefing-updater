@@ -1,6 +1,6 @@
 {
-  "retrieved": "2026-09-23",
-  "retrievedAt": "2026-09-23T23:45:57.177Z",
+  "retrieved": "2026-09-24",
+  "retrievedAt": "2026-09-24T01:22:22.454Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -1540,11 +1540,11 @@
           "id": "SP500",
           "values": [
             "S&P 500",
-            7764.64,
-            1.1762529041471792,
-            13.426922795997376,
-            15.998356676003734,
-            "2026-09-22"
+            7706.03,
+            0.41254200670544083,
+            12.57073990212547,
+            15.759690667756265,
+            "2026-09-23"
           ],
           "source": "https://fred.stlouisfed.org/series/SP500",
           "sa": "NSA",
@@ -1938,10 +1938,10 @@
             "S&P 500",
             6878.88,
             "2026-02-27",
-            7764.64,
-            "2026-09-22",
-            885.7600000000002,
-            12.876514781476068,
+            7706.03,
+            "2026-09-23",
+            827.1499999999996,
+            12.024486544321157,
             "Index · NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/SP500",
@@ -2159,14 +2159,14 @@
     "conflictBaseline": "The user selected February 28, 2026. Use each series last observed value strictly before that date; report each actual baseline date. February 28 is a Saturday, so daily market series normally use February 27 and weekly fuel series the preceding Monday. Describe changes since the baseline, not causal effects of the war.",
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
-  "calculationEngine": "pandas 2.2.3",
-  "snapshotId": "184246c9-7838-44b6-b0b5-5654021bf9c4",
+  "calculationEngine": "pandas 2.3.3",
+  "snapshotId": "070c3812-af43-4346-b62d-80e89b91b2b6",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-09-23T23:45:57.177Z"
+      "updatedAt": "2026-09-24T01:22:22.454Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
