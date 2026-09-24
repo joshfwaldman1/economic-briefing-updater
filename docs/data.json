@@ -1,6 +1,6 @@
 {
   "retrieved": "2026-09-24",
-  "retrievedAt": "2026-09-24T01:31:37.309Z",
+  "retrievedAt": "2026-09-24T17:50:54.687Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -1439,10 +1439,10 @@
           "id": "ICSA",
           "values": [
             "Initial claims",
-            196000.0,
-            206000.0,
-            233000.0,
-            "2026-09-12"
+            197000.0,
+            198000.0,
+            219000.0,
+            "2026-09-19"
           ],
           "source": "https://fred.stlouisfed.org/series/ICSA",
           "sa": "SA",
@@ -1452,10 +1452,10 @@
           "id": "IC4WSA",
           "values": [
             "Initial claims 4-week average",
-            203250.0,
-            206000.0,
-            239250.0,
-            "2026-09-12"
+            202250.0,
+            204000.0,
+            236750.0,
+            "2026-09-19"
           ],
           "source": "https://fred.stlouisfed.org/series/IC4WSA",
           "sa": "SA",
@@ -1465,10 +1465,10 @@
           "id": "CCSA",
           "values": [
             "Continued claims",
-            1730000.0,
-            1769000.0,
-            1925000.0,
-            "2026-09-05"
+            1719000.0,
+            1717000.0,
+            1916000.0,
+            "2026-09-12"
           ],
           "source": "https://fred.stlouisfed.org/series/CCSA",
           "sa": "SA",
@@ -1548,11 +1548,11 @@
           "id": "NASDAQCOM",
           "values": [
             "NASDAQ Composite",
-            27244.28,
-            4.063451926914929,
-            17.22008313401735,
-            19.550238755749483,
-            "2026-09-22"
+            26936.04,
+            2.886084845753234,
+            15.893862788857582,
+            19.326093861510873,
+            "2026-09-23"
           ],
           "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
           "sa": "NSA",
@@ -1960,10 +1960,10 @@
             "Nasdaq Composite",
             22668.21,
             "2026-02-27",
-            27244.28,
-            "2026-09-22",
-            4576.07,
-            20.187169608892795,
+            26936.04,
+            "2026-09-23",
+            4267.830000000002,
+            18.82737984163727,
             "Index February 5, 1971=100 · NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
@@ -2108,10 +2108,10 @@
             "Initial jobless claims",
             211000.0,
             "2026-02-21",
-            196000.0,
-            "2026-09-12",
-            -15000.0,
-            -7.109004739336489,
+            197000.0,
+            "2026-09-19",
+            -14000.0,
+            -6.635071090047395,
             "Number · SA"
           ],
           "source": "https://fred.stlouisfed.org/series/ICSA",
@@ -2137,14 +2137,14 @@
     "conflictBaseline": "The user selected February 28, 2026. Use each series last observed value strictly before that date; report each actual baseline date. February 28 is a Saturday, so daily market series normally use February 27 and weekly fuel series the preceding Monday. Describe changes since the baseline, not causal effects of the war.",
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
-  "calculationEngine": "pandas 2.2.3",
-  "snapshotId": "6bcddf62-7d3f-422d-8919-6fe5b9f7854c",
+  "calculationEngine": "pandas 2.3.3",
+  "snapshotId": "9bc7c66a-9606-4e8b-9541-01a5f057fe9b",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-09-24T01:31:37.309Z"
+      "updatedAt": "2026-09-24T17:50:54.687Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
