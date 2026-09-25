@@ -178,12 +178,44 @@ def audit(data, raw, catalog, config):
     def ids(group):
         return [item['id'] for item in config[group] if item.get('id')]
 
+    gdp_levels, gdp_quarter, gdp_level = latest('GDPC1')
+    gdp_rates, gdp_rate_quarter, gdp_rate = latest('A191RL1Q225SBEA')
+    check(gdp_rate_quarter, gdp_quarter, 'U.S. GDP growth and level publication quarters', 'metadata_checks')
+    displayed_gdp_quarters = [month_shift(gdp_quarter, offset) for offset in (0, -3, -12)] if gdp_quarter else []
+    if not displayed_gdp_quarters:
+        issues.append('U.S. GDP source consistency: required growth rate or quarterly level missing')
+    for quarter in displayed_gdp_quarters:
+        level = gdp_levels.get(quarter)
+        preceding_level = gdp_levels.get(month_shift(quarter, -3))
+        rate = gdp_rates.get(quarter)
+        if level is None or preceding_level in (None, 0) or rate is None:
+            issues.append(f'U.S. GDP source consistency: required growth rate or quarterly level missing at {quarter}')
+            continue
+        # Only a cross-source validation: never substitute this recomputed rate
+        # for BEA's directly published annual rate in the dashboard output.
+        implied_annual_rate = pd.Series([level], dtype='float64').div(
+            pd.Series([preceding_level], dtype='float64')).pow(4).sub(1).mul(100)
+        published_rate = pd.Series([rate], dtype='float64')
+        if not published_rate.sub(implied_annual_rate).abs().le(0.055).all():
+            issues.append(f'U.S. GDP source consistency: published annual rate {rate} differs from '
+                          f'quarterly levels beyond 0.055 percentage points at {quarter}')
+        counts['source_consistency_checks'] += 1
+
+    inflation_comparisons = catalog.get('inflationComparisons', {})
+    expected_inflation_comparisons = {
+        'CPIAUCSL': 'CPIAUCNS', 'CPILFESL': 'CPILFENS',
+        'CUSR0000SACL1E': 'CUUR0000SACL1E', 'CUSR0000SASLE': 'CUUR0000SASLE',
+        'CUSR0000SAH1': 'CUUR0000SAH1', 'CPIUFDSL': 'CPIUFDNS', 'CPIENGSL': 'CPIENGNS',
+    }
+    check(inflation_comparisons, expected_inflation_comparisons,
+          'CPI unadjusted annual-comparison source mappings', 'source_checks')
     expected_ids = {
         'employment': ids('employment'), 'unemployment': ids('unemployment'),
         'inflation': ids('cpi') + ids('pce'),
         'prices': [x['id'] for x in catalog['series'] if x.get('group') == 'prices'],
         'manufacturing': ['MANEMP'] + ids('manufacturing') + list(derived),
         'gdp': [x['id'] for x in catalog['series'] if x.get('group') == 'gdp'],
+        'gdp_us': ['A191RL1Q225SBEA', 'GDPC1'],
         'applications': ids('applications'), 'claims': ids('claims'),
         'markets': ids('markets'), 'budget': ['MTSDS133FMS'] * 3 + ['FYFSGDA188S'],
         'participation': ids('participation'),
@@ -192,8 +224,15 @@ def audit(data, raw, catalog, config):
     }
     required_sources = set().union(*expected_ids.values()) - set(derived)
     required_sources.update(component for definition in derived.values() for component in definition['components'])
+    required_sources.update(expected_inflation_comparisons.values())
     check(set(raw_series), required_sources, 'raw source coverage', 'coverage_checks')
     counts['source_series'] = len(raw_series)
+    gdp_date_sets = [set(day for day, value in values_by_id.get(sid, {}).items() if value is not None)
+                     for sid in expected_ids['gdp']]
+    gdp_common_dates = set.intersection(*gdp_date_sets) if gdp_date_sets else set()
+    gdp_comparison_quarter = max(gdp_common_dates) if gdp_common_dates else None
+    if gdp_comparison_quarter is None:
+        issues.append('G7 GDP: no common observed comparison quarter across all economies')
     check(Counter(t['key'] for t in data['sections']), Counter(expected_ids.keys()), 'section coverage', 'coverage_checks')
     for table in data['sections']:
         key = table['key']
@@ -203,10 +242,19 @@ def audit(data, raw, catalog, config):
         check(Counter(r['id'] for r in table['rows']), Counter(expected_ids[key]), f'{key}: row coverage', 'coverage_checks')
         if key == 'inflation':
             check([column['label'] for column in table['columns']],
-                  ['Measure / component', 'MoM (%)', 'YoY (%)', 'Period'],
+                  ['Measure / component', '1-month change (%, SA)', '12-month change (%)',
+                   'Latest month', '12-month adjustment'],
                   'inflation/columns', 'metadata_checks')
         if key == 'gdp':
-            check(table['columns'][3]['label'], 'QoQ (%)', 'gdp/columns/QoQ', 'metadata_checks')
+            check([column['label'] for column in table['columns']],
+                  ['Economy', 'Quarterly change (%, not annualized)', '4-quarter change (%)',
+                   'Q1 2021–Q1 2025 cumulative change (%)', 'Since Q1 2025 cumulative change (%)',
+                   'Since Q1 2021 cumulative change (%)', 'Comparison quarter'],
+                  'gdp/columns', 'metadata_checks')
+        if key == 'gdp_us':
+            check([column['label'] for column in table['columns']],
+                  ['Measure', 'Latest', 'Previous quarter', 'Same quarter a year earlier',
+                   'Unit / convention', 'Quarter'], 'gdp_us/columns', 'metadata_checks')
         for row in table['rows']:
             sid = row['id']
             where = f'{key}/{sid}/{row["values"][0]}'
@@ -214,6 +262,9 @@ def audit(data, raw, catalog, config):
                 issues.append(f'{where}: no configured archived source series')
                 continue
             values, end, current = latest(sid)
+            if key == 'gdp':
+                end = gdp_comparison_quarter
+                current = values.get(end)
             if end is None:
                 issues.append(f'{where}: no finite observed values')
                 continue
@@ -227,6 +278,8 @@ def audit(data, raw, catalog, config):
             expected_label = definition['label']
             if key == 'inflation':
                 expected_label = ('CPI' if sid in ids('cpi') else 'PCE') + ' · ' + expected_label
+            elif key == 'gdp_us' and sid == 'GDPC1':
+                expected_label = 'Real GDP level'
             elif key == 'war':
                 expected_label = {
                     'CPIAUCSL': 'CPI price index', 'CPILFESL': 'Core CPI price index',
@@ -258,20 +311,32 @@ def audit(data, raw, catalog, config):
                 expected = {1: current, 2: subtract(current, values.get(month_shift(end, -1))),
                             3: subtract(current, values.get(month_shift(end, -12))), 4: end}
             elif key == 'inflation':
+                annual_sid = expected_inflation_comparisons.get(sid, sid)
+                annual_values = values_by_id.get(annual_sid, {})
+                annual_adjustment = 'NSA' if sid in expected_inflation_comparisons else 'SA'
                 expected = {1: ratio_change(current, values.get(month_shift(end, -1))),
-                            2: ratio_change(current, values.get(month_shift(end, -12))), 3: end}
+                            2: ratio_change(annual_values.get(end), annual_values.get(month_shift(end, -12))),
+                            3: end, 4: annual_adjustment}
+                if sid in expected_inflation_comparisons:
+                    check(Counter(source.get('url') for source in row.get('sources', [])),
+                          Counter([f'https://fred.stlouisfed.org/series/{sid}',
+                                   f'https://fred.stlouisfed.org/series/{annual_sid}']),
+                          where + '/monthly and annual source links', 'source_checks')
             elif key == 'prices':
                 prior = days_shift(end, -7) if frequency == 'weekly' else month_shift(end, -1)
                 year_ago = days_shift(end, -364) if frequency == 'weekly' else month_shift(end, -12)
                 expected = {1: current, 2: subtract(current, values.get(prior)), 3: ratio_change(current, values.get(year_ago)),
                             4: definition['units'], 5: frequency, 6: definition['sa'], 7: end}
             elif key == 'gdp':
-                expected = {1: current, 2: definition['units'],
-                            3: ratio_change(current, values.get(month_shift(end, -3))),
-                            4: ratio_change(current, values.get(month_shift(end, -12))),
-                            5: ratio_change(values.get('2025-01-01'), values.get('2021-01-01')),
-                            6: ratio_change(current, values.get('2025-01-01')),
-                            7: ratio_change(current, values.get('2021-01-01')), 8: definition['sa'], 9: end}
+                expected = {1: ratio_change(current, values.get(month_shift(end, -3))),
+                            2: ratio_change(current, values.get(month_shift(end, -12))),
+                            3: ratio_change(values.get('2025-01-01'), values.get('2021-01-01')),
+                            4: ratio_change(current, values.get('2025-01-01')),
+                            5: ratio_change(current, values.get('2021-01-01')), 6: end}
+            elif key == 'gdp_us':
+                expected = {1: current, 2: values.get(month_shift(end, -3)),
+                            3: values.get(month_shift(end, -12)),
+                            4: definition['units'] + ' · ' + definition['sa'], 5: end}
             elif key == 'applications':
                 expected = {1: current, 2: ratio_change(current, values.get(month_shift(end, -1))),
                             3: ratio_change(current, values.get(month_shift(end, -12))), 4: end}
@@ -290,15 +355,21 @@ def audit(data, raw, catalog, config):
                     label = row['values'][0]
                     if label == 'Monthly deficit':
                         total = current
+                        first_month = end
                     elif label == 'Fiscal year to date deficit':
                         fy_year = int(end[:4]) if int(end[5:7]) >= 10 else int(end[:4]) - 1
-                        total = complete_sum(consecutive_months(values, end, month_distance(f'{fy_year}-10-01', end) + 1))
+                        first_month = f'{fy_year}-10-01'
+                        total = complete_sum(consecutive_months(values, end, month_distance(first_month, end) + 1))
                     elif label == 'Trailing 12 months deficit':
                         total = complete_sum(consecutive_months(values, end, 12))
+                        first_month = month_shift(end, -11)
                     else:
                         issues.append(where + ': unsupported budget measure')
                         continue
-                    expected = {1: scaled(total, -0.001), 2: 'USD billions', 3: end}
+                    end_label = date.fromisoformat(end).strftime('%b %Y')
+                    period_label = (date.fromisoformat(first_month).strftime('%b %Y') + '–' + end_label
+                                    if first_month != end else end_label)
+                    expected = {1: scaled(total, -0.001), 2: 'USD billions', 3: period_label}
             elif key == 'context':
                 expected = {1: current, 2: definition['units'], 3: end}
             elif key == 'war':
@@ -314,9 +385,13 @@ def audit(data, raw, catalog, config):
                 scale = 1000 if sid == 'PAYEMS' else 1
                 before = scaled(before, scale)
                 after = scaled(current, scale)
-                units = 'People' if sid == 'PAYEMS' else 'Percent' if sid == 'UNRATE' else definition['units']
+                units = 'Jobs' if sid == 'PAYEMS' else definition['units']
+                change_unit = ('Percentage points' if units in ['Percent', '%'] else
+                               'Index points' if units.startswith('Index') else
+                               'Claims' if sid == 'ICSA' else units)
                 expected = {1: before, 2: baseline, 3: after, 4: end,
-                            5: subtract(after, before), 6: ratio_change(after, before), 7: units + ' · ' + definition['sa']}
+                            5: subtract(after, before), 6: ratio_change(after, before),
+                            7: units + ' · ' + definition['sa'], 8: change_unit}
             for index, expectation in expected.items():
                 label = table['columns'][index]['label']
                 actual = row['values'][index] if index < len(row['values']) else '<missing>'
@@ -332,7 +407,7 @@ def audit(data, raw, catalog, config):
 
     kpis = data['kpis']
     check(len(kpis), 3, 'KPI count', 'shape_checks')
-    expected_kpis = [('PAYEMS', 'Nonfarm payrolls'), ('UNRATE', 'Unemployment rate'), ('CPIAUCSL', 'CPI inflation')]
+    expected_kpis = [('PAYEMS', 'Nonfarm payrolls'), ('UNRATE', 'Unemployment rate'), ('CPIAUCNS', 'CPI inflation')]
     for kpi, (sid, label) in zip(kpis, expected_kpis):
         values, end, current = latest(sid)
         expected = (scaled(subtract(current, values.get(month_shift(end, -1))), 1000) if sid == 'PAYEMS'
@@ -343,6 +418,8 @@ def audit(data, raw, catalog, config):
         period = date.fromisoformat(end).strftime('%b %Y')
         if period not in kpi['detail']:
             issues.append(f'KPI/{sid}/detail: expected latest period {period}')
+        if sid == 'CPIAUCNS' and 'NSA' not in kpi['detail']:
+            issues.append('KPI/CPIAUCNS/detail: annual CPI comparison must be labeled NSA')
     return {'counts': dict(counts), 'numeric_by_section': dict(section_counts), 'findings': issues}
 
 

@@ -339,14 +339,14 @@
   "participation": [
     {
       "id": "LNS11300060",
-      "label": "Prime age (25-54)",
+      "label": "Labor force participation rate, ages 25–54",
       "sa": "SA",
       "frequency": "Monthly",
       "units": "Percent"
     },
     {
       "id": "LNS12300060",
-      "label": "Prime-age employment / population",
+      "label": "Employment-to-population ratio, ages 25–54",
       "sa": "SA",
       "units": "Percent"
     }

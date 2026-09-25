@@ -50,7 +50,7 @@
   <section id="method">
     <h2>About the data</h2>
     <p>The dashboard checks FRED daily at 9:10 a.m. and 7:17 p.m. Eastern, following daylight saving time. New observations appear when FRED makes them available. The refresh timestamp records the last successful retrieval. Scheduled runs can be delayed.</p>
-    <p>All calculations use pandas and observed data. Growth rates are not extrapolated to annual rates. Monthly job averages cover the stated historical period; total changes compare its endpoints. Each table labels its reporting period, units and adjustment.</p>
+    <p>All calculations use pandas and observed data. The U.S. GDP table reads BEA’s published annual-rate growth directly; the G7 table shows quarterly growth that is not annualized. CPI uses seasonally adjusted monthly changes and unadjusted 12-month changes, following BLS. Monthly job averages cover the stated period; cumulative changes compare its endpoints. <a href="https://www.bea.gov/help/faq/122">BEA GDP definitions</a> · <a href="https://www.bls.gov/news.release/cpi.t01.htm">BLS CPI definitions</a></p>
     <p>“Since Iran War began” uses February 28, 2026 as the reference date, with the actual baseline observation shown for each series. These comparisons do not establish that the war caused the changes.</p>
     <p>Sources include BLS, BEA, Census, the Department of Labor, EIA and FRED. Stock indexes exclude dividends. Missing observations remain unavailable, and source revisions can change historical comparisons.</p>
   </section>

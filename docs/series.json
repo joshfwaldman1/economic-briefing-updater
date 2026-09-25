@@ -1,7 +1,7 @@
 {
   "retrieved": "2026-09-25",
-  "retrievedAt": "2026-09-25T17:56:08.478Z",
-  "snapshotId": "251e5389-8d11-45ad-bebb-47a71d278049",
+  "retrievedAt": "2026-09-25T19:44:01.549Z",
+  "snapshotId": "6ef256a5-d54c-4cfa-a269-1d128ec50118",
   "series": {
     "PAYEMS": {
       "id": "PAYEMS",
@@ -338,7 +338,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/PAYEMS",
-      "fetchedAt": "2026-09-25T17:56:01.921Z"
+      "fetchedAt": "2026-09-25T19:43:53.952Z"
     },
     "MANEMP": {
       "id": "MANEMP",
@@ -677,7 +677,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/MANEMP",
-      "fetchedAt": "2026-09-25T17:56:01.919Z"
+      "fetchedAt": "2026-09-25T19:43:54.133Z"
     },
     "USMINE": {
       "id": "USMINE",
@@ -1014,7 +1014,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USMINE",
-      "fetchedAt": "2026-09-25T17:56:01.916Z"
+      "fetchedAt": "2026-09-25T19:43:53.993Z"
     },
     "USCONS": {
       "id": "USCONS",
@@ -1351,7 +1351,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USCONS",
-      "fetchedAt": "2026-09-25T17:56:01.945Z"
+      "fetchedAt": "2026-09-25T19:43:53.945Z"
     },
     "USTPU": {
       "id": "USTPU",
@@ -1688,7 +1688,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USTPU",
-      "fetchedAt": "2026-09-25T17:56:02.203Z"
+      "fetchedAt": "2026-09-25T19:43:54.382Z"
     },
     "USINFO": {
       "id": "USINFO",
@@ -2025,7 +2025,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USINFO",
-      "fetchedAt": "2026-09-25T17:56:02.223Z"
+      "fetchedAt": "2026-09-25T19:43:54.287Z"
     },
     "USFIRE": {
       "id": "USFIRE",
@@ -2362,7 +2362,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USFIRE",
-      "fetchedAt": "2026-09-25T17:56:02.215Z"
+      "fetchedAt": "2026-09-25T19:43:54.327Z"
     },
     "USPBS": {
       "id": "USPBS",
@@ -2699,7 +2699,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USPBS",
-      "fetchedAt": "2026-09-25T17:56:02.291Z"
+      "fetchedAt": "2026-09-25T19:43:54.420Z"
     },
     "USEHS": {
       "id": "USEHS",
@@ -3036,7 +3036,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USEHS",
-      "fetchedAt": "2026-09-25T17:56:02.507Z"
+      "fetchedAt": "2026-09-25T19:43:54.707Z"
     },
     "USLAH": {
       "id": "USLAH",
@@ -3373,7 +3373,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USLAH",
-      "fetchedAt": "2026-09-25T17:56:02.535Z"
+      "fetchedAt": "2026-09-25T19:43:54.633Z"
     },
     "USSERV": {
       "id": "USSERV",
@@ -3710,7 +3710,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USSERV",
-      "fetchedAt": "2026-09-25T17:56:02.546Z"
+      "fetchedAt": "2026-09-25T19:43:54.738Z"
     },
     "USGOVT": {
       "id": "USGOVT",
@@ -4047,7 +4047,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USGOVT",
-      "fetchedAt": "2026-09-25T17:56:02.587Z"
+      "fetchedAt": "2026-09-25T19:43:54.726Z"
     },
     "CES6562000101": {
       "id": "CES6562000101",
@@ -4384,7 +4384,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CES6562000101",
-      "fetchedAt": "2026-09-25T17:56:02.811Z"
+      "fetchedAt": "2026-09-25T19:43:54.868Z"
     },
     "USTRADE": {
       "id": "USTRADE",
@@ -4720,7 +4720,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USTRADE",
-      "fetchedAt": "2026-09-25T17:56:03.005Z"
+      "fetchedAt": "2026-09-25T19:43:55.063Z"
     },
     "USWTRADE": {
       "id": "USWTRADE",
@@ -5056,7 +5056,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USWTRADE",
-      "fetchedAt": "2026-09-25T17:56:02.992Z"
+      "fetchedAt": "2026-09-25T19:43:55.534Z"
     },
     "CES4300000001": {
       "id": "CES4300000001",
@@ -5392,7 +5392,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CES4300000001",
-      "fetchedAt": "2026-09-25T17:56:02.911Z"
+      "fetchedAt": "2026-09-25T19:43:55.341Z"
     },
     "CES4422000001": {
       "id": "CES4422000001",
@@ -5728,7 +5728,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CES4422000001",
-      "fetchedAt": "2026-09-25T17:56:03.302Z"
+      "fetchedAt": "2026-09-25T19:43:55.400Z"
     },
     "UNRATE": {
       "id": "UNRATE",
@@ -6057,7 +6057,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE",
-      "fetchedAt": "2026-09-25T17:56:03.236Z"
+      "fetchedAt": "2026-09-25T19:43:55.299Z"
     },
     "LNS14000060": {
       "id": "LNS14000060",
@@ -6386,7 +6386,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS14000060",
-      "fetchedAt": "2026-09-25T17:56:03.377Z"
+      "fetchedAt": "2026-09-25T19:43:55.666Z"
     },
     "LNS14000001": {
       "id": "LNS14000001",
@@ -6715,7 +6715,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS14000001",
-      "fetchedAt": "2026-09-25T17:56:03.453Z"
+      "fetchedAt": "2026-09-25T19:43:55.641Z"
     },
     "LNS14000002": {
       "id": "LNS14000002",
@@ -7044,7 +7044,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS14000002",
-      "fetchedAt": "2026-09-25T17:56:03.513Z"
+      "fetchedAt": "2026-09-25T19:43:55.865Z"
     },
     "LNS14000003": {
       "id": "LNS14000003",
@@ -7373,7 +7373,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS14000003",
-      "fetchedAt": "2026-09-25T17:56:03.627Z"
+      "fetchedAt": "2026-09-25T19:43:55.840Z"
     },
     "LNS14000006": {
       "id": "LNS14000006",
@@ -7702,7 +7702,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS14000006",
-      "fetchedAt": "2026-09-25T17:56:03.710Z"
+      "fetchedAt": "2026-09-25T19:43:56.083Z"
     },
     "LNS14000009": {
       "id": "LNS14000009",
@@ -8031,7 +8031,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS14000009",
-      "fetchedAt": "2026-09-25T17:56:03.881Z"
+      "fetchedAt": "2026-09-25T19:43:55.897Z"
     },
     "LNS14032183": {
       "id": "LNS14032183",
@@ -8360,7 +8360,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS14032183",
-      "fetchedAt": "2026-09-25T17:56:03.993Z"
+      "fetchedAt": "2026-09-25T19:43:56.137Z"
     },
     "CPIAUCSL": {
       "id": "CPIAUCSL",
@@ -8690,7 +8690,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CPIAUCSL",
-      "fetchedAt": "2026-09-25T17:56:03.882Z"
+      "fetchedAt": "2026-09-25T19:43:56.241Z"
     },
     "CPILFESL": {
       "id": "CPILFESL",
@@ -9020,7 +9020,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CPILFESL",
-      "fetchedAt": "2026-09-25T17:56:03.967Z"
+      "fetchedAt": "2026-09-25T19:43:56.089Z"
     },
     "CUSR0000SACL1E": {
       "id": "CUSR0000SACL1E",
@@ -9350,7 +9350,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CUSR0000SACL1E",
-      "fetchedAt": "2026-09-25T17:56:04.161Z"
+      "fetchedAt": "2026-09-25T19:43:56.387Z"
     },
     "CUSR0000SASLE": {
       "id": "CUSR0000SASLE",
@@ -9680,7 +9680,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CUSR0000SASLE",
-      "fetchedAt": "2026-09-25T17:56:04.257Z"
+      "fetchedAt": "2026-09-25T19:43:56.441Z"
     },
     "CUSR0000SAH1": {
       "id": "CUSR0000SAH1",
@@ -10010,7 +10010,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CUSR0000SAH1",
-      "fetchedAt": "2026-09-25T17:56:04.301Z"
+      "fetchedAt": "2026-09-25T19:43:56.557Z"
     },
     "CPIUFDSL": {
       "id": "CPIUFDSL",
@@ -10340,7 +10340,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CPIUFDSL",
-      "fetchedAt": "2026-09-25T17:56:04.335Z"
+      "fetchedAt": "2026-09-25T19:43:56.556Z"
     },
     "CPIENGSL": {
       "id": "CPIENGSL",
@@ -10670,7 +10670,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CPIENGSL",
-      "fetchedAt": "2026-09-25T17:56:04.538Z"
+      "fetchedAt": "2026-09-25T19:43:56.614Z"
     },
     "PCEPI": {
       "id": "PCEPI",
@@ -11000,7 +11000,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/PCEPI",
-      "fetchedAt": "2026-09-25T17:56:04.608Z"
+      "fetchedAt": "2026-09-25T19:43:56.704Z"
     },
     "PCEPILFE": {
       "id": "PCEPILFE",
@@ -11330,7 +11330,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/PCEPILFE",
-      "fetchedAt": "2026-09-25T17:56:04.575Z"
+      "fetchedAt": "2026-09-25T19:43:56.798Z"
     },
     "DFXARG3M086SBEA": {
       "id": "DFXARG3M086SBEA",
@@ -11660,7 +11660,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/DFXARG3M086SBEA",
-      "fetchedAt": "2026-09-25T17:56:04.699Z"
+      "fetchedAt": "2026-09-25T19:43:56.907Z"
     },
     "DNRGRG3M086SBEA": {
       "id": "DNRGRG3M086SBEA",
@@ -11990,7 +11990,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/DNRGRG3M086SBEA",
-      "fetchedAt": "2026-09-25T17:56:04.807Z"
+      "fetchedAt": "2026-09-25T19:43:57.190Z"
     },
     "BABATOTALSAUS": {
       "id": "BABATOTALSAUS",
@@ -12323,7 +12323,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/BABATOTALSAUS",
-      "fetchedAt": "2026-09-25T17:56:04.890Z"
+      "fetchedAt": "2026-09-25T19:43:57.102Z"
     },
     "BAHBATOTALSAUS": {
       "id": "BAHBATOTALSAUS",
@@ -12656,7 +12656,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/BAHBATOTALSAUS",
-      "fetchedAt": "2026-09-25T17:56:04.877Z"
+      "fetchedAt": "2026-09-25T19:43:57.152Z"
     },
     "ICSA": {
       "id": "ICSA",
@@ -14073,7 +14073,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/ICSA",
-      "fetchedAt": "2026-09-25T17:56:04.992Z"
+      "fetchedAt": "2026-09-25T19:43:57.217Z"
     },
     "IC4WSA": {
       "id": "IC4WSA",
@@ -15490,7 +15490,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/IC4WSA",
-      "fetchedAt": "2026-09-25T17:56:05.162Z"
+      "fetchedAt": "2026-09-25T19:43:57.520Z"
     },
     "CCSA": {
       "id": "CCSA",
@@ -16903,7 +16903,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CCSA",
-      "fetchedAt": "2026-09-25T17:56:05.360Z"
+      "fetchedAt": "2026-09-25T19:43:57.714Z"
     },
     "SP500": {
       "id": "SP500",
@@ -23684,7 +23684,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/SP500",
-      "fetchedAt": "2026-09-25T17:56:05.703Z"
+      "fetchedAt": "2026-09-25T19:43:57.455Z"
     },
     "DJIA": {
       "id": "DJIA",
@@ -30465,7 +30465,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/DJIA",
-      "fetchedAt": "2026-09-25T17:56:05.556Z"
+      "fetchedAt": "2026-09-25T19:43:57.610Z"
     },
     "NASDAQCOM": {
       "id": "NASDAQCOM",
@@ -37246,7 +37246,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/NASDAQCOM",
-      "fetchedAt": "2026-09-25T17:56:05.768Z"
+      "fetchedAt": "2026-09-25T19:43:57.939Z"
     },
     "MTSDS133FMS": {
       "id": "MTSDS133FMS",
@@ -37579,7 +37579,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/MTSDS133FMS",
-      "fetchedAt": "2026-09-25T17:56:05.667Z"
+      "fetchedAt": "2026-09-25T19:43:57.866Z"
     },
     "FYFSGDA188S": {
       "id": "FYFSGDA188S",
@@ -37616,11 +37616,11 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/FYFSGDA188S",
-      "fetchedAt": "2026-09-25T17:56:05.946Z"
+      "fetchedAt": "2026-09-25T19:43:57.912Z"
     },
     "LNS11300060": {
       "id": "LNS11300060",
-      "label": "Prime age (25-54)",
+      "label": "Labor force participation rate, ages 25–54",
       "sa": "SA",
       "frequency": "monthly",
       "units": "Percent",
@@ -37945,11 +37945,11 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS11300060",
-      "fetchedAt": "2026-09-25T17:56:06.040Z"
+      "fetchedAt": "2026-09-25T19:43:58.102Z"
     },
     "LNS12300060": {
       "id": "LNS12300060",
-      "label": "Prime-age employment / population",
+      "label": "Employment-to-population ratio, ages 25–54",
       "sa": "SA",
       "units": "Percent",
       "group": "participation",
@@ -38274,7 +38274,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS12300060",
-      "fetchedAt": "2026-09-25T17:56:05.975Z"
+      "fetchedAt": "2026-09-25T19:43:58.080Z"
     },
     "MIMFG": {
       "id": "MIMFG",
@@ -38611,7 +38611,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/MIMFG",
-      "fetchedAt": "2026-09-25T17:56:06.168Z"
+      "fetchedAt": "2026-09-25T19:43:58.234Z"
     },
     "OHMFG": {
       "id": "OHMFG",
@@ -38948,7 +38948,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/OHMFG",
-      "fetchedAt": "2026-09-25T17:56:06.293Z"
+      "fetchedAt": "2026-09-25T19:43:58.298Z"
     },
     "WIMFG": {
       "id": "WIMFG",
@@ -39285,7 +39285,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/WIMFG",
-      "fetchedAt": "2026-09-25T17:56:06.316Z"
+      "fetchedAt": "2026-09-25T19:43:58.443Z"
     },
     "PAMFG": {
       "id": "PAMFG",
@@ -39622,7 +39622,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/PAMFG",
-      "fetchedAt": "2026-09-25T17:56:06.322Z"
+      "fetchedAt": "2026-09-25T19:43:58.439Z"
     },
     "MNMFG": {
       "id": "MNMFG",
@@ -39959,7 +39959,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/MNMFG",
-      "fetchedAt": "2026-09-25T17:56:06.717Z"
+      "fetchedAt": "2026-09-25T19:43:58.522Z"
     },
     "CES3133600101": {
       "id": "CES3133600101",
@@ -40295,7 +40295,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CES3133600101",
-      "fetchedAt": "2026-09-25T17:56:06.603Z"
+      "fetchedAt": "2026-09-25T19:43:58.569Z"
     },
     "CES4244100001": {
       "id": "CES4244100001",
@@ -40631,7 +40631,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CES4244100001",
-      "fetchedAt": "2026-09-25T17:56:06.633Z"
+      "fetchedAt": "2026-09-25T19:43:58.966Z"
     },
     "GASREGW": {
       "id": "GASREGW",
@@ -42052,7 +42052,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/GASREGW",
-      "fetchedAt": "2026-09-25T17:56:06.668Z"
+      "fetchedAt": "2026-09-25T19:43:58.763Z"
     },
     "GASDESW": {
       "id": "GASDESW",
@@ -43473,7 +43473,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/GASDESW",
-      "fetchedAt": "2026-09-25T17:56:07.011Z"
+      "fetchedAt": "2026-09-25T19:43:58.963Z"
     },
     "CES0500000003": {
       "id": "CES0500000003",
@@ -43806,7 +43806,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CES0500000003",
-      "fetchedAt": "2026-09-25T17:56:06.952Z"
+      "fetchedAt": "2026-09-25T19:43:58.775Z"
     },
     "JTSJOL": {
       "id": "JTSJOL",
@@ -44135,7 +44135,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/JTSJOL",
-      "fetchedAt": "2026-09-25T17:56:06.957Z"
+      "fetchedAt": "2026-09-25T19:43:59.022Z"
     },
     "JTSQUR": {
       "id": "JTSQUR",
@@ -44464,7 +44464,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/JTSQUR",
-      "fetchedAt": "2026-09-25T17:56:07.070Z"
+      "fetchedAt": "2026-09-25T19:43:59.089Z"
     },
     "U6RATE": {
       "id": "U6RATE",
@@ -44793,7 +44793,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/U6RATE",
-      "fetchedAt": "2026-09-25T17:56:07.214Z"
+      "fetchedAt": "2026-09-25T19:43:59.280Z"
     },
     "APU0000703112": {
       "id": "APU0000703112",
@@ -45125,7 +45125,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/APU0000703112",
-      "fetchedAt": "2026-09-25T17:56:07.366Z"
+      "fetchedAt": "2026-09-25T19:43:59.254Z"
     },
     "APU0000708111": {
       "id": "APU0000708111",
@@ -45457,7 +45457,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/APU0000708111",
-      "fetchedAt": "2026-09-25T17:56:07.296Z"
+      "fetchedAt": "2026-09-25T19:43:59.445Z"
     },
     "APU0000709112": {
       "id": "APU0000709112",
@@ -45789,7 +45789,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/APU0000709112",
-      "fetchedAt": "2026-09-25T17:56:07.384Z"
+      "fetchedAt": "2026-09-25T19:43:59.369Z"
     },
     "APU0000702111": {
       "id": "APU0000702111",
@@ -46121,7 +46121,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/APU0000702111",
-      "fetchedAt": "2026-09-25T17:56:07.472Z"
+      "fetchedAt": "2026-09-25T19:43:59.525Z"
     },
     "APU0000706111": {
       "id": "APU0000706111",
@@ -46449,7 +46449,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/APU0000706111",
-      "fetchedAt": "2026-09-25T17:56:07.520Z"
+      "fetchedAt": "2026-09-25T19:43:59.641Z"
     },
     "GDPC1": {
       "id": "GDPC1",
@@ -46569,7 +46569,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/GDPC1",
-      "fetchedAt": "2026-09-25T17:56:07.625Z"
+      "fetchedAt": "2026-09-25T19:43:59.393Z"
     },
     "CLVMNACSCAB1GQDE": {
       "id": "CLVMNACSCAB1GQDE",
@@ -46689,7 +46689,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CLVMNACSCAB1GQDE",
-      "fetchedAt": "2026-09-25T17:56:07.627Z"
+      "fetchedAt": "2026-09-25T19:43:59.417Z"
     },
     "JPNRGDPEXP": {
       "id": "JPNRGDPEXP",
@@ -46809,7 +46809,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/JPNRGDPEXP",
-      "fetchedAt": "2026-09-25T17:56:07.899Z"
+      "fetchedAt": "2026-09-25T19:43:59.437Z"
     },
     "NGDPRSAXDCGBQ": {
       "id": "NGDPRSAXDCGBQ",
@@ -46929,7 +46929,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/NGDPRSAXDCGBQ",
-      "fetchedAt": "2026-09-25T17:56:07.861Z"
+      "fetchedAt": "2026-09-25T19:43:59.455Z"
     },
     "CLVMNACSCAB1GQFR": {
       "id": "CLVMNACSCAB1GQFR",
@@ -47049,7 +47049,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CLVMNACSCAB1GQFR",
-      "fetchedAt": "2026-09-25T17:56:08.012Z"
+      "fetchedAt": "2026-09-25T19:43:59.473Z"
     },
     "CLVMNACSCAB1GQIT": {
       "id": "CLVMNACSCAB1GQIT",
@@ -47169,7 +47169,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CLVMNACSCAB1GQIT",
-      "fetchedAt": "2026-09-25T17:56:07.849Z"
+      "fetchedAt": "2026-09-25T19:43:59.474Z"
     },
     "NGDPRSAXDCCAQ": {
       "id": "NGDPRSAXDCCAQ",
@@ -47289,7 +47289,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/NGDPRSAXDCCAQ",
-      "fetchedAt": "2026-09-25T17:56:08.126Z"
+      "fetchedAt": "2026-09-25T19:43:59.492Z"
     },
     "DCOILWTICO": {
       "id": "DCOILWTICO",
@@ -54028,7 +54028,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/DCOILWTICO",
-      "fetchedAt": "2026-09-25T17:56:08.476Z"
+      "fetchedAt": "2026-09-25T19:43:59.689Z"
     },
     "DCOILBRENTEU": {
       "id": "DCOILBRENTEU",
@@ -60847,7 +60847,2451 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
-      "fetchedAt": "2026-09-25T17:56:08.153Z"
+      "fetchedAt": "2026-09-25T19:43:59.734Z"
+    },
+    "CPIAUCNS": {
+      "id": "CPIAUCNS",
+      "label": "CPI Headline (NSA)",
+      "group": "inflation_yoy",
+      "frequency": "monthly",
+      "sa": "NSA",
+      "units": "Index 1982-1984=100",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/CPIAUCNS",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "note": "Unadjusted CPI-U index used for standard 12-month inflation comparisons.",
+      "observations": [
+        {
+          "date": "2020-01-01",
+          "value": 257.971
+        },
+        {
+          "date": "2020-02-01",
+          "value": 258.678
+        },
+        {
+          "date": "2020-03-01",
+          "value": 258.115
+        },
+        {
+          "date": "2020-04-01",
+          "value": 256.389
+        },
+        {
+          "date": "2020-05-01",
+          "value": 256.394
+        },
+        {
+          "date": "2020-06-01",
+          "value": 257.797
+        },
+        {
+          "date": "2020-07-01",
+          "value": 259.101
+        },
+        {
+          "date": "2020-08-01",
+          "value": 259.918
+        },
+        {
+          "date": "2020-09-01",
+          "value": 260.28
+        },
+        {
+          "date": "2020-10-01",
+          "value": 260.388
+        },
+        {
+          "date": "2020-11-01",
+          "value": 260.229
+        },
+        {
+          "date": "2020-12-01",
+          "value": 260.474
+        },
+        {
+          "date": "2021-01-01",
+          "value": 261.582
+        },
+        {
+          "date": "2021-02-01",
+          "value": 263.014
+        },
+        {
+          "date": "2021-03-01",
+          "value": 264.877
+        },
+        {
+          "date": "2021-04-01",
+          "value": 267.054
+        },
+        {
+          "date": "2021-05-01",
+          "value": 269.195
+        },
+        {
+          "date": "2021-06-01",
+          "value": 271.696
+        },
+        {
+          "date": "2021-07-01",
+          "value": 273.003
+        },
+        {
+          "date": "2021-08-01",
+          "value": 273.567
+        },
+        {
+          "date": "2021-09-01",
+          "value": 274.31
+        },
+        {
+          "date": "2021-10-01",
+          "value": 276.589
+        },
+        {
+          "date": "2021-11-01",
+          "value": 277.948
+        },
+        {
+          "date": "2021-12-01",
+          "value": 278.802
+        },
+        {
+          "date": "2022-01-01",
+          "value": 281.148
+        },
+        {
+          "date": "2022-02-01",
+          "value": 283.716
+        },
+        {
+          "date": "2022-03-01",
+          "value": 287.504
+        },
+        {
+          "date": "2022-04-01",
+          "value": 289.109
+        },
+        {
+          "date": "2022-05-01",
+          "value": 292.296
+        },
+        {
+          "date": "2022-06-01",
+          "value": 296.311
+        },
+        {
+          "date": "2022-07-01",
+          "value": 296.276
+        },
+        {
+          "date": "2022-08-01",
+          "value": 296.171
+        },
+        {
+          "date": "2022-09-01",
+          "value": 296.808
+        },
+        {
+          "date": "2022-10-01",
+          "value": 298.012
+        },
+        {
+          "date": "2022-11-01",
+          "value": 297.711
+        },
+        {
+          "date": "2022-12-01",
+          "value": 296.797
+        },
+        {
+          "date": "2023-01-01",
+          "value": 299.17
+        },
+        {
+          "date": "2023-02-01",
+          "value": 300.84
+        },
+        {
+          "date": "2023-03-01",
+          "value": 301.836
+        },
+        {
+          "date": "2023-04-01",
+          "value": 303.363
+        },
+        {
+          "date": "2023-05-01",
+          "value": 304.127
+        },
+        {
+          "date": "2023-06-01",
+          "value": 305.109
+        },
+        {
+          "date": "2023-07-01",
+          "value": 305.691
+        },
+        {
+          "date": "2023-08-01",
+          "value": 307.026
+        },
+        {
+          "date": "2023-09-01",
+          "value": 307.789
+        },
+        {
+          "date": "2023-10-01",
+          "value": 307.671
+        },
+        {
+          "date": "2023-11-01",
+          "value": 307.051
+        },
+        {
+          "date": "2023-12-01",
+          "value": 306.746
+        },
+        {
+          "date": "2024-01-01",
+          "value": 308.417
+        },
+        {
+          "date": "2024-02-01",
+          "value": 310.326
+        },
+        {
+          "date": "2024-03-01",
+          "value": 312.332
+        },
+        {
+          "date": "2024-04-01",
+          "value": 313.548
+        },
+        {
+          "date": "2024-05-01",
+          "value": 314.069
+        },
+        {
+          "date": "2024-06-01",
+          "value": 314.175
+        },
+        {
+          "date": "2024-07-01",
+          "value": 314.54
+        },
+        {
+          "date": "2024-08-01",
+          "value": 314.796
+        },
+        {
+          "date": "2024-09-01",
+          "value": 315.301
+        },
+        {
+          "date": "2024-10-01",
+          "value": 315.664
+        },
+        {
+          "date": "2024-11-01",
+          "value": 315.493
+        },
+        {
+          "date": "2024-12-01",
+          "value": 315.605
+        },
+        {
+          "date": "2025-01-01",
+          "value": 317.671
+        },
+        {
+          "date": "2025-02-01",
+          "value": 319.082
+        },
+        {
+          "date": "2025-03-01",
+          "value": 319.799
+        },
+        {
+          "date": "2025-04-01",
+          "value": 320.795
+        },
+        {
+          "date": "2025-05-01",
+          "value": 321.465
+        },
+        {
+          "date": "2025-06-01",
+          "value": 322.561
+        },
+        {
+          "date": "2025-07-01",
+          "value": 323.048
+        },
+        {
+          "date": "2025-08-01",
+          "value": 323.976
+        },
+        {
+          "date": "2025-09-01",
+          "value": 324.8
+        },
+        {
+          "date": "2025-11-01",
+          "value": 324.122
+        },
+        {
+          "date": "2025-12-01",
+          "value": 324.054
+        },
+        {
+          "date": "2026-01-01",
+          "value": 325.252
+        },
+        {
+          "date": "2026-02-01",
+          "value": 326.785
+        },
+        {
+          "date": "2026-03-01",
+          "value": 330.213
+        },
+        {
+          "date": "2026-04-01",
+          "value": 333.02
+        },
+        {
+          "date": "2026-05-01",
+          "value": 335.123
+        },
+        {
+          "date": "2026-06-01",
+          "value": 333.952
+        },
+        {
+          "date": "2026-07-01",
+          "value": 333.918
+        },
+        {
+          "date": "2026-08-01",
+          "value": 334.98
+        }
+      ],
+      "sourceUrl": "https://fred.stlouisfed.org/series/CPIAUCNS",
+      "fetchedAt": "2026-09-25T19:43:59.806Z"
+    },
+    "CPILFENS": {
+      "id": "CPILFENS",
+      "label": "CPI Core (NSA)",
+      "group": "inflation_yoy",
+      "frequency": "monthly",
+      "sa": "NSA",
+      "units": "Index 1982-1984=100",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/CPILFENS",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "note": "Unadjusted CPI-U index used for standard 12-month inflation comparisons.",
+      "observations": [
+        {
+          "date": "2020-01-01",
+          "value": 266.004
+        },
+        {
+          "date": "2020-02-01",
+          "value": 267.268
+        },
+        {
+          "date": "2020-03-01",
+          "value": 267.312
+        },
+        {
+          "date": "2020-04-01",
+          "value": 266.089
+        },
+        {
+          "date": "2020-05-01",
+          "value": 265.799
+        },
+        {
+          "date": "2020-06-01",
+          "value": 266.302
+        },
+        {
+          "date": "2020-07-01",
+          "value": 267.703
+        },
+        {
+          "date": "2020-08-01",
+          "value": 268.756
+        },
+        {
+          "date": "2020-09-01",
+          "value": 269.054
+        },
+        {
+          "date": "2020-10-01",
+          "value": 269.328
+        },
+        {
+          "date": "2020-11-01",
+          "value": 269.473
+        },
+        {
+          "date": "2020-12-01",
+          "value": 269.226
+        },
+        {
+          "date": "2021-01-01",
+          "value": 269.755
+        },
+        {
+          "date": "2021-02-01",
+          "value": 270.696
+        },
+        {
+          "date": "2021-03-01",
+          "value": 271.713
+        },
+        {
+          "date": "2021-04-01",
+          "value": 273.968
+        },
+        {
+          "date": "2021-05-01",
+          "value": 275.893
+        },
+        {
+          "date": "2021-06-01",
+          "value": 278.218
+        },
+        {
+          "date": "2021-07-01",
+          "value": 279.146
+        },
+        {
+          "date": "2021-08-01",
+          "value": 279.507
+        },
+        {
+          "date": "2021-09-01",
+          "value": 279.884
+        },
+        {
+          "date": "2021-10-01",
+          "value": 281.617
+        },
+        {
+          "date": "2021-11-01",
+          "value": 282.754
+        },
+        {
+          "date": "2021-12-01",
+          "value": 283.908
+        },
+        {
+          "date": "2022-01-01",
+          "value": 285.996
+        },
+        {
+          "date": "2022-02-01",
+          "value": 288.059
+        },
+        {
+          "date": "2022-03-01",
+          "value": 289.305
+        },
+        {
+          "date": "2022-04-01",
+          "value": 290.846
+        },
+        {
+          "date": "2022-05-01",
+          "value": 292.506
+        },
+        {
+          "date": "2022-06-01",
+          "value": 294.68
+        },
+        {
+          "date": "2022-07-01",
+          "value": 295.646
+        },
+        {
+          "date": "2022-08-01",
+          "value": 297.178
+        },
+        {
+          "date": "2022-09-01",
+          "value": 298.442
+        },
+        {
+          "date": "2022-10-01",
+          "value": 299.315
+        },
+        {
+          "date": "2022-11-01",
+          "value": 299.6
+        },
+        {
+          "date": "2022-12-01",
+          "value": 300.113
+        },
+        {
+          "date": "2023-01-01",
+          "value": 301.962
+        },
+        {
+          "date": "2023-02-01",
+          "value": 304.011
+        },
+        {
+          "date": "2023-03-01",
+          "value": 305.476
+        },
+        {
+          "date": "2023-04-01",
+          "value": 306.899
+        },
+        {
+          "date": "2023-05-01",
+          "value": 308.096
+        },
+        {
+          "date": "2023-06-01",
+          "value": 308.91
+        },
+        {
+          "date": "2023-07-01",
+          "value": 309.402
+        },
+        {
+          "date": "2023-08-01",
+          "value": 310.103
+        },
+        {
+          "date": "2023-09-01",
+          "value": 310.817
+        },
+        {
+          "date": "2023-10-01",
+          "value": 311.38
+        },
+        {
+          "date": "2023-11-01",
+          "value": 311.606
+        },
+        {
+          "date": "2023-12-01",
+          "value": 311.907
+        },
+        {
+          "date": "2024-01-01",
+          "value": 313.623
+        },
+        {
+          "date": "2024-02-01",
+          "value": 315.419
+        },
+        {
+          "date": "2024-03-01",
+          "value": 317.088
+        },
+        {
+          "date": "2024-04-01",
+          "value": 317.978
+        },
+        {
+          "date": "2024-05-01",
+          "value": 318.629
+        },
+        {
+          "date": "2024-06-01",
+          "value": 319.003
+        },
+        {
+          "date": "2024-07-01",
+          "value": 319.214
+        },
+        {
+          "date": "2024-08-01",
+          "value": 320.017
+        },
+        {
+          "date": "2024-09-01",
+          "value": 321.109
+        },
+        {
+          "date": "2024-10-01",
+          "value": 321.758
+        },
+        {
+          "date": "2024-11-01",
+          "value": 321.947
+        },
+        {
+          "date": "2024-12-01",
+          "value": 322.007
+        },
+        {
+          "date": "2025-01-01",
+          "value": 323.842
+        },
+        {
+          "date": "2025-02-01",
+          "value": 325.252
+        },
+        {
+          "date": "2025-03-01",
+          "value": 325.933
+        },
+        {
+          "date": "2025-04-01",
+          "value": 326.815
+        },
+        {
+          "date": "2025-05-01",
+          "value": 327.509
+        },
+        {
+          "date": "2025-06-01",
+          "value": 328.364
+        },
+        {
+          "date": "2025-07-01",
+          "value": 328.98
+        },
+        {
+          "date": "2025-08-01",
+          "value": 329.97
+        },
+        {
+          "date": "2025-09-01",
+          "value": 330.804
+        },
+        {
+          "date": "2025-11-01",
+          "value": 330.425
+        },
+        {
+          "date": "2025-12-01",
+          "value": 330.506
+        },
+        {
+          "date": "2026-01-01",
+          "value": 331.95
+        },
+        {
+          "date": "2026-02-01",
+          "value": 333.242
+        },
+        {
+          "date": "2026-03-01",
+          "value": 334.391
+        },
+        {
+          "date": "2026-04-01",
+          "value": 335.803
+        },
+        {
+          "date": "2026-05-01",
+          "value": 336.846
+        },
+        {
+          "date": "2026-06-01",
+          "value": 336.882
+        },
+        {
+          "date": "2026-07-01",
+          "value": 337.133
+        },
+        {
+          "date": "2026-08-01",
+          "value": 338.041
+        }
+      ],
+      "sourceUrl": "https://fred.stlouisfed.org/series/CPILFENS",
+      "fetchedAt": "2026-09-25T19:43:59.938Z"
+    },
+    "CUUR0000SACL1E": {
+      "id": "CUUR0000SACL1E",
+      "label": "CPI Core Goods (NSA)",
+      "group": "inflation_yoy",
+      "frequency": "monthly",
+      "sa": "NSA",
+      "units": "Index 1982-1984=100",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/CUUR0000SACL1E",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "note": "Unadjusted CPI-U index used for standard 12-month inflation comparisons.",
+      "observations": [
+        {
+          "date": "2020-01-01",
+          "value": 143.532
+        },
+        {
+          "date": "2020-02-01",
+          "value": 144.605
+        },
+        {
+          "date": "2020-03-01",
+          "value": 144.718
+        },
+        {
+          "date": "2020-04-01",
+          "value": 143.613
+        },
+        {
+          "date": "2020-05-01",
+          "value": 142.964
+        },
+        {
+          "date": "2020-06-01",
+          "value": 142.908
+        },
+        {
+          "date": "2020-07-01",
+          "value": 143.696
+        },
+        {
+          "date": "2020-08-01",
+          "value": 145.391
+        },
+        {
+          "date": "2020-09-01",
+          "value": 146.096
+        },
+        {
+          "date": "2020-10-01",
+          "value": 146.261
+        },
+        {
+          "date": "2020-11-01",
+          "value": 145.75
+        },
+        {
+          "date": "2020-12-01",
+          "value": 145.317
+        },
+        {
+          "date": "2021-01-01",
+          "value": 145.973
+        },
+        {
+          "date": "2021-02-01",
+          "value": 146.532
+        },
+        {
+          "date": "2021-03-01",
+          "value": 147.16
+        },
+        {
+          "date": "2021-04-01",
+          "value": 149.915
+        },
+        {
+          "date": "2021-05-01",
+          "value": 152.217
+        },
+        {
+          "date": "2021-06-01",
+          "value": 155.284
+        },
+        {
+          "date": "2021-07-01",
+          "value": 155.873
+        },
+        {
+          "date": "2021-08-01",
+          "value": 156.581
+        },
+        {
+          "date": "2021-09-01",
+          "value": 156.72
+        },
+        {
+          "date": "2021-10-01",
+          "value": 158.55
+        },
+        {
+          "date": "2021-11-01",
+          "value": 159.426
+        },
+        {
+          "date": "2021-12-01",
+          "value": 160.85
+        },
+        {
+          "date": "2022-01-01",
+          "value": 162.991
+        },
+        {
+          "date": "2022-02-01",
+          "value": 164.559
+        },
+        {
+          "date": "2022-03-01",
+          "value": 164.449
+        },
+        {
+          "date": "2022-04-01",
+          "value": 164.52
+        },
+        {
+          "date": "2022-05-01",
+          "value": 165.14
+        },
+        {
+          "date": "2022-06-01",
+          "value": 166.403
+        },
+        {
+          "date": "2022-07-01",
+          "value": 166.746
+        },
+        {
+          "date": "2022-08-01",
+          "value": 167.637
+        },
+        {
+          "date": "2022-09-01",
+          "value": 167.104
+        },
+        {
+          "date": "2022-10-01",
+          "value": 166.601
+        },
+        {
+          "date": "2022-11-01",
+          "value": 165.291
+        },
+        {
+          "date": "2022-12-01",
+          "value": 164.304
+        },
+        {
+          "date": "2023-01-01",
+          "value": 165.34
+        },
+        {
+          "date": "2023-02-01",
+          "value": 166.246
+        },
+        {
+          "date": "2023-03-01",
+          "value": 166.961
+        },
+        {
+          "date": "2023-04-01",
+          "value": 167.833
+        },
+        {
+          "date": "2023-05-01",
+          "value": 168.499
+        },
+        {
+          "date": "2023-06-01",
+          "value": 168.588
+        },
+        {
+          "date": "2023-07-01",
+          "value": 168.014
+        },
+        {
+          "date": "2023-08-01",
+          "value": 168.029
+        },
+        {
+          "date": "2023-09-01",
+          "value": 167.141
+        },
+        {
+          "date": "2023-10-01",
+          "value": 166.759
+        },
+        {
+          "date": "2023-11-01",
+          "value": 165.367
+        },
+        {
+          "date": "2023-12-01",
+          "value": 164.59
+        },
+        {
+          "date": "2024-01-01",
+          "value": 164.866
+        },
+        {
+          "date": "2024-02-01",
+          "value": 165.752
+        },
+        {
+          "date": "2024-03-01",
+          "value": 165.875
+        },
+        {
+          "date": "2024-04-01",
+          "value": 165.7
+        },
+        {
+          "date": "2024-05-01",
+          "value": 165.555
+        },
+        {
+          "date": "2024-06-01",
+          "value": 165.493
+        },
+        {
+          "date": "2024-07-01",
+          "value": 164.836
+        },
+        {
+          "date": "2024-08-01",
+          "value": 164.912
+        },
+        {
+          "date": "2024-09-01",
+          "value": 165.534
+        },
+        {
+          "date": "2024-10-01",
+          "value": 165.088
+        },
+        {
+          "date": "2024-11-01",
+          "value": 164.406
+        },
+        {
+          "date": "2024-12-01",
+          "value": 163.712
+        },
+        {
+          "date": "2025-01-01",
+          "value": 164.645
+        },
+        {
+          "date": "2025-02-01",
+          "value": 165.559
+        },
+        {
+          "date": "2025-03-01",
+          "value": 165.707
+        },
+        {
+          "date": "2025-04-01",
+          "value": 165.916
+        },
+        {
+          "date": "2025-05-01",
+          "value": 166.021
+        },
+        {
+          "date": "2025-06-01",
+          "value": 166.655
+        },
+        {
+          "date": "2025-07-01",
+          "value": 166.766
+        },
+        {
+          "date": "2025-08-01",
+          "value": 167.448
+        },
+        {
+          "date": "2025-09-01",
+          "value": 168.083
+        },
+        {
+          "date": "2025-11-01",
+          "value": 166.693
+        },
+        {
+          "date": "2025-12-01",
+          "value": 166.037
+        },
+        {
+          "date": "2026-01-01",
+          "value": 166.484
+        },
+        {
+          "date": "2026-02-01",
+          "value": 167.206
+        },
+        {
+          "date": "2026-03-01",
+          "value": 167.666
+        },
+        {
+          "date": "2026-04-01",
+          "value": 167.79
+        },
+        {
+          "date": "2026-05-01",
+          "value": 167.785
+        },
+        {
+          "date": "2026-06-01",
+          "value": 168.019
+        },
+        {
+          "date": "2026-07-01",
+          "value": 168.112
+        },
+        {
+          "date": "2026-08-01",
+          "value": 168.589
+        }
+      ],
+      "sourceUrl": "https://fred.stlouisfed.org/series/CUUR0000SACL1E",
+      "fetchedAt": "2026-09-25T19:44:00.047Z"
+    },
+    "CUUR0000SASLE": {
+      "id": "CUUR0000SASLE",
+      "label": "CPI Core Services (NSA)",
+      "group": "inflation_yoy",
+      "frequency": "monthly",
+      "sa": "NSA",
+      "units": "Index 1982-1984=100",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/CUUR0000SASLE",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "note": "Unadjusted CPI-U index used for standard 12-month inflation comparisons.",
+      "observations": [
+        {
+          "date": "2020-01-01",
+          "value": 342.694
+        },
+        {
+          "date": "2020-02-01",
+          "value": 344.006
+        },
+        {
+          "date": "2020-03-01",
+          "value": 343.99
+        },
+        {
+          "date": "2020-04-01",
+          "value": 342.776
+        },
+        {
+          "date": "2020-05-01",
+          "value": 342.801
+        },
+        {
+          "date": "2020-06-01",
+          "value": 343.713
+        },
+        {
+          "date": "2020-07-01",
+          "value": 345.493
+        },
+        {
+          "date": "2020-08-01",
+          "value": 345.936
+        },
+        {
+          "date": "2020-09-01",
+          "value": 345.88
+        },
+        {
+          "date": "2020-10-01",
+          "value": 346.22
+        },
+        {
+          "date": "2020-11-01",
+          "value": 346.884
+        },
+        {
+          "date": "2020-12-01",
+          "value": 346.808
+        },
+        {
+          "date": "2021-01-01",
+          "value": 347.19
+        },
+        {
+          "date": "2021-02-01",
+          "value": 348.361
+        },
+        {
+          "date": "2021-03-01",
+          "value": 349.607
+        },
+        {
+          "date": "2021-04-01",
+          "value": 351.265
+        },
+        {
+          "date": "2021-05-01",
+          "value": 352.721
+        },
+        {
+          "date": "2021-06-01",
+          "value": 354.25
+        },
+        {
+          "date": "2021-07-01",
+          "value": 355.375
+        },
+        {
+          "date": "2021-08-01",
+          "value": 355.423
+        },
+        {
+          "date": "2021-09-01",
+          "value": 355.962
+        },
+        {
+          "date": "2021-10-01",
+          "value": 357.469
+        },
+        {
+          "date": "2021-11-01",
+          "value": 358.722
+        },
+        {
+          "date": "2021-12-01",
+          "value": 359.559
+        },
+        {
+          "date": "2022-01-01",
+          "value": 361.397
+        },
+        {
+          "date": "2022-02-01",
+          "value": 363.672
+        },
+        {
+          "date": "2022-03-01",
+          "value": 365.938
+        },
+        {
+          "date": "2022-04-01",
+          "value": 368.565
+        },
+        {
+          "date": "2022-05-01",
+          "value": 370.937
+        },
+        {
+          "date": "2022-06-01",
+          "value": 373.664
+        },
+        {
+          "date": "2022-07-01",
+          "value": 375.06
+        },
+        {
+          "date": "2022-08-01",
+          "value": 376.98
+        },
+        {
+          "date": "2022-09-01",
+          "value": 379.634
+        },
+        {
+          "date": "2022-10-01",
+          "value": 381.58
+        },
+        {
+          "date": "2022-11-01",
+          "value": 383.179
+        },
+        {
+          "date": "2022-12-01",
+          "value": 384.906
+        },
+        {
+          "date": "2023-01-01",
+          "value": 387.258
+        },
+        {
+          "date": "2023-02-01",
+          "value": 390.07
+        },
+        {
+          "date": "2023-03-01",
+          "value": 392.024
+        },
+        {
+          "date": "2023-04-01",
+          "value": 393.769
+        },
+        {
+          "date": "2023-05-01",
+          "value": 395.295
+        },
+        {
+          "date": "2023-06-01",
+          "value": 396.646
+        },
+        {
+          "date": "2023-07-01",
+          "value": 398.002
+        },
+        {
+          "date": "2023-08-01",
+          "value": 399.219
+        },
+        {
+          "date": "2023-09-01",
+          "value": 401.234
+        },
+        {
+          "date": "2023-10-01",
+          "value": 402.549
+        },
+        {
+          "date": "2023-11-01",
+          "value": 404.143
+        },
+        {
+          "date": "2023-12-01",
+          "value": 405.338
+        },
+        {
+          "date": "2024-01-01",
+          "value": 408.051
+        },
+        {
+          "date": "2024-02-01",
+          "value": 410.432
+        },
+        {
+          "date": "2024-03-01",
+          "value": 413.179
+        },
+        {
+          "date": "2024-04-01",
+          "value": 414.828
+        },
+        {
+          "date": "2024-05-01",
+          "value": 416.048
+        },
+        {
+          "date": "2024-06-01",
+          "value": 416.733
+        },
+        {
+          "date": "2024-07-01",
+          "value": 417.592
+        },
+        {
+          "date": "2024-08-01",
+          "value": 418.903
+        },
+        {
+          "date": "2024-09-01",
+          "value": 420.286
+        },
+        {
+          "date": "2024-10-01",
+          "value": 421.731
+        },
+        {
+          "date": "2024-11-01",
+          "value": 422.574
+        },
+        {
+          "date": "2024-12-01",
+          "value": 423.207
+        },
+        {
+          "date": "2025-01-01",
+          "value": 425.619
+        },
+        {
+          "date": "2025-02-01",
+          "value": 427.309
+        },
+        {
+          "date": "2025-03-01",
+          "value": 428.368
+        },
+        {
+          "date": "2025-04-01",
+          "value": 429.724
+        },
+        {
+          "date": "2025-05-01",
+          "value": 430.841
+        },
+        {
+          "date": "2025-06-01",
+          "value": 431.8
+        },
+        {
+          "date": "2025-07-01",
+          "value": 432.778
+        },
+        {
+          "date": "2025-08-01",
+          "value": 433.93
+        },
+        {
+          "date": "2025-09-01",
+          "value": 434.852
+        },
+        {
+          "date": "2025-11-01",
+          "value": 435.344
+        },
+        {
+          "date": "2025-12-01",
+          "value": 436.025
+        },
+        {
+          "date": "2026-01-01",
+          "value": 438.161
+        },
+        {
+          "date": "2026-02-01",
+          "value": 439.805
+        },
+        {
+          "date": "2026-03-01",
+          "value": 441.419
+        },
+        {
+          "date": "2026-04-01",
+          "value": 443.766
+        },
+        {
+          "date": "2026-05-01",
+          "value": 445.58
+        },
+        {
+          "date": "2026-06-01",
+          "value": 445.448
+        },
+        {
+          "date": "2026-07-01",
+          "value": 445.809
+        },
+        {
+          "date": "2026-08-01",
+          "value": 446.989
+        }
+      ],
+      "sourceUrl": "https://fred.stlouisfed.org/series/CUUR0000SASLE",
+      "fetchedAt": "2026-09-25T19:43:59.985Z"
+    },
+    "CUUR0000SAH1": {
+      "id": "CUUR0000SAH1",
+      "label": "CPI Shelter (NSA)",
+      "group": "inflation_yoy",
+      "frequency": "monthly",
+      "sa": "NSA",
+      "units": "Index 1982-1984=100",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/CUUR0000SAH1",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "note": "Unadjusted CPI-U index used for standard 12-month inflation comparisons.",
+      "observations": [
+        {
+          "date": "2020-01-01",
+          "value": 323.053
+        },
+        {
+          "date": "2020-02-01",
+          "value": 324.254
+        },
+        {
+          "date": "2020-03-01",
+          "value": 324.615
+        },
+        {
+          "date": "2020-04-01",
+          "value": 324.522
+        },
+        {
+          "date": "2020-05-01",
+          "value": 325.265
+        },
+        {
+          "date": "2020-06-01",
+          "value": 325.814
+        },
+        {
+          "date": "2020-07-01",
+          "value": 326.58
+        },
+        {
+          "date": "2020-08-01",
+          "value": 326.997
+        },
+        {
+          "date": "2020-09-01",
+          "value": 327.116
+        },
+        {
+          "date": "2020-10-01",
+          "value": 327.273
+        },
+        {
+          "date": "2020-11-01",
+          "value": 327.435
+        },
+        {
+          "date": "2020-12-01",
+          "value": 327.702
+        },
+        {
+          "date": "2021-01-01",
+          "value": 328.282
+        },
+        {
+          "date": "2021-02-01",
+          "value": 329.005
+        },
+        {
+          "date": "2021-03-01",
+          "value": 330.122
+        },
+        {
+          "date": "2021-04-01",
+          "value": 331.354
+        },
+        {
+          "date": "2021-05-01",
+          "value": 332.454
+        },
+        {
+          "date": "2021-06-01",
+          "value": 334.222
+        },
+        {
+          "date": "2021-07-01",
+          "value": 335.812
+        },
+        {
+          "date": "2021-08-01",
+          "value": 336.284
+        },
+        {
+          "date": "2021-09-01",
+          "value": 337.451
+        },
+        {
+          "date": "2021-10-01",
+          "value": 338.671
+        },
+        {
+          "date": "2021-11-01",
+          "value": 339.997
+        },
+        {
+          "date": "2021-12-01",
+          "value": 341.241
+        },
+        {
+          "date": "2022-01-01",
+          "value": 342.604
+        },
+        {
+          "date": "2022-02-01",
+          "value": 344.607
+        },
+        {
+          "date": "2022-03-01",
+          "value": 346.618
+        },
+        {
+          "date": "2022-04-01",
+          "value": 348.389
+        },
+        {
+          "date": "2022-05-01",
+          "value": 350.58
+        },
+        {
+          "date": "2022-06-01",
+          "value": 352.967
+        },
+        {
+          "date": "2022-07-01",
+          "value": 354.935
+        },
+        {
+          "date": "2022-08-01",
+          "value": 357.264
+        },
+        {
+          "date": "2022-09-01",
+          "value": 359.704
+        },
+        {
+          "date": "2022-10-01",
+          "value": 362.093
+        },
+        {
+          "date": "2022-11-01",
+          "value": 364.195
+        },
+        {
+          "date": "2022-12-01",
+          "value": 366.868
+        },
+        {
+          "date": "2023-01-01",
+          "value": 369.585
+        },
+        {
+          "date": "2023-02-01",
+          "value": 372.51
+        },
+        {
+          "date": "2023-03-01",
+          "value": 374.971
+        },
+        {
+          "date": "2023-04-01",
+          "value": 376.636
+        },
+        {
+          "date": "2023-05-01",
+          "value": 378.776
+        },
+        {
+          "date": "2023-06-01",
+          "value": 380.594
+        },
+        {
+          "date": "2023-07-01",
+          "value": 382.226
+        },
+        {
+          "date": "2023-08-01",
+          "value": 383.221
+        },
+        {
+          "date": "2023-09-01",
+          "value": 385.433
+        },
+        {
+          "date": "2023-10-01",
+          "value": 386.435
+        },
+        {
+          "date": "2023-11-01",
+          "value": 387.892
+        },
+        {
+          "date": "2023-12-01",
+          "value": 389.433
+        },
+        {
+          "date": "2024-01-01",
+          "value": 391.896
+        },
+        {
+          "date": "2024-02-01",
+          "value": 393.906
+        },
+        {
+          "date": "2024-03-01",
+          "value": 396.174
+        },
+        {
+          "date": "2024-04-01",
+          "value": 397.539
+        },
+        {
+          "date": "2024-05-01",
+          "value": 399.274
+        },
+        {
+          "date": "2024-06-01",
+          "value": 400.234
+        },
+        {
+          "date": "2024-07-01",
+          "value": 401.545
+        },
+        {
+          "date": "2024-08-01",
+          "value": 403.257
+        },
+        {
+          "date": "2024-09-01",
+          "value": 404.133
+        },
+        {
+          "date": "2024-10-01",
+          "value": 405.287
+        },
+        {
+          "date": "2024-11-01",
+          "value": 406.25
+        },
+        {
+          "date": "2024-12-01",
+          "value": 407.242
+        },
+        {
+          "date": "2025-01-01",
+          "value": 409.153
+        },
+        {
+          "date": "2025-02-01",
+          "value": 410.635
+        },
+        {
+          "date": "2025-03-01",
+          "value": 411.99
+        },
+        {
+          "date": "2025-04-01",
+          "value": 413.389
+        },
+        {
+          "date": "2025-05-01",
+          "value": 414.689
+        },
+        {
+          "date": "2025-06-01",
+          "value": 415.455
+        },
+        {
+          "date": "2025-07-01",
+          "value": 416.271
+        },
+        {
+          "date": "2025-08-01",
+          "value": 417.902
+        },
+        {
+          "date": "2025-09-01",
+          "value": 418.598
+        },
+        {
+          "date": "2025-11-01",
+          "value": 418.593
+        },
+        {
+          "date": "2025-12-01",
+          "value": 420.134
+        },
+        {
+          "date": "2026-01-01",
+          "value": 421.526
+        },
+        {
+          "date": "2026-02-01",
+          "value": 422.776
+        },
+        {
+          "date": "2026-03-01",
+          "value": 424.45
+        },
+        {
+          "date": "2026-04-01",
+          "value": 427.049
+        },
+        {
+          "date": "2026-05-01",
+          "value": 428.677
+        },
+        {
+          "date": "2026-06-01",
+          "value": 429.062
+        },
+        {
+          "date": "2026-07-01",
+          "value": 429.491
+        },
+        {
+          "date": "2026-08-01",
+          "value": 430.611
+        }
+      ],
+      "sourceUrl": "https://fred.stlouisfed.org/series/CUUR0000SAH1",
+      "fetchedAt": "2026-09-25T19:44:01.546Z"
+    },
+    "CPIUFDNS": {
+      "id": "CPIUFDNS",
+      "label": "CPI Food (NSA)",
+      "group": "inflation_yoy",
+      "frequency": "monthly",
+      "sa": "NSA",
+      "units": "Index 1982-1984=100",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/CPIUFDNS",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "note": "Unadjusted CPI-U index used for standard 12-month inflation comparisons.",
+      "observations": [
+        {
+          "date": "2020-01-01",
+          "value": 261.057
+        },
+        {
+          "date": "2020-02-01",
+          "value": 261.876
+        },
+        {
+          "date": "2020-03-01",
+          "value": 262.708
+        },
+        {
+          "date": "2020-04-01",
+          "value": 266.757
+        },
+        {
+          "date": "2020-05-01",
+          "value": 268.439
+        },
+        {
+          "date": "2020-06-01",
+          "value": 269.77
+        },
+        {
+          "date": "2020-07-01",
+          "value": 268.863
+        },
+        {
+          "date": "2020-08-01",
+          "value": 269.079
+        },
+        {
+          "date": "2020-09-01",
+          "value": 269.163
+        },
+        {
+          "date": "2020-10-01",
+          "value": 269.828
+        },
+        {
+          "date": "2020-11-01",
+          "value": 269.069
+        },
+        {
+          "date": "2020-12-01",
+          "value": 270.023
+        },
+        {
+          "date": "2021-01-01",
+          "value": 270.938
+        },
+        {
+          "date": "2021-02-01",
+          "value": 271.363
+        },
+        {
+          "date": "2021-03-01",
+          "value": 271.812
+        },
+        {
+          "date": "2021-04-01",
+          "value": 273.09
+        },
+        {
+          "date": "2021-05-01",
+          "value": 274.212
+        },
+        {
+          "date": "2021-06-01",
+          "value": 276.206
+        },
+        {
+          "date": "2021-07-01",
+          "value": 278.127
+        },
+        {
+          "date": "2021-08-01",
+          "value": 279.135
+        },
+        {
+          "date": "2021-09-01",
+          "value": 281.506
+        },
+        {
+          "date": "2021-10-01",
+          "value": 284.205
+        },
+        {
+          "date": "2021-11-01",
+          "value": 285.507
+        },
+        {
+          "date": "2021-12-01",
+          "value": 286.966
+        },
+        {
+          "date": "2022-01-01",
+          "value": 289.772
+        },
+        {
+          "date": "2022-02-01",
+          "value": 292.794
+        },
+        {
+          "date": "2022-03-01",
+          "value": 295.728
+        },
+        {
+          "date": "2022-04-01",
+          "value": 298.711
+        },
+        {
+          "date": "2022-05-01",
+          "value": 302.038
+        },
+        {
+          "date": "2022-06-01",
+          "value": 305.041
+        },
+        {
+          "date": "2022-07-01",
+          "value": 308.532
+        },
+        {
+          "date": "2022-08-01",
+          "value": 310.875
+        },
+        {
+          "date": "2022-09-01",
+          "value": 313.142
+        },
+        {
+          "date": "2022-10-01",
+          "value": 315.323
+        },
+        {
+          "date": "2022-11-01",
+          "value": 315.857
+        },
+        {
+          "date": "2022-12-01",
+          "value": 316.839
+        },
+        {
+          "date": "2023-01-01",
+          "value": 319.136
+        },
+        {
+          "date": "2023-02-01",
+          "value": 320.569
+        },
+        {
+          "date": "2023-03-01",
+          "value": 320.863
+        },
+        {
+          "date": "2023-04-01",
+          "value": 321.566
+        },
+        {
+          "date": "2023-05-01",
+          "value": 322.249
+        },
+        {
+          "date": "2023-06-01",
+          "value": 322.556
+        },
+        {
+          "date": "2023-07-01",
+          "value": 323.523
+        },
+        {
+          "date": "2023-08-01",
+          "value": 324.1
+        },
+        {
+          "date": "2023-09-01",
+          "value": 324.704
+        },
+        {
+          "date": "2023-10-01",
+          "value": 325.731
+        },
+        {
+          "date": "2023-11-01",
+          "value": 325.172
+        },
+        {
+          "date": "2023-12-01",
+          "value": 325.409
+        },
+        {
+          "date": "2024-01-01",
+          "value": 327.327
+        },
+        {
+          "date": "2024-02-01",
+          "value": 327.731
+        },
+        {
+          "date": "2024-03-01",
+          "value": 328.043
+        },
+        {
+          "date": "2024-04-01",
+          "value": 328.678
+        },
+        {
+          "date": "2024-05-01",
+          "value": 329.12
+        },
+        {
+          "date": "2024-06-01",
+          "value": 329.71
+        },
+        {
+          "date": "2024-07-01",
+          "value": 330.561
+        },
+        {
+          "date": "2024-08-01",
+          "value": 330.75
+        },
+        {
+          "date": "2024-09-01",
+          "value": 332.083
+        },
+        {
+          "date": "2024-10-01",
+          "value": 332.678
+        },
+        {
+          "date": "2024-11-01",
+          "value": 332.904
+        },
+        {
+          "date": "2024-12-01",
+          "value": 333.566
+        },
+        {
+          "date": "2025-01-01",
+          "value": 335.517
+        },
+        {
+          "date": "2025-02-01",
+          "value": 336.274
+        },
+        {
+          "date": "2025-03-01",
+          "value": 337.751
+        },
+        {
+          "date": "2025-04-01",
+          "value": 337.747
+        },
+        {
+          "date": "2025-05-01",
+          "value": 338.598
+        },
+        {
+          "date": "2025-06-01",
+          "value": 339.498
+        },
+        {
+          "date": "2025-07-01",
+          "value": 340.036
+        },
+        {
+          "date": "2025-08-01",
+          "value": 341.295
+        },
+        {
+          "date": "2025-09-01",
+          "value": 342.405
+        },
+        {
+          "date": "2025-11-01",
+          "value": 341.721
+        },
+        {
+          "date": "2025-12-01",
+          "value": 343.795
+        },
+        {
+          "date": "2026-01-01",
+          "value": 345.165
+        },
+        {
+          "date": "2026-02-01",
+          "value": 346.564
+        },
+        {
+          "date": "2026-03-01",
+          "value": 346.796
+        },
+        {
+          "date": "2026-04-01",
+          "value": 348.499
+        },
+        {
+          "date": "2026-05-01",
+          "value": 349.032
+        },
+        {
+          "date": "2026-06-01",
+          "value": 349.731
+        },
+        {
+          "date": "2026-07-01",
+          "value": 350.164
+        },
+        {
+          "date": "2026-08-01",
+          "value": 350.418
+        }
+      ],
+      "sourceUrl": "https://fred.stlouisfed.org/series/CPIUFDNS",
+      "fetchedAt": "2026-09-25T19:44:00.621Z"
+    },
+    "CPIENGNS": {
+      "id": "CPIENGNS",
+      "label": "CPI Energy (NSA)",
+      "group": "inflation_yoy",
+      "frequency": "monthly",
+      "sa": "NSA",
+      "units": "Index 1982-1984=100",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/CPIENGNS",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "note": "Unadjusted CPI-U index used for standard 12-month inflation comparisons.",
+      "observations": [
+        {
+          "date": "2020-01-01",
+          "value": 213.043
+        },
+        {
+          "date": "2020-02-01",
+          "value": 208.354
+        },
+        {
+          "date": "2020-03-01",
+          "value": 199.573
+        },
+        {
+          "date": "2020-04-01",
+          "value": 183.081
+        },
+        {
+          "date": "2020-05-01",
+          "value": 183.076
+        },
+        {
+          "date": "2020-06-01",
+          "value": 193.379
+        },
+        {
+          "date": "2020-07-01",
+          "value": 197.665
+        },
+        {
+          "date": "2020-08-01",
+          "value": 197.362
+        },
+        {
+          "date": "2020-09-01",
+          "value": 198.858
+        },
+        {
+          "date": "2020-10-01",
+          "value": 196.458
+        },
+        {
+          "date": "2020-11-01",
+          "value": 194.388
+        },
+        {
+          "date": "2020-12-01",
+          "value": 198.155
+        },
+        {
+          "date": "2021-01-01",
+          "value": 205.273
+        },
+        {
+          "date": "2021-02-01",
+          "value": 213.277
+        },
+        {
+          "date": "2021-03-01",
+          "value": 225.861
+        },
+        {
+          "date": "2021-04-01",
+          "value": 229.116
+        },
+        {
+          "date": "2021-05-01",
+          "value": 235.339
+        },
+        {
+          "date": "2021-06-01",
+          "value": 240.72
+        },
+        {
+          "date": "2021-07-01",
+          "value": 244.8
+        },
+        {
+          "date": "2021-08-01",
+          "value": 246.639
+        },
+        {
+          "date": "2021-09-01",
+          "value": 248.228
+        },
+        {
+          "date": "2021-10-01",
+          "value": 255.338
+        },
+        {
+          "date": "2021-11-01",
+          "value": 259.1
+        },
+        {
+          "date": "2021-12-01",
+          "value": 256.207
+        },
+        {
+          "date": "2022-01-01",
+          "value": 260.653
+        },
+        {
+          "date": "2022-02-01",
+          "value": 267.771
+        },
+        {
+          "date": "2022-03-01",
+          "value": 298.246
+        },
+        {
+          "date": "2022-04-01",
+          "value": 298.469
+        },
+        {
+          "date": "2022-05-01",
+          "value": 316.761
+        },
+        {
+          "date": "2022-06-01",
+          "value": 340.917
+        },
+        {
+          "date": "2022-07-01",
+          "value": 325.407
+        },
+        {
+          "date": "2022-08-01",
+          "value": 305.372
+        },
+        {
+          "date": "2022-09-01",
+          "value": 297.343
+        },
+        {
+          "date": "2022-10-01",
+          "value": 300.359
+        },
+        {
+          "date": "2022-11-01",
+          "value": 292.953
+        },
+        {
+          "date": "2022-12-01",
+          "value": 274.937
+        },
+        {
+          "date": "2023-01-01",
+          "value": 283.33
+        },
+        {
+          "date": "2023-02-01",
+          "value": 281.673
+        },
+        {
+          "date": "2023-03-01",
+          "value": 279.084
+        },
+        {
+          "date": "2023-04-01",
+          "value": 283.352
+        },
+        {
+          "date": "2023-05-01",
+          "value": 279.816
+        },
+        {
+          "date": "2023-06-01",
+          "value": 283.854
+        },
+        {
+          "date": "2023-07-01",
+          "value": 284.828
+        },
+        {
+          "date": "2023-08-01",
+          "value": 294.328
+        },
+        {
+          "date": "2023-09-01",
+          "value": 296.004
+        },
+        {
+          "date": "2023-10-01",
+          "value": 286.754
+        },
+        {
+          "date": "2023-11-01",
+          "value": 277.029
+        },
+        {
+          "date": "2023-12-01",
+          "value": 269.375
+        },
+        {
+          "date": "2024-01-01",
+          "value": 270.42
+        },
+        {
+          "date": "2024-02-01",
+          "value": 276.331
+        },
+        {
+          "date": "2024-03-01",
+          "value": 285.002
+        },
+        {
+          "date": "2024-04-01",
+          "value": 290.76
+        },
+        {
+          "date": "2024-05-01",
+          "value": 290.139
+        },
+        {
+          "date": "2024-06-01",
+          "value": 286.675
+        },
+        {
+          "date": "2024-07-01",
+          "value": 287.868
+        },
+        {
+          "date": "2024-08-01",
+          "value": 282.614
+        },
+        {
+          "date": "2024-09-01",
+          "value": 275.74
+        },
+        {
+          "date": "2024-10-01",
+          "value": 272.807
+        },
+        {
+          "date": "2024-11-01",
+          "value": 268.213
+        },
+        {
+          "date": "2024-12-01",
+          "value": 267.963
+        },
+        {
+          "date": "2025-01-01",
+          "value": 273.045
+        },
+        {
+          "date": "2025-02-01",
+          "value": 275.867
+        },
+        {
+          "date": "2025-03-01",
+          "value": 275.734
+        },
+        {
+          "date": "2025-04-01",
+          "value": 279.888
+        },
+        {
+          "date": "2025-05-01",
+          "value": 280.097
+        },
+        {
+          "date": "2025-06-01",
+          "value": 284.307
+        },
+        {
+          "date": "2025-07-01",
+          "value": 283.395
+        },
+        {
+          "date": "2025-08-01",
+          "value": 283.247
+        },
+        {
+          "date": "2025-09-01",
+          "value": 283.589
+        },
+        {
+          "date": "2025-11-01",
+          "value": 279.588
+        },
+        {
+          "date": "2025-12-01",
+          "value": 274.131
+        },
+        {
+          "date": "2026-01-01",
+          "value": 272.668
+        },
+        {
+          "date": "2026-02-01",
+          "value": 277.179
+        },
+        {
+          "date": "2026-03-01",
+          "value": 310.28
+        },
+        {
+          "date": "2026-04-01",
+          "value": 329.907
+        },
+        {
+          "date": "2026-05-01",
+          "value": 346.042
+        },
+        {
+          "date": "2026-06-01",
+          "value": 328.95
+        },
+        {
+          "date": "2026-07-01",
+          "value": 325.15
+        },
+        {
+          "date": "2026-08-01",
+          "value": 329.351
+        }
+      ],
+      "sourceUrl": "https://fred.stlouisfed.org/series/CPIENGNS",
+      "fetchedAt": "2026-09-25T19:44:01.035Z"
+    },
+    "A191RL1Q225SBEA": {
+      "id": "A191RL1Q225SBEA",
+      "label": "Real GDP growth",
+      "group": "gdp_us",
+      "frequency": "quarterly",
+      "sa": "SAAR",
+      "units": "Percent change from preceding quarter at an annual rate",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/A191RL1Q225SBEA",
+      "provider": "U.S. Bureau of Economic Analysis",
+      "note": "Published BEA real GDP growth rate, NIPA Table 1.1.1. Read directly from the source; the dashboard does not annualize it.",
+      "observations": [
+        {
+          "date": "2020-01-01",
+          "value": -5.2
+        },
+        {
+          "date": "2020-04-01",
+          "value": -28
+        },
+        {
+          "date": "2020-07-01",
+          "value": 34.9
+        },
+        {
+          "date": "2020-10-01",
+          "value": 4.6
+        },
+        {
+          "date": "2021-01-01",
+          "value": 5.7
+        },
+        {
+          "date": "2021-04-01",
+          "value": 7
+        },
+        {
+          "date": "2021-07-01",
+          "value": 3.3
+        },
+        {
+          "date": "2021-10-01",
+          "value": 7
+        },
+        {
+          "date": "2022-01-01",
+          "value": -1
+        },
+        {
+          "date": "2022-04-01",
+          "value": 0.6
+        },
+        {
+          "date": "2022-07-01",
+          "value": 2.9
+        },
+        {
+          "date": "2022-10-01",
+          "value": 2.8
+        },
+        {
+          "date": "2023-01-01",
+          "value": 2.9
+        },
+        {
+          "date": "2023-04-01",
+          "value": 2.5
+        },
+        {
+          "date": "2023-07-01",
+          "value": 4.7
+        },
+        {
+          "date": "2023-10-01",
+          "value": 3.4
+        },
+        {
+          "date": "2024-01-01",
+          "value": 0.8
+        },
+        {
+          "date": "2024-04-01",
+          "value": 3.6
+        },
+        {
+          "date": "2024-07-01",
+          "value": 3.3
+        },
+        {
+          "date": "2024-10-01",
+          "value": 1.9
+        },
+        {
+          "date": "2025-01-01",
+          "value": -0.6
+        },
+        {
+          "date": "2025-04-01",
+          "value": 3.8
+        },
+        {
+          "date": "2025-07-01",
+          "value": 4.4
+        },
+        {
+          "date": "2025-10-01",
+          "value": 0.5
+        },
+        {
+          "date": "2026-01-01",
+          "value": 2.1
+        },
+        {
+          "date": "2026-04-01",
+          "value": 1.5
+        }
+      ],
+      "sourceUrl": "https://fred.stlouisfed.org/series/A191RL1Q225SBEA",
+      "fetchedAt": "2026-09-25T19:44:00.066Z"
     }
   }
 }

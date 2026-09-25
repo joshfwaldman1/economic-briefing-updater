@@ -1,6 +1,6 @@
 {
   "retrieved": "2026-09-25",
-  "retrievedAt": "2026-09-25T17:56:08.478Z",
+  "retrievedAt": "2026-09-25T19:44:01.549Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -23,19 +23,19 @@
     },
     {
       "label": "CPI inflation",
-      "value": 3.353016322755642,
+      "value": 3.3965478924364856,
       "digits": 1,
       "prefix": "",
       "suffix": "%",
-      "detail": "Year-over-year · Aug 2026 · SA index",
-      "source": "https://fred.stlouisfed.org/series/CPIAUCSL"
+      "detail": "12-month change · Aug 2026 · NSA",
+      "source": "https://fred.stlouisfed.org/series/CPIAUCNS"
     }
   ],
   "sections": [
     {
       "key": "employment",
       "label": "Employment",
-      "title": "Employment by industry",
+      "title": "Payroll employment by industry",
       "kicker": "LABOR MARKET",
       "columns": [
         {
@@ -43,42 +43,42 @@
           "type": "text"
         },
         {
-          "label": "Monthly change",
+          "label": "1-month change (jobs)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "3-month avg.",
+          "label": "3-month avg. (jobs/month)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "12-month avg.",
+          "label": "12-month avg. (jobs/month)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "Jan 2021–Jan 2025 total",
+          "label": "Jan 2021–Jan 2025 net change (jobs)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "Jan 2021–Jan 2025 monthly avg.",
+          "label": "Jan 2021–Jan 2025 avg. (jobs/month)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "Since Jan 2025 total",
+          "label": "Since Jan 2025 net change (jobs)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "Since Jan 2025 monthly avg.",
+          "label": "Since Jan 2025 avg. (jobs/month)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "Since Jan 2021 total",
+          "label": "Since Jan 2021 net change (jobs)",
           "type": "number",
           "digits": 0
         },
@@ -87,7 +87,7 @@
           "type": "text"
         },
         {
-          "label": "Period",
+          "label": "Latest month",
           "type": "date",
           "frequency": "monthly"
         }
@@ -417,13 +417,13 @@
           "frequency": "monthly"
         }
       ],
-      "note": "Changes are people. Jan 2021–Jan 2025 uses exact January levels and 48 observed monthly changes. Since Jan 2025 uses the exact January 2025 level and observed monthly changes to the row’s latest month. Totals require both endpoints; averages require every intervening month. Subsets overlap and should not be added to parent industries.",
-      "sourceNote": "BLS establishment survey via FRED. Published seasonal adjustment is retained. Pandas converts raw thousands of people to people; monthly averages are means of observed monthly differences."
+      "note": "Payroll jobs, seasonally adjusted. Net change is the ending level minus the starting level for the stated period. “Since” comparisons end in the latest month shown. Jan 2021–Jan 2025 compares those two January levels. Monthly averages summarize observed job changes over the stated period; they are not forecasts. Averages require every month in the period. Subsets overlap their parent industries.",
+      "sourceNote": "Source: BLS Current Employment Statistics via FRED. Employment counts payroll jobs, not unique workers. Changes use the current revised data; missing observations remain unavailable."
     },
     {
       "key": "unemployment",
       "label": "Unemployment",
-      "title": "Unemployment by race and demographic",
+      "title": "Unemployment rates by demographic group",
       "kicker": "LABOR MARKET",
       "columns": [
         {
@@ -431,22 +431,22 @@
           "type": "text"
         },
         {
-          "label": "Rate (%)",
+          "label": "Unemployment rate (%)",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "1m change (pp)",
+          "label": "1-month change (percentage points)",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "1y change (pp)",
+          "label": "12-month change (percentage points)",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "Period",
+          "label": "Latest month",
           "type": "date",
           "frequency": "monthly"
         }
@@ -557,13 +557,13 @@
           "frequency": "monthly"
         }
       ],
-      "note": "Seasonally adjusted. Ages 16 and over unless otherwise noted. Hispanic or Latino ethnicity may be of any race; these groups overlap.",
-      "sourceNote": "BLS household survey via FRED. pp means percentage points. Observed differences are computed with pandas."
+      "note": "Seasonally adjusted. Unemployment rates measure unemployed people as a share of the labor force. Ages 16 and over unless stated otherwise. Hispanic or Latino is an ethnicity and may overlap any race. Changes in rates are percentage points.",
+      "sourceNote": "Source: BLS Current Population Survey via FRED. Comparison months must be present in the source data."
     },
     {
       "key": "inflation",
       "label": "CPI & PCE inflation",
-      "title": "CPI and PCE inflation",
+      "title": "Consumer price inflation: CPI and PCE",
       "kicker": "PRICES",
       "columns": [
         {
@@ -571,19 +571,23 @@
           "type": "text"
         },
         {
-          "label": "MoM (%)",
+          "label": "1-month change (%, SA)",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "YoY (%)",
+          "label": "12-month change (%)",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "Period",
+          "label": "Latest month",
           "type": "date",
           "frequency": "monthly"
+        },
+        {
+          "label": "12-month adjustment",
+          "type": "text"
         }
       ],
       "rows": [
@@ -592,84 +596,161 @@
           "values": [
             "CPI · Headline",
             0.3960181843858157,
-            3.353016322755642,
-            "2026-08-01"
+            3.3965478924364856,
+            "2026-08-01",
+            "NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/CPIAUCSL",
           "sa": "SA",
-          "frequency": "monthly"
+          "frequency": "monthly",
+          "sources": [
+            {
+              "label": "Monthly: SA",
+              "url": "https://fred.stlouisfed.org/series/CPIAUCSL"
+            },
+            {
+              "label": "12-month: NSA",
+              "url": "https://fred.stlouisfed.org/series/CPIAUCNS"
+            }
+          ]
         },
         {
           "id": "CPILFESL",
           "values": [
             "CPI · Core",
             0.2897956881014574,
-            2.4461631786472537,
-            "2026-08-01"
+            2.4459799375700753,
+            "2026-08-01",
+            "NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/CPILFESL",
           "sa": "SA",
-          "frequency": "monthly"
+          "frequency": "monthly",
+          "sources": [
+            {
+              "label": "Monthly: SA",
+              "url": "https://fred.stlouisfed.org/series/CPILFESL"
+            },
+            {
+              "label": "12-month: NSA",
+              "url": "https://fred.stlouisfed.org/series/CPILFENS"
+            }
+          ]
         },
         {
           "id": "CUSR0000SACL1E",
           "values": [
             "CPI · Core Goods",
             0.10550661055541699,
-            0.6599216005945818,
-            "2026-08-01"
+            0.6814055706846345,
+            "2026-08-01",
+            "NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/CUSR0000SACL1E",
           "sa": "SA",
-          "frequency": "monthly"
+          "frequency": "monthly",
+          "sources": [
+            {
+              "label": "Monthly: SA",
+              "url": "https://fred.stlouisfed.org/series/CUSR0000SACL1E"
+            },
+            {
+              "label": "12-month: NSA",
+              "url": "https://fred.stlouisfed.org/series/CUUR0000SACL1E"
+            }
+          ]
         },
         {
           "id": "CUSR0000SASLE",
           "values": [
             "CPI · Core Services",
             0.3274119421205812,
-            3.0164706532959773,
-            "2026-08-01"
+            3.0094715737561284,
+            "2026-08-01",
+            "NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/CUSR0000SASLE",
           "sa": "SA",
-          "frequency": "monthly"
+          "frequency": "monthly",
+          "sources": [
+            {
+              "label": "Monthly: SA",
+              "url": "https://fred.stlouisfed.org/series/CUSR0000SASLE"
+            },
+            {
+              "label": "12-month: NSA",
+              "url": "https://fred.stlouisfed.org/series/CUUR0000SASLE"
+            }
+          ]
         },
         {
           "id": "CUSR0000SAH1",
           "values": [
             "CPI · Shelter",
             0.26381104417434464,
-            3.034809785537229,
-            "2026-08-01"
+            3.0411436174031303,
+            "2026-08-01",
+            "NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/CUSR0000SAH1",
           "sa": "SA",
-          "frequency": "monthly"
+          "frequency": "monthly",
+          "sources": [
+            {
+              "label": "Monthly: SA",
+              "url": "https://fred.stlouisfed.org/series/CUSR0000SAH1"
+            },
+            {
+              "label": "12-month: NSA",
+              "url": "https://fred.stlouisfed.org/series/CUUR0000SAH1"
+            }
+          ]
         },
         {
           "id": "CPIUFDSL",
           "values": [
             "CPI · Food",
             0.12232730556962501,
-            2.633598968709716,
-            "2026-08-01"
+            2.6730541027556676,
+            "2026-08-01",
+            "NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/CPIUFDSL",
           "sa": "SA",
-          "frequency": "monthly"
+          "frequency": "monthly",
+          "sources": [
+            {
+              "label": "Monthly: SA",
+              "url": "https://fred.stlouisfed.org/series/CPIUFDSL"
+            },
+            {
+              "label": "12-month: NSA",
+              "url": "https://fred.stlouisfed.org/series/CPIUFDNS"
+            }
+          ]
         },
         {
           "id": "CPIENGSL",
           "values": [
             "CPI · Energy",
             2.096626005792346,
-            16.049347026386364,
-            "2026-08-01"
+            16.276959685362936,
+            "2026-08-01",
+            "NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/CPIENGSL",
           "sa": "SA",
-          "frequency": "monthly"
+          "frequency": "monthly",
+          "sources": [
+            {
+              "label": "Monthly: SA",
+              "url": "https://fred.stlouisfed.org/series/CPIENGSL"
+            },
+            {
+              "label": "12-month: NSA",
+              "url": "https://fred.stlouisfed.org/series/CPIENGNS"
+            }
+          ]
         },
         {
           "id": "PCEPI",
@@ -677,7 +758,8 @@
             "PCE · Headline",
             0.15594808830463602,
             3.7011657214870874,
-            "2026-07-01"
+            "2026-07-01",
+            "SA"
           ],
           "source": "https://fred.stlouisfed.org/series/PCEPI",
           "sa": "SA",
@@ -689,7 +771,8 @@
             "PCE · Core",
             0.2455155058386671,
             3.3441430040338282,
-            "2026-07-01"
+            "2026-07-01",
+            "SA"
           ],
           "source": "https://fred.stlouisfed.org/series/PCEPILFE",
           "sa": "SA",
@@ -701,7 +784,8 @@
             "PCE · Food",
             -0.08013365689186758,
             2.4025350192140804,
-            "2026-07-01"
+            "2026-07-01",
+            "SA"
           ],
           "source": "https://fred.stlouisfed.org/series/DFXARG3M086SBEA",
           "sa": "SA",
@@ -713,20 +797,21 @@
             "PCE · Energy",
             -1.463922026889941,
             15.314272833151744,
-            "2026-07-01"
+            "2026-07-01",
+            "SA"
           ],
           "source": "https://fred.stlouisfed.org/series/DNRGRG3M086SBEA",
           "sa": "SA",
           "frequency": "monthly"
         }
       ],
-      "note": "Observed month-over-month and year-over-year changes in published seasonally adjusted price indexes. CPI and PCE have different coverage and weights. Only configured source series are included.",
-      "sourceNote": "BLS CPI and BEA PCE via FRED. Changes use pandas pct_change with no missing-value fill. SA CPI index-based YoY can differ slightly from the headline NSA convention."
+      "note": "Percent changes in price indexes. The 1-month change is seasonally adjusted (SA). CPI and PCE measure different baskets of consumer spending; core measures exclude food and energy. CPI 12-month changes are not seasonally adjusted (NSA); PCE 12-month changes use SA indexes, as indicated.",
+      "sourceNote": "Sources: BLS Consumer Price Index and BEA Personal Consumption Expenditures Price Index via FRED. All changes compare observed index values."
     },
     {
       "key": "prices",
       "label": "Gas & basic goods",
-      "title": "Gas prices and everyday goods",
+      "title": "Retail prices: gasoline and basic goods",
       "kicker": "COST OF LIVING",
       "columns": [
         {
@@ -734,7 +819,7 @@
           "type": "text"
         },
         {
-          "label": "Latest price ($)",
+          "label": "Price ($)",
           "type": "number",
           "digits": 3
         },
@@ -744,12 +829,12 @@
           "digits": 3
         },
         {
-          "label": "YoY (%)",
+          "label": "12-month change (%)",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "Unit",
+          "label": "Price unit",
           "type": "text"
         },
         {
@@ -761,7 +846,7 @@
           "type": "text"
         },
         {
-          "label": "Period",
+          "label": "Latest observation",
           "type": "date"
         }
       ],
@@ -886,13 +971,13 @@
           "note": "U.S. city average retail dollar price. Published only without seasonal adjustment; average-price differences are not a quality-adjusted inflation measure."
         }
       ],
-      "note": "Actual dollar prices per stated unit. These series retain their published seasonal adjustment; most average retail prices are NSA. They are national averages, not a local shopping quote. The prior period is one month for monthly prices or one week for weekly fuel prices.",
-      "sourceNote": "BLS average retail prices and EIA fuel prices via FRED. Weekly YoY compares 52 weeks earlier; monthly YoY compares the same month a year earlier. Pandas uses exact observations; missing periods remain unavailable."
+      "note": "Dollar prices for the stated quantity. The prior period is the preceding month for goods and the preceding week for fuel. Twelve-month comparisons use the same month a year earlier, or 52 weeks earlier for weekly fuel prices. Published adjustment is shown for each series.",
+      "sourceNote": "Sources: BLS U.S. city average retail prices and EIA U.S. retail fuel prices via FRED. Average retail prices describe dollar costs; CPI and PCE indexes are the measures of inflation."
     },
     {
       "key": "manufacturing",
       "label": "Manufacturing & autos",
-      "title": "Manufacturing, auto manufacturing and dealers",
+      "title": "Manufacturing and auto employment",
       "kicker": "JOBS BY INDUSTRY & STATE",
       "columns": [
         {
@@ -900,47 +985,47 @@
           "type": "text"
         },
         {
-          "label": "Total jobs",
+          "label": "Employment level (jobs)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "Monthly change",
+          "label": "1-month change (jobs)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "3-month avg.",
+          "label": "3-month avg. (jobs/month)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "12-month avg.",
+          "label": "12-month avg. (jobs/month)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "Jan 2021–Jan 2025 total",
+          "label": "Jan 2021–Jan 2025 net change (jobs)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "Jan 2021–Jan 2025 monthly avg.",
+          "label": "Jan 2021–Jan 2025 avg. (jobs/month)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "Since Jan 2025 total",
+          "label": "Since Jan 2025 net change (jobs)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "Since Jan 2025 monthly avg.",
+          "label": "Since Jan 2025 avg. (jobs/month)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "Since Jan 2021 total",
+          "label": "Since Jan 2021 net change (jobs)",
           "type": "number",
           "digits": 0
         },
@@ -949,7 +1034,7 @@
           "type": "text"
         },
         {
-          "label": "Period",
+          "label": "Latest month",
           "type": "date",
           "frequency": "monthly"
         }
@@ -1147,55 +1232,36 @@
           "note": "Sum of motor vehicles and parts manufacturing and motor vehicle and parts dealers, two disjoint payroll industries. This defined total excludes automotive repair, wholesale and other auto-related employment. Normalize each input to people before adding, on common observation dates only."
         }
       ],
-      "note": "Levels and changes are people. Jan 2021–Jan 2025 uses exact January levels and 48 observed monthly changes. Since Jan 2025 uses the exact January 2025 level and observed monthly changes to the row’s latest month. Totals require both endpoints; averages require every intervening month. Subsets overlap and should not be added to parent industries. “Total auto jobs” means motor vehicles and parts manufacturing plus motor vehicle and parts dealers; it does not cover every auto-related business.",
-      "sourceNote": "BLS establishment-survey data via FRED, using published seasonal adjustment. Pandas aligns derived components on dates present in every source before summing. The selected states are Michigan, Ohio, Wisconsin, Pennsylvania and Minnesota, not a complete geographic region."
+      "note": "Payroll jobs, seasonally adjusted. Net change is the ending level minus the starting level for the stated period. “Since” comparisons end in the latest month shown. Jan 2021–Jan 2025 compares those two January levels. Monthly averages summarize observed job changes over the stated period; they are not forecasts. Averages require every month in the period. Subsets overlap their parent industries. The defined auto total combines motor vehicles and parts manufacturing with motor vehicle and parts dealers. It excludes auto repair, wholesale and other auto-related industries.",
+      "sourceNote": "Source: BLS Current Employment Statistics via FRED. Component totals use dates available in every source. Michigan, Ohio, Wisconsin, Pennsylvania and Minnesota are selected states, not a complete region."
     },
     {
-      "key": "gdp",
-      "label": "Real GDP",
-      "title": "Real GDP: U.S. and G7",
+      "key": "gdp_us",
+      "label": "U.S. real GDP",
+      "title": "U.S. real GDP: official BEA figures",
       "kicker": "ECONOMIC OUTPUT",
       "columns": [
         {
-          "label": "Economy",
+          "label": "Measure",
           "type": "text"
         },
         {
-          "label": "Real GDP level",
-          "type": "number",
-          "digits": 2
-        },
-        {
-          "label": "Published unit",
-          "type": "text"
-        },
-        {
-          "label": "QoQ (%)",
+          "label": "Latest",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "YoY (%)",
+          "label": "Previous quarter",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "Q1 2021–Q1 2025 change (%)",
+          "label": "Same quarter a year earlier",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "Since Q1 2025 change (%)",
-          "type": "number",
-          "digits": 1
-        },
-        {
-          "label": "Since Q1 2021 change (%)",
-          "type": "number",
-          "digits": 1
-        },
-        {
-          "label": "Adjustment",
+          "label": "Unit / convention",
           "type": "text"
         },
         {
@@ -1206,17 +1272,95 @@
       ],
       "rows": [
         {
+          "id": "A191RL1Q225SBEA",
+          "values": [
+            "Real GDP growth",
+            1.5,
+            2.1,
+            3.8,
+            "Percent change from preceding quarter at an annual rate · SAAR",
+            "2026-04-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/A191RL1Q225SBEA",
+          "sa": "SAAR",
+          "frequency": "quarterly",
+          "note": "Published BEA real GDP growth rate, NIPA Table 1.1.1. Read directly from the source; the dashboard does not annualize it."
+        },
+        {
+          "id": "GDPC1",
+          "values": [
+            "Real GDP level",
+            24269.613,
+            24180.419,
+            23770.976,
+            "Billions of chained 2017 USD · SAAR",
+            "2026-04-01"
+          ],
+          "source": "https://fred.stlouisfed.org/series/GDPC1",
+          "sa": "SAAR",
+          "frequency": "quarterly",
+          "note": "Real GDP. Compare percentage growth or rebased indexes across countries; raw levels have different currencies, scales, reference years and annualization conventions.",
+          "digits": {
+            "1": 3,
+            "2": 3,
+            "3": 3
+          }
+        }
+      ],
+      "note": "Growth is the BEA-published percent change from the preceding quarter at a seasonally adjusted annual rate (SAAR). Each growth entry describes its own quarter; it is not a 4-quarter change or a forecast. The GDP level is inflation-adjusted output in billions of chained 2017 dollars at an annual rate.",
+      "sourceNote": "BEA NIPA Tables 1.1.1 and 1.1.6 via FRED. Values are read directly from the published series. For growth during a single quarter and cumulative comparisons, use G7 real GDP."
+    },
+    {
+      "key": "gdp",
+      "label": "G7 real GDP",
+      "title": "G7 real GDP growth and cumulative changes",
+      "kicker": "ECONOMIC OUTPUT",
+      "columns": [
+        {
+          "label": "Economy",
+          "type": "text"
+        },
+        {
+          "label": "Quarterly change (%, not annualized)",
+          "type": "number",
+          "digits": 1
+        },
+        {
+          "label": "4-quarter change (%)",
+          "type": "number",
+          "digits": 1
+        },
+        {
+          "label": "Q1 2021–Q1 2025 cumulative change (%)",
+          "type": "number",
+          "digits": 1
+        },
+        {
+          "label": "Since Q1 2025 cumulative change (%)",
+          "type": "number",
+          "digits": 1
+        },
+        {
+          "label": "Since Q1 2021 cumulative change (%)",
+          "type": "number",
+          "digits": 1
+        },
+        {
+          "label": "Comparison quarter",
+          "type": "date",
+          "frequency": "quarterly"
+        }
+      ],
+      "rows": [
+        {
           "id": "GDPC1",
           "values": [
             "United States",
-            24269.613,
-            "Billions of chained 2017 USD",
             0.36886871149750533,
             2.097671547016011,
             11.697468576947667,
             3.063515231094005,
             15.119337539548905,
-            "SAAR",
             "2026-04-01"
           ],
           "source": "https://fred.stlouisfed.org/series/GDPC1",
@@ -1228,14 +1372,11 @@
           "id": "CLVMNACSCAB1GQDE",
           "values": [
             "Germany",
-            782934.3,
-            "Millions of chained 2010 EUR",
             0.3304647689418516,
             1.0171982341795838,
             3.4005291955930828,
             0.9980033483067086,
             4.432469939131978,
-            "SA",
             "2026-04-01"
           ],
           "source": "https://fred.stlouisfed.org/series/CLVMNACSCAB1GQDE",
@@ -1247,14 +1388,11 @@
           "id": "JPNRGDPEXP",
           "values": [
             "Japan",
-            598950.5,
-            "Billions of chained 2015 JPY",
             0.36045618686213476,
             0.7266540380768127,
             4.075660470336029,
             0.8510579544132479,
             4.9614046573769555,
-            "SA",
             "2026-04-01"
           ],
           "source": "https://fred.stlouisfed.org/series/JPNRGDPEXP",
@@ -1266,14 +1404,11 @@
           "id": "NGDPRSAXDCGBQ",
           "values": [
             "United Kingdom",
-            712545.0,
-            "Millions of domestic currency",
             0.4153055673775885,
             1.1744008723877375,
             14.773652811895577,
             1.3320951451837315,
             16.302547068952844,
-            "SA",
             "2026-04-01"
           ],
           "source": "https://fred.stlouisfed.org/series/NGDPRSAXDCGBQ",
@@ -1285,14 +1420,11 @@
           "id": "CLVMNACSCAB1GQFR",
           "values": [
             "France",
-            597203.9,
-            "Millions of chained 2010 EUR",
             0.035427586682845735,
             0.5422715031021985,
             9.328448666162647,
             0.7794663684477898,
             10.180627154661082,
-            "SA",
             "2026-04-01"
           ],
           "source": "https://fred.stlouisfed.org/series/CLVMNACSCAB1GQFR",
@@ -1304,14 +1436,11 @@
           "id": "CLVMNACSCAB1GQIT",
           "values": [
             "Italy",
-            436738.3,
-            "Millions of chained 2010 EUR",
             0.17165535256664644,
             1.0172308671593022,
             10.974396010290445,
             1.0025362896166623,
             12.086954602476506,
-            "SA",
             "2026-04-01"
           ],
           "source": "https://fred.stlouisfed.org/series/CLVMNACSCAB1GQIT",
@@ -1323,14 +1452,11 @@
           "id": "NGDPRSAXDCCAQ",
           "values": [
             "Canada",
-            631031.8,
-            "Millions of domestic currency",
             0.819746253800524,
             1.1278958220418245,
             12.476967746123456,
             0.8828483020641542,
             13.46996874608337,
-            "SA",
             "2026-04-01"
           ],
           "source": "https://fred.stlouisfed.org/series/NGDPRSAXDCCAQ",
@@ -1339,8 +1465,8 @@
           "note": "Real GDP. Compare percentage growth or rebased indexes across countries; raw levels have different currencies, scales, reference years and annualization conventions."
         }
       ],
-      "note": "Inflation-adjusted output. QoQ is the observed change from the preceding quarter. Compare growth rates across countries: published levels use different currencies, reference years and source conventions. Q1 baselines represent full quarters, not January alone.",
-      "sourceNote": "BEA and national statistical sources via FRED. Changes are computed with pandas from observed quarterly levels. SAAR identifies an annual-rate level published by the source; the dashboard does not convert observed quarterly growth into an annual rate."
+      "note": "All countries use the latest quarter available for every country, with seasonally adjusted real GDP. Quarterly change is growth during one quarter, not an annual rate. The 4-quarter column compares with the same quarter a year earlier, not annual-average GDP. Cumulative columns compare levels at the stated endpoints and are not average annual growth rates.",
+      "sourceNote": "BEA and national statistical sources via FRED. Pandas calculates percentage changes from each country’s real GDP series; national-currency levels are omitted from this comparison. Q1 baselines are full quarters, not January-only observations or exact presidential-term boundaries. The common comparison quarter avoids mixing periods when national release dates differ; the U.S. tab separately reports the latest BEA quarter."
     },
     {
       "key": "applications",
@@ -1349,26 +1475,26 @@
       "kicker": "BUSINESS ACTIVITY",
       "columns": [
         {
-          "label": "Applications",
+          "label": "Application category",
           "type": "text"
         },
         {
-          "label": "Level",
+          "label": "Applications (count)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "MoM (%)",
+          "label": "1-month change (%)",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "YoY (%)",
+          "label": "12-month change (%)",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "Period",
+          "label": "Latest month",
           "type": "date",
           "frequency": "monthly"
         }
@@ -1401,13 +1527,13 @@
           "frequency": "monthly"
         }
       ],
-      "note": "Monthly applications, seasonally adjusted. High-propensity applications are a subset of total applications, not additional business formations.",
-      "sourceNote": "U.S. Census Bureau via FRED. Changes are computed with pandas from observed application counts."
+      "note": "Monthly application counts, seasonally adjusted. Applications are not counts of businesses opened. High-propensity applications are a subset of total applications with characteristics associated with a higher likelihood of becoming an employer business.",
+      "sourceNote": "Source: U.S. Census Bureau Business Formation Statistics via FRED. Changes compare observed monthly counts."
     },
     {
       "key": "claims",
       "label": "Jobless claims",
-      "title": "Initial and continued claims",
+      "title": "Unemployment insurance claims",
       "kicker": "LABOR MARKET",
       "columns": [
         {
@@ -1415,22 +1541,22 @@
           "type": "text"
         },
         {
-          "label": "Claims",
+          "label": "Latest claims (level)",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "1 week ago",
+          "label": "Claims 1 week earlier",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "52 weeks ago",
+          "label": "Claims 52 weeks earlier",
           "type": "number",
           "digits": 0
         },
         {
-          "label": "Week ending",
+          "label": "Latest week ending",
           "type": "date"
         }
       ],
@@ -1475,13 +1601,13 @@
           "frequency": "weekly"
         }
       ],
-      "note": "Seasonally adjusted. Continued claims generally refer to an earlier week than initial claims.",
-      "sourceNote": "U.S. Employment and Training Administration via FRED. Comparisons require exact dates; missing observations remain unavailable."
+      "note": "Seasonally adjusted weekly levels. The comparison columns show claim counts, not changes. The 4-week average is the published average of initial claims. Continued claims generally refer to an earlier week than initial claims.",
+      "sourceNote": "Source: U.S. Department of Labor, Employment and Training Administration via FRED. Comparisons require the exact reporting week."
     },
     {
       "key": "markets",
       "label": "Stock market",
-      "title": "Stock market indexes",
+      "title": "Stock market price indexes",
       "kicker": "FINANCIAL MARKETS",
       "columns": [
         {
@@ -1489,27 +1615,27 @@
           "type": "text"
         },
         {
-          "label": "Close",
+          "label": "Closing index level",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "1m (%)",
+          "label": "1-month price return (%)",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "YTD (%)",
+          "label": "Year-to-date price return (%)",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "1y (%)",
+          "label": "12-month price return (%)",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "Close date",
+          "label": "Latest close",
           "type": "date"
         }
       ],
@@ -1560,13 +1686,13 @@
           "note": "Closing price index, excluding dividends."
         }
       ],
-      "note": "Daily closing price indexes, not live prices. Changes exclude dividends. Market series are not seasonally adjusted.",
-      "sourceNote": "S&P Dow Jones Indices and Nasdaq via FRED. Calendar lookbacks use a prior observed close within seven days. Pandas computes returns from those observed prices."
+      "note": "Observed daily closing index levels and price returns, not seasonally adjusted. Returns exclude dividends. Year-to-date starts from the last available close on or before the preceding December 31.",
+      "sourceNote": "Sources: S&P Dow Jones Indices and Nasdaq via FRED. Calendar comparisons use a prior available closing value within seven days of the comparison date. These are closing prices, not intraday quotes."
     },
     {
       "key": "budget",
       "label": "Federal budget",
-      "title": "Federal deficit measures",
+      "title": "Federal budget deficit",
       "kicker": "FISCAL POSITION",
       "columns": [
         {
@@ -1574,7 +1700,7 @@
           "type": "text"
         },
         {
-          "label": "Deficit",
+          "label": "Deficit (units shown)",
           "type": "number",
           "digits": 1
         },
@@ -1583,7 +1709,7 @@
           "type": "text"
         },
         {
-          "label": "Period ending",
+          "label": "Reporting period",
           "type": "text"
         }
       ],
@@ -1594,7 +1720,7 @@
             "Monthly deficit",
             166.79695227738003,
             "USD billions",
-            "2026-08-01"
+            "Aug 2026"
           ],
           "source": "https://fred.stlouisfed.org/series/MTSDS133FMS",
           "sa": "NSA",
@@ -1606,7 +1732,7 @@
             "Fiscal year to date deficit",
             1965.6278204534403,
             "USD billions",
-            "2026-08-01"
+            "Oct 2025–Aug 2026"
           ],
           "source": "https://fred.stlouisfed.org/series/MTSDS133FMS",
           "sa": "NSA",
@@ -1618,7 +1744,7 @@
             "Trailing 12 months deficit",
             1767.6781900912804,
             "USD billions",
-            "2026-08-01"
+            "Sep 2025–Aug 2026"
           ],
           "source": "https://fred.stlouisfed.org/series/MTSDS133FMS",
           "sa": "NSA",
@@ -1637,13 +1763,13 @@
           "frequency": "annual"
         }
       ],
-      "note": "Positive values indicate a deficit; negative values indicate a surplus. Fiscal year to date begins in October. Published budget balances are NSA.",
-      "sourceNote": "Treasury and OMB via FRED. Pandas sums observed monthly balances only when every required month is available."
+      "note": "Positive values indicate a deficit; negative values indicate a surplus. Dollar amounts are billions of U.S. dollars, while the fiscal-year deficit-to-GDP ratio is a percent. The federal fiscal year starts in October. Monthly balances are not seasonally adjusted.",
+      "sourceNote": "Sources: U.S. Treasury and OMB via FRED. Fiscal-year-to-date and trailing-12-month totals require every reported month."
     },
     {
       "key": "participation",
       "label": "Participation",
-      "title": "Prime-age participation and employment",
+      "title": "Prime-age labor force participation and employment",
       "kicker": "LABOR MARKET",
       "columns": [
         {
@@ -1656,17 +1782,17 @@
           "digits": 1
         },
         {
-          "label": "1m change (pp)",
+          "label": "1-month change (percentage points)",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "1y change (pp)",
+          "label": "12-month change (percentage points)",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "Period",
+          "label": "Latest month",
           "type": "date",
           "frequency": "monthly"
         }
@@ -1675,7 +1801,7 @@
         {
           "id": "LNS11300060",
           "values": [
-            "Prime age (25-54)",
+            "Labor force participation rate, ages 25–54",
             83.4,
             0.0,
             -0.29999999999999716,
@@ -1688,7 +1814,7 @@
         {
           "id": "LNS12300060",
           "values": [
-            "Prime-age employment / population",
+            "Employment-to-population ratio, ages 25–54",
             80.4,
             0.0,
             -0.29999999999999716,
@@ -1699,8 +1825,8 @@
           "frequency": "monthly"
         }
       ],
-      "note": "People ages 25–54. Seasonally adjusted. Participation includes employed people and unemployed people seeking work.",
-      "sourceNote": "BLS household survey via FRED. pp means percentage points. Differences are computed with pandas."
+      "note": "People ages 25–54, seasonally adjusted. Labor force participation is the share of the population working or actively seeking work. The employment-to-population ratio is the share employed. Changes in either rate are percentage points.",
+      "sourceNote": "Source: BLS Current Population Survey via FRED. Comparison months must be present in the source data."
     },
     {
       "key": "context",
@@ -1709,11 +1835,11 @@
       "kicker": "LABOR MARKET",
       "columns": [
         {
-          "label": "Measure",
+          "label": "Indicator",
           "type": "text"
         },
         {
-          "label": "Value",
+          "label": "Latest value",
           "type": "number",
           "digits": 2
         },
@@ -1722,7 +1848,7 @@
           "type": "text"
         },
         {
-          "label": "Period",
+          "label": "Latest month",
           "type": "date",
           "frequency": "monthly"
         }
@@ -1777,8 +1903,8 @@
           "frequency": "monthly"
         }
       ],
-      "note": "Published seasonal adjustment is retained. Job openings and quits come from JOLTS; U-6 is a broader measure of labor underutilization. Wages are nominal dollars per hour.",
-      "sourceNote": "BLS via FRED. Observation months differ across releases."
+      "note": "Job openings are in thousands. The quits rate is quits as a percent of employment. U-6 includes unemployed and marginally attached people and people working part time for economic reasons, relative to the labor force plus the marginally attached. Average hourly earnings cover all employees on private nonfarm payrolls and are nominal dollars per hour.",
+      "sourceNote": "Source: BLS via FRED. Published seasonal adjustment is retained. The latest reporting month can differ across indicators."
     },
     {
       "key": "war",
@@ -1796,7 +1922,7 @@
           "digits": 3
         },
         {
-          "label": "Baseline observation",
+          "label": "Baseline date",
           "type": "date"
         },
         {
@@ -1805,21 +1931,25 @@
           "digits": 3
         },
         {
-          "label": "Latest observation",
+          "label": "Latest date",
           "type": "date"
         },
         {
-          "label": "Absolute change",
+          "label": "Change (units shown)",
           "type": "number",
           "digits": 3
         },
         {
-          "label": "Change (%)",
+          "label": "Relative change (%)",
           "type": "number",
           "digits": 1
         },
         {
-          "label": "Unit / adjustment",
+          "label": "Level unit / adjustment",
+          "type": "text"
+        },
+        {
+          "label": "Change unit",
           "type": "text"
         }
       ],
@@ -1834,7 +1964,8 @@
             "2026-09-22",
             29.450000000000003,
             43.98148148148149,
-            "USD per barrel · NSA"
+            "USD per barrel · NSA",
+            "USD per barrel"
           ],
           "source": "https://fred.stlouisfed.org/series/DCOILWTICO",
           "sa": "NSA",
@@ -1855,7 +1986,8 @@
             "2026-09-22",
             43.57000000000001,
             61.09085810431858,
-            "USD per barrel · NSA"
+            "USD per barrel · NSA",
+            "USD per barrel"
           ],
           "source": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
           "sa": "NSA",
@@ -1876,7 +2008,8 @@
             "2026-09-21",
             1.541,
             52.468505277494046,
-            "USD per gallon · NSA"
+            "USD per gallon · NSA",
+            "USD per gallon"
           ],
           "source": "https://fred.stlouisfed.org/series/GASREGW",
           "sa": "NSA",
@@ -1898,7 +2031,8 @@
             "2026-09-21",
             2.7199999999999998,
             71.40981885009188,
-            "USD per gallon · NSA"
+            "USD per gallon · NSA",
+            "USD per gallon"
           ],
           "source": "https://fred.stlouisfed.org/series/GASDESW",
           "sa": "NSA",
@@ -1920,7 +2054,8 @@
             "2026-09-24",
             825.25,
             11.996865768846089,
-            "Index · NSA"
+            "Index · NSA",
+            "Index points"
           ],
           "source": "https://fred.stlouisfed.org/series/SP500",
           "sa": "NSA",
@@ -1942,7 +2077,8 @@
             "2026-09-24",
             2372.060000000005,
             4.843121145201756,
-            "Index · NSA"
+            "Index · NSA",
+            "Index points"
           ],
           "source": "https://fred.stlouisfed.org/series/DJIA",
           "sa": "NSA",
@@ -1964,7 +2100,8 @@
             "2026-09-24",
             4271.16,
             18.842070017879674,
-            "Index February 5, 1971=100 · NSA"
+            "Index February 5, 1971=100 · NSA",
+            "Index points"
           ],
           "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
           "sa": "NSA",
@@ -1986,7 +2123,8 @@
             "2026-08-01",
             7.5429999999999495,
             2.309637831151168,
-            "Index 1982-1984=100 · SA"
+            "Index 1982-1984=100 · SA",
+            "Index points"
           ],
           "source": "https://fred.stlouisfed.org/series/CPIAUCSL",
           "sa": "SA",
@@ -2007,7 +2145,8 @@
             "2026-08-01",
             4.97199999999998,
             1.4940218093529634,
-            "Index 1982-1984=100 · SA"
+            "Index 1982-1984=100 · SA",
+            "Index points"
           ],
           "source": "https://fred.stlouisfed.org/series/CPILFESL",
           "sa": "SA",
@@ -2028,7 +2167,8 @@
             "2026-07-01",
             2.6359999999999957,
             2.043046588592734,
-            "Index 2017=100 · SA"
+            "Index 2017=100 · SA",
+            "Index points"
           ],
           "source": "https://fred.stlouisfed.org/series/PCEPI",
           "sa": "SA",
@@ -2049,7 +2189,8 @@
             "2026-07-01",
             2.2029999999999745,
             1.71499746993109,
-            "Index 2017=100 · SA"
+            "Index 2017=100 · SA",
+            "Index points"
           ],
           "source": "https://fred.stlouisfed.org/series/PCEPILFE",
           "sa": "SA",
@@ -2070,7 +2211,8 @@
             "2026-08-01",
             483000.0,
             0.3045550847457612,
-            "People · SA"
+            "Jobs · SA",
+            "Jobs"
           ],
           "source": "https://fred.stlouisfed.org/series/PAYEMS",
           "sa": "SA",
@@ -2091,7 +2233,8 @@
             "2026-08-01",
             -0.20000000000000018,
             -4.651162790697683,
-            "Percent · SA"
+            "Percent · SA",
+            "Percentage points"
           ],
           "source": "https://fred.stlouisfed.org/series/UNRATE",
           "sa": "SA",
@@ -2112,7 +2255,8 @@
             "2026-09-19",
             -14000.0,
             -6.635071090047395,
-            "Number · SA"
+            "Number · SA",
+            "Claims"
           ],
           "source": "https://fred.stlouisfed.org/series/ICSA",
           "sa": "SA",
@@ -2124,8 +2268,8 @@
           }
         }
       ],
-      "note": "User-selected start: February 28, 2026. Daily and weekly baselines are the last available observation before that date; monthly baselines use January 2026 because February spans the start of the war. Each baseline is shown explicitly. These comparisons describe changes over time and do not attribute them to the war.",
-      "sourceNote": "Sources via FRED. Pandas uses observed baselines within 7 days for daily data and 14 days for weekly data; missing monthly baselines remain unavailable. Rate differences under absolute change are percentage points; percent change is relative to the baseline."
+      "note": "Changes since the user-selected February 28, 2026 start date. Daily and weekly baselines are actual observations before that date. Monthly baselines use January 2026 because February includes the start of the war. Baseline and latest dates are shown for every series. These comparisons describe changes over the period, not the effects caused by the war.",
+      "sourceNote": "Sources: FRED and the original data providers linked in each row. Changes use the unit shown: jobs or claims for counts, index points for indexes, and percentage points for unemployment rates. Relative change (%) is the proportional change from the baseline value. Daily baselines must fall within seven days before the start; weekly baselines within fourteen days. Missing values remain unavailable."
     }
   ],
   "notes": {
@@ -2137,14 +2281,14 @@
     "conflictBaseline": "The user selected February 28, 2026. Use each series last observed value strictly before that date; report each actual baseline date. February 28 is a Saturday, so daily market series normally use February 27 and weekly fuel series the preceding Monday. Describe changes since the baseline, not causal effects of the war.",
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
-  "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "251e5389-8d11-45ad-bebb-47a71d278049",
+  "calculationEngine": "pandas 2.2.3",
+  "snapshotId": "6ef256a5-d54c-4cfa-a269-1d128ec50118",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-09-25T17:56:08.478Z"
+      "updatedAt": "2026-09-25T19:44:01.549Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",

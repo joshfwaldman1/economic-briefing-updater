@@ -15,6 +15,7 @@ import tempfile
 from typing import Any
 
 import pandas as pd
+from economic_labels import apply_economic_labels
 
 ROOT = Path(__file__).resolve().parent
 JAN_2021 = pd.Timestamp('2021-01-01')
@@ -302,14 +303,20 @@ def build_dashboard(raw_series, catalog, now, config=None, snapshot_id=None):
     add_section('unemployment', 'Unemployment', 'Unemployment by race and demographic', 'LABOR MARKET', rate_columns('Population'), rate_rows(config.get('unemployment', [])), 'Seasonally adjusted. Ages 16 and over unless otherwise noted. Hispanic or Latino ethnicity may be of any race; these groups overlap.', 'BLS household survey via FRED. pp means percentage points. Observed differences are computed with pandas.')
 
     inflation_rows = []
+    inflation_comparisons = catalog.get('inflationComparisons', {})
     for name in ('cpi', 'pce'):
         for definition in config.get(name, []):
             if not definition.get('id'):
                 continue
             observed = series[definition['id']]
             end = latest_date(observed)
-            inflation_rows.append(row(definition, [f"{name.upper()} · {definition['label']}", growth(observed, end, 1), growth(observed, end, 12), iso_date(end)]))
-    add_section('inflation', 'CPI & PCE inflation', 'CPI and PCE inflation', 'PRICES', [text('Measure / component'), number('MoM (%)'), number('YoY (%)'), date_column('Period', 'monthly')], inflation_rows, 'Observed month-over-month and year-over-year changes in published seasonally adjusted price indexes. CPI and PCE have different coverage and weights. Only configured source series are included.', 'BLS CPI and BEA PCE via FRED. Changes use pandas pct_change with no missing-value fill. SA CPI index-based YoY can differ slightly from the headline NSA convention.')
+            yearly_id = inflation_comparisons.get(definition['id'], definition['id'])
+            yearly = series[yearly_id]
+            record = row(definition, [f"{name.upper()} · {definition['label']}", growth(observed, end, 1), growth(yearly, end, 12), iso_date(end), definitions[yearly_id]['sa']])
+            if yearly_id != definition['id']:
+                record['sources'] = [{'label': 'Monthly: SA', 'url': source_for(definitions[definition['id']])}, {'label': '12-month: NSA', 'url': source_for(definitions[yearly_id])}]
+            inflation_rows.append(record)
+    add_section('inflation', 'CPI & PCE inflation', 'CPI and PCE inflation', 'PRICES', [text('Measure / component'), number('1-month change (%, SA)'), number('12-month change (%)'), date_column('Latest month', 'monthly'), text('12-month adjustment')], inflation_rows, 'Monthly changes use seasonally adjusted indexes. CPI 12-month changes use unadjusted indexes, matching BLS reporting; PCE 12-month changes use seasonally adjusted indexes. Core excludes food and energy. These are observed changes, not annualized rates.', 'BLS CPI and BEA PCE via FRED. Separate SA and NSA source links identify the CPI inputs. Both comparisons end in the displayed month; missing exact observations remain unavailable.')
 
     price_rows = []
     for definition in unique([*config.get('fuels', []), *group('prices')]):
@@ -320,12 +327,32 @@ def build_dashboard(raw_series, catalog, now, config=None, snapshot_id=None):
     auto_definitions = unique([*[definition for definition in config.get('employment', []) if definition['id'] == 'MANEMP'], *config.get('manufacturing', []), *group('manuf_auto'), *[definition for definition in catalog.get('derived', []) if definition.get('group') == 'manuf_auto']])
     add_section('manufacturing', 'Manufacturing & autos', 'Manufacturing, auto manufacturing and dealers', 'JOBS BY INDUSTRY & STATE', employment_columns, employment_rows(auto_definitions), f'{employment_note} “Total auto jobs” means motor vehicles and parts manufacturing plus motor vehicle and parts dealers; it does not cover every auto-related business.', 'BLS establishment-survey data via FRED, using published seasonal adjustment. Pandas aligns derived components on dates present in every source before summing. The selected states are Michigan, Ohio, Wisconsin, Pennsylvania and Minnesota, not a complete geographic region.')
 
-    gdp_rows = []
-    for definition in group('gdp'):
+    us_gdp_rows = []
+    for definition in group('gdp_us'):
         observed = series[definition['id']]
         end = latest_date(observed)
-        gdp_rows.append(row(definition, [definition['label'], value_at(observed, end), definition.get('units'), growth(observed, end, 3), growth(observed, end, 12), percent_change(observed, JAN_2021, JAN_2025), percent_change(observed, JAN_2025, end), percent_change(observed, JAN_2021, end), definition.get('sa'), iso_date(end)]))
-    add_section('gdp', 'Real GDP', 'Real GDP: U.S. and G7', 'ECONOMIC OUTPUT', [text('Economy'), number('Real GDP level', 2), text('Published unit'), number('QoQ (%)'), number('YoY (%)'), number('Q1 2021–Q1 2025 change (%)'), number('Since Q1 2025 change (%)'), number('Since Q1 2021 change (%)'), text('Adjustment'), date_column('Quarter', 'quarterly')], gdp_rows, 'Inflation-adjusted output. QoQ is the observed change from the preceding quarter. Compare growth rates across countries: published levels use different currencies, reference years and source conventions. Q1 baselines represent full quarters, not January alone.', 'BEA and national statistical sources via FRED. Changes are computed with pandas from observed quarterly levels. SAAR identifies an annual-rate level published by the source; the dashboard does not convert observed quarterly growth into an annual rate.')
+        us_gdp_rows.append(row(definition, [definition['label'], value_at(observed, end), value_at(observed, end - pd.DateOffset(months=3)), value_at(observed, end - pd.DateOffset(months=12)), f"{definition['units']} · {definition['sa']}", iso_date(end)]))
+    if us_gdp_rows and 'GDPC1' in series:
+        observed = series['GDPC1']
+        end = latest_date(observed)
+        definition = definitions['GDPC1']
+        record = row(definition, ['Real GDP level', value_at(observed, end), value_at(observed, end - pd.DateOffset(months=3)), value_at(observed, end - pd.DateOffset(months=12)), f"{definition['units']} · {definition['sa']}", iso_date(end)])
+        record['digits'] = {'1': 3, '2': 3, '3': 3}
+        us_gdp_rows.append(record)
+    add_section('gdp_us', 'U.S. real GDP', 'U.S. real GDP: official BEA figures', 'ECONOMIC OUTPUT', [text('Measure'), number('Latest'), number('Previous quarter'), number('Same quarter a year earlier'), text('Unit / convention'), date_column('Quarter', 'quarterly')], us_gdp_rows, 'Growth is the BEA-published percent change from the preceding quarter at a seasonally adjusted annual rate (SAAR). Each growth entry describes its own quarter; it is not a 4-quarter change or a forecast. The GDP level is inflation-adjusted output in billions of chained 2017 dollars at an annual rate.', 'BEA NIPA Tables 1.1.1 and 1.1.6 via FRED. Values are read directly from the published series. For growth during a single quarter and cumulative comparisons, use G7 real GDP.')
+
+    gdp_rows = []
+    gdp_definitions = group('gdp')
+    if gdp_definitions:
+        common_gdp = pd.concat({item['id']: series[item['id']] for item in gdp_definitions}, axis=1, join='inner').dropna(how='any')
+        if common_gdp.empty:
+            raise ValueError('No common observation quarter for G7 GDP comparison')
+        gdp_comparison_quarter = common_gdp.index[-1]
+    for definition in gdp_definitions:
+        observed = series[definition['id']]
+        end = gdp_comparison_quarter
+        gdp_rows.append(row(definition, [definition['label'], growth(observed, end, 3), growth(observed, end, 12), percent_change(observed, JAN_2021, JAN_2025), percent_change(observed, JAN_2025, end), percent_change(observed, JAN_2021, end), iso_date(end)]))
+    add_section('gdp', 'G7 real GDP', 'G7 real GDP growth and cumulative changes', 'ECONOMIC OUTPUT', [text('Economy'), number('Quarterly change (%, not annualized)'), number('4-quarter change (%)'), number('Q1 2021–Q1 2025 cumulative change (%)'), number('Since Q1 2025 cumulative change (%)'), number('Since Q1 2021 cumulative change (%)'), date_column('Comparison quarter', 'quarterly')], gdp_rows, 'All countries use the latest quarter available for every country, with seasonally adjusted real GDP. Quarterly change is growth during one quarter, not an annual rate. The 4-quarter column compares with the same quarter a year earlier, not annual-average GDP. Cumulative columns compare levels at the stated endpoints and are not average annual growth rates.', 'BEA and national statistical sources via FRED. Pandas calculates percentage changes from each country’s real GDP series; national-currency levels are omitted from this comparison. Q1 baselines are full quarters, not January-only observations or exact presidential-term boundaries. The common comparison quarter avoids mixing periods when national release dates differ; the U.S. tab separately reports the latest BEA quarter.')
 
     application_rows = []
     for definition in config.get('applications', []):
@@ -367,8 +394,10 @@ def build_dashboard(raw_series, catalog, now, config=None, snapshot_id=None):
             required = pd.date_range(start, end, freq='MS')
             return deficits.reindex(required).sum(min_count=len(required))
 
-        for label, value in [('Monthly deficit', value_at(deficits, end)), ('Fiscal year to date deficit', observed_sum(fiscal_start)), ('Trailing 12 months deficit', observed_sum(end - pd.DateOffset(months=11)))]:
-            budget_rows.append(row(monthly_budget, [label, value, 'USD billions', iso_date(end)]))
+        trailing_start = end - pd.DateOffset(months=11)
+        for label, value, start in [('Monthly deficit', value_at(deficits, end), end), ('Fiscal year to date deficit', observed_sum(fiscal_start), fiscal_start), ('Trailing 12 months deficit', observed_sum(trailing_start), trailing_start)]:
+            period = end.strftime('%b %Y') if start == end else f"{start.strftime('%b %Y')}–{end.strftime('%b %Y')}"
+            budget_rows.append(row(monthly_budget, [label, value, 'USD billions', period]))
     annual_budget = next((definition for definition in config.get('budget', []) if definition['id'] == 'FYFSGDA188S'), None)
     if annual_budget:
         observed = series[annual_budget['id']].mul(-1)
@@ -392,9 +421,11 @@ def build_dashboard(raw_series, catalog, now, config=None, snapshot_id=None):
         observed = series[definition['id']].mul(definition.get('multiplier', 1))
         end = latest_date(observed)
         baseline = prewar_baseline(observed, definition)
-        unit = 'People' if definition.get('multiplier') == 1000 and 'person' in definition.get('units', '').lower() else definition.get('units') or ('Percent' if definition['id'] == 'UNRATE' else '')
+        unit = 'Jobs' if definition['id'] == 'PAYEMS' else definition.get('units') or ('Percent' if definition['id'] == 'UNRATE' else '')
         record = row(definition, [war_labels.get(definition['id'], definition['label']), value_at(observed, baseline), iso_date(baseline), value_at(observed, end), iso_date(end), difference(observed, baseline, end) if baseline is not None else float('nan'), percent_change(observed, baseline, end) if baseline is not None else float('nan'), f"{unit} · {definition.get('sa', 'SA')}"])
-        if unit.lower() in ('people', 'persons', 'number'):
+        change_unit = 'Percentage points' if unit.lower() in ('percent', '%') else 'Index points' if unit.lower().startswith('index') else 'Claims' if definition['id'] == 'ICSA' else unit
+        record['values'].append(change_unit)
+        if unit.lower() in ('people', 'persons', 'number', 'jobs'):
             display_digits = 0
         elif unit.lower() in ('percent', '%'):
             display_digits = 1
@@ -404,7 +435,7 @@ def build_dashboard(raw_series, catalog, now, config=None, snapshot_id=None):
             display_digits = 3
         record['digits'] = {'1': display_digits, '3': display_digits, '5': display_digits}
         war_rows.append(record)
-    add_section('war', 'Since Iran War began', 'Changes since February 28, 2026', 'BEFORE & AFTER', [text('Indicator'), number('Baseline value', 3), date_column('Baseline observation'), number('Latest value', 3), date_column('Latest observation'), number('Absolute change', 3), number('Change (%)'), text('Unit / adjustment')], war_rows, 'User-selected start: February 28, 2026. Daily and weekly baselines are the last available observation before that date; monthly baselines use January 2026 because February spans the start of the war. Each baseline is shown explicitly. These comparisons describe changes over time and do not attribute them to the war.', 'Sources via FRED. Pandas uses observed baselines within 7 days for daily data and 14 days for weekly data; missing monthly baselines remain unavailable. Rate differences under absolute change are percentage points; percent change is relative to the baseline.')
+    add_section('war', 'Since Iran War began', 'Changes since February 28, 2026', 'BEFORE & AFTER', [text('Indicator'), number('Baseline value', 3), date_column('Baseline observation'), number('Latest value', 3), date_column('Latest observation'), number('Absolute change', 3), number('Change (%)'), text('Unit / adjustment'), text('Change unit')], war_rows, 'User-selected start: February 28, 2026. Daily and weekly baselines are the last available observation before that date; monthly baselines use January 2026 because February spans the start of the war. Each baseline is shown explicitly. These comparisons describe changes over time and do not attribute them to the war.', 'Sources via FRED. Pandas uses observed baselines within 7 days for daily data and 14 days for weekly data; missing monthly baselines remain unavailable. Rate differences under absolute change are percentage points; percent change is relative to the baseline.')
 
     kpis = []
     if 'PAYEMS' in series:
@@ -417,9 +448,11 @@ def build_dashboard(raw_series, catalog, now, config=None, snapshot_id=None):
         end = latest_date(observed)
         kpis.append({'label': 'Unemployment rate', 'value': value_at(observed, end), 'digits': 1, 'prefix': '', 'suffix': '%', 'detail': f"Overall U-3 · {end.strftime('%b %Y')} · SA", 'source': source_for(definitions['UNRATE'])})
     if 'CPIAUCSL' in series:
-        observed = series['CPIAUCSL']
+        cpi_headline_id = inflation_comparisons.get('CPIAUCSL', 'CPIAUCSL')
+        observed = series[cpi_headline_id]
         end = latest_date(observed)
-        kpis.append({'label': 'CPI inflation', 'value': growth(observed, end, 12), 'digits': 1, 'prefix': '', 'suffix': '%', 'detail': f"Year-over-year · {end.strftime('%b %Y')} · SA index", 'source': source_for(definitions['CPIAUCSL'])})
+        kpis.append({'label': 'CPI inflation', 'value': growth(observed, end, 12), 'digits': 1, 'prefix': '', 'suffix': '%', 'detail': f"12-month change · {end.strftime('%b %Y')} · {definitions[cpi_headline_id]['sa']}", 'source': source_for(definitions[cpi_headline_id])})
+    apply_economic_labels(sections)
     notes = {**catalog.get('notes', {}), 'calculations': 'All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled.', 'gdp': 'Real GDP comparisons use observed quarterly levels. National currency levels are not directly comparable. Q1 baselines are full quarters, not January alone.'}
     result = {'retrieved': retrieved, 'retrievedAt': retrieved_at, 'warStart': WAR_START, 'kpis': kpis, 'sections': sections, 'notes': notes, 'calculationEngine': f'pandas {pd.__version__}'}
     if snapshot_id:

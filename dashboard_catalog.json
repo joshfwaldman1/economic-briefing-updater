@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "verifiedOn": "2026-09-23",
+  "verifiedOn": "2026-09-25",
   "series": [
     {
       "id": "MANEMP",
@@ -105,7 +105,7 @@
     },
     {
       "id": "APU0000703112",
-      "label": "Ground beef, 100% beef \u2014 1 lb",
+      "label": "Ground beef, 100% beef — 1 lb",
       "group": "prices",
       "frequency": "monthly",
       "sa": "NSA",
@@ -117,7 +117,7 @@
     },
     {
       "id": "APU0000708111",
-      "label": "Eggs, grade A large \u2014 dozen",
+      "label": "Eggs, grade A large — dozen",
       "group": "prices",
       "frequency": "monthly",
       "sa": "NSA",
@@ -129,7 +129,7 @@
     },
     {
       "id": "APU0000709112",
-      "label": "Milk, whole fortified \u2014 gallon",
+      "label": "Milk, whole fortified — gallon",
       "group": "prices",
       "frequency": "monthly",
       "sa": "NSA",
@@ -141,7 +141,7 @@
     },
     {
       "id": "APU0000702111",
-      "label": "White pan bread \u2014 1 lb",
+      "label": "White pan bread — 1 lb",
       "group": "prices",
       "frequency": "monthly",
       "sa": "NSA",
@@ -153,7 +153,7 @@
     },
     {
       "id": "APU0000706111",
-      "label": "Whole fresh chicken \u2014 1 lb",
+      "label": "Whole fresh chicken — 1 lb",
       "group": "prices",
       "frequency": "monthly",
       "sa": "NSA",
@@ -165,7 +165,7 @@
     },
     {
       "id": "GASREGW",
-      "label": "Regular gasoline \u2014 gallon",
+      "label": "Regular gasoline — gallon",
       "group": "prices",
       "frequency": "weekly",
       "sa": "NSA",
@@ -178,7 +178,7 @@
     },
     {
       "id": "GASDESW",
-      "label": "Diesel \u2014 gallon",
+      "label": "Diesel — gallon",
       "group": "prices",
       "frequency": "weekly",
       "sa": "NSA",
@@ -333,6 +333,102 @@
       "provider": "Nasdaq, Inc.",
       "frequencyDetail": "Daily, close",
       "note": "Closing price index, excluding dividends."
+    },
+    {
+      "id": "CPIAUCNS",
+      "label": "CPI Headline (NSA)",
+      "group": "inflation_yoy",
+      "frequency": "monthly",
+      "sa": "NSA",
+      "units": "Index 1982-1984=100",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/CPIAUCNS",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "note": "Unadjusted CPI-U index used for standard 12-month inflation comparisons."
+    },
+    {
+      "id": "CPILFENS",
+      "label": "CPI Core (NSA)",
+      "group": "inflation_yoy",
+      "frequency": "monthly",
+      "sa": "NSA",
+      "units": "Index 1982-1984=100",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/CPILFENS",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "note": "Unadjusted CPI-U index used for standard 12-month inflation comparisons."
+    },
+    {
+      "id": "CUUR0000SACL1E",
+      "label": "CPI Core Goods (NSA)",
+      "group": "inflation_yoy",
+      "frequency": "monthly",
+      "sa": "NSA",
+      "units": "Index 1982-1984=100",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/CUUR0000SACL1E",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "note": "Unadjusted CPI-U index used for standard 12-month inflation comparisons."
+    },
+    {
+      "id": "CUUR0000SASLE",
+      "label": "CPI Core Services (NSA)",
+      "group": "inflation_yoy",
+      "frequency": "monthly",
+      "sa": "NSA",
+      "units": "Index 1982-1984=100",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/CUUR0000SASLE",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "note": "Unadjusted CPI-U index used for standard 12-month inflation comparisons."
+    },
+    {
+      "id": "CUUR0000SAH1",
+      "label": "CPI Shelter (NSA)",
+      "group": "inflation_yoy",
+      "frequency": "monthly",
+      "sa": "NSA",
+      "units": "Index 1982-1984=100",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/CUUR0000SAH1",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "note": "Unadjusted CPI-U index used for standard 12-month inflation comparisons."
+    },
+    {
+      "id": "CPIUFDNS",
+      "label": "CPI Food (NSA)",
+      "group": "inflation_yoy",
+      "frequency": "monthly",
+      "sa": "NSA",
+      "units": "Index 1982-1984=100",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/CPIUFDNS",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "note": "Unadjusted CPI-U index used for standard 12-month inflation comparisons."
+    },
+    {
+      "id": "CPIENGNS",
+      "label": "CPI Energy (NSA)",
+      "group": "inflation_yoy",
+      "frequency": "monthly",
+      "sa": "NSA",
+      "units": "Index 1982-1984=100",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/CPIENGNS",
+      "provider": "U.S. Bureau of Labor Statistics",
+      "note": "Unadjusted CPI-U index used for standard 12-month inflation comparisons."
+    },
+    {
+      "id": "A191RL1Q225SBEA",
+      "label": "Real GDP growth",
+      "group": "gdp_us",
+      "frequency": "quarterly",
+      "sa": "SAAR",
+      "units": "Percent change from preceding quarter at an annual rate",
+      "multiplier": 1,
+      "source": "https://fred.stlouisfed.org/series/A191RL1Q225SBEA",
+      "provider": "U.S. Bureau of Economic Analysis",
+      "note": "Published BEA real GDP growth rate, NIPA Table 1.1.1. Read directly from the source; the dashboard does not annualize it."
     }
   ],
   "derived": [
@@ -371,5 +467,14 @@
     "gdp": "Quarterly real GDP can be compared using percentage changes or a shared base-quarter index, not raw national-currency levels. Q1 2021 and Q1 2025 are quarter baselines, not January observations; any monthly equivalent growth rate is a calculation, not monthly GDP.",
     "conflictBaseline": "The user selected February 28, 2026. Use each series last observed value strictly before that date; report each actual baseline date. February 28 is a Saturday, so daily market series normally use February 27 and weekly fuel series the preceding Monday. Describe changes since the baseline, not causal effects of the war."
   },
-  "unavailable": []
+  "unavailable": [],
+  "inflationComparisons": {
+    "CPIAUCSL": "CPIAUCNS",
+    "CPILFESL": "CPILFENS",
+    "CUSR0000SACL1E": "CUUR0000SACL1E",
+    "CUSR0000SASLE": "CUUR0000SASLE",
+    "CUSR0000SAH1": "CUUR0000SAH1",
+    "CPIUFDSL": "CPIUFDNS",
+    "CPIENGSL": "CPIENGNS"
+  }
 }

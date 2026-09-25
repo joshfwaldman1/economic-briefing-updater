@@ -85,23 +85,61 @@ class PandasDashboardTest(unittest.TestCase):
     def test_inflation_contains_only_observed_mom_and_yoy_and_drops_unconfigured(self):
         cpi = observed(('2025-08-01', 323.1), ('2026-05-01', 333.979), ('2026-06-01', 332.568), ('2026-07-01', 332.813), ('2026-08-01', 334.131))
         config = {'cpi': [definition('CPIAUCSL', 'cpi', units='Index')], 'pce': [{'id': None, 'label': 'Core goods'}]}
-        data = build_dashboard({'CPIAUCSL': raw(cpi)}, {}, NOW, config)
+        nsa = observed(('2025-08-01', 320), ('2026-08-01', 336))
+        catalog = {'series': [definition('CPIAUCNS', 'inflation_yoy', sa='NSA', units='Index')], 'inflationComparisons': {'CPIAUCSL': 'CPIAUCNS'}}
+        data = build_dashboard({'CPIAUCSL': raw(cpi), 'CPIAUCNS': raw(nsa)}, catalog, NOW, config)
         section = next(section for section in data['sections'] if section['key'] == 'inflation')
-        self.assertEqual([column['label'] for column in section['columns']], ['Measure / component', 'MoM (%)', 'YoY (%)', 'Period'])
+        self.assertEqual(len(section['columns']), 5)
         self.assertEqual(len(section['rows']), 1)
         self.assertAlmostEqual(section['rows'][0]['values'][1], 0.3960181843858157)
-        self.assertAlmostEqual(section['rows'][0]['values'][2], cpi.reindex(pd.to_datetime(['2025-08-01', '2026-08-01'])).pct_change(fill_method=None).mul(100).iloc[-1])
+        self.assertAlmostEqual(section['rows'][0]['values'][2], 5)
+        self.assertEqual(section['rows'][0]['values'][4], 'NSA')
+        self.assertEqual(len(section['rows'][0]['sources']), 2)
+        self.assertAlmostEqual(data['kpis'][0]['value'], 5)
+        self.assertEqual(data['kpis'][0]['source'], 'https://fred.stlouisfed.org/series/CPIAUCNS')
         self.assertFalse(any('annualized' in column['label'].lower() for column in section['columns']))
 
     def test_gdp_reports_observed_quarterly_growth_without_compounding(self):
         data = observed(('2021-01-01', 100), ('2025-01-01', 120), ('2025-04-01', 121), ('2026-01-01', 125), ('2026-04-01', 126))
         catalog = {'series': [definition('GDP', 'gdp', frequency='quarterly', units='Billions of real USD', multiplier=1, sa='SAAR')]}
         section = build_dashboard({'GDP': raw(data)}, catalog, NOW)['sections'][0]
-        self.assertEqual(section['columns'][3]['label'], 'QoQ (%)')
-        self.assertAlmostEqual(section['rows'][0]['values'][3], 0.8)
-        self.assertAlmostEqual(section['rows'][0]['values'][5], 20)
-        self.assertEqual(section['rows'][0]['values'][-2], 'SAAR')
+        self.assertEqual(section['columns'][1]['label'], 'Quarterly change (%, not annualized)')
+        self.assertAlmostEqual(section['rows'][0]['values'][1], 0.8)
+        self.assertAlmostEqual(section['rows'][0]['values'][3], 20)
+        self.assertEqual(len(section['rows'][0]['values']), 7)
         self.assertEqual(section['columns'][-1]['frequency'], 'quarterly')
+
+    def test_us_gdp_uses_published_annual_rate_without_replacing_g7_quarterly_change(self):
+        levels = observed(('2025-04-01', 120), ('2026-01-01', 125), ('2026-04-01', 126))
+        rates = observed(('2025-04-01', 1.2), ('2026-01-01', 1.7), ('2026-04-01', 3.2))
+        catalog = {'series': [definition('GDPC1', 'gdp', frequency='quarterly', units='Billions of chained 2017 USD', sa='SAAR', multiplier=1), definition('A191RL1Q225SBEA', 'gdp_us', frequency='quarterly', units='Percent change from preceding quarter at an annual rate', sa='SAAR', multiplier=1)]}
+        result = build_dashboard({'GDPC1': raw(levels), 'A191RL1Q225SBEA': raw(rates)}, catalog, NOW)
+        us = next(s for s in result['sections'] if s['key']=='gdp_us')
+        g7 = next(s for s in result['sections'] if s['key']=='gdp')
+        self.assertEqual(us['rows'][0]['values'][1:4], [3.2, 1.7, 1.2])
+        self.assertIn('annual rate', us['rows'][0]['values'][4])
+        self.assertEqual(us['rows'][0]['source'], 'https://fred.stlouisfed.org/series/A191RL1Q225SBEA')
+        self.assertAlmostEqual(g7['rows'][0]['values'][1], 0.8)
+
+    def test_cpi_annual_comparison_requires_the_same_month_in_the_nsa_source(self):
+        sa = observed(('2025-08-01', 320), ('2026-07-01', 335), ('2026-08-01', 336))
+        nsa = observed(('2025-07-01', 320), ('2026-07-01', 330))
+        catalog = {'series': [definition('CPIAUCNS', 'inflation_yoy', sa='NSA', units='Index')], 'inflationComparisons': {'CPIAUCSL': 'CPIAUCNS'}}
+        config = {'cpi': [definition('CPIAUCSL', 'cpi', units='Index')]}
+        result = build_dashboard({'CPIAUCSL': raw(sa), 'CPIAUCNS': raw(nsa)}, catalog, NOW, config)
+        row = next(s for s in result['sections'] if s['key']=='inflation')['rows'][0]
+        self.assertEqual(row['values'][3], '2026-08-01')
+        self.assertIsNone(row['values'][2])
+
+    def test_g7_compares_the_same_quarter_when_country_releases_differ(self):
+        a = observed(('2026-01-01', 100), ('2026-04-01', 102), ('2026-07-01', 105))
+        b = observed(('2026-01-01', 100), ('2026-04-01', 101))
+        catalog = {'series': [definition(sid, 'gdp', frequency='quarterly', units='Real national currency', multiplier=1) for sid in ['A', 'B']]}
+        result = build_dashboard({'A': raw(a), 'B': raw(b)}, catalog, NOW)
+        rows = result['sections'][0]['rows']
+        self.assertEqual([r['values'][-1] for r in rows], ['2026-04-01', '2026-04-01'])
+        self.assertAlmostEqual(rows[0]['values'][1], 2)
+        self.assertAlmostEqual(rows[1]['values'][1], 1)
 
     def test_zeros_are_preserved_and_zero_denominator_is_missing(self):
         values = observed(('2025-01-01', 0), ('2025-02-01', 5), ('2025-03-01', 0))
