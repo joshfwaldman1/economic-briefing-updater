@@ -1,6 +1,6 @@
 {
   "retrieved": "2026-09-26",
-  "retrievedAt": "2026-09-26T01:06:38.748Z",
+  "retrievedAt": "2026-09-26T01:31:15.286Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -2281,14 +2281,14 @@
     "conflictBaseline": "The user selected February 28, 2026. Use each series last observed value strictly before that date; report each actual baseline date. February 28 is a Saturday, so daily market series normally use February 27 and weekly fuel series the preceding Monday. Describe changes since the baseline, not causal effects of the war.",
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
-  "calculationEngine": "pandas 2.2.3",
-  "snapshotId": "c8637d9d-e3e6-4a8c-971c-f28150f01a80",
+  "calculationEngine": "pandas 2.3.3",
+  "snapshotId": "41c4e72d-a10a-437c-bb21-e4949a936640",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-09-26T01:06:38.748Z"
+      "updatedAt": "2026-09-26T01:31:15.286Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
