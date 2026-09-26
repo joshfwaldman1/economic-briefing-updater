@@ -275,7 +275,7 @@
     },
     {
       "id": "DCOILWTICO",
-      "label": "WTI crude oil",
+      "label": "WTI crude oil — Cushing spot price",
       "group": "war",
       "frequency": "daily",
       "sa": "NSA",
@@ -286,7 +286,7 @@
     },
     {
       "id": "DCOILBRENTEU",
-      "label": "Brent crude oil",
+      "label": "Brent crude oil — Europe spot price",
       "group": "war",
       "frequency": "daily",
       "sa": "NSA",

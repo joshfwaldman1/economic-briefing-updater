@@ -195,7 +195,7 @@ def apply_economic_labels(sections):
         elif key == 'war':
             _rename_columns(section, {
                 'Baseline observation': 'Baseline date',
-                'Latest observation': 'Latest date',
+                'Latest observation': 'Latest observation date',
                 'Absolute change': 'Change (units shown)',
                 'Change (%)': 'Relative change (%)',
                 'Unit / adjustment': 'Level unit / adjustment',
@@ -207,7 +207,9 @@ def apply_economic_labels(sections):
                 'Changes since the user-selected February 28, 2026 start date. Daily and weekly baselines are actual '
                 'observations before that date. Monthly baselines use January 2026 because February includes the start '
                 'of the war. Baseline and latest dates are shown for every series. These comparisons describe changes '
-                'over the period, not the effects caused by the war.'
+                'over the period, not the effects caused by the war. Latest observation date identifies when the value '
+                'was measured; the page refresh timestamp identifies when the data were retrieved. '
+                'WTI and Brent are EIA daily spot-price observations published with a delay, not live futures quotes.'
             )
             section['sourceNote'] = (
                 'Sources: FRED and the original data providers linked in each row. Changes use the unit shown: '

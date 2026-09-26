@@ -1,6 +1,6 @@
 {
-  "retrieved": "2026-09-25",
-  "retrievedAt": "2026-09-25T19:51:33.988Z",
+  "retrieved": "2026-09-26",
+  "retrievedAt": "2026-09-26T01:06:38.748Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -1644,11 +1644,11 @@
           "id": "SP500",
           "values": [
             "S&P 500",
-            7704.13,
-            0.6699456151033845,
-            12.542984442334394,
-            16.061536885523743,
-            "2026-09-24"
+            7743.41,
+            0.8613727778588265,
+            13.11679205317362,
+            17.240549183008504,
+            "2026-09-25"
           ],
           "source": "https://fred.stlouisfed.org/series/SP500",
           "sa": "NSA",
@@ -1659,11 +1659,11 @@
           "id": "DJIA",
           "values": [
             "Dow Jones Industrial Average",
-            51349.98,
-            -3.8698800160847147,
-            6.838254310098213,
-            11.33684928085259,
-            "2026-09-24"
+            51828.62,
+            -3.2640255032905685,
+            7.8341079023096505,
+            12.800093672492775,
+            "2026-09-25"
           ],
           "source": "https://fred.stlouisfed.org/series/DJIA",
           "sa": "NSA",
@@ -1931,7 +1931,7 @@
           "digits": 3
         },
         {
-          "label": "Latest date",
+          "label": "Latest observation date",
           "type": "date"
         },
         {
@@ -1957,7 +1957,7 @@
         {
           "id": "DCOILWTICO",
           "values": [
-            "WTI crude oil",
+            "WTI crude oil — Cushing spot price",
             66.96,
             "2026-02-27",
             96.41,
@@ -1979,7 +1979,7 @@
         {
           "id": "DCOILBRENTEU",
           "values": [
-            "Brent crude oil",
+            "Brent crude oil — Europe spot price",
             71.32,
             "2026-02-27",
             114.89,
@@ -2050,10 +2050,10 @@
             "S&P 500",
             6878.88,
             "2026-02-27",
-            7704.13,
-            "2026-09-24",
-            825.25,
-            11.996865768846089,
+            7743.41,
+            "2026-09-25",
+            864.5299999999997,
+            12.567888958667695,
             "Index · NSA",
             "Index points"
           ],
@@ -2073,10 +2073,10 @@
             "Dow Jones Industrial Average",
             48977.92,
             "2026-02-27",
-            51349.98,
-            "2026-09-24",
-            2372.060000000005,
-            4.843121145201756,
+            51828.62,
+            "2026-09-25",
+            2850.7000000000044,
+            5.820377835563462,
             "Index · NSA",
             "Index points"
           ],
@@ -2268,7 +2268,7 @@
           }
         }
       ],
-      "note": "Changes since the user-selected February 28, 2026 start date. Daily and weekly baselines are actual observations before that date. Monthly baselines use January 2026 because February includes the start of the war. Baseline and latest dates are shown for every series. These comparisons describe changes over the period, not the effects caused by the war.",
+      "note": "Changes since the user-selected February 28, 2026 start date. Daily and weekly baselines are actual observations before that date. Monthly baselines use January 2026 because February includes the start of the war. Baseline and latest dates are shown for every series. These comparisons describe changes over the period, not the effects caused by the war. Latest observation date identifies when the value was measured; the page refresh timestamp identifies when the data were retrieved. WTI and Brent are EIA daily spot-price observations published with a delay, not live futures quotes.",
       "sourceNote": "Sources: FRED and the original data providers linked in each row. Changes use the unit shown: jobs or claims for counts, index points for indexes, and percentage points for unemployment rates. Relative change (%) is the proportional change from the baseline value. Daily baselines must fall within seven days before the start; weekly baselines within fourteen days. Missing values remain unavailable."
     }
   ],
@@ -2281,14 +2281,14 @@
     "conflictBaseline": "The user selected February 28, 2026. Use each series last observed value strictly before that date; report each actual baseline date. February 28 is a Saturday, so daily market series normally use February 27 and weekly fuel series the preceding Monday. Describe changes since the baseline, not causal effects of the war.",
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
-  "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "8eba6340-f472-44ec-969f-c96d298139c2",
+  "calculationEngine": "pandas 2.2.3",
+  "snapshotId": "c8637d9d-e3e6-4a8c-971c-f28150f01a80",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-09-25T19:51:33.988Z"
+      "updatedAt": "2026-09-26T01:06:38.748Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
