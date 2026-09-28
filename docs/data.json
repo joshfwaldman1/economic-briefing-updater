@@ -1,6 +1,6 @@
 {
-  "retrieved": "2026-09-27",
-  "retrievedAt": "2026-09-27T17:42:19.235Z",
+  "retrieved": "2026-09-28",
+  "retrievedAt": "2026-09-28T01:38:26.642Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "0d18f7ce-8fd4-4011-a3d0-0f5dc6d6f501",
+  "snapshotId": "7e882d74-5af9-4ecb-a266-031a5a2adf75",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-09-27T17:42:19.235Z"
+      "updatedAt": "2026-09-28T01:38:26.642Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
