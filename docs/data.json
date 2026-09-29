@@ -1,6 +1,6 @@
 {
   "retrieved": "2026-09-29",
-  "retrievedAt": "2026-09-29T02:34:26.373Z",
+  "retrievedAt": "2026-09-29T18:35:39.502Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -855,13 +855,13 @@
           "id": "GASREGW",
           "values": [
             "Regular gasoline — gallon",
-            4.478,
-            0.1589999999999998,
-            41.12826977623698,
+            4.465,
+            -0.0129999999999999,
+            43.200769724182166,
             "USD per gallon",
             "weekly",
             "NSA",
-            "2026-09-21"
+            "2026-09-28"
           ],
           "source": "https://fred.stlouisfed.org/series/GASREGW",
           "sa": "NSA",
@@ -872,13 +872,13 @@
           "id": "GASDESW",
           "values": [
             "Diesel — gallon",
-            6.529,
-            0.24399999999999977,
-            74.15310749533208,
+            6.382,
+            -0.14700000000000024,
+            70.0053276505061,
             "USD per gallon",
             "weekly",
             "NSA",
-            "2026-09-21"
+            "2026-09-28"
           ],
           "source": "https://fred.stlouisfed.org/series/GASDESW",
           "sa": "NSA",
@@ -1674,11 +1674,11 @@
           "id": "NASDAQCOM",
           "values": [
             "NASDAQ Composite",
-            27068.72,
-            3.5081238791188296,
-            16.464726127151753,
-            20.925096159430325,
-            "2026-09-25"
+            26820.38,
+            1.5830367064837425,
+            15.396228980392813,
+            19.28614347847166,
+            "2026-09-28"
           ],
           "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
           "sa": "NSA",
@@ -1858,9 +1858,9 @@
           "id": "JTSJOL",
           "values": [
             "Job openings",
-            7271.0,
+            7079.0,
             "Thousands",
-            "2026-07-01"
+            "2026-08-01"
           ],
           "source": "https://fred.stlouisfed.org/series/JTSJOL",
           "sa": "SA",
@@ -1872,7 +1872,7 @@
             "Quits rate",
             1.9,
             "Percent",
-            "2026-07-01"
+            "2026-08-01"
           ],
           "source": "https://fred.stlouisfed.org/series/JTSQUR",
           "sa": "SA",
@@ -2004,10 +2004,10 @@
             "Regular gasoline — gallon",
             2.937,
             "2026-02-23",
-            4.478,
-            "2026-09-21",
-            1.541,
-            52.468505277494046,
+            4.465,
+            "2026-09-28",
+            1.528,
+            52.02587674497787,
             "USD per gallon · NSA",
             "USD per gallon"
           ],
@@ -2027,10 +2027,10 @@
             "Diesel — gallon",
             3.809,
             "2026-02-23",
-            6.529,
-            "2026-09-21",
-            2.7199999999999998,
-            71.40981885009188,
+            6.382,
+            "2026-09-28",
+            2.5729999999999995,
+            67.55053819900235,
             "USD per gallon · NSA",
             "USD per gallon"
           ],
@@ -2096,10 +2096,10 @@
             "Nasdaq Composite",
             22668.21,
             "2026-02-27",
-            27068.72,
-            "2026-09-25",
-            4400.510000000002,
-            19.41269292987846,
+            26820.38,
+            "2026-09-28",
+            4152.170000000002,
+            18.31714987641284,
             "Index February 5, 1971=100 · NSA",
             "Index points"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "95eff79e-ef8f-4a0c-88fa-a592699c89e6",
+  "snapshotId": "511b38bd-f07d-4122-b7cf-d246c90c8150",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-09-29T02:34:26.373Z"
+      "updatedAt": "2026-09-29T18:35:39.502Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
