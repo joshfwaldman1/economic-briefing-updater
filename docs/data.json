@@ -1,6 +1,6 @@
 {
   "retrieved": "2026-09-30",
-  "retrievedAt": "2026-09-30T02:05:45.157Z",
+  "retrievedAt": "2026-09-30T18:25:38.334Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -756,9 +756,9 @@
           "id": "PCEPI",
           "values": [
             "PCE · Headline",
-            0.15594808830463602,
-            3.7011657214870874,
-            "2026-07-01",
+            0.3102796328484869,
+            3.419031824505425,
+            "2026-08-01",
             "SA"
           ],
           "source": "https://fred.stlouisfed.org/series/PCEPI",
@@ -769,9 +769,9 @@
           "id": "PCEPILFE",
           "values": [
             "PCE · Core",
-            0.2455155058386671,
-            3.3441430040338282,
-            "2026-07-01",
+            0.24743915839948727,
+            3.0075959761856064,
+            "2026-08-01",
             "SA"
           ],
           "source": "https://fred.stlouisfed.org/series/PCEPILFE",
@@ -782,9 +782,9 @@
           "id": "DFXARG3M086SBEA",
           "values": [
             "PCE · Food",
-            -0.08013365689186758,
-            2.4025350192140804,
-            "2026-07-01",
+            0.031030985574376224,
+            1.9201554631893103,
+            "2026-08-01",
             "SA"
           ],
           "source": "https://fred.stlouisfed.org/series/DFXARG3M086SBEA",
@@ -795,9 +795,9 @@
           "id": "DNRGRG3M086SBEA",
           "values": [
             "PCE · Energy",
-            -1.463922026889941,
-            15.314272833151744,
-            "2026-07-01",
+            2.308295231874591,
+            16.845701668009426,
+            "2026-08-01",
             "SA"
           ],
           "source": "https://fred.stlouisfed.org/series/DNRGRG3M086SBEA",
@@ -1275,9 +1275,9 @@
           "id": "A191RL1Q225SBEA",
           "values": [
             "Real GDP growth",
-            1.5,
-            2.1,
-            3.8,
+            2.2,
+            2.5,
+            4.0,
             "Percent change from preceding quarter at an annual rate · SAAR",
             "2026-04-01"
           ],
@@ -1290,9 +1290,9 @@
           "id": "GDPC1",
           "values": [
             "Real GDP level",
-            24269.613,
-            24180.419,
-            23770.976,
+            24408.011,
+            24274.383,
+            23884.563,
             "Billions of chained 2017 USD · SAAR",
             "2026-04-01"
           ],
@@ -1356,11 +1356,11 @@
           "id": "GDPC1",
           "values": [
             "United States",
-            0.36886871149750533,
-            2.097671547016011,
-            11.697468576947667,
-            3.063515231094005,
-            15.119337539548905,
+            0.5504897899979433,
+            2.1915745328897174,
+            12.051167456047796,
+            3.204191015108404,
+            15.64150089599854,
             "2026-04-01"
           ],
           "source": "https://fred.stlouisfed.org/series/GDPC1",
@@ -1674,11 +1674,11 @@
           "id": "NASDAQCOM",
           "values": [
             "NASDAQ Composite",
-            26820.38,
-            1.5830367064837425,
-            15.396228980392813,
-            19.28614347847166,
-            "2026-09-28"
+            26797.54,
+            1.4965294847972377,
+            15.297958565510083,
+            18.619636450556953,
+            "2026-09-29"
           ],
           "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
           "sa": "NSA",
@@ -1960,10 +1960,10 @@
             "WTI crude oil — Cushing spot price",
             66.96,
             "2026-02-27",
-            96.41,
-            "2026-09-22",
-            29.450000000000003,
-            43.98148148148149,
+            96.16,
+            "2026-09-29",
+            29.200000000000003,
+            43.60812425328555,
             "USD per barrel · NSA",
             "USD per barrel"
           ],
@@ -1982,10 +1982,10 @@
             "Brent crude oil — Europe spot price",
             71.32,
             "2026-02-27",
-            114.89,
-            "2026-09-22",
-            43.57000000000001,
-            61.09085810431858,
+            113.96,
+            "2026-09-29",
+            42.64,
+            59.786876051598426,
             "USD per barrel · NSA",
             "USD per barrel"
           ],
@@ -2096,10 +2096,10 @@
             "Nasdaq Composite",
             22668.21,
             "2026-02-27",
-            26820.38,
-            "2026-09-28",
-            4152.170000000002,
-            18.31714987641284,
+            26797.54,
+            "2026-09-29",
+            4129.330000000002,
+            18.216392030954374,
             "Index February 5, 1971=100 · NSA",
             "Index points"
           ],
@@ -2161,12 +2161,12 @@
           "id": "PCEPI",
           "values": [
             "PCE price index",
-            129.023,
+            128.845,
             "2026-01-01",
-            131.659,
-            "2026-07-01",
-            2.6359999999999957,
-            2.043046588592734,
+            131.579,
+            "2026-08-01",
+            2.734000000000009,
+            2.1219294501144903,
             "Index 2017=100 · SA",
             "Index points"
           ],
@@ -2183,12 +2183,12 @@
           "id": "PCEPILFE",
           "values": [
             "Core PCE price index",
-            128.455,
+            128.27,
             "2026-01-01",
-            130.658,
-            "2026-07-01",
-            2.2029999999999745,
-            1.71499746993109,
+            130.455,
+            "2026-08-01",
+            2.1850000000000023,
+            1.7034380603414778,
             "Index 2017=100 · SA",
             "Index points"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "ab115284-2ad1-4f20-b8cf-c4d0f08e08de",
+  "snapshotId": "cc2b5dfb-7b5d-4adb-a996-25547b51e5a4",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-09-30T02:05:45.157Z"
+      "updatedAt": "2026-09-30T18:25:38.334Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
