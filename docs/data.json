@@ -1,6 +1,6 @@
 {
   "retrieved": "2026-10-06",
-  "retrievedAt": "2026-10-06T02:56:55.407Z",
+  "retrievedAt": "2026-10-06T18:53:50.313Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -855,13 +855,13 @@
           "id": "GASREGW",
           "values": [
             "Regular gasoline — gallon",
-            4.465,
-            -0.0129999999999999,
-            43.200769724182166,
+            4.354,
+            -0.11099999999999977,
+            39.37259923175416,
             "USD per gallon",
             "weekly",
             "NSA",
-            "2026-09-28"
+            "2026-10-05"
           ],
           "source": "https://fred.stlouisfed.org/series/GASREGW",
           "sa": "NSA",
@@ -872,13 +872,13 @@
           "id": "GASDESW",
           "values": [
             "Diesel — gallon",
-            6.382,
-            -0.14700000000000024,
-            70.0053276505061,
+            6.199,
+            -0.18299999999999983,
+            67.0439234707626,
             "USD per gallon",
             "weekly",
             "NSA",
-            "2026-09-28"
+            "2026-10-05"
           ],
           "source": "https://fred.stlouisfed.org/series/GASDESW",
           "sa": "NSA",
@@ -1674,11 +1674,11 @@
           "id": "NASDAQCOM",
           "values": [
             "NASDAQ Composite",
-            27190.86,
-            3.711329274772157,
-            16.990240508665554,
-            19.02819333699586,
-            "2026-10-02"
+            27477.31,
+            3.660619330976478,
+            18.222708124390373,
+            20.617624451779193,
+            "2026-10-05"
           ],
           "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
           "sa": "NSA",
@@ -2004,10 +2004,10 @@
             "Regular gasoline — gallon",
             2.937,
             "2026-02-23",
-            4.465,
-            "2026-09-28",
-            1.528,
-            52.02587674497787,
+            4.354,
+            "2026-10-05",
+            1.4170000000000003,
+            48.246510044262855,
             "USD per gallon · NSA",
             "USD per gallon"
           ],
@@ -2027,10 +2027,10 @@
             "Diesel — gallon",
             3.809,
             "2026-02-23",
-            6.382,
-            "2026-09-28",
-            2.5729999999999995,
-            67.55053819900235,
+            6.199,
+            "2026-10-05",
+            2.3899999999999997,
+            62.746127592543964,
             "USD per gallon · NSA",
             "USD per gallon"
           ],
@@ -2096,10 +2096,10 @@
             "Nasdaq Composite",
             22668.21,
             "2026-02-27",
-            27190.86,
-            "2026-10-02",
-            4522.6500000000015,
-            19.951509184007033,
+            27477.31,
+            "2026-10-05",
+            4809.100000000002,
+            21.215173143358037,
             "Index February 5, 1971=100 · NSA",
             "Index points"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "560409cc-bab3-4e5f-b3a6-2ab84f52be29",
+  "snapshotId": "9a44ff87-a927-4644-aa04-63b6ebe84bdf",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-10-06T02:56:55.407Z"
+      "updatedAt": "2026-10-06T18:53:50.313Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
