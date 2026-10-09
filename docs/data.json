@@ -1,6 +1,6 @@
 {
   "retrieved": "2026-10-09",
-  "retrievedAt": "2026-10-09T02:56:11.960Z",
+  "retrievedAt": "2026-10-09T18:46:26.918Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -1674,11 +1674,11 @@
           "id": "NASDAQCOM",
           "values": [
             "NASDAQ Composite",
-            27538.69,
-            3.8921808926626333,
-            18.486799107993757,
-            20.845422838677273,
-            "2026-10-07"
+            27193.34,
+            2.92160789299285,
+            17.000910851437425,
+            18.00933717189057,
+            "2026-10-08"
           ],
           "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
           "sa": "NSA",
@@ -2096,10 +2096,10 @@
             "Nasdaq Composite",
             22668.21,
             "2026-02-27",
-            27538.69,
-            "2026-10-07",
-            4870.48,
-            21.485948824366808,
+            27193.34,
+            "2026-10-08",
+            4525.130000000001,
+            19.96244961556295,
             "Index February 5, 1971=100 · NSA",
             "Index points"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "48219a85-3523-458b-82d2-e7a801a20253",
+  "snapshotId": "8686696c-c172-40a7-a51f-1694f38dbc84",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-10-09T02:56:11.960Z"
+      "updatedAt": "2026-10-09T18:46:26.918Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
