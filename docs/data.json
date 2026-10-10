@@ -1,6 +1,6 @@
 {
-  "retrieved": "2026-10-09",
-  "retrievedAt": "2026-10-09T18:46:26.918Z",
+  "retrieved": "2026-10-10",
+  "retrievedAt": "2026-10-10T02:18:35.358Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -1644,11 +1644,11 @@
           "id": "SP500",
           "values": [
             "S&P 500",
-            7765.36,
-            1.1968431697578108,
-            13.437440654444522,
-            14.979004163631293,
-            "2026-10-08"
+            7811.54,
+            2.2940249019166137,
+            14.112044408735658,
+            15.982367028897816,
+            "2026-10-09"
           ],
           "source": "https://fred.stlouisfed.org/series/SP500",
           "sa": "NSA",
@@ -1659,11 +1659,11 @@
           "id": "DJIA",
           "values": [
             "Dow Jones Industrial Average",
-            51231.64,
-            -2.9447731191202586,
-            6.592037290830488,
-            9.934942399195922,
-            "2026-10-08"
+            51654.95,
+            -1.385454096989247,
+            7.47277183896482,
+            11.425173679344546,
+            "2026-10-09"
           ],
           "source": "https://fred.stlouisfed.org/series/DJIA",
           "sa": "NSA",
@@ -2050,10 +2050,10 @@
             "S&P 500",
             6878.88,
             "2026-02-27",
-            7765.36,
-            "2026-10-08",
-            886.4799999999996,
-            12.886981601656068,
+            7811.54,
+            "2026-10-09",
+            932.6599999999999,
+            13.55831181820295,
             "Index · NSA",
             "Index points"
           ],
@@ -2073,10 +2073,10 @@
             "Dow Jones Industrial Average",
             48977.92,
             "2026-02-27",
-            51231.64,
-            "2026-10-08",
-            2253.720000000001,
-            4.601502064603813,
+            51654.95,
+            "2026-10-09",
+            2677.029999999999,
+            5.465789482281003,
             "Index · NSA",
             "Index points"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "8686696c-c172-40a7-a51f-1694f38dbc84",
+  "snapshotId": "924268da-7f77-4930-8369-09d28714adc0",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-10-09T18:46:26.918Z"
+      "updatedAt": "2026-10-10T02:18:35.358Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
