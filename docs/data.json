@@ -1,6 +1,6 @@
 {
-  "retrieved": "2026-10-14",
-  "retrievedAt": "2026-10-14T01:53:40.497Z",
+  "retrieved": "2026-10-15",
+  "retrievedAt": "2026-10-15T01:26:54.110Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -23,11 +23,11 @@
     },
     {
       "label": "CPI inflation",
-      "value": 3.3965478924364856,
+      "value": 3.737684729064039,
       "digits": 1,
       "prefix": "",
       "suffix": "%",
-      "detail": "12-month change · Aug 2026 · NSA",
+      "detail": "12-month change · Sep 2026 · NSA",
       "source": "https://fred.stlouisfed.org/series/CPIAUCNS"
     }
   ],
@@ -595,9 +595,9 @@
           "id": "CPIAUCSL",
           "values": [
             "CPI · Headline",
-            0.3960181843858157,
-            3.3965478924364856,
-            "2026-08-01",
+            0.6485480245771891,
+            3.737684729064039,
+            "2026-09-01",
             "NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/CPIAUCSL",
@@ -618,9 +618,9 @@
           "id": "CPILFESL",
           "values": [
             "CPI · Core",
-            0.2897956881014574,
-            2.4459799375700753,
-            "2026-08-01",
+            0.3348481932704761,
+            2.5643583511686607,
+            "2026-09-01",
             "NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/CPILFESL",
@@ -641,9 +641,9 @@
           "id": "CUSR0000SACL1E",
           "values": [
             "CPI · Core Goods",
-            0.10550661055541699,
-            0.6814055706846345,
-            "2026-08-01",
+            0.25128171538475463,
+            0.7353509873098352,
+            "2026-09-01",
             "NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/CUSR0000SACL1E",
@@ -664,9 +664,9 @@
           "id": "CUSR0000SASLE",
           "values": [
             "CPI · Core Services",
-            0.3274119421205812,
-            3.0094715737561284,
-            "2026-08-01",
+            0.36861824078735506,
+            3.1488874375649845,
+            "2026-09-01",
             "NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/CUSR0000SASLE",
@@ -687,9 +687,9 @@
           "id": "CUSR0000SAH1",
           "values": [
             "CPI · Shelter",
-            0.26381104417434464,
-            3.0411436174031303,
-            "2026-08-01",
+            0.39072396665016385,
+            3.223617886373087,
+            "2026-09-01",
             "NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/CUSR0000SAH1",
@@ -710,9 +710,9 @@
           "id": "CPIUFDSL",
           "values": [
             "CPI · Food",
-            0.12232730556962501,
-            2.6730541027556676,
-            "2026-08-01",
+            0.0479576602370857,
+            2.4824403849242893,
+            "2026-09-01",
             "NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/CPIUFDSL",
@@ -733,9 +733,9 @@
           "id": "CPIENGSL",
           "values": [
             "CPI · Energy",
-            2.096626005792346,
-            16.276959685362936,
-            "2026-08-01",
+            5.195735299612636,
+            20.44649122497699,
+            "2026-09-01",
             "NSA"
           ],
           "source": "https://fred.stlouisfed.org/series/CPIENGSL",
@@ -855,13 +855,13 @@
           "id": "GASREGW",
           "values": [
             "Regular gasoline — gallon",
-            4.354,
-            -0.11099999999999977,
-            39.37259923175416,
+            4.331,
+            -0.022999999999999687,
+            41.48970924534468,
             "USD per gallon",
             "weekly",
             "NSA",
-            "2026-10-05"
+            "2026-10-12"
           ],
           "source": "https://fred.stlouisfed.org/series/GASREGW",
           "sa": "NSA",
@@ -872,13 +872,13 @@
           "id": "GASDESW",
           "values": [
             "Diesel — gallon",
-            6.199,
-            -0.18299999999999983,
-            67.0439234707626,
+            6.179,
+            -0.019999999999999574,
+            68.59481582537516,
             "USD per gallon",
             "weekly",
             "NSA",
-            "2026-10-05"
+            "2026-10-12"
           ],
           "source": "https://fred.stlouisfed.org/series/GASDESW",
           "sa": "NSA",
@@ -889,13 +889,13 @@
           "id": "APU0000703112",
           "values": [
             "Ground beef, 100% beef — 1 lb",
-            6.923,
-            0.038000000000000256,
-            9.57581513137069,
+            6.792,
+            -0.13100000000000023,
+            7.4173651747588165,
             "USD per pound",
             "monthly",
             "NSA",
-            "2026-08-01"
+            "2026-09-01"
           ],
           "source": "https://fred.stlouisfed.org/series/APU0000703112",
           "sa": "NSA",
@@ -907,12 +907,12 @@
           "values": [
             "Eggs, grade A large — dozen",
             2.272,
-            0.08299999999999974,
-            -36.66016169500976,
+            0.0,
+            -34.862385321100916,
             "USD per dozen",
             "monthly",
             "NSA",
-            "2026-08-01"
+            "2026-09-01"
           ],
           "source": "https://fred.stlouisfed.org/series/APU0000708111",
           "sa": "NSA",
@@ -923,13 +923,13 @@
           "id": "APU0000709112",
           "values": [
             "Milk, whole fortified — gallon",
-            4.229,
-            -0.08399999999999963,
-            1.390553824023022,
+            4.106,
+            -0.12300000000000022,
+            -0.5570356018406275,
             "USD per gallon",
             "monthly",
             "NSA",
-            "2026-08-01"
+            "2026-09-01"
           ],
           "source": "https://fred.stlouisfed.org/series/APU0000709112",
           "sa": "NSA",
@@ -940,13 +940,13 @@
           "id": "APU0000702111",
           "values": [
             "White pan bread — 1 lb",
-            1.823,
-            0.0029999999999998916,
-            -0.977729494839763,
+            1.83,
+            0.007000000000000117,
+            -1.9817889662560262,
             "USD per pound",
             "monthly",
             "NSA",
-            "2026-08-01"
+            "2026-09-01"
           ],
           "source": "https://fred.stlouisfed.org/series/APU0000702111",
           "sa": "NSA",
@@ -957,13 +957,13 @@
           "id": "APU0000706111",
           "values": [
             "Whole fresh chicken — 1 lb",
-            2.012,
-            0.007000000000000117,
-            -3.0828516377649384,
+            2.064,
+            0.052000000000000046,
+            0.14556040756914523,
             "USD per pound",
             "monthly",
             "NSA",
-            "2026-08-01"
+            "2026-09-01"
           ],
           "source": "https://fred.stlouisfed.org/series/APU0000706111",
           "sa": "NSA",
@@ -1504,10 +1504,10 @@
           "id": "BABATOTALSAUS",
           "values": [
             "Total applications",
-            531728.0,
-            -7.768095026642985,
-            11.377875155265183,
-            "2026-08-01"
+            534947.0,
+            0.5443087222841481,
+            4.365851231736606,
+            "2026-09-01"
           ],
           "source": "https://fred.stlouisfed.org/series/BABATOTALSAUS",
           "sa": "SA",
@@ -1517,10 +1517,10 @@
           "id": "BAHBATOTALSAUS",
           "values": [
             "High-propensity applications",
-            145387.0,
-            -4.102080392596596,
-            1.9201110425663082,
-            "2026-08-01"
+            147331.0,
+            1.313427909311593,
+            3.0798508350299736,
+            "2026-09-01"
           ],
           "source": "https://fred.stlouisfed.org/series/BAHBATOTALSAUS",
           "sa": "SA",
@@ -1644,11 +1644,11 @@
           "id": "SP500",
           "values": [
             "S&P 500",
-            7805.45,
-            1.939015120844001,
-            14.023080856036806,
-            17.291937151375247,
-            "2026-10-13"
+            7718.94,
+            1.2986910726799916,
+            12.759330947337656,
+            16.173688464264902,
+            "2026-10-14"
           ],
           "source": "https://fred.stlouisfed.org/series/SP500",
           "sa": "NSA",
@@ -1659,11 +1659,11 @@
           "id": "DJIA",
           "values": [
             "Dow Jones Industrial Average",
-            51670.1,
-            -1.7179636275378662,
-            7.504292777294275,
-            12.16152443866163,
-            "2026-10-13"
+            51621.48,
+            -1.5255659923847475,
+            7.403134492041641,
+            11.56465701875453,
+            "2026-10-14"
           ],
           "source": "https://fred.stlouisfed.org/series/DJIA",
           "sa": "NSA",
@@ -1674,11 +1674,11 @@
           "id": "NASDAQCOM",
           "values": [
             "NASDAQ Composite",
-            27245.9,
-            3.466595577267184,
-            17.2270532772796,
-            22.704793592990224,
-            "2026-10-12"
+            27204.38,
+            3.3089229348377547,
+            17.048411087002435,
+            19.871546591900024,
+            "2026-10-13"
           ],
           "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
           "sa": "NSA",
@@ -2004,10 +2004,10 @@
             "Regular gasoline — gallon",
             2.937,
             "2026-02-23",
-            4.354,
-            "2026-10-05",
-            1.4170000000000003,
-            48.246510044262855,
+            4.331,
+            "2026-10-12",
+            1.3940000000000006,
+            47.463398025195794,
             "USD per gallon · NSA",
             "USD per gallon"
           ],
@@ -2027,10 +2027,10 @@
             "Diesel — gallon",
             3.809,
             "2026-02-23",
-            6.199,
-            "2026-10-05",
-            2.3899999999999997,
-            62.746127592543964,
+            6.179,
+            "2026-10-12",
+            2.37,
+            62.22105539511682,
             "USD per gallon · NSA",
             "USD per gallon"
           ],
@@ -2050,10 +2050,10 @@
             "S&P 500",
             6878.88,
             "2026-02-27",
-            7805.45,
-            "2026-10-13",
-            926.5699999999997,
-            13.469779964180217,
+            7718.94,
+            "2026-10-14",
+            840.0599999999995,
+            12.212162445049191,
             "Index · NSA",
             "Index points"
           ],
@@ -2073,10 +2073,10 @@
             "Dow Jones Industrial Average",
             48977.92,
             "2026-02-27",
-            51670.1,
-            "2026-10-13",
-            2692.1800000000003,
-            5.496721788103698,
+            51621.48,
+            "2026-10-14",
+            2643.560000000005,
+            5.397452566380934,
             "Index · NSA",
             "Index points"
           ],
@@ -2096,10 +2096,10 @@
             "Nasdaq Composite",
             22668.21,
             "2026-02-27",
-            27245.9,
-            "2026-10-12",
-            4577.690000000002,
-            20.194316181118865,
+            27204.38,
+            "2026-10-13",
+            4536.170000000002,
+            20.011152181844103,
             "Index February 5, 1971=100 · NSA",
             "Index points"
           ],
@@ -2119,10 +2119,10 @@
             "CPI price index",
             326.588,
             "2026-01-01",
-            334.131,
-            "2026-08-01",
-            7.5429999999999495,
-            2.309637831151168,
+            336.298,
+            "2026-09-01",
+            9.70999999999998,
+            2.973164966257169,
             "Index 1982-1984=100 · SA",
             "Index points"
           ],
@@ -2141,10 +2141,10 @@
             "Core CPI price index",
             332.793,
             "2026-01-01",
-            337.765,
-            "2026-08-01",
-            4.97199999999998,
-            1.4940218093529634,
+            338.896,
+            "2026-09-01",
+            6.103000000000009,
+            1.8338727076591121,
             "Index 1982-1984=100 · SA",
             "Index points"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "78c5fb12-e624-4930-9c86-2e4d84500e75",
+  "snapshotId": "ddc9ed2f-fc3f-4ccf-8102-f042af3eb3b5",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-10-14T01:53:40.497Z"
+      "updatedAt": "2026-10-15T01:26:54.110Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
