@@ -1,6 +1,6 @@
 {
   "retrieved": "2026-10-15",
-  "retrievedAt": "2026-10-15T01:26:54.110Z",
+  "retrievedAt": "2026-10-15T17:44:44.513Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -1565,10 +1565,10 @@
           "id": "ICSA",
           "values": [
             "Initial claims",
-            197000.0,
             199000.0,
-            233000.0,
-            "2026-10-03"
+            198000.0,
+            222000.0,
+            "2026-10-10"
           ],
           "source": "https://fred.stlouisfed.org/series/ICSA",
           "sa": "SA",
@@ -1578,10 +1578,10 @@
           "id": "IC4WSA",
           "values": [
             "Initial claims 4-week average",
-            198000.0,
-            200500.0,
-            227500.0,
-            "2026-10-03"
+            198500.0,
+            198250.0,
+            224750.0,
+            "2026-10-10"
           ],
           "source": "https://fred.stlouisfed.org/series/IC4WSA",
           "sa": "SA",
@@ -1591,10 +1591,10 @@
           "id": "CCSA",
           "values": [
             "Continued claims",
-            1716000.0,
-            1699000.0,
-            1929000.0,
-            "2026-09-26"
+            1710000.0,
+            1714000.0,
+            1928000.0,
+            "2026-10-03"
           ],
           "source": "https://fred.stlouisfed.org/series/CCSA",
           "sa": "SA",
@@ -1674,11 +1674,11 @@
           "id": "NASDAQCOM",
           "values": [
             "NASDAQ Composite",
-            27204.38,
-            3.3089229348377547,
-            17.048411087002435,
-            19.871546591900024,
-            "2026-10-13"
+            26692.87,
+            1.9340566347200605,
+            14.847609864731881,
+            18.520671174911296,
+            "2026-10-14"
           ],
           "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
           "sa": "NSA",
@@ -2096,10 +2096,10 @@
             "Nasdaq Composite",
             22668.21,
             "2026-02-27",
-            27204.38,
-            "2026-10-13",
-            4536.170000000002,
-            20.011152181844103,
+            26692.87,
+            "2026-10-14",
+            4024.66,
+            17.754644058794234,
             "Index February 5, 1971=100 · NSA",
             "Index points"
           ],
@@ -2251,10 +2251,10 @@
             "Initial jobless claims",
             211000.0,
             "2026-02-21",
-            197000.0,
-            "2026-10-03",
-            -14000.0,
-            -6.635071090047395,
+            199000.0,
+            "2026-10-10",
+            -12000.0,
+            -5.687203791469198,
             "Number · SA",
             "Claims"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "ddc9ed2f-fc3f-4ccf-8102-f042af3eb3b5",
+  "snapshotId": "4ad42643-f0b9-4b09-94c8-bf9966ccbcf8",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-10-15T01:26:54.110Z"
+      "updatedAt": "2026-10-15T17:44:44.513Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
