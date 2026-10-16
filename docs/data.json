@@ -1,6 +1,6 @@
 {
-  "retrieved": "2026-10-15",
-  "retrievedAt": "2026-10-15T17:44:44.513Z",
+  "retrieved": "2026-10-16",
+  "retrievedAt": "2026-10-16T01:19:12.212Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -1644,11 +1644,11 @@
           "id": "SP500",
           "values": [
             "S&P 500",
-            7718.94,
-            1.2986910726799916,
-            12.759330947337656,
-            16.173688464264902,
-            "2026-10-14"
+            7744.06,
+            2.087208482242331,
+            13.126287342049526,
+            16.08440038014949,
+            "2026-10-15"
           ],
           "source": "https://fred.stlouisfed.org/series/SP500",
           "sa": "NSA",
@@ -1659,11 +1659,11 @@
           "id": "DJIA",
           "values": [
             "Dow Jones Industrial Average",
-            51621.48,
-            -1.5255659923847475,
-            7.403134492041641,
-            11.56465701875453,
-            "2026-10-14"
+            52177.69,
+            0.16236312249355844,
+            8.5603794496798,
+            12.808553593245552,
+            "2026-10-15"
           ],
           "source": "https://fred.stlouisfed.org/series/DJIA",
           "sa": "NSA",
@@ -1960,10 +1960,10 @@
             "WTI crude oil — Cushing spot price",
             66.96,
             "2026-02-27",
-            96.24,
-            "2026-10-06",
-            29.28,
-            43.72759856630826,
+            101.91,
+            "2026-10-14",
+            34.95,
+            52.19534050179213,
             "USD per barrel · NSA",
             "USD per barrel"
           ],
@@ -1982,10 +1982,10 @@
             "Brent crude oil — Europe spot price",
             71.32,
             "2026-02-27",
-            125.44,
-            "2026-10-06",
-            54.120000000000005,
-            75.88334268087496,
+            126.55,
+            "2026-10-14",
+            55.230000000000004,
+            77.4397083567022,
             "USD per barrel · NSA",
             "USD per barrel"
           ],
@@ -2050,10 +2050,10 @@
             "S&P 500",
             6878.88,
             "2026-02-27",
-            7718.94,
-            "2026-10-14",
-            840.0599999999995,
-            12.212162445049191,
+            7744.06,
+            "2026-10-15",
+            865.1800000000003,
+            12.577338171330222,
             "Index · NSA",
             "Index points"
           ],
@@ -2073,10 +2073,10 @@
             "Dow Jones Industrial Average",
             48977.92,
             "2026-02-27",
-            51621.48,
-            "2026-10-14",
-            2643.560000000005,
-            5.397452566380934,
+            52177.69,
+            "2026-10-15",
+            3199.770000000004,
+            6.5330867460276165,
             "Index · NSA",
             "Index points"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "4ad42643-f0b9-4b09-94c8-bf9966ccbcf8",
+  "snapshotId": "6d2ea657-e122-470d-b8f1-cdc480eb66ea",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-10-15T17:44:44.513Z"
+      "updatedAt": "2026-10-16T01:19:12.212Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
