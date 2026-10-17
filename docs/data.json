@@ -1,6 +1,6 @@
 {
-  "retrieved": "2026-10-16",
-  "retrievedAt": "2026-10-16T17:22:30.703Z",
+  "retrieved": "2026-10-17",
+  "retrievedAt": "2026-10-17T01:17:33.714Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -1644,11 +1644,11 @@
           "id": "SP500",
           "values": [
             "S&P 500",
-            7744.06,
-            2.087208482242331,
-            13.126287342049526,
-            16.08440038014949,
-            "2026-10-15"
+            7659.44,
+            1.4252212383521146,
+            11.89014681177416,
+            15.54320590972791,
+            "2026-10-16"
           ],
           "source": "https://fred.stlouisfed.org/series/SP500",
           "sa": "NSA",
@@ -1659,11 +1659,11 @@
           "id": "DJIA",
           "values": [
             "Dow Jones Industrial Average",
-            52177.69,
-            0.16236312249355844,
-            8.5603794496798,
-            12.808553593245552,
-            "2026-10-15"
+            52002.41,
+            1.0503110067836552,
+            8.195693636453116,
+            13.166213442478547,
+            "2026-10-16"
           ],
           "source": "https://fred.stlouisfed.org/series/DJIA",
           "sa": "NSA",
@@ -1718,9 +1718,9 @@
           "id": "MTSDS133FMS",
           "values": [
             "Monthly deficit",
-            166.79695227738003,
+            26.900347102020003,
             "USD billions",
-            "Aug 2026"
+            "Sep 2026"
           ],
           "source": "https://fred.stlouisfed.org/series/MTSDS133FMS",
           "sa": "NSA",
@@ -1730,9 +1730,9 @@
           "id": "MTSDS133FMS",
           "values": [
             "Fiscal year to date deficit",
-            1965.6278204534403,
+            1992.5281675554604,
             "USD billions",
-            "Oct 2025–Aug 2026"
+            "Oct 2025–Sep 2026"
           ],
           "source": "https://fred.stlouisfed.org/series/MTSDS133FMS",
           "sa": "NSA",
@@ -1742,9 +1742,9 @@
           "id": "MTSDS133FMS",
           "values": [
             "Trailing 12 months deficit",
-            1767.6781900912804,
+            1992.5281675554604,
             "USD billions",
-            "Sep 2025–Aug 2026"
+            "Oct 2025–Sep 2026"
           ],
           "source": "https://fred.stlouisfed.org/series/MTSDS133FMS",
           "sa": "NSA",
@@ -2050,10 +2050,10 @@
             "S&P 500",
             6878.88,
             "2026-02-27",
-            7744.06,
-            "2026-10-15",
-            865.1800000000003,
-            12.577338171330222,
+            7659.44,
+            "2026-10-16",
+            780.5599999999995,
+            11.34719605517176,
             "Index · NSA",
             "Index points"
           ],
@@ -2073,10 +2073,10 @@
             "Dow Jones Industrial Average",
             48977.92,
             "2026-02-27",
-            52177.69,
-            "2026-10-15",
-            3199.770000000004,
-            6.5330867460276165,
+            52002.41,
+            "2026-10-16",
+            3024.4900000000052,
+            6.175211197208874,
             "Index · NSA",
             "Index points"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "2f6958b6-de09-4b82-b300-3766a7557745",
+  "snapshotId": "e2273613-8bc2-4dd7-8c52-712eb03b0f12",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-10-16T17:22:30.703Z"
+      "updatedAt": "2026-10-17T01:17:33.714Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
