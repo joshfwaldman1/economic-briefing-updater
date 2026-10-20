@@ -1,6 +1,6 @@
 {
   "retrieved": "2026-10-20",
-  "retrievedAt": "2026-10-20T01:48:40.300Z",
+  "retrievedAt": "2026-10-20T17:57:03.346Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -1064,17 +1064,17 @@
           "id": "MIMFG",
           "values": [
             "Michigan manufacturing",
-            583300.0,
-            -2000.0,
-            300.0,
-            -175.0,
+            583800.0,
+            700.0,
+            633.3333333333334,
+            -133.33333333333334,
             -7600.0,
             -158.33333333333334,
-            4600.0,
-            242.10526315789474,
-            -3000.0,
+            5100.0,
+            255.0,
+            -2500.0,
             "SA",
-            "2026-08-01"
+            "2026-09-01"
           ],
           "source": "https://fred.stlouisfed.org/series/MIMFG",
           "sa": "SA",
@@ -1084,17 +1084,17 @@
           "id": "OHMFG",
           "values": [
             "Ohio manufacturing",
-            688300.0,
-            -700.0,
-            2366.6666666666665,
-            1041.6666666666667,
+            686600.0,
+            -1800.0,
+            933.3333333333334,
+            1025.0,
             13800.0,
             287.5,
-            13200.0,
-            694.7368421052631,
-            27000.0,
+            11500.0,
+            575.0,
+            25300.0,
             "SA",
-            "2026-08-01"
+            "2026-09-01"
           ],
           "source": "https://fred.stlouisfed.org/series/OHMFG",
           "sa": "SA",
@@ -1104,17 +1104,17 @@
           "id": "WIMFG",
           "values": [
             "Wisconsin manufacturing",
-            458400.0,
-            300.0,
-            700.0,
-            100.0,
+            457800.0,
+            -500.0,
+            133.33333333333334,
+            133.33333333333334,
             -400.0,
             -8.333333333333334,
-            -2700.0,
-            -142.10526315789474,
-            -3100.0,
+            -3300.0,
+            -165.0,
+            -3700.0,
             "SA",
-            "2026-08-01"
+            "2026-09-01"
           ],
           "source": "https://fred.stlouisfed.org/series/WIMFG",
           "sa": "SA",
@@ -1124,17 +1124,17 @@
           "id": "PAMFG",
           "values": [
             "Pennsylvania manufacturing",
-            557300.0,
-            -200.0,
-            566.6666666666666,
-            183.33333333333334,
+            559200.0,
+            300.0,
+            933.3333333333334,
+            441.6666666666667,
             21700.0,
             452.0833333333333,
-            -3000.0,
-            -157.89473684210526,
-            18700.0,
+            -1100.0,
+            -55.0,
+            20600.0,
             "SA",
-            "2026-08-01"
+            "2026-09-01"
           ],
           "source": "https://fred.stlouisfed.org/series/PAMFG",
           "sa": "SA",
@@ -1144,17 +1144,17 @@
           "id": "MNMFG",
           "values": [
             "Minnesota manufacturing",
-            324700.0,
-            2200.0,
-            1800.0,
-            883.3333333333334,
+            326200.0,
+            1600.0,
+            1366.6666666666667,
+            1033.3333333333333,
             6600.0,
             137.5,
-            8400.0,
-            442.10526315789474,
-            15000.0,
+            9900.0,
+            495.0,
+            16500.0,
             "SA",
-            "2026-08-01"
+            "2026-09-01"
           ],
           "source": "https://fred.stlouisfed.org/series/MNMFG",
           "sa": "SA",
@@ -1436,11 +1436,11 @@
           "id": "CLVMNACSCAB1GQIT",
           "values": [
             "Italy",
-            0.17165535256664644,
-            1.0172308671593022,
-            10.974396010290445,
-            1.0025362896166623,
-            12.086954602476506,
+            0.15525951451189623,
+            1.0156890685862452,
+            11.737136815576665,
+            0.9847221371309001,
+            12.837437137195895,
             "2026-04-01"
           ],
           "source": "https://fred.stlouisfed.org/series/CLVMNACSCAB1GQIT",
@@ -1674,11 +1674,11 @@
           "id": "NASDAQCOM",
           "values": [
             "NASDAQ Composite",
-            26713.03,
-            2.8153033092303437,
-            14.934349425328875,
-            17.83385854835977,
-            "2026-10-15"
+            26430.89,
+            -0.34559271261624946,
+            13.720425832727745,
+            16.538469848064175,
+            "2026-10-19"
           ],
           "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
           "sa": "NSA",
@@ -2096,10 +2096,10 @@
             "Nasdaq Composite",
             22668.21,
             "2026-02-27",
-            26713.03,
-            "2026-10-15",
-            4044.8199999999997,
-            17.843579179829373,
+            26430.89,
+            "2026-10-19",
+            3762.6800000000003,
+            16.598928631771102,
             "Index February 5, 1971=100 · NSA",
             "Index points"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "9b9d05e6-d760-4190-8447-ece2bc650e2a",
+  "snapshotId": "a3209978-5a22-4db1-97f6-15d9187013ff",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-10-20T01:48:40.300Z"
+      "updatedAt": "2026-10-20T17:57:03.346Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
