@@ -1,6 +1,6 @@
 {
-  "retrieved": "2026-10-21",
-  "retrievedAt": "2026-10-21T01:32:46.221Z",
+  "retrieved": "2026-10-22",
+  "retrievedAt": "2026-10-22T17:56:47.672Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -1565,10 +1565,10 @@
           "id": "ICSA",
           "values": [
             "Initial claims",
-            199000.0,
-            198000.0,
-            222000.0,
-            "2026-10-10"
+            194000.0,
+            200000.0,
+            231000.0,
+            "2026-10-17"
           ],
           "source": "https://fred.stlouisfed.org/series/ICSA",
           "sa": "SA",
@@ -1578,10 +1578,10 @@
           "id": "IC4WSA",
           "values": [
             "Initial claims 4-week average",
-            198500.0,
-            198250.0,
-            224750.0,
-            "2026-10-10"
+            197750.0,
+            198750.0,
+            227750.0,
+            "2026-10-17"
           ],
           "source": "https://fred.stlouisfed.org/series/IC4WSA",
           "sa": "SA",
@@ -1591,10 +1591,10 @@
           "id": "CCSA",
           "values": [
             "Continued claims",
-            1710000.0,
-            1714000.0,
-            1928000.0,
-            "2026-10-03"
+            1728000.0,
+            1703000.0,
+            1947000.0,
+            "2026-10-10"
           ],
           "source": "https://fred.stlouisfed.org/series/CCSA",
           "sa": "SA",
@@ -1644,11 +1644,11 @@
           "id": "SP500",
           "values": [
             "S&P 500",
-            7690.73,
-            0.5258479837918939,
-            12.347235410123435,
-            15.406939665456676,
-            "2026-10-19"
+            7757.17,
+            -0.09697734619495968,
+            13.317800014608139,
+            15.171000764622477,
+            "2026-10-21"
           ],
           "source": "https://fred.stlouisfed.org/series/SP500",
           "sa": "NSA",
@@ -1659,11 +1659,11 @@
           "id": "DJIA",
           "values": [
             "Dow Jones Industrial Average",
-            52495.88,
-            1.573526429764427,
-            9.22240237819758,
-            12.395041555172725,
-            "2026-10-20"
+            52856.09,
+            1.5509666595771687,
+            9.971851698042311,
+            12.640133967710842,
+            "2026-10-21"
           ],
           "source": "https://fred.stlouisfed.org/series/DJIA",
           "sa": "NSA",
@@ -1674,11 +1674,11 @@
           "id": "NASDAQCOM",
           "values": [
             "NASDAQ Composite",
-            26430.89,
-            -0.34559271261624946,
-            13.720425832727745,
-            16.538469848064175,
-            "2026-10-19"
+            26702.86,
+            -1.545714213027094,
+            14.890592414849158,
+            16.333727896236216,
+            "2026-10-21"
           ],
           "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
           "sa": "NSA",
@@ -1960,10 +1960,10 @@
             "WTI crude oil — Cushing spot price",
             66.96,
             "2026-02-27",
-            101.91,
-            "2026-10-14",
-            34.95,
-            52.19534050179213,
+            107.89,
+            "2026-10-20",
+            40.93000000000001,
+            61.12604540023896,
             "USD per barrel · NSA",
             "USD per barrel"
           ],
@@ -1982,10 +1982,10 @@
             "Brent crude oil — Europe spot price",
             71.32,
             "2026-02-27",
-            126.55,
-            "2026-10-14",
-            55.230000000000004,
-            77.4397083567022,
+            115.22,
+            "2026-10-20",
+            43.900000000000006,
+            61.55356141334831,
             "USD per barrel · NSA",
             "USD per barrel"
           ],
@@ -2050,10 +2050,10 @@
             "S&P 500",
             6878.88,
             "2026-02-27",
-            7690.73,
-            "2026-10-19",
-            811.8499999999995,
-            11.802066615495544,
+            7757.17,
+            "2026-10-21",
+            878.29,
+            12.767921522108239,
             "Index · NSA",
             "Index points"
           ],
@@ -2073,10 +2073,10 @@
             "Dow Jones Industrial Average",
             48977.92,
             "2026-02-27",
-            52495.88,
-            "2026-10-20",
-            3517.959999999999,
-            7.1827468377587245,
+            52856.09,
+            "2026-10-21",
+            3878.1699999999983,
+            7.918200691250266,
             "Index · NSA",
             "Index points"
           ],
@@ -2096,10 +2096,10 @@
             "Nasdaq Composite",
             22668.21,
             "2026-02-27",
-            26430.89,
-            "2026-10-19",
-            3762.6800000000003,
-            16.598928631771102,
+            26702.86,
+            "2026-10-21",
+            4034.6500000000015,
+            17.79871458752147,
             "Index February 5, 1971=100 · NSA",
             "Index points"
           ],
@@ -2251,10 +2251,10 @@
             "Initial jobless claims",
             211000.0,
             "2026-02-21",
-            199000.0,
-            "2026-10-10",
-            -12000.0,
-            -5.687203791469198,
+            194000.0,
+            "2026-10-17",
+            -17000.0,
+            -8.056872037914697,
             "Number · SA",
             "Claims"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "5ca58502-5bdc-4a40-be47-b5a69bebbb44",
+  "snapshotId": "71f09d91-2450-4f04-b4ee-888ec243dab7",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-10-21T01:32:46.221Z"
+      "updatedAt": "2026-10-22T17:56:47.672Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",

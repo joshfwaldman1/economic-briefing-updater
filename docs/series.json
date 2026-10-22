@@ -1,7 +1,7 @@
 {
-  "retrieved": "2026-10-21",
-  "retrievedAt": "2026-10-21T01:32:46.221Z",
-  "snapshotId": "5ca58502-5bdc-4a40-be47-b5a69bebbb44",
+  "retrieved": "2026-10-22",
+  "retrievedAt": "2026-10-22T17:56:47.672Z",
+  "snapshotId": "71f09d91-2450-4f04-b4ee-888ec243dab7",
   "series": {
     "PAYEMS": {
       "id": "PAYEMS",
@@ -342,7 +342,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/PAYEMS",
-      "fetchedAt": "2026-10-21T01:32:39.934Z"
+      "fetchedAt": "2026-10-22T17:56:40.086Z"
     },
     "MANEMP": {
       "id": "MANEMP",
@@ -685,7 +685,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/MANEMP",
-      "fetchedAt": "2026-10-21T01:32:39.937Z"
+      "fetchedAt": "2026-10-22T17:56:40.090Z"
     },
     "USMINE": {
       "id": "USMINE",
@@ -1026,7 +1026,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USMINE",
-      "fetchedAt": "2026-10-21T01:32:39.939Z"
+      "fetchedAt": "2026-10-22T17:56:40.088Z"
     },
     "USCONS": {
       "id": "USCONS",
@@ -1367,7 +1367,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USCONS",
-      "fetchedAt": "2026-10-21T01:32:40.187Z"
+      "fetchedAt": "2026-10-22T17:56:40.091Z"
     },
     "USTPU": {
       "id": "USTPU",
@@ -1708,7 +1708,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USTPU",
-      "fetchedAt": "2026-10-21T01:32:40.420Z"
+      "fetchedAt": "2026-10-22T17:56:40.547Z"
     },
     "USINFO": {
       "id": "USINFO",
@@ -2049,7 +2049,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USINFO",
-      "fetchedAt": "2026-10-21T01:32:40.405Z"
+      "fetchedAt": "2026-10-22T17:56:40.653Z"
     },
     "USFIRE": {
       "id": "USFIRE",
@@ -2390,7 +2390,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USFIRE",
-      "fetchedAt": "2026-10-21T01:32:40.443Z"
+      "fetchedAt": "2026-10-22T17:56:40.387Z"
     },
     "USPBS": {
       "id": "USPBS",
@@ -2731,7 +2731,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USPBS",
-      "fetchedAt": "2026-10-21T01:32:40.444Z"
+      "fetchedAt": "2026-10-22T17:56:40.452Z"
     },
     "USEHS": {
       "id": "USEHS",
@@ -3072,7 +3072,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USEHS",
-      "fetchedAt": "2026-10-21T01:32:40.646Z"
+      "fetchedAt": "2026-10-22T17:56:40.734Z"
     },
     "USLAH": {
       "id": "USLAH",
@@ -3413,7 +3413,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USLAH",
-      "fetchedAt": "2026-10-21T01:32:40.672Z"
+      "fetchedAt": "2026-10-22T17:56:40.830Z"
     },
     "USSERV": {
       "id": "USSERV",
@@ -3754,7 +3754,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USSERV",
-      "fetchedAt": "2026-10-21T01:32:40.666Z"
+      "fetchedAt": "2026-10-22T17:56:40.893Z"
     },
     "USGOVT": {
       "id": "USGOVT",
@@ -4095,7 +4095,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USGOVT",
-      "fetchedAt": "2026-10-21T01:32:40.724Z"
+      "fetchedAt": "2026-10-22T17:56:40.985Z"
     },
     "CES6562000101": {
       "id": "CES6562000101",
@@ -4436,7 +4436,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CES6562000101",
-      "fetchedAt": "2026-10-21T01:32:41.032Z"
+      "fetchedAt": "2026-10-22T17:56:41.035Z"
     },
     "USTRADE": {
       "id": "USTRADE",
@@ -4776,7 +4776,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USTRADE",
-      "fetchedAt": "2026-10-21T01:32:40.940Z"
+      "fetchedAt": "2026-10-22T17:56:41.081Z"
     },
     "USWTRADE": {
       "id": "USWTRADE",
@@ -5116,7 +5116,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/USWTRADE",
-      "fetchedAt": "2026-10-21T01:32:40.980Z"
+      "fetchedAt": "2026-10-22T17:56:41.350Z"
     },
     "CES4300000001": {
       "id": "CES4300000001",
@@ -5456,7 +5456,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CES4300000001",
-      "fetchedAt": "2026-10-21T01:32:40.990Z"
+      "fetchedAt": "2026-10-22T17:56:41.291Z"
     },
     "CES4422000001": {
       "id": "CES4422000001",
@@ -5796,7 +5796,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CES4422000001",
-      "fetchedAt": "2026-10-21T01:32:41.257Z"
+      "fetchedAt": "2026-10-22T17:56:41.397Z"
     },
     "UNRATE": {
       "id": "UNRATE",
@@ -6129,7 +6129,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/UNRATE",
-      "fetchedAt": "2026-10-21T01:32:41.146Z"
+      "fetchedAt": "2026-10-22T17:56:41.309Z"
     },
     "LNS14000060": {
       "id": "LNS14000060",
@@ -6462,7 +6462,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS14000060",
-      "fetchedAt": "2026-10-21T01:32:41.384Z"
+      "fetchedAt": "2026-10-22T17:56:41.592Z"
     },
     "LNS14000001": {
       "id": "LNS14000001",
@@ -6795,7 +6795,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS14000001",
-      "fetchedAt": "2026-10-21T01:32:41.388Z"
+      "fetchedAt": "2026-10-22T17:56:41.729Z"
     },
     "LNS14000002": {
       "id": "LNS14000002",
@@ -7128,7 +7128,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS14000002",
-      "fetchedAt": "2026-10-21T01:32:41.452Z"
+      "fetchedAt": "2026-10-22T17:56:41.719Z"
     },
     "LNS14000003": {
       "id": "LNS14000003",
@@ -7461,7 +7461,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS14000003",
-      "fetchedAt": "2026-10-21T01:32:41.538Z"
+      "fetchedAt": "2026-10-22T17:56:41.963Z"
     },
     "LNS14000006": {
       "id": "LNS14000006",
@@ -7794,7 +7794,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS14000006",
-      "fetchedAt": "2026-10-21T01:32:41.670Z"
+      "fetchedAt": "2026-10-22T17:56:41.861Z"
     },
     "LNS14000009": {
       "id": "LNS14000009",
@@ -8127,7 +8127,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS14000009",
-      "fetchedAt": "2026-10-21T01:32:41.665Z"
+      "fetchedAt": "2026-10-22T17:56:42.098Z"
     },
     "LNS14032183": {
       "id": "LNS14032183",
@@ -8460,7 +8460,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS14032183",
-      "fetchedAt": "2026-10-21T01:32:41.759Z"
+      "fetchedAt": "2026-10-22T17:56:41.984Z"
     },
     "CPIAUCSL": {
       "id": "CPIAUCSL",
@@ -8794,7 +8794,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CPIAUCSL",
-      "fetchedAt": "2026-10-21T01:32:41.580Z"
+      "fetchedAt": "2026-10-22T17:56:42.112Z"
     },
     "CPILFESL": {
       "id": "CPILFESL",
@@ -9128,7 +9128,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CPILFESL",
-      "fetchedAt": "2026-10-21T01:32:41.875Z"
+      "fetchedAt": "2026-10-22T17:56:42.213Z"
     },
     "CUSR0000SACL1E": {
       "id": "CUSR0000SACL1E",
@@ -9462,7 +9462,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CUSR0000SACL1E",
-      "fetchedAt": "2026-10-21T01:32:41.983Z"
+      "fetchedAt": "2026-10-22T17:56:42.382Z"
     },
     "CUSR0000SASLE": {
       "id": "CUSR0000SASLE",
@@ -9796,7 +9796,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CUSR0000SASLE",
-      "fetchedAt": "2026-10-21T01:32:41.975Z"
+      "fetchedAt": "2026-10-22T17:56:42.467Z"
     },
     "CUSR0000SAH1": {
       "id": "CUSR0000SAH1",
@@ -10130,7 +10130,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CUSR0000SAH1",
-      "fetchedAt": "2026-10-21T01:32:42.080Z"
+      "fetchedAt": "2026-10-22T17:56:42.397Z"
     },
     "CPIUFDSL": {
       "id": "CPIUFDSL",
@@ -10464,7 +10464,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CPIUFDSL",
-      "fetchedAt": "2026-10-21T01:32:42.324Z"
+      "fetchedAt": "2026-10-22T17:56:42.666Z"
     },
     "CPIENGSL": {
       "id": "CPIENGSL",
@@ -10798,7 +10798,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CPIENGSL",
-      "fetchedAt": "2026-10-21T01:32:42.235Z"
+      "fetchedAt": "2026-10-22T17:56:42.701Z"
     },
     "PCEPI": {
       "id": "PCEPI",
@@ -11132,7 +11132,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/PCEPI",
-      "fetchedAt": "2026-10-21T01:32:42.250Z"
+      "fetchedAt": "2026-10-22T17:56:42.583Z"
     },
     "PCEPILFE": {
       "id": "PCEPILFE",
@@ -11466,7 +11466,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/PCEPILFE",
-      "fetchedAt": "2026-10-21T01:32:42.512Z"
+      "fetchedAt": "2026-10-22T17:56:42.692Z"
     },
     "DFXARG3M086SBEA": {
       "id": "DFXARG3M086SBEA",
@@ -11800,7 +11800,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/DFXARG3M086SBEA",
-      "fetchedAt": "2026-10-21T01:32:42.541Z"
+      "fetchedAt": "2026-10-22T17:56:42.982Z"
     },
     "DNRGRG3M086SBEA": {
       "id": "DNRGRG3M086SBEA",
@@ -12134,7 +12134,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/DNRGRG3M086SBEA",
-      "fetchedAt": "2026-10-21T01:32:42.494Z"
+      "fetchedAt": "2026-10-22T17:56:43.160Z"
     },
     "BABATOTALSAUS": {
       "id": "BABATOTALSAUS",
@@ -12471,7 +12471,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/BABATOTALSAUS",
-      "fetchedAt": "2026-10-21T01:32:42.576Z"
+      "fetchedAt": "2026-10-22T17:56:43.024Z"
     },
     "BAHBATOTALSAUS": {
       "id": "BAHBATOTALSAUS",
@@ -12808,7 +12808,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/BAHBATOTALSAUS",
-      "fetchedAt": "2026-10-21T01:32:42.792Z"
+      "fetchedAt": "2026-10-22T17:56:43.201Z"
     },
     "ICSA": {
       "id": "ICSA",
@@ -14233,11 +14233,15 @@
         },
         {
           "date": "2026-10-10",
-          "value": 199000
+          "value": 200000
+        },
+        {
+          "date": "2026-10-17",
+          "value": 194000
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/ICSA",
-      "fetchedAt": "2026-10-21T01:32:42.818Z"
+      "fetchedAt": "2026-10-22T17:56:43.175Z"
     },
     "IC4WSA": {
       "id": "IC4WSA",
@@ -15662,11 +15666,15 @@
         },
         {
           "date": "2026-10-10",
-          "value": 198500
+          "value": 198750
+        },
+        {
+          "date": "2026-10-17",
+          "value": 197750
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/IC4WSA",
-      "fetchedAt": "2026-10-21T01:32:42.816Z"
+      "fetchedAt": "2026-10-22T17:56:43.365Z"
     },
     "CCSA": {
       "id": "CCSA",
@@ -17087,11 +17095,15 @@
         },
         {
           "date": "2026-10-03",
-          "value": 1710000
+          "value": 1703000
+        },
+        {
+          "date": "2026-10-10",
+          "value": 1728000
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CCSA",
-      "fetchedAt": "2026-10-21T01:32:42.958Z"
+      "fetchedAt": "2026-10-22T17:56:43.377Z"
     },
     "SP500": {
       "id": "SP500",
@@ -23937,10 +23949,18 @@
         {
           "date": "2026-10-19",
           "value": 7690.73
+        },
+        {
+          "date": "2026-10-20",
+          "value": 7712.57
+        },
+        {
+          "date": "2026-10-21",
+          "value": 7757.17
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/SP500",
-      "fetchedAt": "2026-10-21T01:32:42.952Z"
+      "fetchedAt": "2026-10-22T17:56:43.833Z"
     },
     "DJIA": {
       "id": "DJIA",
@@ -30790,10 +30810,14 @@
         {
           "date": "2026-10-20",
           "value": 52495.88
+        },
+        {
+          "date": "2026-10-21",
+          "value": 52856.09
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/DJIA",
-      "fetchedAt": "2026-10-21T01:32:43.222Z"
+      "fetchedAt": "2026-10-22T17:56:43.934Z"
     },
     "NASDAQCOM": {
       "id": "NASDAQCOM",
@@ -37639,10 +37663,18 @@
         {
           "date": "2026-10-19",
           "value": 26430.89
+        },
+        {
+          "date": "2026-10-20",
+          "value": 26424.82
+        },
+        {
+          "date": "2026-10-21",
+          "value": 26702.86
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/NASDAQCOM",
-      "fetchedAt": "2026-10-21T01:32:42.981Z"
+      "fetchedAt": "2026-10-22T17:56:44.046Z"
     },
     "MTSDS133FMS": {
       "id": "MTSDS133FMS",
@@ -37979,7 +38011,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/MTSDS133FMS",
-      "fetchedAt": "2026-10-21T01:32:43.162Z"
+      "fetchedAt": "2026-10-22T17:56:43.703Z"
     },
     "FYFSGDA188S": {
       "id": "FYFSGDA188S",
@@ -38016,7 +38048,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/FYFSGDA188S",
-      "fetchedAt": "2026-10-21T01:32:43.156Z"
+      "fetchedAt": "2026-10-22T17:56:43.998Z"
     },
     "LNS11300060": {
       "id": "LNS11300060",
@@ -38349,7 +38381,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS11300060",
-      "fetchedAt": "2026-10-21T01:32:43.197Z"
+      "fetchedAt": "2026-10-22T17:56:44.080Z"
     },
     "LNS12300060": {
       "id": "LNS12300060",
@@ -38682,7 +38714,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/LNS12300060",
-      "fetchedAt": "2026-10-21T01:32:43.413Z"
+      "fetchedAt": "2026-10-22T17:56:44.301Z"
     },
     "MIMFG": {
       "id": "MIMFG",
@@ -39023,7 +39055,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/MIMFG",
-      "fetchedAt": "2026-10-21T01:32:43.470Z"
+      "fetchedAt": "2026-10-22T17:56:44.347Z"
     },
     "OHMFG": {
       "id": "OHMFG",
@@ -39364,7 +39396,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/OHMFG",
-      "fetchedAt": "2026-10-21T01:32:43.506Z"
+      "fetchedAt": "2026-10-22T17:56:44.396Z"
     },
     "WIMFG": {
       "id": "WIMFG",
@@ -39705,7 +39737,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/WIMFG",
-      "fetchedAt": "2026-10-21T01:32:43.491Z"
+      "fetchedAt": "2026-10-22T17:56:44.402Z"
     },
     "PAMFG": {
       "id": "PAMFG",
@@ -40046,7 +40078,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/PAMFG",
-      "fetchedAt": "2026-10-21T01:32:43.842Z"
+      "fetchedAt": "2026-10-22T17:56:44.628Z"
     },
     "MNMFG": {
       "id": "MNMFG",
@@ -40387,7 +40419,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/MNMFG",
-      "fetchedAt": "2026-10-21T01:32:43.789Z"
+      "fetchedAt": "2026-10-22T17:56:44.749Z"
     },
     "CES3133600101": {
       "id": "CES3133600101",
@@ -40727,7 +40759,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CES3133600101",
-      "fetchedAt": "2026-10-21T01:32:43.781Z"
+      "fetchedAt": "2026-10-22T17:56:44.741Z"
     },
     "CES4244100001": {
       "id": "CES4244100001",
@@ -41067,7 +41099,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CES4244100001",
-      "fetchedAt": "2026-10-21T01:32:43.853Z"
+      "fetchedAt": "2026-10-22T17:56:44.811Z"
     },
     "GASREGW": {
       "id": "GASREGW",
@@ -42504,7 +42536,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/GASREGW",
-      "fetchedAt": "2026-10-21T01:32:44.132Z"
+      "fetchedAt": "2026-10-22T17:56:44.968Z"
     },
     "GASDESW": {
       "id": "GASDESW",
@@ -43941,7 +43973,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/GASDESW",
-      "fetchedAt": "2026-10-21T01:32:44.158Z"
+      "fetchedAt": "2026-10-22T17:56:45.143Z"
     },
     "CES0500000003": {
       "id": "CES0500000003",
@@ -44278,7 +44310,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CES0500000003",
-      "fetchedAt": "2026-10-21T01:32:44.282Z"
+      "fetchedAt": "2026-10-22T17:56:45.371Z"
     },
     "JTSJOL": {
       "id": "JTSJOL",
@@ -44611,7 +44643,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/JTSJOL",
-      "fetchedAt": "2026-10-21T01:32:44.121Z"
+      "fetchedAt": "2026-10-22T17:56:45.058Z"
     },
     "JTSQUR": {
       "id": "JTSQUR",
@@ -44944,7 +44976,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/JTSQUR",
-      "fetchedAt": "2026-10-21T01:32:44.404Z"
+      "fetchedAt": "2026-10-22T17:56:45.380Z"
     },
     "U6RATE": {
       "id": "U6RATE",
@@ -45277,7 +45309,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/U6RATE",
-      "fetchedAt": "2026-10-21T01:32:44.417Z"
+      "fetchedAt": "2026-10-22T17:56:45.400Z"
     },
     "APU0000703112": {
       "id": "APU0000703112",
@@ -45613,7 +45645,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/APU0000703112",
-      "fetchedAt": "2026-10-21T01:32:44.504Z"
+      "fetchedAt": "2026-10-22T17:56:45.592Z"
     },
     "APU0000708111": {
       "id": "APU0000708111",
@@ -45949,7 +45981,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/APU0000708111",
-      "fetchedAt": "2026-10-21T01:32:44.564Z"
+      "fetchedAt": "2026-10-22T17:56:45.767Z"
     },
     "APU0000709112": {
       "id": "APU0000709112",
@@ -46285,7 +46317,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/APU0000709112",
-      "fetchedAt": "2026-10-21T01:32:44.613Z"
+      "fetchedAt": "2026-10-22T17:56:45.705Z"
     },
     "APU0000702111": {
       "id": "APU0000702111",
@@ -46621,7 +46653,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/APU0000702111",
-      "fetchedAt": "2026-10-21T01:32:44.651Z"
+      "fetchedAt": "2026-10-22T17:56:45.715Z"
     },
     "APU0000706111": {
       "id": "APU0000706111",
@@ -46953,7 +46985,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/APU0000706111",
-      "fetchedAt": "2026-10-21T01:32:44.823Z"
+      "fetchedAt": "2026-10-22T17:56:45.931Z"
     },
     "GDPC1": {
       "id": "GDPC1",
@@ -47073,7 +47105,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/GDPC1",
-      "fetchedAt": "2026-10-21T01:32:44.837Z"
+      "fetchedAt": "2026-10-22T17:56:46.040Z"
     },
     "CLVMNACSCAB1GQDE": {
       "id": "CLVMNACSCAB1GQDE",
@@ -47193,7 +47225,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CLVMNACSCAB1GQDE",
-      "fetchedAt": "2026-10-21T01:32:44.840Z"
+      "fetchedAt": "2026-10-22T17:56:46.141Z"
     },
     "JPNRGDPEXP": {
       "id": "JPNRGDPEXP",
@@ -47313,7 +47345,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/JPNRGDPEXP",
-      "fetchedAt": "2026-10-21T01:32:44.971Z"
+      "fetchedAt": "2026-10-22T17:56:46.029Z"
     },
     "NGDPRSAXDCGBQ": {
       "id": "NGDPRSAXDCGBQ",
@@ -47433,7 +47465,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/NGDPRSAXDCGBQ",
-      "fetchedAt": "2026-10-21T01:32:45.360Z"
+      "fetchedAt": "2026-10-22T17:56:46.378Z"
     },
     "CLVMNACSCAB1GQFR": {
       "id": "CLVMNACSCAB1GQFR",
@@ -47553,7 +47585,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CLVMNACSCAB1GQFR",
-      "fetchedAt": "2026-10-21T01:32:45.387Z"
+      "fetchedAt": "2026-10-22T17:56:46.712Z"
     },
     "CLVMNACSCAB1GQIT": {
       "id": "CLVMNACSCAB1GQIT",
@@ -47673,7 +47705,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CLVMNACSCAB1GQIT",
-      "fetchedAt": "2026-10-21T01:32:45.101Z"
+      "fetchedAt": "2026-10-22T17:56:46.314Z"
     },
     "NGDPRSAXDCCAQ": {
       "id": "NGDPRSAXDCCAQ",
@@ -47793,7 +47825,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/NGDPRSAXDCCAQ",
-      "fetchedAt": "2026-10-21T01:32:45.308Z"
+      "fetchedAt": "2026-10-22T17:56:46.460Z"
     },
     "DCOILWTICO": {
       "id": "DCOILWTICO",
@@ -54584,19 +54616,35 @@
         },
         {
           "date": "2026-10-12",
-          "value": 98.73
+          "value": 94.99
         },
         {
           "date": "2026-10-13",
-          "value": 100.86
+          "value": 95.39
         },
         {
           "date": "2026-10-14",
-          "value": 101.91
+          "value": 96.34
+        },
+        {
+          "date": "2026-10-15",
+          "value": 104.71
+        },
+        {
+          "date": "2026-10-16",
+          "value": 108.21
+        },
+        {
+          "date": "2026-10-19",
+          "value": 110.01
+        },
+        {
+          "date": "2026-10-20",
+          "value": 107.89
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/DCOILWTICO",
-      "fetchedAt": "2026-10-21T01:32:45.465Z"
+      "fetchedAt": "2026-10-22T17:56:46.908Z"
     },
     "DCOILBRENTEU": {
       "id": "DCOILBRENTEU",
@@ -61476,10 +61524,26 @@
         {
           "date": "2026-10-14",
           "value": 126.55
+        },
+        {
+          "date": "2026-10-15",
+          "value": 126.35
+        },
+        {
+          "date": "2026-10-16",
+          "value": 119.33
+        },
+        {
+          "date": "2026-10-19",
+          "value": 118.82
+        },
+        {
+          "date": "2026-10-20",
+          "value": 115.22
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/DCOILBRENTEU",
-      "fetchedAt": "2026-10-21T01:32:45.806Z"
+      "fetchedAt": "2026-10-22T17:56:47.001Z"
     },
     "CPIAUCNS": {
       "id": "CPIAUCNS",
@@ -61815,7 +61879,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CPIAUCNS",
-      "fetchedAt": "2026-10-21T01:32:45.388Z"
+      "fetchedAt": "2026-10-22T17:56:46.751Z"
     },
     "CPILFENS": {
       "id": "CPILFENS",
@@ -62151,7 +62215,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CPILFENS",
-      "fetchedAt": "2026-10-21T01:32:46.030Z"
+      "fetchedAt": "2026-10-22T17:56:47.027Z"
     },
     "CUUR0000SACL1E": {
       "id": "CUUR0000SACL1E",
@@ -62487,7 +62551,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CUUR0000SACL1E",
-      "fetchedAt": "2026-10-21T01:32:46.220Z"
+      "fetchedAt": "2026-10-22T17:56:47.013Z"
     },
     "CUUR0000SASLE": {
       "id": "CUUR0000SASLE",
@@ -62823,7 +62887,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CUUR0000SASLE",
-      "fetchedAt": "2026-10-21T01:32:45.722Z"
+      "fetchedAt": "2026-10-22T17:56:47.345Z"
     },
     "CUUR0000SAH1": {
       "id": "CUUR0000SAH1",
@@ -63159,7 +63223,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CUUR0000SAH1",
-      "fetchedAt": "2026-10-21T01:32:45.939Z"
+      "fetchedAt": "2026-10-22T17:56:47.275Z"
     },
     "CPIUFDNS": {
       "id": "CPIUFDNS",
@@ -63495,7 +63559,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CPIUFDNS",
-      "fetchedAt": "2026-10-21T01:32:46.130Z"
+      "fetchedAt": "2026-10-22T17:56:47.304Z"
     },
     "CPIENGNS": {
       "id": "CPIENGNS",
@@ -63831,7 +63895,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/CPIENGNS",
-      "fetchedAt": "2026-10-21T01:32:46.188Z"
+      "fetchedAt": "2026-10-22T17:56:47.335Z"
     },
     "A191RL1Q225SBEA": {
       "id": "A191RL1Q225SBEA",
@@ -63951,7 +64015,7 @@
         }
       ],
       "sourceUrl": "https://fred.stlouisfed.org/series/A191RL1Q225SBEA",
-      "fetchedAt": "2026-10-21T01:32:46.219Z"
+      "fetchedAt": "2026-10-22T17:56:47.671Z"
     }
   }
 }
