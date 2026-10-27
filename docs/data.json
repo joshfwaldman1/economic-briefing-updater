@@ -1,6 +1,6 @@
 {
   "retrieved": "2026-10-27",
-  "retrievedAt": "2026-10-27T02:02:36.127Z",
+  "retrievedAt": "2026-10-27T18:39:27.408Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -855,13 +855,13 @@
           "id": "GASREGW",
           "values": [
             "Regular gasoline — gallon",
-            4.284,
-            -0.0470000000000006,
-            41.901291818482925,
+            4.269,
+            -0.01499999999999968,
+            40.658978583196046,
             "USD per gallon",
             "weekly",
             "NSA",
-            "2026-10-19"
+            "2026-10-26"
           ],
           "source": "https://fred.stlouisfed.org/series/GASREGW",
           "sa": "NSA",
@@ -872,13 +872,13 @@
           "id": "GASDESW",
           "values": [
             "Diesel — gallon",
-            6.276,
-            0.09699999999999953,
-            73.37016574585635,
+            6.352,
+            0.07600000000000051,
+            70.84454007530931,
             "USD per gallon",
             "weekly",
             "NSA",
-            "2026-10-19"
+            "2026-10-26"
           ],
           "source": "https://fred.stlouisfed.org/series/GASDESW",
           "sa": "NSA",
@@ -1644,11 +1644,11 @@
           "id": "SP500",
           "values": [
             "S&P 500",
-            7623.68,
-            -1.0686436465988214,
-            11.367759842232129,
-            13.137165278610485,
-            "2026-10-23"
+            7676.77,
+            -0.8606027576997688,
+            12.143305821342487,
+            13.031807988880551,
+            "2026-10-26"
           ],
           "source": "https://fred.stlouisfed.org/series/SP500",
           "sa": "NSA",
@@ -1674,11 +1674,11 @@
           "id": "NASDAQCOM",
           "values": [
             "NASDAQ Composite",
-            25955.34,
-            -3.6408469841892166,
-            11.674344580649066,
-            13.13558657123679,
-            "2026-10-23"
+            26169.38,
+            -3.322432682446752,
+            12.595264002781171,
+            12.77537861664384,
+            "2026-10-26"
           ],
           "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
           "sa": "NSA",
@@ -2004,10 +2004,10 @@
             "Regular gasoline — gallon",
             2.937,
             "2026-02-23",
-            4.284,
-            "2026-10-19",
-            1.347,
-            45.86312563840653,
+            4.269,
+            "2026-10-26",
+            1.3320000000000003,
+            45.352400408580195,
             "USD per gallon · NSA",
             "USD per gallon"
           ],
@@ -2027,10 +2027,10 @@
             "Diesel — gallon",
             3.809,
             "2026-02-23",
-            6.276,
-            "2026-10-19",
-            2.4669999999999996,
-            64.76765555263849,
+            6.352,
+            "2026-10-26",
+            2.543,
+            66.76292990286163,
             "USD per gallon · NSA",
             "USD per gallon"
           ],
@@ -2050,10 +2050,10 @@
             "S&P 500",
             6878.88,
             "2026-02-27",
-            7623.68,
-            "2026-10-23",
-            744.8000000000002,
-            10.827343986230309,
+            7676.77,
+            "2026-10-26",
+            797.8900000000003,
+            11.599126602004972,
             "Index · NSA",
             "Index points"
           ],
@@ -2096,10 +2096,10 @@
             "Nasdaq Composite",
             22668.21,
             "2026-02-27",
-            25955.34,
-            "2026-10-23",
-            3287.130000000001,
-            14.50105676628195,
+            26169.38,
+            "2026-10-26",
+            3501.170000000002,
+            15.445286592986406,
             "Index February 5, 1971=100 · NSA",
             "Index points"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "4fb576ab-dc67-44cb-a9d2-9524fad6e2a2",
+  "snapshotId": "28986112-26e1-420b-9d93-4405b4f4612b",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-10-27T02:02:36.127Z"
+      "updatedAt": "2026-10-27T18:39:27.408Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
