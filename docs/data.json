@@ -1,6 +1,6 @@
 {
   "retrieved": "2026-10-28",
-  "retrievedAt": "2026-10-28T02:12:39.319Z",
+  "retrievedAt": "2026-10-28T18:48:47.077Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -1674,11 +1674,11 @@
           "id": "NASDAQCOM",
           "values": [
             "NASDAQ Composite",
-            26169.38,
-            -3.322432682446752,
-            12.595264002781171,
-            12.77537861664384,
-            "2026-10-26"
+            26477.81,
+            -2.182999417778153,
+            13.922301833879104,
+            12.016308012789878,
+            "2026-10-27"
           ],
           "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
           "sa": "NSA",
@@ -1960,10 +1960,10 @@
             "WTI crude oil — Cushing spot price",
             66.96,
             "2026-02-27",
-            107.89,
-            "2026-10-20",
-            40.93000000000001,
-            61.12604540023896,
+            103.37,
+            "2026-10-27",
+            36.41000000000001,
+            54.37574671445642,
             "USD per barrel · NSA",
             "USD per barrel"
           ],
@@ -1982,10 +1982,10 @@
             "Brent crude oil — Europe spot price",
             71.32,
             "2026-02-27",
-            115.22,
-            "2026-10-20",
-            43.900000000000006,
-            61.55356141334831,
+            123.1,
+            "2026-10-27",
+            51.78,
+            72.60235558048234,
             "USD per barrel · NSA",
             "USD per barrel"
           ],
@@ -2096,10 +2096,10 @@
             "Nasdaq Composite",
             22668.21,
             "2026-02-27",
-            26169.38,
-            "2026-10-26",
-            3501.170000000002,
-            15.445286592986406,
+            26477.81,
+            "2026-10-27",
+            3809.600000000002,
+            16.805914538466006,
             "Index February 5, 1971=100 · NSA",
             "Index points"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "21e52d7b-2f70-45e7-96d3-4f65b389af1f",
+  "snapshotId": "f7d7a680-176f-4536-811d-b98ea1736581",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-10-28T02:12:39.319Z"
+      "updatedAt": "2026-10-28T18:48:47.077Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
