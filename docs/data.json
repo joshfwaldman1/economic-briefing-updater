@@ -1,6 +1,6 @@
 {
   "retrieved": "2026-10-29",
-  "retrievedAt": "2026-10-29T02:24:37.232Z",
+  "retrievedAt": "2026-10-29T18:56:41.761Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -756,9 +756,9 @@
           "id": "PCEPI",
           "values": [
             "PCE · Headline",
-            0.3102796328484869,
-            3.419031824505425,
-            "2026-08-01",
+            0.4908404312709447,
+            3.648874225123633,
+            "2026-09-01",
             "SA"
           ],
           "source": "https://fred.stlouisfed.org/series/PCEPI",
@@ -769,9 +769,9 @@
           "id": "PCEPILFE",
           "values": [
             "PCE · Core",
-            0.24743915839948727,
-            3.0075959761856064,
-            "2026-08-01",
+            0.31650177409587865,
+            3.1211596029620203,
+            "2026-09-01",
             "SA"
           ],
           "source": "https://fred.stlouisfed.org/series/PCEPILFE",
@@ -782,9 +782,9 @@
           "id": "DFXARG3M086SBEA",
           "values": [
             "PCE · Food",
-            0.031030985574376224,
-            1.9201554631893103,
-            "2026-08-01",
+            -0.015889109150601932,
+            1.4852815814332176,
+            "2026-09-01",
             "SA"
           ],
           "source": "https://fred.stlouisfed.org/series/DFXARG3M086SBEA",
@@ -795,9 +795,9 @@
           "id": "DNRGRG3M086SBEA",
           "values": [
             "PCE · Energy",
-            2.308295231874591,
-            16.845701668009426,
-            "2026-08-01",
+            5.355592995354064,
+            21.2821134448534,
+            "2026-09-01",
             "SA"
           ],
           "source": "https://fred.stlouisfed.org/series/DNRGRG3M086SBEA",
@@ -1275,11 +1275,11 @@
           "id": "A191RL1Q225SBEA",
           "values": [
             "Real GDP growth",
+            3.4,
             2.2,
-            2.5,
-            4.0,
+            3.9,
             "Percent change from preceding quarter at an annual rate · SAAR",
-            "2026-04-01"
+            "2026-07-01"
           ],
           "source": "https://fred.stlouisfed.org/series/A191RL1Q225SBEA",
           "sa": "SAAR",
@@ -1290,11 +1290,11 @@
           "id": "GDPC1",
           "values": [
             "Real GDP level",
+            24611.077,
             24408.011,
-            24274.383,
-            23884.563,
+            24112.966,
             "Billions of chained 2017 USD · SAAR",
-            "2026-04-01"
+            "2026-07-01"
           ],
           "source": "https://fred.stlouisfed.org/series/GDPC1",
           "sa": "SAAR",
@@ -1566,9 +1566,9 @@
           "values": [
             "Initial claims",
             194000.0,
-            200000.0,
-            231000.0,
-            "2026-10-17"
+            195000.0,
+            221000.0,
+            "2026-10-24"
           ],
           "source": "https://fred.stlouisfed.org/series/ICSA",
           "sa": "SA",
@@ -1578,10 +1578,10 @@
           "id": "IC4WSA",
           "values": [
             "Initial claims 4-week average",
-            197750.0,
-            198750.0,
-            227750.0,
-            "2026-10-17"
+            196750.0,
+            198000.0,
+            226750.0,
+            "2026-10-24"
           ],
           "source": "https://fred.stlouisfed.org/series/IC4WSA",
           "sa": "SA",
@@ -1591,10 +1591,10 @@
           "id": "CCSA",
           "values": [
             "Continued claims",
-            1728000.0,
-            1703000.0,
-            1947000.0,
-            "2026-10-10"
+            1701000.0,
+            1722000.0,
+            1953000.0,
+            "2026-10-17"
           ],
           "source": "https://fred.stlouisfed.org/series/CCSA",
           "sa": "SA",
@@ -1674,11 +1674,11 @@
           "id": "NASDAQCOM",
           "values": [
             "NASDAQ Composite",
-            26477.81,
-            -2.182999417778153,
-            13.922301833879104,
-            12.016308012789878,
-            "2026-10-27"
+            26549.85,
+            -1.0086732551887856,
+            14.232258081171167,
+            11.425290704140444,
+            "2026-10-28"
           ],
           "source": "https://fred.stlouisfed.org/series/NASDAQCOM",
           "sa": "NSA",
@@ -2096,10 +2096,10 @@
             "Nasdaq Composite",
             22668.21,
             "2026-02-27",
-            26477.81,
-            "2026-10-27",
-            3809.600000000002,
-            16.805914538466006,
+            26549.85,
+            "2026-10-28",
+            3881.6399999999994,
+            17.123716429307834,
             "Index February 5, 1971=100 · NSA",
             "Index points"
           ],
@@ -2163,10 +2163,10 @@
             "PCE price index",
             128.845,
             "2026-01-01",
-            131.579,
-            "2026-08-01",
-            2.734000000000009,
-            2.1219294501144903,
+            132.257,
+            "2026-09-01",
+            3.412000000000006,
+            2.648143117699564,
             "Index 2017=100 · SA",
             "Index points"
           ],
@@ -2185,10 +2185,10 @@
             "Core PCE price index",
             128.27,
             "2026-01-01",
-            130.455,
-            "2026-08-01",
-            2.1850000000000023,
-            1.7034380603414778,
+            130.902,
+            "2026-09-01",
+            2.6319999999999766,
+            2.051921727605821,
             "Index 2017=100 · SA",
             "Index points"
           ],
@@ -2252,7 +2252,7 @@
             211000.0,
             "2026-02-21",
             194000.0,
-            "2026-10-17",
+            "2026-10-24",
             -17000.0,
             -8.056872037914697,
             "Number · SA",
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "5ded27e7-b026-412f-819d-903c4b369ed7",
+  "snapshotId": "a8e4ed27-336b-47bb-87b2-a2f1b3604cd1",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-10-29T02:24:37.232Z"
+      "updatedAt": "2026-10-29T18:56:41.761Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
