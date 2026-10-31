@@ -1,6 +1,6 @@
 {
-  "retrieved": "2026-10-30",
-  "retrievedAt": "2026-10-30T18:33:54.313Z",
+  "retrieved": "2026-10-31",
+  "retrievedAt": "2026-10-31T02:20:09.064Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -1659,11 +1659,11 @@
           "id": "DJIA",
           "values": [
             "Dow Jones Industrial Average",
-            52342.56,
-            1.9330896718047441,
-            8.903406321123652,
-            9.889486059791741,
-            "2026-10-29"
+            51770.31,
+            1.6977549819716886,
+            7.712788700066087,
+            8.939394959652457,
+            "2026-10-30"
           ],
           "source": "https://fred.stlouisfed.org/series/DJIA",
           "sa": "NSA",
@@ -2073,10 +2073,10 @@
             "Dow Jones Industrial Average",
             48977.92,
             "2026-02-27",
-            52342.56,
-            "2026-10-29",
-            3364.6399999999994,
-            6.869707819360227,
+            51770.31,
+            "2026-10-30",
+            2792.3899999999994,
+            5.7013241885323085,
             "Index · NSA",
             "Index points"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "6ed3a205-998f-41f8-98ac-8b7ace7e6e84",
+  "snapshotId": "634c2be4-3863-47cd-b3d1-eb44ebfdd331",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-10-30T18:33:54.313Z"
+      "updatedAt": "2026-10-31T02:20:09.064Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
