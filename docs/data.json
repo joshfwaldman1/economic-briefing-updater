@@ -1,6 +1,6 @@
 {
   "retrieved": "2026-11-02",
-  "retrievedAt": "2026-11-02T05:56:44.275Z",
+  "retrievedAt": "2026-11-02T22:45:06.449Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -1644,11 +1644,11 @@
           "id": "SP500",
           "values": [
             "S&P 500",
-            7743.98,
-            0.7846490423221164,
-            13.125118691110949,
-            12.379968335004609,
-            "2026-10-28"
+            7580.07,
+            -0.9340603329525909,
+            10.730698999342625,
+            11.106599788342407,
+            "2026-10-30"
           ],
           "source": "https://fred.stlouisfed.org/series/SP500",
           "sa": "NSA",
@@ -2050,10 +2050,10 @@
             "S&P 500",
             6878.88,
             "2026-02-27",
-            7743.98,
-            "2026-10-28",
-            865.0999999999995,
-            12.576175191310202,
+            7580.07,
+            "2026-10-30",
+            701.1899999999996,
+            10.193374502826025,
             "Index · NSA",
             "Index points"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "06cb2914-0ef9-4ea0-9d58-d1d5d2e2cd1a",
+  "snapshotId": "bc296d47-3320-4846-a0f2-5fd7ea1f9f19",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-11-02T05:56:44.275Z"
+      "updatedAt": "2026-11-02T22:45:06.449Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
