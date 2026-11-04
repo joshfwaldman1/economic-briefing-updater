@@ -1,6 +1,6 @@
 {
   "retrieved": "2026-11-04",
-  "retrievedAt": "2026-11-04T06:10:57.671Z",
+  "retrievedAt": "2026-11-04T20:47:18.209Z",
   "warStart": "2026-02-28",
   "kpis": [
     {
@@ -1644,11 +1644,11 @@
           "id": "SP500",
           "values": [
             "S&P 500",
-            7541.4,
-            -2.3478774317857054,
-            10.165802351910003,
-            10.251162246717938,
-            "2026-11-02"
+            7568.92,
+            -1.991526301613944,
+            10.56781827477906,
+            10.463414171398888,
+            "2026-11-03"
           ],
           "source": "https://fred.stlouisfed.org/series/SP500",
           "sa": "NSA",
@@ -1960,10 +1960,10 @@
             "WTI crude oil — Cushing spot price",
             66.96,
             "2026-02-27",
-            103.37,
-            "2026-10-27",
-            36.41000000000001,
-            54.37574671445642,
+            99.64,
+            "2026-11-03",
+            32.68000000000001,
+            48.80525686977302,
             "USD per barrel · NSA",
             "USD per barrel"
           ],
@@ -1982,10 +1982,10 @@
             "Brent crude oil — Europe spot price",
             71.32,
             "2026-02-27",
-            123.1,
-            "2026-10-27",
-            51.78,
-            72.60235558048234,
+            107.03,
+            "2026-11-03",
+            35.71000000000001,
+            50.070106561974214,
             "USD per barrel · NSA",
             "USD per barrel"
           ],
@@ -2050,10 +2050,10 @@
             "S&P 500",
             6878.88,
             "2026-02-27",
-            7541.4,
-            "2026-11-02",
-            662.5199999999995,
-            9.631219035656958,
+            7568.92,
+            "2026-11-03",
+            690.04,
+            10.031284162538089,
             "Index · NSA",
             "Index points"
           ],
@@ -2282,13 +2282,13 @@
     "calculations": "All dashboard arithmetic uses pandas on observed values. Missing observations are not estimated, interpolated or filled."
   },
   "calculationEngine": "pandas 2.3.3",
-  "snapshotId": "0546bd9c-82e6-43b6-8399-51774abd1d65",
+  "snapshotId": "71f25682-f4b3-48b0-82d4-6441d18e5205",
   "downloads": [
     {
       "path": "downloads/dashboard-data.zip",
       "label": "Current dashboard tables and source data",
       "description": "All indicator tables as CSV + source observations as JSON",
-      "updatedAt": "2026-11-04T06:10:57.671Z"
+      "updatedAt": "2026-11-04T20:47:18.209Z"
     },
     {
       "path": "downloads/labor-market-chartbook.docx",
